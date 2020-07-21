@@ -1,0 +1,109 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "hl7.fhir.nz.cca",
+  "url": "http://hl7.org.nz/fhir/ImplementationGuide/hl7.fhir.nz.cca",
+  "version": "0.1.0",
+  "name": "CcaImplementationGuide",
+  "title": "HL7® FHIR® CCA Implementation Guide",
+  "status": "active",
+  "publisher": "David Hay",
+  "contact": [
+    {
+      "name": "David Hay",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "mailto:david.hay25@gmail.com"
+        }
+      ]
+    }
+  ],
+  "description": "CCA IG",
+  "packageId": "hl7.fhir.nz.cca",
+  "license": "CC0-1.0",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/CcaActivityDefinition"
+        },
+        "name": "ActivityDefinition",
+        "description": "CCA Regimen Activity Definition.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/CcaPlanDefinition"
+        },
+        "name": "PlanDefinition",
+        "description": "CCA Regimen Plan Definition.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/support-factor"
+        },
+        "name": "SupportFactor",
+        "description": "Support factors needed during treatment",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "PlanDefinition/pd1"
+        },
+        "name": "pd1",
+        "description": "Example Plan definition",
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/CcaPlanDefinition"
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "CapabilityStatement.html",
+          "title": "Capability Statement",
+          "generation": "html"
+        },
+        {
+          "nameUrl": "extensions.html",
+          "title": "Extensions",
+          "generation": "html"
+        },
+        {
+          "nameUrl": "profiles.html",
+          "title": "Profiles",
+          "generation": "html"
+        },
+        {
+          "nameUrl": "terminology.html",
+          "title": "Terminology",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2020+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "CI Build"
+      },
+      {
+        "code": "show-inherited-invariants",
+        "value": "false"
+      }
+    ]
+  }
+}
