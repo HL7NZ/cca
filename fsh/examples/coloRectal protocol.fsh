@@ -43,11 +43,11 @@ Usage: #example
 * useContext[1].valueCodeableConcept = http://snomed.info/sct#FOLFOX "FOLFOX"
 
 //relatedArtifacts
-* relatedArtifact.type = #citations
+* relatedArtifact.type = #citation
 * relatedArtifact.display = "test"
 * relatedArtifact.url = "http://www.ncbi.nlm.nih.gov/pubmed/23434"
 
-* relatedArtifact[1].type = #citations
+* relatedArtifact[1].type = #citation
 * relatedArtifact[1].display = "test2"
 * relatedArtifact[1].url = "http://www.ncbi.nlm.nih.gov/pubmed/34324"
 

@@ -48,6 +48,27 @@
         }
       ],
       "url": "http://hl7.org.nz/fhir/StructureDefinition/support-factor"
+    },
+    {
+      "extension": [
+        {
+          "url": "factor",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "TOUPDATE-SUPPORT2",
+                "system": "http://snomed.info/sct",
+                "display": "Hypersensitivity / Infusion related reaction ris"
+              }
+            ]
+          }
+        },
+        {
+          "url": "value",
+          "valueBoolean": true
+        }
+      ],
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/support-factor"
     }
   ],
   "status": "draft",
@@ -93,6 +114,18 @@
           }
         ]
       }
+    }
+  ],
+  "relatedArtifact": [
+    {
+      "type": "citation",
+      "display": "test",
+      "url": "http://www.ncbi.nlm.nih.gov/pubmed/23434"
+    },
+    {
+      "type": "citation",
+      "display": "test2",
+      "url": "http://www.ncbi.nlm.nih.gov/pubmed/34324"
     }
   ]
 }
