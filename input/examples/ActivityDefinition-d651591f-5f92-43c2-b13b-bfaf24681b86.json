@@ -1,0 +1,51 @@
+{
+  "resourceType": "ActivityDefinition",
+  "id": "d651591f-5f92-43c2-b13b-bfaf24681b86",
+  "meta": {
+    "profile": [
+      "http://hl7.org.nz/fhir/StructureDefinition/CcaActivityDefinition"
+    ]
+  },
+  "text": {
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Tragacanth administration, 3mg over 3 hours by continuous IV infusion</div>",
+    "status": "additional"
+  },
+  "productCodeableConcept": {
+    "coding": [
+      {
+        "code": "10711851000116105",
+        "system": "https://nzulm.org.nz/nzmt",
+        "display": "Tragacanth"
+      }
+    ]
+  },
+  "dosage": [
+    {
+      "text": "3 mg over 3 hours by IV infusion",
+      "route": {
+        "coding": [
+          {
+            "code": "180177004",
+            "system": "http://snomed.info/sct",
+            "display": "continuous intravenous infusion"
+          }
+        ]
+      },
+      "doseAndRate": [
+        {
+          "doseQuantity": {
+            "value": 3,
+            "system": "http://unitsofmeasure.org",
+            "code": "mg"
+          },
+          "rateQuantity": {
+            "value": 3,
+            "system": "http://unitsofmeasure.org",
+            "code": "h"
+          }
+        }
+      ]
+    }
+  ],
+  "status": "draft"
+}

@@ -52,6 +52,22 @@
       },
       {
         "reference": {
+          "reference": "ActivityDefinition/5cd0c665-040c-4d7f-9106-8ecd56eab694"
+        },
+        "name": "5cd0c665-040c-4d7f-9106-8ecd56eab694",
+        "description": "Cabergoline Administration",
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/CcaActivityDefinition"
+      },
+      {
+        "reference": {
+          "reference": "ActivityDefinition/d651591f-5f92-43c2-b13b-bfaf24681b86"
+        },
+        "name": "d651591f-5f92-43c2-b13b-bfaf24681b86",
+        "description": "Tragacanth Administration",
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/CcaActivityDefinition"
+      },
+      {
+        "reference": {
           "reference": "PlanDefinition/pd1"
         },
         "name": "pd1",

@@ -1,0 +1,51 @@
+{
+  "resourceType": "ActivityDefinition",
+  "id": "5cd0c665-040c-4d7f-9106-8ecd56eab694",
+  "meta": {
+    "profile": [
+      "http://hl7.org.nz/fhir/StructureDefinition/CcaActivityDefinition"
+    ]
+  },
+  "text": {
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Cabergoline administration, 2mg over 20 minutes</div>",
+    "status": "additional"
+  },
+  "productCodeableConcept": {
+    "coding": [
+      {
+        "code": "10250021000116102",
+        "system": "https://nzulm.org.nz/nzmt",
+        "display": "Cabergoline"
+      }
+    ]
+  },
+  "dosage": [
+    {
+      "text": "2 mg over 20 minutes by IV infusion",
+      "route": {
+        "coding": [
+          {
+            "code": "180177004",
+            "system": "http://snomed.info/sct",
+            "display": "continuous intravenous infusion"
+          }
+        ]
+      },
+      "doseAndRate": [
+        {
+          "doseQuantity": {
+            "value": 2,
+            "system": "http://unitsofmeasure.org",
+            "code": "mg"
+          },
+          "rateQuantity": {
+            "value": 2,
+            "system": "http://unitsofmeasure.org",
+            "code": "min"
+          }
+        }
+      ]
+    }
+  ],
+  "status": "draft"
+}
