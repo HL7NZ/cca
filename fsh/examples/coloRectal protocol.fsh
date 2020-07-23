@@ -2,6 +2,7 @@
 Alias: $SNOMED = http://snomed.info/sct
 Alias: $NZMT = https://nzulm.org.nz/nzmt
 
+
 Instance:   pd1
 InstanceOf: CcaPlanDefinition
 Description: "Example Plan definition"
@@ -59,15 +60,48 @@ Usage: #example
 
 
 
-* action.description = "Administration of Cabergoline and Tragacanth daily over 14 days"
+//Uses the '3 level' representation of actions suggested by the example in the spec
+//top level: Regimen options. Allows different 'versions' of the rregimen to be selected based on trigger criteria. Only 1 supported
+//next level: Represents the different defined cycles. May be more than one
+//third level: the components of a single cycle
 
-//the Cabergoline admin
-* action.action.definitionCanonical = "#5cd0c665-040c-4d7f-9106-8ecd56eab694"
-* action.action.description = "2mg of Cabergoline daily for 14 days by IV Infusion"
+* action.description = "Describes the single cycle in this regimen. Cycle length 14 days"
+* action.selectionBehavior = #exactly-one    //explicit that only 1 top level action is chosen (there is only 1)
+
+//Cycle description
+* action.action.description = "Administration of Cabergoline and Tragacanth daily "
+
+//the Cabergoline admin within the cycle
+* action.action.action.description = "2mg of Cabergoline daily on days 1 and 4 by IV Infusion over 20 minutes"
+
+//details of the first administration on day 1
+* action.action.action.extension[timing-of-days].extension[day].valueInteger = 1
+* action.action.action.extension[timing-of-days].extension[instructions].valueString = "Specific instructions for the first administration"
+
+//details of the second administration on day 4
+* action.action.action.extension[timing-of-days][1].extension[day].valueInteger = 4
+* action.action.action.extension[timing-of-days][1].extension[instructions].valueString = "Specific instructions for the second administration"
 
 
-* action.action[1].definitionCanonical = "#d651591f-5f92-43c2-b13b-bfaf24681b86"
-* action.action[1].description = "3mg of Tragacanth daily for 14 days by IV Infusion"
+//the detailed activity definition. This is enough information to generate a MedicationRequest resource for a specific patient
+* action.action.action.definitionCanonical = "#5cd0c665-040c-4d7f-9106-8ecd56eab694"
+
+
+//the Tragacanth admin within the cycle
+* action.action.action[1].definitionCanonical = "#d651591f-5f92-43c2-b13b-bfaf24681b86"
+* action.action.action[1].description = "3mg of Tragacanth daily on days 2,3 and 4 by IV Infusion over 3 hours"
+
+//details of the first administration on day 2
+* action.action.action.extension[timing-of-days].extension[day].valueInteger = 2
+* action.action.action.extension[timing-of-days].extension[instructions].valueString = "Specific instructions for the first administration"
+
+//details of the second administration on day 3
+* action.action.action.extension[timing-of-days][1].extension[day].valueInteger = 3
+* action.action.action.extension[timing-of-days][1].extension[instructions].valueString = "Specific instructions for the second administration"
+
+//details of the third administration on day 4
+* action.action.action.extension[timing-of-days][2].extension[day].valueInteger = 4
+* action.action.action.extension[timing-of-days][2].extension[instructions].valueString = "Specific instructions for the third administration"
 
 
 Instance:   5cd0c665-040c-4d7f-9106-8ecd56eab694
@@ -81,6 +115,7 @@ Usage: #example
 * productCodeableConcept = $NZMT#10250021000116102 "Cabergoline"
 * dosage.text = "2 mg over 20 minutes by IV infusion"
 * dosage.route = $SNOMED#180177004 "continuous intravenous infusion"
+
 * dosage.doseAndRate.doseQuantity.value = 2 
 * dosage.doseAndRate.doseQuantity.system = "http://unitsofmeasure.org"
 * dosage.doseAndRate.doseQuantity.code = #mg

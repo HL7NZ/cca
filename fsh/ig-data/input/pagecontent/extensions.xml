@@ -4,11 +4,19 @@
 <tr><th>Id</th><th>Url</th><th>Context of Use</th><th>Description</th></tr>
 <tr>
 <td><a href='http://build.fhir.org/ig/HL7NZ/cca/branches/master/StructureDefinition-support-factor.html'>support-factor</a></td>
-<td>http://hl7.org.nz/fhir/StructureDefinition/support-factor</td>
+<td>http://clinfhir.com/fhir/StructureDefinition/support-factor</td>
 <td>
 <div>PlanDefinition</div>
 </td>
 <td>Support factors needed during treatment</td>
+</tr>
+<tr>
+<td><a href='http://build.fhir.org/ig/HL7NZ/cca/branches/master/StructureDefinition-timing-of-days.html'>timing-of-days</a></td>
+<td>http://clinfhir.com/fhir/StructureDefinition/timing-of-days</td>
+<td>
+<div>PlanDefinition.action</div>
+</td>
+<td>Allows specific days to be indicated in a regimen cycle. extends the UV extension: http://hl7.org/fhir/extension-timing-daysofcycle.html by adding instructions</td>
 </tr>
 </table>
 <a name="externalExtensions"> </a>

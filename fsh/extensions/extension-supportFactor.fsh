@@ -21,7 +21,8 @@ Extension: SupportFactor
 Id: support-factor
 Description: "Support factors needed during treatment"
 
-* ^url = "http://hl7.org.nz/fhir/StructureDefinition/support-factor"
+* ^url = "http://clinfhir.com/fhir/StructureDefinition/support-factor"
+
 
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 * ^context.type = #element

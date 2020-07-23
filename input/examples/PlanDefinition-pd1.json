@@ -28,7 +28,7 @@
           }
         }
       ],
-      "url": "http://hl7.org.nz/fhir/StructureDefinition/support-factor"
+      "url": "http://clinfhir.com/fhir/StructureDefinition/support-factor"
     },
     {
       "extension": [
@@ -51,7 +51,7 @@
           }
         }
       ],
-      "url": "http://hl7.org.nz/fhir/StructureDefinition/support-factor"
+      "url": "http://clinfhir.com/fhir/StructureDefinition/support-factor"
     },
     {
       "extension": [
@@ -74,7 +74,69 @@
           }
         }
       ],
-      "url": "http://hl7.org.nz/fhir/StructureDefinition/support-factor"
+      "url": "http://clinfhir.com/fhir/StructureDefinition/support-factor"
+    }
+  ],
+  "action": [
+    {
+      "action": [
+        {
+          "action": [
+            {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "day",
+                      "valueInteger": 2
+                    },
+                    {
+                      "url": "instructions",
+                      "valueString": "Specific instructions for the first administration"
+                    }
+                  ],
+                  "url": "http://clinfhir.com/fhir/StructureDefinition/timing-of-days"
+                },
+                {
+                  "extension": [
+                    {
+                      "url": "day",
+                      "valueInteger": 3
+                    },
+                    {
+                      "url": "instructions",
+                      "valueString": "Specific instructions for the second administration"
+                    }
+                  ],
+                  "url": "http://clinfhir.com/fhir/StructureDefinition/timing-of-days"
+                },
+                {
+                  "extension": [
+                    {
+                      "url": "day",
+                      "valueInteger": 4
+                    },
+                    {
+                      "url": "instructions",
+                      "valueString": "Specific instructions for the third administration"
+                    }
+                  ],
+                  "url": "http://clinfhir.com/fhir/StructureDefinition/timing-of-days"
+                }
+              ],
+              "description": "2mg of Cabergoline daily on days 1 and 4 by IV Infusion over 20 minutes",
+              "definitionCanonical": "#5cd0c665-040c-4d7f-9106-8ecd56eab694"
+            },
+            {
+              "definitionCanonical": "#d651591f-5f92-43c2-b13b-bfaf24681b86",
+              "description": "3mg of Tragacanth daily on days 2,3 and 4 by IV Infusion over 3 hours"
+            }
+          ],
+          "description": "Administration of Cabergoline and Tragacanth daily "
+        }
+      ],
+      "description": "Describes the single cycle in this regimen. Cycle length 14 days",
+      "selectionBehavior": "exactly-one"
     }
   ],
   "status": "draft",
@@ -185,21 +247,6 @@
       "type": "citation",
       "display": "test2",
       "url": "http://www.ncbi.nlm.nih.gov/pubmed/34324"
-    }
-  ],
-  "action": [
-    {
-      "description": "Administration of Cabergoline and Tragacanth daily over 14 days",
-      "action": [
-        {
-          "definitionCanonical": "#5cd0c665-040c-4d7f-9106-8ecd56eab694",
-          "description": "2mg of Cabergoline daily for 14 days by IV Infusion"
-        },
-        {
-          "definitionCanonical": "#d651591f-5f92-43c2-b13b-bfaf24681b86",
-          "description": "3mg of Tragacanth daily for 14 days by IV Infusion"
-        }
-      ]
     }
   ]
 }

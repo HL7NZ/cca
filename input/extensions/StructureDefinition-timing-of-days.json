@@ -1,11 +1,11 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "support-factor",
-  "url": "http://clinfhir.com/fhir/StructureDefinition/support-factor",
+  "id": "timing-of-days",
+  "url": "http://clinfhir.com/fhir/StructureDefinition/timing-of-days",
   "version": "0.1.0",
-  "name": "SupportFactor",
+  "name": "TimingOfDays",
   "status": "active",
-  "description": "Support factors needed during treatment",
+  "description": "Allows specific days to be indicated in a regimen cycle. extends the UV extension: http://hl7.org/fhir/extension-timing-daysofcycle.html by adding instructions",
   "jurisdiction": [
     {
       "coding": [
@@ -29,7 +29,7 @@
   "context": [
     {
       "type": "element",
-      "expression": "PlanDefinition"
+      "expression": "PlanDefinition.action"
     }
   ],
   "type": "Extension",
@@ -40,66 +40,66 @@
       {
         "id": "Extension.extension",
         "path": "Extension.extension",
-        "min": 2
+        "min": 1
       },
       {
-        "id": "Extension.extension:factor",
+        "id": "Extension.extension:day",
         "path": "Extension.extension",
-        "sliceName": "factor",
-        "definition": "The support factor to consider.",
+        "sliceName": "day",
+        "short": "The day number from the start of the cycle",
         "min": 1,
         "max": "1"
       },
       {
-        "id": "Extension.extension:factor.extension",
+        "id": "Extension.extension:day.extension",
         "path": "Extension.extension.extension",
         "max": "0"
       },
       {
-        "id": "Extension.extension:factor.url",
+        "id": "Extension.extension:day.url",
         "path": "Extension.extension.url",
-        "fixedUri": "factor"
+        "fixedUri": "day"
       },
       {
-        "id": "Extension.extension:factor.value[x]",
+        "id": "Extension.extension:day.value[x]",
         "path": "Extension.extension.value[x]",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "integer"
           }
         ]
       },
       {
-        "id": "Extension.extension:value",
+        "id": "Extension.extension:instructions",
         "path": "Extension.extension",
-        "sliceName": "value",
-        "definition": "The value of this support factor",
-        "min": 1,
+        "sliceName": "instructions",
+        "short": "Any specific instructions for this day",
+        "min": 0,
         "max": "1"
       },
       {
-        "id": "Extension.extension:value.extension",
+        "id": "Extension.extension:instructions.extension",
         "path": "Extension.extension.extension",
         "max": "0"
       },
       {
-        "id": "Extension.extension:value.url",
+        "id": "Extension.extension:instructions.url",
         "path": "Extension.extension.url",
-        "fixedUri": "value"
+        "fixedUri": "instructions"
       },
       {
-        "id": "Extension.extension:value.value[x]",
+        "id": "Extension.extension:instructions.value[x]",
         "path": "Extension.extension.value[x]",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "string"
           }
         ]
       },
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://clinfhir.com/fhir/StructureDefinition/support-factor"
+        "fixedUri": "http://clinfhir.com/fhir/StructureDefinition/timing-of-days"
       },
       {
         "id": "Extension.value[x]",

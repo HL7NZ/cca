@@ -1,7 +1,7 @@
 {
   "resourceType": "ImplementationGuide",
   "id": "hl7.fhir.nz.cca",
-  "url": "http://hl7.org.nz/fhir/ImplementationGuide/hl7.fhir.nz.cca",
+  "url": "http://clinfhir.com/fhir/ImplementationGuide/hl7.fhir.nz.cca",
   "version": "0.1.0",
   "name": "CcaImplementationGuide",
   "title": "HL7® FHIR® CCA Implementation Guide",
@@ -48,6 +48,14 @@
         },
         "name": "SupportFactor",
         "description": "Support factors needed during treatment",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/timing-of-days"
+        },
+        "name": "TimingOfDays",
+        "description": "Allows specific days to be indicated in a regimen cycle. extends the UV extension: http://hl7.org/fhir/extension-timing-daysofcycle.html by adding instructions",
         "exampleBoolean": false
       },
       {

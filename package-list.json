@@ -1,6 +1,6 @@
 {
   "package-id": "hl7.fhir.nz.cca",
-  "canonical": "http://hl7.org.nz/fhir",
+  "canonical": "http://clinfhir.com/fhir",
   "title": "HL7® FHIR® CCA Implementation Guide",
   "introduction": "CCA IG",
   "list": [

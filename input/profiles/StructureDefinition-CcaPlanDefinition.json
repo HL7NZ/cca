@@ -75,7 +75,60 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org.nz/fhir/StructureDefinition/support-factor"
+              "http://clinfhir.com/fhir/StructureDefinition/support-factor"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "PlanDefinition.action",
+        "path": "PlanDefinition.action",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "PlanDefinition.action.action",
+        "path": "PlanDefinition.action.action",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "PlanDefinition.action.action.action",
+        "path": "PlanDefinition.action.action.action",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "PlanDefinition.action.action.action.extension",
+        "path": "PlanDefinition.action.action.action.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "PlanDefinition.action.action.action.extension:timing-of-days",
+        "path": "PlanDefinition.action.action.action.extension",
+        "sliceName": "timing-of-days",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://clinfhir.com/fhir/StructureDefinition/timing-of-days"
             ]
           }
         ]
