@@ -52,8 +52,114 @@
   "differential": {
     "element": [
       {
-        "id": "ActivityDefinition",
-        "path": "ActivityDefinition"
+        "id": "ActivityDefinition.identifier",
+        "path": "ActivityDefinition.identifier",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.version",
+        "path": "ActivityDefinition.version",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.experimental",
+        "path": "ActivityDefinition.experimental",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.subject[x]",
+        "path": "ActivityDefinition.subject[x]",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.publisher",
+        "path": "ActivityDefinition.publisher",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.contact",
+        "path": "ActivityDefinition.contact",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.useContext",
+        "path": "ActivityDefinition.useContext",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.approvalDate",
+        "path": "ActivityDefinition.approvalDate",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.lastReviewDate",
+        "path": "ActivityDefinition.lastReviewDate",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.topic",
+        "path": "ActivityDefinition.topic",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.author",
+        "path": "ActivityDefinition.author",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.editor",
+        "path": "ActivityDefinition.editor",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.reviewer",
+        "path": "ActivityDefinition.reviewer",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.library",
+        "path": "ActivityDefinition.library",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.priority",
+        "path": "ActivityDefinition.priority",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.doNotPerform",
+        "path": "ActivityDefinition.doNotPerform",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.timing[x]",
+        "path": "ActivityDefinition.timing[x]",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.specimenRequirement",
+        "path": "ActivityDefinition.specimenRequirement",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.observationRequirement",
+        "path": "ActivityDefinition.observationRequirement",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.observationResultRequirement",
+        "path": "ActivityDefinition.observationResultRequirement",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.transform",
+        "path": "ActivityDefinition.transform",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.dynamicValue",
+        "path": "ActivityDefinition.dynamicValue",
+        "max": "0"
       }
     ]
   }

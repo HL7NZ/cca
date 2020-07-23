@@ -1,6 +1,6 @@
 {
   "resourceType": "PlanDefinition",
-  "id": "pd1",
+  "id": "coloRectal",
   "meta": {
     "profile": [
       "http://hl7.org.nz/fhir/StructureDefinition/CcaPlanDefinition"
@@ -125,10 +125,10 @@
                 }
               ],
               "description": "2mg of Cabergoline daily on days 1 and 4 by IV Infusion over 20 minutes",
-              "definitionCanonical": "#5cd0c665-040c-4d7f-9106-8ecd56eab694"
+              "definitionCanonical": "#act-cabergoline"
             },
             {
-              "definitionCanonical": "#d651591f-5f92-43c2-b13b-bfaf24681b86",
+              "definitionCanonical": "#act-tragacanth",
               "description": "3mg of Tragacanth daily on days 2,3 and 4 by IV Infusion over 3 hours"
             }
           ],
@@ -155,7 +155,7 @@
   "contained": [
     {
       "resourceType": "ActivityDefinition",
-      "id": "d651591f-5f92-43c2-b13b-bfaf24681b86",
+      "id": "act-tragacanth",
       "meta": {
         "profile": [
           "http://hl7.org.nz/fhir/StructureDefinition/CcaActivityDefinition"

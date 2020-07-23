@@ -3,7 +3,7 @@ Alias: $SNOMED = http://snomed.info/sct
 Alias: $NZMT = https://nzulm.org.nz/nzmt
 
 
-Instance:   pd1
+Instance:   coloRectal
 InstanceOf: CcaPlanDefinition
 Description: "Example Plan definition"
 Usage: #example
@@ -19,10 +19,10 @@ Usage: #example
 * date = "2020-06-29T20:14:18.417+12:00"
 
 //Cabergoline admin
-* contained = 5cd0c665-040c-4d7f-9106-8ecd56eab694
+* contained = act-cabergoline
 
 //Tragacanth
-* contained = d651591f-5f92-43c2-b13b-bfaf24681b86
+* contained = act-tragacanth
 
 
 //support factors
@@ -59,7 +59,6 @@ Usage: #example
 * relatedArtifact[1].url = "http://www.ncbi.nlm.nih.gov/pubmed/34324"
 
 
-
 //Uses the '3 level' representation of actions suggested by the example in the spec
 //top level: Regimen options. Allows different 'versions' of the rregimen to be selected based on trigger criteria. Only 1 supported
 //next level: Represents the different defined cycles. May be more than one
@@ -84,11 +83,10 @@ Usage: #example
 
 
 //the detailed activity definition. This is enough information to generate a MedicationRequest resource for a specific patient
-* action.action.action.definitionCanonical = "#5cd0c665-040c-4d7f-9106-8ecd56eab694"
-
+* action.action.action.definitionCanonical = "#act-cabergoline"
 
 //the Tragacanth admin within the cycle
-* action.action.action[1].definitionCanonical = "#d651591f-5f92-43c2-b13b-bfaf24681b86"
+* action.action.action[1].definitionCanonical = "#act-tragacanth"
 * action.action.action[1].description = "3mg of Tragacanth daily on days 2,3 and 4 by IV Infusion over 3 hours"
 
 //details of the first administration on day 2
@@ -104,7 +102,7 @@ Usage: #example
 * action.action.action.extension[timing-of-days][2].extension[instructions].valueString = "Specific instructions for the third administration"
 
 
-Instance:   5cd0c665-040c-4d7f-9106-8ecd56eab694
+Instance:   act-cabergoline
 InstanceOf: CcaActivityDefinition
 Description: "Cabergoline Administration"
 Usage: #example
@@ -112,8 +110,11 @@ Usage: #example
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Cabergoline administration, 2mg over 20 minutes</div>"
 * text.status = #additional
 
+* status = #draft
+
 * productCodeableConcept = $NZMT#10250021000116102 "Cabergoline"
 * dosage.text = "2 mg over 20 minutes by IV infusion"
+
 * dosage.route = $SNOMED#180177004 "continuous intravenous infusion"
 
 * dosage.doseAndRate.doseQuantity.value = 2 
@@ -125,9 +126,9 @@ Usage: #example
 * dosage.doseAndRate.rateQuantity.code = #min
 
 
-* status = #draft
 
-Instance:   d651591f-5f92-43c2-b13b-bfaf24681b86
+
+Instance:   act-tragacanth
 InstanceOf: CcaActivityDefinition
 Description: "Tragacanth Administration"
 Usage: #example
@@ -137,7 +138,9 @@ Usage: #example
 
 * productCodeableConcept = $NZMT#10711851000116105 "Tragacanth"
 * dosage.text = "3 mg over 3 hours by IV infusion"
+
 * dosage.route = $SNOMED#180177004 "continuous intravenous infusion"
+
 * dosage.doseAndRate.doseQuantity.value = 3 
 * dosage.doseAndRate.doseQuantity.system = "http://unitsofmeasure.org"
 * dosage.doseAndRate.doseQuantity.code = #mg

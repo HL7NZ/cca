@@ -60,25 +60,25 @@
       },
       {
         "reference": {
-          "reference": "ActivityDefinition/5cd0c665-040c-4d7f-9106-8ecd56eab694"
+          "reference": "ActivityDefinition/act-cabergoline"
         },
-        "name": "5cd0c665-040c-4d7f-9106-8ecd56eab694",
+        "name": "act-cabergoline",
         "description": "Cabergoline Administration",
         "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/CcaActivityDefinition"
       },
       {
         "reference": {
-          "reference": "ActivityDefinition/d651591f-5f92-43c2-b13b-bfaf24681b86"
+          "reference": "ActivityDefinition/act-tragacanth"
         },
-        "name": "d651591f-5f92-43c2-b13b-bfaf24681b86",
+        "name": "act-tragacanth",
         "description": "Tragacanth Administration",
         "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/CcaActivityDefinition"
       },
       {
         "reference": {
-          "reference": "PlanDefinition/pd1"
+          "reference": "PlanDefinition/coloRectal"
         },
-        "name": "pd1",
+        "name": "coloRectal",
         "description": "Example Plan definition",
         "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/CcaPlanDefinition"
       }

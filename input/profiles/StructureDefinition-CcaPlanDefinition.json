@@ -81,10 +81,119 @@
         ]
       },
       {
+        "id": "PlanDefinition.approvalDate",
+        "path": "PlanDefinition.approvalDate",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.lastReviewDate",
+        "path": "PlanDefinition.lastReviewDate",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.reviewer",
+        "path": "PlanDefinition.reviewer",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.endorser",
+        "path": "PlanDefinition.endorser",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.library",
+        "path": "PlanDefinition.library",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.goal",
+        "path": "PlanDefinition.goal",
+        "max": "0"
+      },
+      {
         "id": "PlanDefinition.action",
         "path": "PlanDefinition.action",
         "min": 1,
         "max": "1"
+      },
+      {
+        "id": "PlanDefinition.action.prefix",
+        "path": "PlanDefinition.action.prefix",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.priority",
+        "path": "PlanDefinition.action.priority",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.code",
+        "path": "PlanDefinition.action.code",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.reason",
+        "path": "PlanDefinition.action.reason",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.subject[x]",
+        "path": "PlanDefinition.action.subject[x]",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.trigger",
+        "path": "PlanDefinition.action.trigger",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.condition",
+        "path": "PlanDefinition.action.condition",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.input",
+        "path": "PlanDefinition.action.input",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.output",
+        "path": "PlanDefinition.action.output",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.timing[x]",
+        "path": "PlanDefinition.action.timing[x]",
+        "type": [
+          {
+            "code": "Timing"
+          }
+        ]
+      },
+      {
+        "id": "PlanDefinition.action.type",
+        "path": "PlanDefinition.action.type",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.precheckBehavior",
+        "path": "PlanDefinition.action.precheckBehavior",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.cardinalityBehavior",
+        "path": "PlanDefinition.action.cardinalityBehavior",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.transform",
+        "path": "PlanDefinition.action.transform",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.dynamicValue",
+        "path": "PlanDefinition.action.dynamicValue",
+        "max": "0"
       },
       {
         "id": "PlanDefinition.action.action",
