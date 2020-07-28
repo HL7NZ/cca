@@ -52,13 +52,52 @@
   "differential": {
     "element": [
       {
-        "id": "ActivityDefinition.identifier",
-        "path": "ActivityDefinition.identifier",
-        "max": "0"
+        "id": "ActivityDefinition.extension",
+        "path": "ActivityDefinition.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
       },
       {
-        "id": "ActivityDefinition.version",
-        "path": "ActivityDefinition.version",
+        "id": "ActivityDefinition.extension:location-medication-collection",
+        "path": "ActivityDefinition.extension",
+        "sliceName": "location-medication-collection",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://clinfhir.com/fhir/StructureDefinition/location-medication-collection"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ActivityDefinition.extension:location-administration",
+        "path": "ActivityDefinition.extension",
+        "sliceName": "location-administration",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://clinfhir.com/fhir/StructureDefinition/location-administration"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ActivityDefinition.identifier",
+        "path": "ActivityDefinition.identifier",
         "max": "0"
       },
       {
@@ -69,16 +108,6 @@
       {
         "id": "ActivityDefinition.subject[x]",
         "path": "ActivityDefinition.subject[x]",
-        "max": "0"
-      },
-      {
-        "id": "ActivityDefinition.publisher",
-        "path": "ActivityDefinition.publisher",
-        "max": "0"
-      },
-      {
-        "id": "ActivityDefinition.contact",
-        "path": "ActivityDefinition.contact",
         "max": "0"
       },
       {

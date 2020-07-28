@@ -1,4 +1,6 @@
 
+Alias: $locationMedicationCollection = http://clinfhir.com/fhir/StructureDefinition/location-medication-collection
+Alias: $locationAdministration = http://clinfhir.com/fhir/StructureDefinition/location-administration
 
 Profile:        CcaActivityDefinition
 Parent:         ActivityDefinition
@@ -12,13 +14,17 @@ Description:    "CCA Regimen Activity Definition."
 * ^text.status = #additional
 * ^text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>ActivityDefinition</div>"
 
+* extension contains
+    $locationMedicationCollection named location-medication-collection 0..1 and
+    $locationAdministration named location-administration 0..1
+
 //elements that have been removed
 * identifier 0..0
-* version 0..0
+
 * experimental 0..0
 * subject[x] 0..0
-* publisher 0..0
-* contact 0..0
+
+
 * useContext 0..0
 
 * lastReviewDate 0..0

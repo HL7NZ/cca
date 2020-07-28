@@ -155,7 +155,7 @@
   "contained": [
     {
       "resourceType": "ActivityDefinition",
-      "id": "act-tragacanth",
+      "id": "ActTragacanth",
       "meta": {
         "profile": [
           "http://hl7.org.nz/fhir/StructureDefinition/CcaActivityDefinition"

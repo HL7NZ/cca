@@ -1,0 +1,33 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "LocationMedicationCollection",
+  "id": "location-medication-collection",
+  "title": "The location where the medication can be collected on prior to administration",
+  "description": "The location where the medication can be collected on prior to administration",
+  "version": "0.1.0",
+  "url": "http:clinfhir.com/fhir/ValueSet/location-medication-collection",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "NZ",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "284748001",
+            "display": "Pharmacy shop"
+          }
+        ]
+      }
+    ]
+  }
+}

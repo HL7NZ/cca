@@ -27,12 +27,16 @@ Description: "Support factors needed during treatment"
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 * ^context.type = #element
 * ^context.expression = "PlanDefinition"
-/*
+
+
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 
+/*
+
 * extension ^slicing.discriminator[1].type = #value
-* extension ^slicing.discriminator[1].path = extension.extension.valueString
+* extension ^slicing.discriminator[1].path = valueString
+
 */
 
 * extension contains

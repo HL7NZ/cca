@@ -6,7 +6,7 @@ Description: "Allows specific days to be indicated in a regimen cycle. extends t
 
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 * ^context.type = #element
-* ^context.expression = "PlanDefinition.action"
+* ^context.expression = "PlanDefinition.action.action.action"
 
 * extension contains 
     day 1..1 and 

@@ -11,6 +11,24 @@ A common pattern is to have a ValueSet that 'includes' all the codes from a code
 
 <table class='table table-bordered table-condensed'>
 <tr><th>ValueSet</th><th>Purpose</th><th>Url</th><th>CodeSystem Urls</th></tr>
+<tr><td width='20%'>The location where the administration occurred</td><td>The location where the administration occurred</td><td><a href='ValueSet-location-administration.html'>http:clinfhir.com/fhir/ValueSet/location-administration-code</a></td><td><div><a href='undefined'>http://snomed.info/sct</a></div></td></tr>
+<tr><td width='20%'>The location where the medication can be collected on prior to administration</td><td>The location where the medication can be collected on prior to administration</td><td><a href='ValueSet-location-medication-collection.html'>http:clinfhir.com/fhir/ValueSet/location-medication-collection</a></td><td><div><a href='undefined'>http://snomed.info/sct</a></div></td></tr>
+</table>
+<br/><br/>
+### ValueSet by path
+<em>Coded bindings - even for terminology defined elsewhere</em>
+<table class='table table-bordered table-condensed'>
+<tr><th>Path</th><th>ValueSet</th><th>Notes</th></tr>
+<tr>
+<td>Extension.valueCodeableConcept</td>
+<td><a href='ValueSet-location-administration.html'>http:clinfhir.com/fhir/ValueSet/location-administration-code</a></td>
+<td></td>
+</tr>
+<tr>
+<td>Extension.valueCodeableConcept</td>
+<td><a href='ValueSet-location-medication-collection.html'>http:clinfhir.com/fhir/ValueSet/location-medication-collection</a></td>
+<td></td>
+</tr>
 </table>
 <br/><br/>
 ### CodeSystems

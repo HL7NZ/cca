@@ -23,6 +23,9 @@ These are complex resource types, and have been constrained for this purpose. In
 
 Refer to the spec for details on how a client might consume a PlanDefinition.
 
+### Examples
+Examples are found at the top of each resource. 
+
 ### Using this guide
 
 * The [Profiles](profiles.html) tab contains the profiles defined by this IG

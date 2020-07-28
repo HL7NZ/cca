@@ -19,10 +19,10 @@ Usage: #example
 * date = "2020-06-29T20:14:18.417+12:00"
 
 //Cabergoline admin
-* contained = act-cabergoline
+* contained = ActCabergoline
 
 //Tragacanth
-* contained = act-tragacanth
+* contained = ActTragacanth
 
 
 //support factors
@@ -102,7 +102,7 @@ Usage: #example
 * action.action.action.extension[timing-of-days][2].extension[instructions].valueString = "Specific instructions for the third administration"
 
 
-Instance:   act-cabergoline
+Instance:   ActCabergoline
 InstanceOf: CcaActivityDefinition
 Description: "Cabergoline Administration"
 Usage: #example
@@ -110,12 +110,17 @@ Usage: #example
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Cabergoline administration, 2mg over 20 minutes</div>"
 * text.status = #additional
 
+* extension[location-medication-collection].valueCodeableConcept = $SNOMED#284748001 "Pharmacy shop"
+* extension[location-medication-collection].valueCodeableConcept.text = "Collect medication from Pharmacy shop"
+* extension[location-administration].valueCodeableConcept = $SNOMED#264362003 "Home"
+* extension[location-medication-collection].valueCodeableConcept.text = "Administration takes place at the patients home"
+
 * status = #draft
 
 * productCodeableConcept = $NZMT#10250021000116102 "Cabergoline"
 * dosage.text = "2 mg over 20 minutes by IV infusion"
 
-* dosage.route = $SNOMED#180177004 "continuous intravenous infusion"
+* dosage.route = $SNOMED#180177004 "Continuous infusion of therapeutic substance"
 
 * dosage.doseAndRate.doseQuantity.value = 2 
 * dosage.doseAndRate.doseQuantity.system = "http://unitsofmeasure.org"
@@ -128,7 +133,7 @@ Usage: #example
 
 
 
-Instance:   act-tragacanth
+Instance:   ActTragacanth
 InstanceOf: CcaActivityDefinition
 Description: "Tragacanth Administration"
 Usage: #example

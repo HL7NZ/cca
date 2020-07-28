@@ -3,6 +3,22 @@
 <table width='100%' border='1' cellspacing='0' cellpadding='5px'>
 <tr><th>Id</th><th>Url</th><th>Context of Use</th><th>Description</th></tr>
 <tr>
+<td><a href='http://build.fhir.org/ig/HL7NZ/cca/branches/master/StructureDefinition-location-administration.html'>location-administration</a></td>
+<td>http://clinfhir.com/fhir/StructureDefinition/location-administration</td>
+<td>
+<div>ActivityDefinition</div>
+</td>
+<td>The Location where the medication administration occurs (eg home or clinic)</td>
+</tr>
+<tr>
+<td><a href='http://build.fhir.org/ig/HL7NZ/cca/branches/master/StructureDefinition-location-medication-collection.html'>location-medication-collection</a></td>
+<td>http://clinfhir.com/fhir/StructureDefinition/location-medication-collection</td>
+<td>
+<div>ActivityDefinition</div>
+</td>
+<td>The Location where the medication can be collection prior to collection</td>
+</tr>
+<tr>
 <td><a href='http://build.fhir.org/ig/HL7NZ/cca/branches/master/StructureDefinition-support-factor.html'>support-factor</a></td>
 <td>http://clinfhir.com/fhir/StructureDefinition/support-factor</td>
 <td>
@@ -14,7 +30,7 @@
 <td><a href='http://build.fhir.org/ig/HL7NZ/cca/branches/master/StructureDefinition-timing-of-days.html'>timing-of-days</a></td>
 <td>http://clinfhir.com/fhir/StructureDefinition/timing-of-days</td>
 <td>
-<div>PlanDefinition.action</div>
+<div>PlanDefinition.action.action.action</div>
 </td>
 <td>Allows specific days to be indicated in a regimen cycle. extends the UV extension: http://hl7.org/fhir/extension-timing-daysofcycle.html by adding instructions</td>
 </tr>

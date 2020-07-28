@@ -44,6 +44,22 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/location-administration"
+        },
+        "name": "LocationAdministration",
+        "description": "The Location where the medication administration occurs (eg home or clinic)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/location-medication-collection"
+        },
+        "name": "LocationMedicationCollection",
+        "description": "The Location where the medication can be collection prior to collection",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/support-factor"
         },
         "name": "SupportFactor",
@@ -60,17 +76,33 @@
       },
       {
         "reference": {
-          "reference": "ActivityDefinition/act-cabergoline"
+          "reference": "ValueSet/location-administration"
         },
-        "name": "act-cabergoline",
+        "name": "The location where the administration occurred",
+        "description": "The location where the administration occurred",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/location-medication-collection"
+        },
+        "name": "The location where the medication can be collected on prior to administration",
+        "description": "The location where the medication can be collected on prior to administration",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ActivityDefinition/ActCabergoline"
+        },
+        "name": "ActCabergoline",
         "description": "Cabergoline Administration",
         "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/CcaActivityDefinition"
       },
       {
         "reference": {
-          "reference": "ActivityDefinition/act-tragacanth"
+          "reference": "ActivityDefinition/ActTragacanth"
         },
-        "name": "act-tragacanth",
+        "name": "ActTragacanth",
         "description": "Tragacanth Administration",
         "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/CcaActivityDefinition"
       },

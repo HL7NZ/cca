@@ -1,11 +1,38 @@
 {
   "resourceType": "ActivityDefinition",
-  "id": "act-cabergoline",
+  "id": "ActCabergoline",
   "meta": {
     "profile": [
       "http://hl7.org.nz/fhir/StructureDefinition/CcaActivityDefinition"
     ]
   },
+  "extension": [
+    {
+      "url": "http://clinfhir.com/fhir/StructureDefinition/location-medication-collection",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "284748001",
+            "system": "http://snomed.info/sct",
+            "display": "Pharmacy shop"
+          }
+        ],
+        "text": "Administration takes place at the patients home"
+      }
+    },
+    {
+      "url": "http://clinfhir.com/fhir/StructureDefinition/location-administration",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "264362003",
+            "system": "http://snomed.info/sct",
+            "display": " Home"
+          }
+        ]
+      }
+    }
+  ],
   "text": {
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Cabergoline administration, 2mg over 20 minutes</div>",
     "status": "additional"
@@ -28,7 +55,7 @@
           {
             "code": "180177004",
             "system": "http://snomed.info/sct",
-            "display": "continuous intravenous infusion"
+            "display": "Continuous infusion of therapeutic substance"
           }
         ]
       },
