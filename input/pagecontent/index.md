@@ -11,26 +11,26 @@
 # CCA Implementation Guide
 
 ### Background
-This Implementation Guide describes the representaton of cancer treatment regimens (primarily chemotherapy created by the cancer Control Agency)
+This Implementation Guide describes the representaton of cancer treatment regimens (primarily chemotherapy created by the Cancer Control Agency)
 
 It defines profiles on [PlanDefinition](http://hl7.org/fhir/plandefinition.html) and [ActivityDefinition](http://hl7.org/fhir/activitydefinition.html) resource types.
 
-These are complex resource types, and have been constrained for this purpose. In particular, the ['action'](http://hl7.org/fhir/plandefinition-definitions.html#PlanDefinition.action) element of the PlanDefinion resource is used in a specific manner. It has 4 levels of nesting.
+These are complex resource types, and have been significantly constrained for this usage. In particular, the ['action'](http://hl7.org/fhir/plandefinition-definitions.html#PlanDefinition.action) element of the PlanDefinion resource is used in a specific manner. It has 4 levels of nesting.
 
 * The top level represents regimen options. This allows there to be different 'versions' of the regimen to be selected based on trigger criteria within the action. In this IG, only a single version is supported, but the pattern is maintained to suport future enhancement. 
-* The next level represents the parts of the regimen. In this IG, only a single part is supported, but the pattern is maintained to suport future enhancement. 
-* The next level represents the different defined cycles that are included in each regimen. Each cycle type will have a separate action element. A single cycle may repeat multiple times
-* The third level represents the components of a single cycle - for example each drug will have a separate action element that describes the rules for administration. In most cases, a third level action will contain a reference (via canonical url) to a separate ActivityDefinition resource (commonly contained within the PlanDefinition). This resource provides the detailed information to allow a client system to generate the particular 'action ' resources if needed - for example a MedicationRequest resource for a drug administration.
+* The second level represents the parts of the regimen. In this IG, only a single part is supported, but the pattern is maintained to suport future enhancement. 
+* The third level represents the different defined cycles that are included in each regimen. Each cycle type will have a separate action element at this level. A single cycle may repeat multiple times.
+* The fourth level represents the components of a single cycle - for example each drug will have a separate action element that describes the rules for administration. In most cases, a fourth level action will contain a reference (via canonical url) to a separate ActivityDefinition resource (commonly contained within the PlanDefinition). This resource provides the detailed information to allow a client system to generate the particular 'action ' resources if needed - for example a [MedicationRequest](http://hl7.org/fhir/medicationrequest.html) resource for a drug administration.
 
 Refer to the spec for details on how a client might consume a PlanDefinition.
 
 ### Examples
-Examples are found at the top of each resource. 
+Examples are found at the top of each resource, and listed in the [artifact index](artifacts.html). 
 
 ### Using this guide
 
 * The [Profiles](profiles.html) tab contains the profiles defined by this IG
 * The [Extensions](extensions.html) tab contains the Extension Definition resources defined by this IG
 * [Terminology]() has the ValueSets and CodeSystems
-* [Artfact Index](artifacts.html) has a list of all artofacts (including Profiles and Extensions)
-* The will be an API tab to describe the external interface supported by the system, if any. It is also feasible to 'bundle' the resources into a separate package for direct distribution to specific clients.
+* [Artifact Index](artifacts.html) has a list of all artifacts (including Examples, Profiles and Extensions)
+* There will be an API tab to describe the external interface supported by the system. It is also feasible to 'bundle' the resources into a separate package for direct distribution to specific clients.

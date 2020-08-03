@@ -78,16 +78,16 @@
         "reference": {
           "reference": "ValueSet/location-administration"
         },
-        "name": "The location where the administration occurred",
-        "description": "The location where the administration occurred",
+        "name": "Administration location",
+        "description": "The physical location where the administration occurred - eg at home or in a clinic",
         "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "ValueSet/location-medication-collection"
         },
-        "name": "The location where the medication can be collected on prior to administration",
-        "description": "The location where the medication can be collected on prior to administration",
+        "name": "Medication collection location",
+        "description": "The physical location where the medication can be collected on prior to administration - eg a pharmacy",
         "exampleBoolean": false
       },
       {
@@ -110,8 +110,8 @@
         "reference": {
           "reference": "PlanDefinition/coloRectal"
         },
-        "description": "Example Plan definition for coloRectal cancer",
         "name": "coloRectal",
+        "description": "Example Plan definition for coloRectal cancer",
         "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/CcaPlanDefinition"
       }
     ],

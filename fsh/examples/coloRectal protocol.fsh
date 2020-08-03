@@ -66,10 +66,6 @@ Usage: #example
 * relatedArtifact[1].url = "http://www.ncbi.nlm.nih.gov/pubmed/34324"
 
 
-//Uses the '3 level' representation of actions suggested by the example in the spec
-//top level: Regimen options. Allows different 'versions' of the rregimen to be selected based on trigger criteria. Only 1 supported
-//next level: Represents the different defined cycles. May be more than one
-//third level: the components of a single cycle
 
 * action.description = "The first option for this regimen. There is only 1"
 
@@ -79,6 +75,13 @@ Usage: #example
 
 //Cycle description
 * action.action.action.description = "Administration of Cabergoline and Tragacanth daily "
+
+* action.action.action.priority = #routine
+
+* action.action.action.timingTiming.repeat.count = 4
+* action.action.action.timingTiming.repeat.duration = 14
+* action.action.action.timingTiming.repeat.durationUnit = #d
+
 
 // -------- the Cabergoline admin within the cycle
 * action.action.action.action[0].description = "2mg of Cabergoline daily on days 1 and 4 by IV Infusion over 20 minutes"
