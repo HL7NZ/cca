@@ -16,8 +16,10 @@ Description:    "CCA Regimen Plan Definition."
 * extension contains
     $supportFactor named support-factor 0..* 
    
-* action.action.action.extension contains
+* action.action.action.action.extension contains
     $TOD named timing-of-days 0..*
+
+* useContext.value[x] only CodeableConcept
 
 //elements that have been removed
 * goal 0..0

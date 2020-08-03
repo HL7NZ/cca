@@ -23,6 +23,12 @@ echo "Making terminology summary"
 
 echo "Making API summary"
 ../scripts/makeCapabilityStatement.js cca
+
+# read -p "Press any key..."
+
+echo "Making Text"
+../scripts/makeText.js cca
+
 else 
 echo
 echo

@@ -9,17 +9,18 @@ files.
 NOTE: This file does not currently list the FHIR resources and examples generated from .fsh files. It only
 lists those files generated from project configs or the contents in the ig-data folder.
 
-| SUSHI-GENERATED FILE                           | ACTION    | INPUT FILE(S)                                         |
-| ---------------------------------------------- | --------- | ----------------------------------------------------- |
-| ig.ini                                         | generated | fsh/config.yaml                                       |
-| input/ImplementationGuide-hl7.fhir.nz.cca.json | generated | fsh/config.yaml, {all input resources and pages}      |
-| input/ignoreWarnings.txt                       | generated |                                                       |
-| input/includes/menu.xml                        | generated | fsh/config.yaml                                       |
-| package-list.json                              | generated | fsh/config.yaml                                       |
-| input/images/hl7nz-logo.jpg                    | copied    | fsh/ig-data/input/images/hl7nz-logo.jpg               |
-| input/includes/menuDEP.xml                     | copied    | fsh/ig-data/input/includes/menuDEP.xml                |
-| input/pagecontent/CapabilityStatement.xml      | copied    | fsh/ig-data/input/pagecontent/CapabilityStatement.xml |
-| input/pagecontent/extensions.xml               | copied    | fsh/ig-data/input/pagecontent/extensions.xml          |
-| input/pagecontent/index.md                     | copied    | fsh/ig-data/input/pagecontent/index.md                |
-| input/pagecontent/profiles.xml                 | copied    | fsh/ig-data/input/pagecontent/profiles.xml            |
-| input/pagecontent/terminology.md               | copied    | fsh/ig-data/input/pagecontent/terminology.md          |
+| SUSHI-GENERATED FILE                           | ACTION    | INPUT FILE(S)                                             |
+| ---------------------------------------------- | --------- | --------------------------------------------------------- |
+| ig.ini                                         | generated | fsh/config.yaml                                           |
+| input/ImplementationGuide-hl7.fhir.nz.cca.json | generated | fsh/config.yaml, {all input resources and pages}          |
+| input/ignoreWarnings.txt                       | generated |                                                           |
+| input/includes/menu.xml                        | generated | fsh/config.yaml                                           |
+| package-list.json                              | generated | fsh/config.yaml                                           |
+| input/examples/PlanDefinition-coloRectal.json  | copied    | fsh/ig-data/input/examples/PlanDefinition-coloRectal.json |
+| input/images/hl7nz-logo.jpg                    | copied    | fsh/ig-data/input/images/hl7nz-logo.jpg                   |
+| input/includes/menuDEP.xml                     | copied    | fsh/ig-data/input/includes/menuDEP.xml                    |
+| input/pagecontent/CapabilityStatement.xml      | copied    | fsh/ig-data/input/pagecontent/CapabilityStatement.xml     |
+| input/pagecontent/extensions.xml               | copied    | fsh/ig-data/input/pagecontent/extensions.xml              |
+| input/pagecontent/index.md                     | copied    | fsh/ig-data/input/pagecontent/index.md                    |
+| input/pagecontent/profiles.xml                 | copied    | fsh/ig-data/input/pagecontent/profiles.xml                |
+| input/pagecontent/terminology.md               | copied    | fsh/ig-data/input/pagecontent/terminology.md              |

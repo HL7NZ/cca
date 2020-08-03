@@ -15,9 +15,10 @@ This Implementation Guide describes the representaton of cancer treatment regime
 
 It defines profiles on [PlanDefinition](http://hl7.org/fhir/plandefinition.html) and [ActivityDefinition](http://hl7.org/fhir/activitydefinition.html) resource types.
 
-These are complex resource types, and have been constrained for this purpose. In particular, the ['action'](http://hl7.org/fhir/plandefinition-definitions.html#PlanDefinition.action) element of the PlanDefinion resource is used in a specific manner. It has 3 levels of nesting.
+These are complex resource types, and have been constrained for this purpose. In particular, the ['action'](http://hl7.org/fhir/plandefinition-definitions.html#PlanDefinition.action) element of the PlanDefinion resource is used in a specific manner. It has 4 levels of nesting.
 
 * The top level represents regimen options. This allows there to be different 'versions' of the regimen to be selected based on trigger criteria within the action. In this IG, only a single version is supported, but the pattern is maintained to suport future enhancement. 
+* The next level represents the parts of the regimen. In this IG, only a single part is supported, but the pattern is maintained to suport future enhancement. 
 * The next level represents the different defined cycles that are included in each regimen. Each cycle type will have a separate action element. A single cycle may repeat multiple times
 * The third level represents the components of a single cycle - for example each drug will have a separate action element that describes the rules for administration. In most cases, a third level action will contain a reference (via canonical url) to a separate ActivityDefinition resource (commonly contained within the PlanDefinition). This resource provides the detailed information to allow a client system to generate the particular 'action ' resources if needed - for example a MedicationRequest resource for a drug administration.
 

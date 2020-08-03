@@ -110,8 +110,8 @@
         "reference": {
           "reference": "PlanDefinition/coloRectal"
         },
+        "description": "Example Plan definition for coloRectal cancer",
         "name": "coloRectal",
-        "description": "Example Plan definition",
         "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/CcaPlanDefinition"
       }
     ],

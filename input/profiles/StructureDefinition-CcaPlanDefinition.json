@@ -5,6 +5,16 @@
     "status": "additional",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">CCA Plan definition</div>"
   },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Specialized.Definitional Artifacts"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "business"
+    }
+  ],
   "url": "http://hl7.org.nz/fhir/StructureDefinition/CcaPlanDefinition",
   "version": "0.1.0",
   "name": "CcaPlanDefinition",
@@ -77,6 +87,15 @@
             "profile": [
               "http://clinfhir.com/fhir/StructureDefinition/support-factor"
             ]
+          }
+        ]
+      },
+      {
+        "id": "PlanDefinition.useContext.value[x]",
+        "path": "PlanDefinition.useContext.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
           }
         ]
       },
@@ -214,8 +233,17 @@
         ]
       },
       {
-        "id": "PlanDefinition.action.action.action.extension",
-        "path": "PlanDefinition.action.action.action.extension",
+        "id": "PlanDefinition.action.action.action.action",
+        "path": "PlanDefinition.action.action.action.action",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "PlanDefinition.action.action.action.action.extension",
+        "path": "PlanDefinition.action.action.action.action.extension",
         "slicing": {
           "discriminator": [
             {
@@ -228,8 +256,8 @@
         }
       },
       {
-        "id": "PlanDefinition.action.action.action.extension:timing-of-days",
-        "path": "PlanDefinition.action.action.action.extension",
+        "id": "PlanDefinition.action.action.action.action.extension:timing-of-days",
+        "path": "PlanDefinition.action.action.action.action.extension",
         "sliceName": "timing-of-days",
         "min": 0,
         "max": "*",

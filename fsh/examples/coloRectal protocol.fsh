@@ -5,18 +5,24 @@ Alias: $NZMT = https://nzulm.org.nz/nzmt
 
 Instance:   coloRectal
 InstanceOf: CcaPlanDefinition
-Description: "Example Plan definition"
+Description: "Example Plan definition for coloRectal cancer"
 Usage: #example
 
 * status = #draft
 * version = "3.0.3"
 * title = "Colorectal Adjuvant FOLFOX (a7)"
+* description = "A drug treatment regimen for Colorectal cancer"
 
 * type.coding.system = "http://terminology.hl7.org/CodeSystem/plan-definition-type"
 * type.coding.code = #order-set
 
 * publisher = "New Zealand Medicines Formulary LP"
 * date = "2020-06-29T20:14:18.417+12:00"
+
+* type = http://terminology.hl7.org/CodeSystem/plan-definition-type#clinical-protocol
+* experimental = false
+
+
 
 //Cabergoline admin
 * contained = ActCabergoline
@@ -44,6 +50,7 @@ Usage: #example
 * useContext.code.system = "http://terminology.hl7.org/CodeSystem/usage-context-type"
 * useContext.valueCodeableConcept = http://snomed.info/sct#781382000 "Colorectal cancer"
 
+
 //the type of regimen - ?Is the code really a snomed code??
 * useContext[1].code = #program
 * useContext[1].code.system = "http://terminology.hl7.org/CodeSystem/usage-context-type"
@@ -64,42 +71,45 @@ Usage: #example
 //next level: Represents the different defined cycles. May be more than one
 //third level: the components of a single cycle
 
-* action.description = "Describes the single cycle in this regimen. Cycle length 14 days"
-* action.selectionBehavior = #exactly-one    //explicit that only 1 top level action is chosen (there is only 1)
+* action.description = "The first option for this regimen. There is only 1"
+
+
+* action.action.description = "Describes the single cycle in this regimen. Cycle length 14 days"
+* action.action.selectionBehavior = #exactly-one    //explicit that only 1 top level action is chosen (there is only 1)
 
 //Cycle description
-* action.action.description = "Administration of Cabergoline and Tragacanth daily "
+* action.action.action.description = "Administration of Cabergoline and Tragacanth daily "
 
-//the Cabergoline admin within the cycle
-* action.action.action.description = "2mg of Cabergoline daily on days 1 and 4 by IV Infusion over 20 minutes"
+// -------- the Cabergoline admin within the cycle
+* action.action.action.action[0].description = "2mg of Cabergoline daily on days 1 and 4 by IV Infusion over 20 minutes"
 
 //details of the first administration on day 1
-* action.action.action.extension[timing-of-days].extension[day].valueInteger = 1
-* action.action.action.extension[timing-of-days].extension[instructions].valueString = "Specific instructions for the first administration"
+* action.action.action.action[0].extension[timing-of-days].extension[day].valueInteger = 1
+* action.action.action.action[0].extension[timing-of-days].extension[instructions].valueString = "Specific instructions for the first administration"
 
 //details of the second administration on day 4
-* action.action.action.extension[timing-of-days][1].extension[day].valueInteger = 4
-* action.action.action.extension[timing-of-days][1].extension[instructions].valueString = "Specific instructions for the second administration"
+* action.action.action.action[0].extension[timing-of-days][1].extension[day].valueInteger = 4
+* action.action.action.action[0].extension[timing-of-days][1].extension[instructions].valueString = "Specific instructions for the second administration"
 
 
 //the detailed activity definition. This is enough information to generate a MedicationRequest resource for a specific patient
-* action.action.action.definitionCanonical = "#act-cabergoline"
+* action.action.action.action[0].definitionCanonical = "#act-cabergoline"
 
-//the Tragacanth admin within the cycle
-* action.action.action[1].definitionCanonical = "#act-tragacanth"
-* action.action.action[1].description = "3mg of Tragacanth daily on days 2,3 and 4 by IV Infusion over 3 hours"
+//------------- the Tragacanth admin within the cycle
+* action.action.action.action[1].definitionCanonical = "#act-tragacanth"
+* action.action.action.action[1].description = "3mg of Tragacanth daily on days 2,3 and 4 by IV Infusion over 3 hours"
 
 //details of the first administration on day 2
-* action.action.action.extension[timing-of-days].extension[day].valueInteger = 2
-* action.action.action.extension[timing-of-days].extension[instructions].valueString = "Specific instructions for the first administration"
+* action.action.action.action[1].extension[timing-of-days].extension[day].valueInteger = 2
+* action.action.action.action[1].extension[timing-of-days].extension[instructions].valueString = "Specific instructions for the first administration"
 
 //details of the second administration on day 3
-* action.action.action.extension[timing-of-days][1].extension[day].valueInteger = 3
-* action.action.action.extension[timing-of-days][1].extension[instructions].valueString = "Specific instructions for the second administration"
+* action.action.action.action[1].extension[timing-of-days][1].extension[day].valueInteger = 3
+* action.action.action.action[1].extension[timing-of-days][1].extension[instructions].valueString = "Specific instructions for the second administration"
 
 //details of the third administration on day 4
-* action.action.action.extension[timing-of-days][2].extension[day].valueInteger = 4
-* action.action.action.extension[timing-of-days][2].extension[instructions].valueString = "Specific instructions for the third administration"
+* action.action.action.action[1].extension[timing-of-days][2].extension[day].valueInteger = 4
+* action.action.action.action[1].extension[timing-of-days][2].extension[instructions].valueString = "Specific instructions for the third administration"
 
 
 Instance:   ActCabergoline
