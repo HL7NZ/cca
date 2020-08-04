@@ -1,6 +1,6 @@
 Extension: LocationMedicationCollection
 Id: location-medication-collection
-Description: "The Location where the medication can be collection prior to collection"
+Description: "The physical Location where the medication can be collection prior to collection"
 
 * ^url = "http://clinfhir.com/fhir/StructureDefinition/location-medication-collection"
 

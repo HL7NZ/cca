@@ -47,7 +47,7 @@
           "reference": "StructureDefinition/location-administration"
         },
         "name": "LocationAdministration",
-        "description": "The Location where the medication administration occurs (eg home or clinic)",
+        "description": "The physical Location where the medication administration occurs (eg home or clinic)",
         "exampleBoolean": false
       },
       {
@@ -55,7 +55,7 @@
           "reference": "StructureDefinition/location-medication-collection"
         },
         "name": "LocationMedicationCollection",
-        "description": "The Location where the medication can be collection prior to collection",
+        "description": "The physical Location where the medication can be collection prior to collection",
         "exampleBoolean": false
       },
       {
@@ -87,7 +87,7 @@
           "reference": "StructureDefinition/timing-of-days"
         },
         "name": "TimingOfDays",
-        "description": "Allows specific days to be indicated in a regimen cycle. extends the UV extension: http://hl7.org/fhir/extension-timing-daysofcycle.html by adding instructions",
+        "description": "Allows specific days to be indicated in a component of a regimen cycle. extends the UV extension: http://hl7.org/fhir/extension-timing-daysofcycle.html by adding instructions",
         "exampleBoolean": false
       },
       {
@@ -126,8 +126,8 @@
         "reference": {
           "reference": "PlanDefinition/coloRectal"
         },
-        "description": "Example Plan definition for coloRectal cancer",
         "name": "coloRectal",
+        "description": "Example Plan definition for coloRectal cancer",
         "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/CcaPlanDefinition"
       }
     ],

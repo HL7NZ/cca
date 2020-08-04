@@ -1,1 +1,286 @@
-{"resourceType":"PlanDefinition","id":"coloRectal","meta":{"profile":["http://hl7.org.nz/fhir/StructureDefinition/CcaPlanDefinition"]},"extension":[{"extension":[{"url":"factor","valueCodeableConcept":{"coding":[{"code":"TOUPDATE-SUPPORT4","system":"http://snomed.info/sct","display":"Diarrhoea risk"}]}},{"url":"value","valueCodeableConcept":{"text":"low"}}],"url":"http://clinfhir.com/fhir/StructureDefinition/support-factor"},{"extension":[{"url":"factor","valueCodeableConcept":{"coding":[{"code":"TOUPDATE-SUPPORT8","system":"http://snomed.info/sct","display":"AntiFungal Prophylaxis"}]}},{"url":"value","valueCodeableConcept":{"text":"low"}}],"url":"http://clinfhir.com/fhir/StructureDefinition/support-factor"},{"extension":[{"url":"factor","valueCodeableConcept":{"coding":[{"code":"TOUPDATE-SUPPORT2","system":"http://snomed.info/sct","display":"Hypersensitivity / Infusion related reaction ris"}]}},{"url":"value","valueCodeableConcept":{"text":"low"}}],"url":"http://clinfhir.com/fhir/StructureDefinition/support-factor"}],"action":[{"action":[{"action":[{"action":[{"extension":[{"extension":[{"url":"day","valueInteger":1},{"url":"instructions","valueString":"Specific instructions for the first administration"}],"url":"http://clinfhir.com/fhir/StructureDefinition/timing-of-days"},{"extension":[{"url":"day","valueInteger":4},{"url":"instructions","valueString":"Specific instructions for the second administration"}],"url":"http://clinfhir.com/fhir/StructureDefinition/timing-of-days"}],"description":"2mg of Cabergoline daily on days 1 and 4 by IV Infusion over 20 minutes","definitionCanonical":"#act-cabergoline"},{"extension":[{"extension":[{"url":"day","valueInteger":2},{"url":"instructions","valueString":"Specific instructions for the first administration"}],"url":"http://clinfhir.com/fhir/StructureDefinition/timing-of-days"},{"extension":[{"url":"day","valueInteger":3},{"url":"instructions","valueString":"Specific instructions for the second administration"}],"url":"http://clinfhir.com/fhir/StructureDefinition/timing-of-days"},{"extension":[{"url":"day","valueInteger":4},{"url":"instructions","valueString":"Specific instructions for the third administration"}],"url":"http://clinfhir.com/fhir/StructureDefinition/timing-of-days"}],"definitionCanonical":"#act-tragacanth","description":"3mg of Tragacanth daily on days 2,3 and 4 by IV Infusion over 3 hours"}],"description":"Administration of Cabergoline and Tragacanth daily ","priority":"routine","timingTiming":{"repeat":{"count":4,"duration":14,"durationUnit":"d"}}}],"description":"Describes the single cycle in this regimen. Cycle length 14 days","selectionBehavior":"exactly-one"}],"description":"The first option for this regimen. There is only 1"}],"status":"draft","version":"3.0.3","title":"Colorectal Adjuvant FOLFOX (a7)","description":"A drug treatment regimen for Colorectal cancer","type":{"coding":[{"code":"clinical-protocol","system":"http://terminology.hl7.org/CodeSystem/plan-definition-type"}]},"publisher":"New Zealand Medicines Formulary LP","date":"2020-06-29T20:14:18.417+12:00","experimental":false,"contained":[{"resourceType":"ActivityDefinition","id":"ActTragacanth","meta":{"profile":["http://hl7.org.nz/fhir/StructureDefinition/CcaActivityDefinition"]},"text":{"div":"<div xmlns=\"http://www.w3.org/1999/xhtml\">Tragacanth administration, 3mg over 3 hours by continuous IV infusion</div>","status":"additional"},"productCodeableConcept":{"coding":[{"code":"10711851000116105","system":"https://nzulm.org.nz/nzmt","display":"Tragacanth"}]},"dosage":[{"text":"3 mg over 3 hours by IV infusion","route":{"coding":[{"code":"180177004","system":"http://snomed.info/sct","display":"continuous intravenous infusion"}]},"doseAndRate":[{"doseQuantity":{"value":3,"system":"http://unitsofmeasure.org","code":"mg"},"rateQuantity":{"value":3,"system":"http://unitsofmeasure.org","code":"h"}}]}],"status":"draft"}],"useContext":[{"code":{"code":"focus","system":"http://terminology.hl7.org/CodeSystem/usage-context-type"},"valueCodeableConcept":{"coding":[{"code":"781382000","system":"http://snomed.info/sct","display":"Colorectal cancer"}]}},{"code":{"code":"program","system":"http://terminology.hl7.org/CodeSystem/usage-context-type"},"valueCodeableConcept":{"coding":[{"code":"FOLFOX","system":"http://snomed.info/sct","display":"FOLFOX"}]}}],"relatedArtifact":[{"type":"citation","display":"test","url":"http://www.ncbi.nlm.nih.gov/pubmed/23434"},{"type":"citation","display":"test2","url":"http://www.ncbi.nlm.nih.gov/pubmed/34324"}],"text":{"status":"generated","div":"<div xmlns='http://www.w3.org/1999/xhtml'><div><h3>Colorectal Adjuvant FOLFOX (a7)</h3><p>A drug treatment regimen for Colorectal cancer</p><h4>Use Context</h4><div><strong>focus</strong>  Colorectal cancer http://snomed.info/sct 781382000</div><div><strong>program</strong>  FOLFOX http://snomed.info/sct FOLFOX</div><br/><h4>Support factors</h4><table class='table'><tr><th>Factor</th><th>Value</th></tr><tr><td>Diarrhoea risk</td><td>low</td></tr><tr><td>AntiFungal Prophylaxis</td><td>low</td></tr><tr><td>Hypersensitivity / Infusion related reaction ris</td><td>low</td></tr></table><br/><h4>Related artifacts</h4><table class='table'><tr><th>Type</th><th>Display</th><th>Url</th></tr><tr><td>citation</td><td>test</td><td>http://www.ncbi.nlm.nih.gov/pubmed/23434</td></tr><tr><td>citation</td><td>test2</td><td>http://www.ncbi.nlm.nih.gov/pubmed/34324</td></tr></table><br/><h4>Regimen details</h4><div>Cycle#0  Administration of Cabergoline and Tragacanth daily </div><div>Cycle length: 14 d Repeat:4 times</div><div>&nbsp;&nbsp;Action#0  2mg of Cabergoline daily on days 1 and 4 by IV Infusion over 20 minutes</div><div>&nbsp;&nbsp;&nbsp;&nbsp;Day#1  Specific instructions for the first administration</div><div>&nbsp;&nbsp;&nbsp;&nbsp;Day#4  Specific instructions for the second administration</div><div>&nbsp;&nbsp;Action#1  3mg of Tragacanth daily on days 2,3 and 4 by IV Infusion over 3 hours</div><div>&nbsp;&nbsp;&nbsp;&nbsp;Day#2  Specific instructions for the first administration</div><div>&nbsp;&nbsp;&nbsp;&nbsp;Day#3  Specific instructions for the second administration</div><div>&nbsp;&nbsp;&nbsp;&nbsp;Day#4  Specific instructions for the third administration</div></div></div>"}}
+{
+  "resourceType": "PlanDefinition",
+  "id": "coloRectal",
+  "meta": {
+    "profile": [
+      "http://hl7.org.nz/fhir/StructureDefinition/CcaPlanDefinition"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://clinfhir.com/fhir/StructureDefinition/regimen-type",
+      "valueCodeableConcept": {
+        "text": "Folfox"
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "factor",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "TOUPDATE-SUPPORT4",
+                "system": "http://snomed.info/sct",
+                "display": "Diarrhoea risk"
+              }
+            ]
+          }
+        },
+        {
+          "url": "value",
+          "valueCodeableConcept": {
+            "text": "low"
+          }
+        }
+      ],
+      "url": "http://clinfhir.com/fhir/StructureDefinition/support-factor"
+    },
+    {
+      "extension": [
+        {
+          "url": "factor",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "TOUPDATE-SUPPORT8",
+                "system": "http://snomed.info/sct",
+                "display": "AntiFungal Prophylaxis"
+              }
+            ]
+          }
+        },
+        {
+          "url": "value",
+          "valueCodeableConcept": {
+            "text": "low"
+          }
+        }
+      ],
+      "url": "http://clinfhir.com/fhir/StructureDefinition/support-factor"
+    },
+    {
+      "extension": [
+        {
+          "url": "factor",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "TOUPDATE-SUPPORT2",
+                "system": "http://snomed.info/sct",
+                "display": "Hypersensitivity / Infusion related reaction ris"
+              }
+            ]
+          }
+        },
+        {
+          "url": "value",
+          "valueCodeableConcept": {
+            "text": "low"
+          }
+        }
+      ],
+      "url": "http://clinfhir.com/fhir/StructureDefinition/support-factor"
+    }
+  ],
+  "action": [
+    {
+      "action": [
+        {
+          "action": [
+            {
+              "action": [
+                {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "day",
+                          "valueInteger": 1
+                        },
+                        {
+                          "url": "instructions",
+                          "valueString": "Specific instructions for the first administration"
+                        }
+                      ],
+                      "url": "http://clinfhir.com/fhir/StructureDefinition/timing-of-days"
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "day",
+                          "valueInteger": 4
+                        },
+                        {
+                          "url": "instructions",
+                          "valueString": "Specific instructions for the second administration"
+                        }
+                      ],
+                      "url": "http://clinfhir.com/fhir/StructureDefinition/timing-of-days"
+                    }
+                  ],
+                  "description": "2mg of Cabergoline daily on days 1 and 4 by IV Infusion over 20 minutes",
+                  "definitionCanonical": "#act-cabergoline"
+                },
+                {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "day",
+                          "valueInteger": 2
+                        },
+                        {
+                          "url": "instructions",
+                          "valueString": "Specific instructions for the first administration"
+                        }
+                      ],
+                      "url": "http://clinfhir.com/fhir/StructureDefinition/timing-of-days"
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "day",
+                          "valueInteger": 3
+                        },
+                        {
+                          "url": "instructions",
+                          "valueString": "Specific instructions for the second administration"
+                        }
+                      ],
+                      "url": "http://clinfhir.com/fhir/StructureDefinition/timing-of-days"
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "day",
+                          "valueInteger": 4
+                        },
+                        {
+                          "url": "instructions",
+                          "valueString": "Specific instructions for the third administration"
+                        }
+                      ],
+                      "url": "http://clinfhir.com/fhir/StructureDefinition/timing-of-days"
+                    }
+                  ],
+                  "definitionCanonical": "#act-tragacanth",
+                  "description": "3mg of Tragacanth daily on days 2,3 and 4 by IV Infusion over 3 hours"
+                }
+              ],
+              "description": "Administration of Cabergoline and Tragacanth daily ",
+              "priority": "routine",
+              "timingTiming": {
+                "repeat": {
+                  "count": 4,
+                  "duration": 14,
+                  "durationUnit": "d"
+                }
+              }
+            }
+          ],
+          "description": "Describes the single cycle in this regimen. Cycle length 14 days",
+          "selectionBehavior": "exactly-one"
+        }
+      ],
+      "description": "The first option for this regimen. There is only 1"
+    }
+  ],
+  "status": "draft",
+  "version": "3.0.3",
+  "title": "Colorectal Adjuvant FOLFOX (a7)",
+  "description": "A drug treatment regimen for Colorectal cancer",
+  "type": {
+    "coding": [
+      {
+        "code": "clinical-protocol",
+        "system": "http://terminology.hl7.org/CodeSystem/plan-definition-type"
+      }
+    ]
+  },
+  "publisher": "New Zealand Medicines Formulary LP",
+  "date": "2020-06-29T20:14:18.417+12:00",
+  "experimental": false,
+  "contained": [
+    {
+      "resourceType": "ActivityDefinition",
+      "id": "ActTragacanth",
+      "meta": {
+        "profile": [
+          "http://hl7.org.nz/fhir/StructureDefinition/CcaActivityDefinition"
+        ]
+      },
+      "text": {
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Tragacanth administration, 3mg over 3 hours by continuous IV infusion</div>",
+        "status": "additional"
+      },
+      "productCodeableConcept": {
+        "coding": [
+          {
+            "code": "10711851000116105",
+            "system": "https://nzulm.org.nz/nzmt",
+            "display": "Tragacanth"
+          }
+        ]
+      },
+      "dosage": [
+        {
+          "text": "3 mg over 3 hours by IV infusion",
+          "route": {
+            "coding": [
+              {
+                "code": "180177004",
+                "system": "http://snomed.info/sct",
+                "display": "continuous intravenous infusion"
+              }
+            ]
+          },
+          "doseAndRate": [
+            {
+              "doseQuantity": {
+                "value": 3,
+                "system": "http://unitsofmeasure.org",
+                "code": "mg"
+              },
+              "rateQuantity": {
+                "value": 3,
+                "system": "http://unitsofmeasure.org",
+                "code": "h"
+              }
+            }
+          ]
+        }
+      ],
+      "status": "draft"
+    }
+  ],
+  "useContext": [
+    {
+      "code": {
+        "code": "focus",
+        "system": "http://terminology.hl7.org/CodeSystem/usage-context-type"
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "781382000",
+            "system": "http://snomed.info/sct",
+            "display": "Colorectal cancer"
+          }
+        ]
+      }
+    }
+  ],
+  "relatedArtifact": [
+    {
+      "type": "citation",
+      "display": "test",
+      "url": "http://www.ncbi.nlm.nih.gov/pubmed/23434"
+    },
+    {
+      "type": "citation",
+      "display": "test2",
+      "url": "http://www.ncbi.nlm.nih.gov/pubmed/34324"
+    }
+  ]
+}

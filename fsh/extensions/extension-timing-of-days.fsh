@@ -1,6 +1,6 @@
 Extension: TimingOfDays
 Id: timing-of-days
-Description: "Allows specific days to be indicated in a regimen cycle. extends the UV extension: http://hl7.org/fhir/extension-timing-daysofcycle.html by adding instructions"
+Description: "Allows specific days to be indicated in a component of a regimen cycle. extends the UV extension: http://hl7.org/fhir/extension-timing-daysofcycle.html by adding instructions"
 
 * ^url = "http://clinfhir.com/fhir/StructureDefinition/timing-of-days"
 

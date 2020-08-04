@@ -10,5 +10,4 @@ Description: "When a Plan has been deprecated (superceeded or discontinued), ref
 * ^context.type = #element
 * ^context.expression = "PlanDefinition"
 
-
 * value[x] only Reference(CcaPlanDefinition)

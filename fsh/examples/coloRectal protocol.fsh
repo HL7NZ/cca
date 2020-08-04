@@ -29,6 +29,9 @@ Usage: #example
 //Tragacanth
 * contained = ActTragacanth
 
+//regimen type
+* extension[regimen-type].valueCodeableConcept.text = "Folfox"
+
 
 //support factors
 
@@ -49,12 +52,13 @@ Usage: #example
 * useContext.code.system = "http://terminology.hl7.org/CodeSystem/usage-context-type"
 * useContext.valueCodeableConcept = http://snomed.info/sct#781382000 "Colorectal cancer"
 
-
+/*
 //the type of regimen - ?Is the code really a snomed code??
 * useContext[1].code = #program
 * useContext[1].code.system = "http://terminology.hl7.org/CodeSystem/usage-context-type"
 * useContext[1].valueCodeableConcept = http://snomed.info/sct#FOLFOX "FOLFOX"
 
+*/
 //relatedArtifacts
 * relatedArtifact.type = #citation
 * relatedArtifact.display = "test"

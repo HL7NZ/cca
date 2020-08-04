@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "name": "LocationMedicationCollection",
   "status": "active",
-  "description": "The Location where the medication can be collection prior to collection",
+  "description": "The physical Location where the medication can be collection prior to collection",
   "jurisdiction": [
     {
       "coding": [

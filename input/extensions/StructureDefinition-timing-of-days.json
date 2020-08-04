@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "name": "TimingOfDays",
   "status": "active",
-  "description": "Allows specific days to be indicated in a regimen cycle. extends the UV extension: http://hl7.org/fhir/extension-timing-daysofcycle.html by adding instructions",
+  "description": "Allows specific days to be indicated in a component of a regimen cycle. extends the UV extension: http://hl7.org/fhir/extension-timing-daysofcycle.html by adding instructions",
   "jurisdiction": [
     {
       "coding": [

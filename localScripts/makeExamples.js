@@ -1,44 +1,11 @@
 #!/usr/bin/env node
 /**
- * make the Text element for examples
- * 
- * execute: ./makeText {IG}
- * 
- * Start with Plan definition - maybe extens to more
+ * make the Example page
  * */
 
 let fs = require('fs');
 
-/*
-let igRoot = "/Users/davidhay/IG/";
-
-
-//retrieve the IG
-
-let igName = process.argv[2];   
-if (!igName) {
-    console.log("No IG specified. Must be in the command eg: ./makeTerminology nhi")
-    return;
-}
-
-
-
-let fullPath = igRoot + igName;
-*/
-
-/*
-let fullPath = "./cca/"
-
-if ( ! fs.existsSync(fullPath)) {
-    console.log("The IG '" + igName + "' does not exist (at least, there is no folder with that name.")
-    return;
-}
-
-
-
-let folderPath = igRoot + igName +  "/input/examples/"
-*/
-
+                
 let folderPath =  "/Users/davidhay/IG/cca/input/examples/"
 
 //let outPath = igRoot + igName +  "/fsh/ig-data/input/examples/";
@@ -46,29 +13,25 @@ let folderPath =  "/Users/davidhay/IG/cca/input/examples/"
 let outFile =  "/Users/davidhay/IG/cca/fsh/ig-data/input/pagecontent/examples.xml";   
 let xml = "<div xmlns='http://www.w3.org/1999/xhtml'>"
 
-//let md =  ""
-
-
 if (fs.existsSync(folderPath)) {
     fs.readdirSync(folderPath).forEach(function(file) {
         
     
         let fullFileName = folderPath + file
-        console.log(fullFileName)
 
-        //console.log('- ' + fullFileName)
         let contents = fs.readFileSync(fullFileName, {encoding: 'utf8'});
         let resource = JSON.parse(contents)
 
         let text;
         switch (resource.resourceType) {
             case 'PlanDefinition' :
+                console.log(fullFileName)
                 text = makePlanDefinition(resource)
                 break;
         }
 
         if (text) {
-            console.log(text)
+           
             xml += text
           
 /*
@@ -111,11 +74,12 @@ if (fs.existsSync(folderPath)) {
 }
 
 function makePlanDefinition(pd) {
-//console.log(pd)
+
     let xml = "<div>"
     
     xml += "<a name='title'> </a>"
     xml += "<h3>" + pd.title + "</h3>"
+
 
 
     //a row to allow the link to the example to be shown to the right
@@ -124,11 +88,19 @@ function makePlanDefinition(pd) {
     xml += "<p>" + pd.description + "</p>"
     xml += "</div>"
     xml += "<div class='col-sm-2'>"
-    xml += "link"
+    xml += "<a href='PlanDefinition-"+pd.id+".html'>Link to example</a>"
     xml += "</div>"
     xml += "</div>"
 
-   
+
+    //regimen type
+    let arRT = getExtensions(pd,"http://clinfhir.com/fhir/StructureDefinition/regimen-type")
+    if (arRT.length > 0) {      //should only be one...
+
+
+        console.log(arRT)
+        xml += "<div><strong>Regimen type </strong>" + createCCSummary(arRT[0].valueCodeableConcept) + "</div>"
+    }
 
     xml += "<div class='container'>"
     xml += "<div class='row'>"
@@ -136,8 +108,8 @@ function makePlanDefinition(pd) {
 
     //context of use
     if (pd.useContext) {
-        xml += "<a name='ctx'> </a>"
-        xml += "<h4>Use Context</h4>"
+        //xml += "<a name='ctx'> </a>"
+        //xml += "<h4>Use Context</h4>"
         pd.useContext.forEach(function(uc){
             let lne = "<strong>" + uc.code.code + "</strong>"
             lne += "  " + createCCSummary(uc.valueCodeableConcept)
@@ -205,14 +177,15 @@ function makePlanDefinition(pd) {
     try {
         let arRegimenOptions = pd.action;     //Optional regimens
         arRegimenOptions.forEach(function(regimen){
-            //this is a single regimen
+            //this is a single regimen in this spec
             let arParts = regimen.action;       //the parts of this regimen
             arParts.forEach(function(part){
-              
+                // a single part only
                 let arCycles = part.action;     //the cycles in this part
                 arCycles.forEach(function(cycle,inxCycle){
                     //this is a single cycle
-                    xml += "<div>Cycle " + (inxCycle +1)
+                    xml += "<div class='alert alert-dark'>"
+                    xml += "Cycle " + (inxCycle +1)
                     xml += "  " + cycle.description
                     xml += "</div>"
 
@@ -234,10 +207,10 @@ function makePlanDefinition(pd) {
                     let hashDay = {};    //combined actions by day
 
                     let arCycleActions = cycle.action;    //the individual actions within this cycle
-                    console.log(arCycleActions)
+
                     arCycleActions.forEach(function(action,inxAction){
                         //a single action within the cycle
-                        //console.log(action)
+
                         //look for 'timing of days
                         xml += "<div style='padding-left:8px'>Action " + (inxAction+1); // + "</div>"
                         xml += "  " + action.description
@@ -248,26 +221,21 @@ function makePlanDefinition(pd) {
                             arTOD.forEach(function(admin){
                                 let day = getChildExtension(admin,"day","integer")
                                 let instructions = getChildExtension(admin,"instructions","string")
-                                xml += "<div  style='padding-left:16px'>Day#" + day +  "  " +instructions+ "</div>"
+                                xml += "<div style='padding-left:16px'>Day " + day +  "  <em>" +instructions+ "</em></div>"
                                 hashDay[day] = hashDay[day] || []
                                 hashDay[day].push({description : action.description,instructions:instructions,day:day})
 
                             })
                         }
-                        console.log(arTOD)
                         xml += "<br/>"                        
                     })
 
                     //render the day summary
                     //conver to array
 
-                    console.log(JSON.stringify(hashDay))
-
                     let arDaySummary = []
-                    Object.keys(hashDay).forEach(function(key) {
-                        
-                            arDaySummary.push(hashDay[key]);
-                       
+                    Object.keys(hashDay).forEach(function(key) {                       
+                        arDaySummary.push(hashDay[key]);
                     });
                     //and sort
                     arDaySummary.sort(function(a,b){
@@ -277,13 +245,12 @@ function makePlanDefinition(pd) {
                             return -1
                         }
                     })
-                    console.log(arDaySummary)
+
                     //and render
-                    xml += "<a name='daysum'> </a>"
-                    xml += "<h4>Daily Summary</h4>"
+                    //xml += "<a name='daysum'> </a>"
+                    xml += "<strong>Summary of administration by day</strong>"
                     arDaySummary.forEach(function(arItem){
-                        console.log('---')
-                            console.log(arItem)
+
 
                         xml += "<div>Day " + arItem[0].day + "</div>";
 
@@ -293,7 +260,7 @@ function makePlanDefinition(pd) {
                             xml += "</div>";
 
                             xml += "<div style='padding-left:16px'>";
-                            xml += item.instructions;
+                            xml += "<em>" + item.instructions + "</em>";
                             xml += "</div>";
 
                         })
@@ -320,8 +287,9 @@ function makePlanDefinition(pd) {
 
 //get all the extensions with this url in this element. Returns an array of extensions
 function getExtensions(element,url) {
+    let ar = []
     if (element.extension) {
-        let ar = []
+        
         element.extension.forEach(function(ext){
             if (ext.url == url) {
                 ar.push(ext)
@@ -357,12 +325,13 @@ function getChildExtension(ext,key,type) {
 }
 
 
-//create a 1 line display of CC
+//create a 1 line display of CC. If there is text, then just retrun that - otherwise make up samething from the coded elements
 function createCCSummary(cc) {
     let display = ""
     if (cc) {
         if (cc.text) {
-            display = cc.text + " "
+            return cc.text;
+            //display = cc.text + " "
         }
         if (cc.coding && cc.coding.length >= 0) {
             display += cc.coding[0].display + " " + cc.coding[0].system + " " + cc.coding[0].code 

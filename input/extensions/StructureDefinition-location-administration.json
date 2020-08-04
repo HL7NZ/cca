@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "name": "LocationAdministration",
   "status": "active",
-  "description": "The Location where the medication administration occurs (eg home or clinic)",
+  "description": "The physical Location where the medication administration occurs (eg home or clinic)",
   "jurisdiction": [
     {
       "coding": [

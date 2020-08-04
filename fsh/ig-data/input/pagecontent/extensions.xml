@@ -8,7 +8,7 @@
 <td>
 <div>ActivityDefinition</div>
 </td>
-<td>The Location where the medication administration occurs (eg home or clinic)</td>
+<td>The physical Location where the medication administration occurs (eg home or clinic)</td>
 </tr>
 <tr>
 <td><a href='http://build.fhir.org/ig/HL7NZ/cca/branches/master/StructureDefinition-location-medication-collection.html'>location-medication-collection</a></td>
@@ -16,7 +16,7 @@
 <td>
 <div>ActivityDefinition</div>
 </td>
-<td>The Location where the medication can be collection prior to collection</td>
+<td>The physical Location where the medication can be collection prior to collection</td>
 </tr>
 <tr>
 <td><a href='http://build.fhir.org/ig/HL7NZ/cca/branches/master/StructureDefinition-regimen-type.html'>regimen-type</a></td>
@@ -48,7 +48,7 @@
 <td>
 <div>PlanDefinition.action.action.action.action</div>
 </td>
-<td>Allows specific days to be indicated in a regimen cycle. extends the UV extension: http://hl7.org/fhir/extension-timing-daysofcycle.html by adding instructions</td>
+<td>Allows specific days to be indicated in a component of a regimen cycle. extends the UV extension: http://hl7.org/fhir/extension-timing-daysofcycle.html by adding instructions</td>
 </tr>
 </table>
 <a name="externalExtensions"> </a>

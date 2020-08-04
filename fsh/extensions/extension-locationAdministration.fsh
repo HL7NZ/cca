@@ -1,6 +1,6 @@
 Extension: LocationAdministration
 Id: location-administration
-Description: "The Location where the medication administration occurs (eg home or clinic)"
+Description: "The physical Location where the medication administration occurs (eg home or clinic)"
 
 * ^url = "http://clinfhir.com/fhir/StructureDefinition/location-administration"
 
