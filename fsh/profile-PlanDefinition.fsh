@@ -1,4 +1,6 @@
 Alias: $supportFactor = http://clinfhir.com/fhir/StructureDefinition/support-factor
+Alias: $replacedBy = http://clinfhir.com/fhir/StructureDefinition/replaced-by
+Alias: $regimenType = http://clinfhir.com/fhir/StructureDefinition/regimen-type
 Alias: $TOD = http://clinfhir.com/fhir/StructureDefinition/timing-of-days
 
 Profile:        CcaPlanDefinition
@@ -14,7 +16,9 @@ Description:    "CCA Regimen Plan Definition."
 * ^text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>CCA Plan definition</div>"
 
 * extension contains
-    $supportFactor named support-factor 0..* 
+    $supportFactor named support-factor 0..* and 
+    $regimenType named regimen-type 0..1 and
+    $replacedBy named replaced-by 0..1
    
 * action.action.action.action.extension contains
     $TOD named timing-of-days 0..*
@@ -26,8 +30,8 @@ Description:    "CCA Regimen Plan Definition."
 * library 0..0
 * endorser 0..0
 * reviewer 0..0
-* lastReviewDate 0..0
-* approvalDate 0..0
+//* lastReviewDate 0..0
+//* approvalDate 0..0
 
 * action.prefix 0..0
 * action.priority 0..0

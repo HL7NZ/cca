@@ -2,7 +2,6 @@
 Alias: $SNOMED = http://snomed.info/sct
 Alias: $NZMT = https://nzulm.org.nz/nzmt
 
-
 Instance:   coloRectal
 InstanceOf: CcaPlanDefinition
 Description: "Example Plan definition for coloRectal cancer"

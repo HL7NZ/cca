@@ -4,7 +4,7 @@
   "url": "http://clinfhir.com/fhir/ImplementationGuide/hl7.fhir.nz.cca",
   "version": "0.1.0",
   "name": "CcaImplementationGuide",
-  "title": "HL7® FHIR® CCA Implementation Guide",
+  "title": "HL7® FHIR® Te Aho o Te Kahu, Cancer Control Agency Implementation Guide",
   "status": "active",
   "publisher": "David Hay",
   "contact": [
@@ -60,6 +60,22 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/regimen-type"
+        },
+        "name": "Regimen type",
+        "description": "The overall type of the regimen - eg FOLFOX",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/replaced-by"
+        },
+        "name": "Replaced by",
+        "description": "When a Plan has been deprecated (superceeded or discontinued), refers to the one that replaces it, if any",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/support-factor"
         },
         "name": "SupportFactor",
@@ -110,8 +126,8 @@
         "reference": {
           "reference": "PlanDefinition/coloRectal"
         },
-        "name": "coloRectal",
         "description": "Example Plan definition for coloRectal cancer",
+        "name": "coloRectal",
         "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/CcaPlanDefinition"
       }
     ],
@@ -128,6 +144,11 @@
         {
           "nameUrl": "CapabilityStatement.html",
           "title": "Capability Statement",
+          "generation": "html"
+        },
+        {
+          "nameUrl": "examples.html",
+          "title": "Examples",
           "generation": "html"
         },
         {

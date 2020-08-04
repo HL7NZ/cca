@@ -1,4 +1,4 @@
-# CCA Implementation Guide
+# Te Aho o Te Kahu, Cancer Control Agency Implementation Guide
 
 ### Background
 This Implementation Guide describes the representaton of cancer treatment regimens (primarily chemotherapy created by the Cancer Control Agency)
@@ -21,6 +21,7 @@ Examples are found at the top of each resource, and listed in the [artifact inde
 
 * The [Profiles](profiles.html) tab contains the profiles defined by this IG
 * The [Extensions](extensions.html) tab contains the Extension Definition resources defined by this IG
+* [Examples](examples.html) has the PlanDefinition examples
 * [Terminology]() has the ValueSets and CodeSystems
 * [Artifact Index](artifacts.html) has a list of all artifacts (including Examples, Profiles and Extensions)
 * There will be an API tab to describe the external interface supported by the system. It is also feasible to 'bundle' the resources into a separate package for direct distribution to specific clients.

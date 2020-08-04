@@ -8,7 +8,7 @@ id: hl7.fhir.nz.cca
 canonical: http://clinfhir.com/fhir
 version: 0.1.0
 name: CcaImplementationGuide
-title: HL7® FHIR® CCA Implementation Guide
+title: HL7® FHIR® Te Aho o Te Kahu, Cancer Control Agency Implementation Guide
 status: active
 publisher:
   name: David Hay
@@ -48,6 +48,7 @@ menu:
   Profiles: profiles.html
   Extensions: extensions.html
   Terminology: terminology.html
+  Examples: examples.html
 #   Table of Contents: toc.html
   Artifact Index: artifacts.html
   "Support\n      ":

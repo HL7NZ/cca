@@ -1,7 +1,7 @@
 {
   "package-id": "hl7.fhir.nz.cca",
   "canonical": "http://clinfhir.com/fhir",
-  "title": "HL7® FHIR® CCA Implementation Guide",
+  "title": "HL7® FHIR® Te Aho o Te Kahu, Cancer Control Agency Implementation Guide",
   "introduction": "CCA IG",
   "list": [
     {

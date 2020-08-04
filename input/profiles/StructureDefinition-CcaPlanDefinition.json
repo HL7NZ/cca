@@ -91,6 +91,36 @@
         ]
       },
       {
+        "id": "PlanDefinition.extension:regimen-type",
+        "path": "PlanDefinition.extension",
+        "sliceName": "regimen-type",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://clinfhir.com/fhir/StructureDefinition/regimen-type"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "PlanDefinition.extension:replaced-by",
+        "path": "PlanDefinition.extension",
+        "sliceName": "replaced-by",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://clinfhir.com/fhir/StructureDefinition/replaced-by"
+            ]
+          }
+        ]
+      },
+      {
         "id": "PlanDefinition.useContext.value[x]",
         "path": "PlanDefinition.useContext.value[x]",
         "type": [
@@ -98,16 +128,6 @@
             "code": "CodeableConcept"
           }
         ]
-      },
-      {
-        "id": "PlanDefinition.approvalDate",
-        "path": "PlanDefinition.approvalDate",
-        "max": "0"
-      },
-      {
-        "id": "PlanDefinition.lastReviewDate",
-        "path": "PlanDefinition.lastReviewDate",
-        "max": "0"
       },
       {
         "id": "PlanDefinition.reviewer",
