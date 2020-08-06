@@ -12,8 +12,9 @@ Usage: #example
 * title = "Colorectal Adjuvant FOLFOX (a7)"
 * description = "A drug treatment regimen for Colorectal cancer"
 
+
 * type.coding.system = "http://terminology.hl7.org/CodeSystem/plan-definition-type"
-* type.coding.code = #order-set
+* type.coding.code = #clinical-protocol
 
 * publisher = "New Zealand Medicines Formulary LP"
 * date = "2020-06-29T20:14:18.417+12:00"
@@ -21,13 +22,14 @@ Usage: #example
 * type = http://terminology.hl7.org/CodeSystem/plan-definition-type#clinical-protocol
 * experimental = false
 
-
+/* temp
 
 //Cabergoline admin
 * contained = ActCabergoline
-
+*/
 //Tragacanth
 * contained = ActTragacanth
+
 
 //regimen type
 * extension[regimen-type].valueCodeableConcept.text = "Folfox"
@@ -69,7 +71,6 @@ Usage: #example
 * relatedArtifact[1].url = "http://www.ncbi.nlm.nih.gov/pubmed/34324"
 
 
-
 * action.description = "The first option for this regimen. There is only 1"
 
 
@@ -80,9 +81,11 @@ Usage: #example
 * action.action.action.description = "Administration of Cabergoline and Tragacanth daily "
 
 * action.action.action.priority = #routine
+* action.action.action.title = "This is the only cycle in the regimen."
+* action.action.action.selectionBehavior = #all     //all actions should be performed
 
-* action.action.action.timingTiming.repeat.count = 4
-* action.action.action.timingTiming.repeat.duration = 14
+* action.action.action.timingTiming.repeat.count = 1        //only a single repeat
+* action.action.action.timingTiming.repeat.duration = 14    // of 14 days - 
 * action.action.action.timingTiming.repeat.durationUnit = #d
 
 
@@ -116,6 +119,8 @@ Usage: #example
 //details of the third administration on day 4
 * action.action.action.action[1].extension[timing-of-days][2].extension[day].valueInteger = 4
 * action.action.action.action[1].extension[timing-of-days][2].extension[instructions].valueString = "Specific instructions for the third administration"
+
+
 
 
 Instance:   ActCabergoline
@@ -172,3 +177,5 @@ Usage: #example
 
 
 * status = #draft
+
+

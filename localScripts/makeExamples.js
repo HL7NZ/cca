@@ -97,7 +97,6 @@ function makePlanDefinition(pd) {
     let arRT = getExtensions(pd,"http://clinfhir.com/fhir/StructureDefinition/regimen-type")
     if (arRT.length > 0) {      //should only be one...
 
-
         console.log(arRT)
         xml += "<div><strong>Regimen type </strong>" + createCCSummary(arRT[0].valueCodeableConcept) + "</div>"
     }

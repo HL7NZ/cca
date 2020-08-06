@@ -121,6 +121,18 @@
         ]
       },
       {
+        "id": "PlanDefinition.type",
+        "path": "PlanDefinition.type",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "clinical-protocol",
+              "system": "http://terminology.hl7.org/CodeSystem/plan-definition-type"
+            }
+          ]
+        }
+      },
+      {
         "id": "PlanDefinition.useContext.value[x]",
         "path": "PlanDefinition.useContext.value[x]",
         "type": [

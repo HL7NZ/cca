@@ -3,6 +3,8 @@ Alias: $replacedBy = http://clinfhir.com/fhir/StructureDefinition/replaced-by
 Alias: $regimenType = http://clinfhir.com/fhir/StructureDefinition/regimen-type
 Alias: $TOD = http://clinfhir.com/fhir/StructureDefinition/timing-of-days
 
+Alias: $type = http://terminology.hl7.org/CodeSystem/plan-definition-type
+
 Profile:        CcaPlanDefinition
 Parent:         PlanDefinition
 Id:             CcaPlanDefinition
@@ -20,8 +22,9 @@ Description:    "CCA Regimen Plan Definition."
     $regimenType named regimen-type 0..1 and
     $replacedBy named replaced-by 0..1
    
-* action.action.action.action.extension contains
-    $TOD named timing-of-days 0..*
+
+//fix the type to clincial-protocol
+* type = $type#clinical-protocol
 
 * useContext.value[x] only CodeableConcept
 
@@ -32,6 +35,9 @@ Description:    "CCA Regimen Plan Definition."
 * reviewer 0..0
 //* lastReviewDate 0..0
 //* approvalDate 0..0
+
+* action.action.action.action.extension contains
+    $TOD named timing-of-days 0..*
 
 * action.prefix 0..0
 * action.priority 0..0
