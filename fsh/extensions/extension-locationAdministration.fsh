@@ -4,7 +4,6 @@ Description: "The physical Location where the medication administration occurs (
 
 * ^url = "http://clinfhir.com/fhir/StructureDefinition/location-administration"
 
-
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 * ^context.type = #element
 * ^context.expression = "ActivityDefinition"

@@ -108,6 +108,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/regimen-type"
+        },
+        "name": "Regimen type",
+        "description": "The type of regimen - eg FOLFOX",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ActivityDefinition/ActCabergoline"
         },
         "name": "ActCabergoline",
@@ -121,6 +129,14 @@
         "name": "ActTragacanth",
         "description": "Tragacanth Administration",
         "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/CcaActivityDefinition"
+      },
+      {
+        "reference": {
+          "reference": "CapabilityStatement/CcaCapabilityStatement"
+        },
+        "name": "CapabilityStatement",
+        "description": "Represents API exposed to retrieve plans",
+        "exampleBoolean": false
       },
       {
         "reference": {
@@ -160,6 +176,11 @@
           "nameUrl": "profiles.html",
           "title": "Profiles",
           "generation": "html"
+        },
+        {
+          "nameUrl": "progress.html",
+          "title": "Progress",
+          "generation": "markdown"
         },
         {
           "nameUrl": "terminology.html",

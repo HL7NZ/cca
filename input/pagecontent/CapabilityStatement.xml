@@ -10,4 +10,15 @@
 {% endcomment %} -->
 <div xmlns='http://www.w3.org/1999/xhtml'>
 <br/><div>API summary (generated from the capabilityStatement resource)</div><br/><br/>
+<br/><div>This is the computable resource that describes the RESTful endpoint</div><br/>
+<a name="PlanDefinition"> </a>
+<h3>PlanDefinition</h3>
+<strong>Interactions</strong>
+<table class='table table-bordered table-condensed'>
+<tr><th width='60%'>Code</th><th width='40%'>Documentation</th></tr>
+<tr>
+<td>read</td>
+<td>Used to retrieve a PlanDefinition resource by Id.</td>
+</tr>
+</table>
 </div>

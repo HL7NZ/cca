@@ -22,11 +22,11 @@ Usage: #example
 * type = http://terminology.hl7.org/CodeSystem/plan-definition-type#clinical-protocol
 * experimental = false
 
-/* temp
+
 
 //Cabergoline admin
 * contained = ActCabergoline
-*/
+
 //Tragacanth
 * contained = ActTragacanth
 

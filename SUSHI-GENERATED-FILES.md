@@ -23,4 +23,5 @@ lists those files generated from project configs or the contents in the ig-data 
 | input/pagecontent/extensions.xml               | copied    | fsh/ig-data/input/pagecontent/extensions.xml          |
 | input/pagecontent/index.md                     | copied    | fsh/ig-data/input/pagecontent/index.md                |
 | input/pagecontent/profiles.xml                 | copied    | fsh/ig-data/input/pagecontent/profiles.xml            |
+| input/pagecontent/progress.md                  | copied    | fsh/ig-data/input/pagecontent/progress.md             |
 | input/pagecontent/terminology.md               | copied    | fsh/ig-data/input/pagecontent/terminology.md          |

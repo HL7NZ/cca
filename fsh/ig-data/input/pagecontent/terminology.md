@@ -13,6 +13,7 @@ A common pattern is to have a ValueSet that 'includes' all the codes from a code
 <tr><th>ValueSet</th><th>Purpose</th><th>Url</th><th>CodeSystem Urls</th></tr>
 <tr><td width='20%'>Administration location</td><td>The physical location where the administration occurred - eg at home or in a clinic</td><td><a href='ValueSet-location-administration.html'>http:clinfhir.com/fhir/ValueSet/location-administration-code</a></td><td><div><a href='undefined'>http://snomed.info/sct</a></div></td></tr>
 <tr><td width='20%'>Medication collection location</td><td>The physical location where the medication can be collected on prior to administration - eg a pharmacy</td><td><a href='ValueSet-location-medication-collection.html'>http:clinfhir.com/fhir/ValueSet/location-medication-collection</a></td><td><div><a href='undefined'>http://snomed.info/sct</a></div></td></tr>
+<tr><td width='20%'>Regimen type</td><td>The type of regimen - eg FOLFOX</td><td><a href='ValueSet-regimen-type.html'>http:clinfhir.com/fhir/ValueSet/regimen-type</a></td><td><div><a href='undefined'>http://snomed.info/sct</a></div></td></tr>
 </table>
 <br/><br/>
 ### ValueSet by path

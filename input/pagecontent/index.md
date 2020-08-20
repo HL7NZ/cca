@@ -27,6 +27,16 @@ Refer to the spec for details on how a client might consume a PlanDefinition.
 ### Examples
 Examples are found at the top of each resource, and listed in the [artifact index](artifacts.html). 
 
+### Replacing regimens
+It is common that regimens are deprecated over time and replaced by others. It is necessary to continue to make the deprecated guide available for historic purposes, but to indicate that it is no longer actively used. This is achieved by setting the [status](StructureDefinition-CcaPlanDefinition-definitions.html#PlanDefinition.status) to "retired". 
+
+There is an extension - [replaced-by](StructureDefinition-replaced-by.html) that allows the deprecated plan to refer to the one that replaces it. Thus a user retrieving the deprecated plan can easily find the new one. This is a direct FHIR reference.
+
+There is currently no reference from the new Plan back to the one that it has replaced.
+
+### Contained resources
+In this implementation, ActivityDefinition resources will be contained within the PlanDefinition and there uisn't a separate API for them (the only API is against PlanDefinition)
+
 ### Using this guide
 
 * The [Profiles](profiles.html) tab contains the profiles defined by this IG
