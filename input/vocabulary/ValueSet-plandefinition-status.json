@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "PlanDefinitionStatus",
+  "id": "plandefinition-status",
+  "title": "PlanDefinition additional status",
+  "description": "Other codes used for the PlanDefinition status",
+  "version": "0.1.0",
+  "url": "http://clinfhir.com/fhir/ValueSet/plandefinition-status",
+  "compose": {
+    "include": [
+      {
+        "system": "http://clinfhir.com/fhir/CodeSystem/plandefinition-status"
+      }
+    ]
+  }
+}

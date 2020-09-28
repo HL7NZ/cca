@@ -147,10 +147,11 @@ Usage: #example
 * dosage.doseAndRate.doseQuantity.system = "http://unitsofmeasure.org"
 * dosage.doseAndRate.doseQuantity.code = #mg
 
-* dosage.doseAndRate.rateQuantity.value = 2 
+* dosage.doseAndRate.rateQuantity.value = 20 
 * dosage.doseAndRate.rateQuantity.system = "http://unitsofmeasure.org"
 * dosage.doseAndRate.rateQuantity.code = #min
 
+* dosage.timing.code = $SNOMED#123445 "QID"
 
 
 

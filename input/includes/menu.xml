@@ -14,6 +14,9 @@
     <a href="index.html">IG Home</a>
   </li>
   <li>
+    <a href="notes.html">Notes</a>
+  </li>
+  <li>
     <a href="CapabilityStatement.html">API</a>
   </li>
   <li>
@@ -44,5 +47,8 @@
         <a href="http://hl7.org/fhir/R4/index.html">FHIR Spec</a>
       </li>
     </ul>
+  </li>
+  <li>
+    <a href="progress.html">Progress</a>
   </li>
 </ul>

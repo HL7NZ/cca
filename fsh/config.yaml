@@ -45,6 +45,7 @@ template: fhir.base.template#current
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   IG Home: index.html
+  Notes: notes.html
   API: CapabilityStatement.html
   Profiles: profiles.html
   Extensions: extensions.html

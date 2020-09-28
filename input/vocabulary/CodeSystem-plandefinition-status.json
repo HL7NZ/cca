@@ -1,0 +1,18 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "PlanDefinitionStatus",
+  "id": "plandefinition-status",
+  "title": "PlanDefinition additional status",
+  "description": "Other codes used for the PlanDefinition status",
+  "version": "0.1.0",
+  "url": "http://clinfhir.com/fhir/CodeSystem/plandefinition-status",
+  "concept": [
+    {
+      "code": "ur",
+      "display": "Under review"
+    }
+  ],
+  "count": 1
+}

@@ -44,6 +44,22 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/disclaimer"
+        },
+        "name": "Disclaimer",
+        "description": "A disclaimer for use of this Plan",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Instructions"
+        },
+        "name": "Instructions for use",
+        "description": "Specific instructions for use of the regimen overall, or for the individual cycles",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/location-administration"
         },
         "name": "LocationAdministration",
@@ -60,10 +76,26 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/off-label"
+        },
+        "name": "Off label",
+        "description": "Indicates that the medication is being used for a purpose for which it has not been specifically approved",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/regimen-type"
         },
         "name": "Regimen type",
         "description": "The overall type of the regimen - eg FOLFOX",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/regimen-under-review"
+        },
+        "name": "Regimen under review",
+        "description": "Indicates that a regimen is published and available to be used, but there is still a review being performed, so could change. \nIn most situations the value of the status element will be 'active'",
         "exampleBoolean": false
       },
       {
@@ -92,6 +124,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/treatment-intent"
+        },
+        "name": "TreatmentIntent",
+        "description": "The intent of the regimen - what is its purpose",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/location-administration"
         },
         "name": "Administration location",
@@ -108,10 +148,42 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/plandefinition-status"
+        },
+        "name": "PlanDefinition additional status",
+        "description": "Other codes used for the PlanDefinition status",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/regimen-type"
         },
         "name": "Regimen type",
         "description": "The type of regimen - eg FOLFOX",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/treatment-intent"
+        },
+        "name": "Treatment intent",
+        "description": "The intent of the regimen - what is its purpose",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/plandefinition-status"
+        },
+        "name": "PlanDefinition additional status",
+        "description": "Other codes used for the PlanDefinition status",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/treatment-intent"
+        },
+        "name": "Treatment intent",
+        "description": "The intent of the regimen - what is its purpose",
         "exampleBoolean": false
       },
       {
@@ -171,6 +243,11 @@
           "nameUrl": "extensions.html",
           "title": "Extensions",
           "generation": "html"
+        },
+        {
+          "nameUrl": "notes.html",
+          "title": "Notes",
+          "generation": "markdown"
         },
         {
           "nameUrl": "profiles.html",

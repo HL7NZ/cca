@@ -13,6 +13,23 @@
 <table width='100%' border='1' cellspacing='0' cellpadding='5px'>
 <tr><th>Id</th><th>Url</th><th>Context of Use</th><th>Description</th></tr>
 <tr>
+<td><a href='http://build.fhir.org/ig/HL7NZ/cca/branches/master/StructureDefinition-Instructions.html'>Instructions</a></td>
+<td>http://clinfhir.com/fhir/StructureDefinition/instructions</td>
+<td>
+<div>PlanDefinition</div>
+<div>PlanDefinition.action</div>
+</td>
+<td>Specific instructions for use of the regimen overall, or for the individual cycles</td>
+</tr>
+<tr>
+<td><a href='http://build.fhir.org/ig/HL7NZ/cca/branches/master/StructureDefinition-disclaimer.html'>disclaimer</a></td>
+<td>http://clinfhir.com/fhir/StructureDefinition/disclaimer</td>
+<td>
+<div>PlanDefinition</div>
+</td>
+<td>A disclaimer for use of this Plan</td>
+</tr>
+<tr>
 <td><a href='http://build.fhir.org/ig/HL7NZ/cca/branches/master/StructureDefinition-location-administration.html'>location-administration</a></td>
 <td>http://clinfhir.com/fhir/StructureDefinition/location-administration</td>
 <td>
@@ -29,12 +46,29 @@
 <td>The physical Location where the medication can be collection prior to collection</td>
 </tr>
 <tr>
+<td><a href='http://build.fhir.org/ig/HL7NZ/cca/branches/master/StructureDefinition-off-label.html'>off-label</a></td>
+<td>http://clinfhir.com/fhir/StructureDefinition/off-label</td>
+<td>
+<div>PlanDefinition</div>
+</td>
+<td>Indicates that the medication is being used for a purpose for which it has not been specifically approved</td>
+</tr>
+<tr>
 <td><a href='http://build.fhir.org/ig/HL7NZ/cca/branches/master/StructureDefinition-regimen-type.html'>regimen-type</a></td>
 <td>http://clinfhir.com/fhir/StructureDefinition/regimen-type</td>
 <td>
 <div>PlanDefinition</div>
 </td>
 <td>The overall type of the regimen - eg FOLFOX</td>
+</tr>
+<tr>
+<td><a href='http://build.fhir.org/ig/HL7NZ/cca/branches/master/StructureDefinition-regimen-under-review.html'>regimen-under-review</a></td>
+<td>http://clinfhir.com/fhir/StructureDefinition/regimen-under-review</td>
+<td>
+<div>PlanDefinition.status</div>
+</td>
+<td>Indicates that a regimen is published and available to be used, but there is still a review being performed, so could change. 
+In most situations the value of the status element will be 'active'</td>
 </tr>
 <tr>
 <td><a href='http://build.fhir.org/ig/HL7NZ/cca/branches/master/StructureDefinition-replaced-by.html'>replaced-by</a></td>
@@ -59,6 +93,14 @@
 <div>PlanDefinition.action.action.action.action</div>
 </td>
 <td>Allows specific days to be indicated in a component of a regimen cycle. extends the UV extension: http://hl7.org/fhir/extension-timing-daysofcycle.html by adding instructions</td>
+</tr>
+<tr>
+<td><a href='http://build.fhir.org/ig/HL7NZ/cca/branches/master/StructureDefinition-treatment-intent.html'>treatment-intent</a></td>
+<td>http://clinfhir.com/fhir/StructureDefinition/treatment-intent</td>
+<td>
+<div>PlanDefinition</div>
+</td>
+<td>The intent of the regimen - what is its purpose</td>
 </tr>
 </table>
 <a name="externalExtensions"> </a>

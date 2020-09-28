@@ -1,8 +1,15 @@
 Alias: $supportFactor = http://clinfhir.com/fhir/StructureDefinition/support-factor
 Alias: $replacedBy = http://clinfhir.com/fhir/StructureDefinition/replaced-by
 Alias: $regimenType = http://clinfhir.com/fhir/StructureDefinition/regimen-type
-Alias: $TOD = http://clinfhir.com/fhir/StructureDefinition/timing-of-days
 
+
+Alias: $treatmentIntent = http://clinfhir.com/fhir/StructureDefinition/treatment-intent
+Alias: $offLabel = http://clinfhir.com/fhir/StructureDefinition/off-label
+Alias: $instructions = http://clinfhir.com/fhir/StructureDefinition/instructions
+
+Alias: $regimenUnderReview = http://clinfhir.com/fhir/StructureDefinition/regimen-under-review
+
+Alias: $TOD = http://clinfhir.com/fhir/StructureDefinition/timing-of-days
 Alias: $type = http://terminology.hl7.org/CodeSystem/plan-definition-type
 
 Profile:        CcaPlanDefinition
@@ -20,8 +27,15 @@ Description:    "CCA Regimen Plan Definition."
 * extension contains
     $supportFactor named support-factor 0..* and 
     $regimenType named regimen-type 0..1 and
-    $replacedBy named replaced-by 0..1
+    $replacedBy named replaced-by 0..1 and
+    $treatmentIntent named treatment-intent 0..1 and
+    $offLabel named offLabel 0..1 and
+    $instructions named instructions 0..1
    
+
+* status.extension contains
+    $regimenUnderReview named regimen-under-review 0..1
+
 
 //fix the type to clincial-protocol
 * type = $type#clinical-protocol
@@ -35,6 +49,10 @@ Description:    "CCA Regimen Plan Definition."
 * reviewer 0..0
 //* lastReviewDate 0..0
 //* approvalDate 0..0
+
+* action.extension contains
+    $instructions named instructions 0..1
+
 
 * action.action.action.action.extension contains
     $TOD named timing-of-days 0..*
@@ -54,6 +72,7 @@ Description:    "CCA Regimen Plan Definition."
 * action.cardinalityBehavior 0..0
 * action.transform 0..0
 * action.dynamicValue 0..0
+
 
 
 //Uses the '3 level' representation of actions suggested by the example in the spec

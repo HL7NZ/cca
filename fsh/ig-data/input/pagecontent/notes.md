@@ -1,0 +1,21 @@
+### Plan status
+
+The status of the overall plan is exposed in the PlanDefinition.status element, supported by an extension. The statuses that are used are:
+
+<table>
+    <tr><th>Business status</th><th>Meaning</th><th>PlanDefinition.status</th><th>Extension</th></tr>
+    <tr><td>Published</td><td>The regimen is available for use</td><td>active</td><td></td></tr>
+    <tr><td>Provisionally published</td>
+        <td>The regimen is available for use, but is still undergoing a review so may change</td>
+        <td>active</td><td><a href="StructureDefinition-regimen-under-review.html">regimen-under-review</a></td></tr>
+    <tr><td>Discontinued</td><td>The regimen is no longer in use</td><td>retired</td><td></td></tr>
+    <tr><td>Superceeded</td><td>The regimen is no longer in use, but has been superceeded by another</td><td>retired</td>
+    <td><a href="StructureDefinition-replaced-by.html">replaced-by</a></td></tr>
+
+</table>
+
+### UseContext
+
+The PlanDefinition.useContext element is used for 2 main items.
+
+The cancers for which the regimen is intended to treat. There can be up to 3 of these, representing the cancer type, sub-type and sub-sub-type. The 'code' value for these is 'focus' - indicating that these are the focus of the regimen.

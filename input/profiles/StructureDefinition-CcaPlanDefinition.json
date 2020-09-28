@@ -121,6 +121,51 @@
         ]
       },
       {
+        "id": "PlanDefinition.extension:treatment-intent",
+        "path": "PlanDefinition.extension",
+        "sliceName": "treatment-intent",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://clinfhir.com/fhir/StructureDefinition/treatment-intent"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "PlanDefinition.extension:offLabel",
+        "path": "PlanDefinition.extension",
+        "sliceName": "offLabel",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://clinfhir.com/fhir/StructureDefinition/off-label"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "PlanDefinition.extension:instructions",
+        "path": "PlanDefinition.extension",
+        "sliceName": "instructions",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://clinfhir.com/fhir/StructureDefinition/instructions"
+            ]
+          }
+        ]
+      },
+      {
         "id": "PlanDefinition.type",
         "path": "PlanDefinition.type",
         "patternCodeableConcept": {
@@ -131,6 +176,35 @@
             }
           ]
         }
+      },
+      {
+        "id": "PlanDefinition.status.extension",
+        "path": "PlanDefinition.status.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "PlanDefinition.status.extension:regimen-under-review",
+        "path": "PlanDefinition.status.extension",
+        "sliceName": "regimen-under-review",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://clinfhir.com/fhir/StructureDefinition/regimen-under-review"
+            ]
+          }
+        ]
       },
       {
         "id": "PlanDefinition.useContext.value[x]",
@@ -166,6 +240,35 @@
         "path": "PlanDefinition.action",
         "min": 1,
         "max": "1"
+      },
+      {
+        "id": "PlanDefinition.action.extension",
+        "path": "PlanDefinition.action.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "PlanDefinition.action.extension:instructions",
+        "path": "PlanDefinition.action.extension",
+        "sliceName": "instructions",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://clinfhir.com/fhir/StructureDefinition/instructions"
+            ]
+          }
+        ]
       },
       {
         "id": "PlanDefinition.action.prefix",

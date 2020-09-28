@@ -67,12 +67,23 @@
             "code": "mg"
           },
           "rateQuantity": {
-            "value": 2,
+            "value": 20,
             "system": "http://unitsofmeasure.org",
             "code": "min"
           }
         }
-      ]
+      ],
+      "timing": {
+        "code": {
+          "coding": [
+            {
+              "code": "123445",
+              "system": "http://snomed.info/sct",
+              "display": "QID"
+            }
+          ]
+        }
+      }
     }
   ]
 }
