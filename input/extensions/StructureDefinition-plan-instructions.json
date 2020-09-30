@@ -1,9 +1,9 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "Instructions",
-  "url": "http://clinfhir.com/fhir/StructureDefinition/instructions",
+  "id": "plan-instructions",
+  "url": "http://clinfhir.com/fhir/StructureDefinition/plan-instructions",
   "version": "0.1.0",
-  "name": "Instructions",
+  "name": "PlanInstructions",
   "title": "Instructions for use",
   "status": "active",
   "description": "Specific instructions for use of the regimen overall, or for the individual cycles",
@@ -50,7 +50,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://clinfhir.com/fhir/StructureDefinition/instructions"
+        "fixedUri": "http://clinfhir.com/fhir/StructureDefinition/plan-instructions"
       },
       {
         "id": "Extension.value[x]",

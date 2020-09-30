@@ -5,7 +5,7 @@ Alias: $regimenType = http://clinfhir.com/fhir/StructureDefinition/regimen-type
 
 Alias: $treatmentIntent = http://clinfhir.com/fhir/StructureDefinition/treatment-intent
 Alias: $offLabel = http://clinfhir.com/fhir/StructureDefinition/off-label
-Alias: $instructions = http://clinfhir.com/fhir/StructureDefinition/instructions
+Alias: $instructions = http://clinfhir.com/fhir/StructureDefinition/plan-instructions
 
 Alias: $regimenUnderReview = http://clinfhir.com/fhir/StructureDefinition/regimen-under-review
 
@@ -30,7 +30,7 @@ Description:    "CCA Regimen Plan Definition."
     $replacedBy named replaced-by 0..1 and
     $treatmentIntent named treatment-intent 0..1 and
     $offLabel named offLabel 0..1 and
-    $instructions named instructions 0..1
+    $instructions named plan-instructions 0..1
    
 
 * status.extension contains
@@ -52,6 +52,19 @@ Description:    "CCA Regimen Plan Definition."
 
 * action.extension contains
     $instructions named instructions 0..1
+
+//slice useContext
+* useContext ^slicing.discriminator.type = #pattern
+* useContext ^slicing.discriminator.path = "code"
+* useContext ^slicing.rules = #openAtEnd
+* useContext contains 
+    cancertype 0..* MS
+
+//set the code and binding for cancer type
+* useContext[cancertype].code = http://hl7.org/fhir/codesystem-usage-context-type.html#focus (exactly)
+* useContext[cancertype].valueCodeableConcept from http:clinfhir.com/fhir/ValueSet/cancer-type
+* useContext[cancertype] ^short = ""
+* useContext[cancertype] ^definition = ""
 
 
 * action.action.action.action.extension contains

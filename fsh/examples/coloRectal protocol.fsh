@@ -71,11 +71,11 @@ Usage: #example
 * relatedArtifact[1].url = "http://www.ncbi.nlm.nih.gov/pubmed/34324"
 
 
-* action.description = "The first option for this regimen. There is only 1"
+* action.description = "This plan defines a single regimen"
 
 
-* action.action.description = "Describes the single cycle in this regimen. Cycle length 14 days"
-* action.action.selectionBehavior = #exactly-one    //explicit that only 1 top level action is chosen (there is only 1)
+* action.action.action.description = "Describes the single cycle in this regimen. Cycle length 14 days"
+* action.action.action.selectionBehavior = #exactly-one    //explicit that only 1 top level action is chosen (there is only 1)
 
 //Cycle description
 * action.action.action.description = "Administration of Cabergoline and Tragacanth daily "

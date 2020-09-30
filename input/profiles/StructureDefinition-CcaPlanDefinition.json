@@ -151,16 +151,16 @@
         ]
       },
       {
-        "id": "PlanDefinition.extension:instructions",
+        "id": "PlanDefinition.extension:plan-instructions",
         "path": "PlanDefinition.extension",
-        "sliceName": "instructions",
+        "sliceName": "plan-instructions",
         "min": 0,
         "max": "1",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "http://clinfhir.com/fhir/StructureDefinition/instructions"
+              "http://clinfhir.com/fhir/StructureDefinition/plan-instructions"
             ]
           }
         ]
@@ -207,6 +207,19 @@
         ]
       },
       {
+        "id": "PlanDefinition.useContext",
+        "path": "PlanDefinition.useContext",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "code"
+            }
+          ],
+          "rules": "openAtEnd"
+        }
+      },
+      {
         "id": "PlanDefinition.useContext.value[x]",
         "path": "PlanDefinition.useContext.value[x]",
         "type": [
@@ -214,6 +227,34 @@
             "code": "CodeableConcept"
           }
         ]
+      },
+      {
+        "id": "PlanDefinition.useContext:cancertype",
+        "path": "PlanDefinition.useContext",
+        "sliceName": "cancertype",
+        "short": "",
+        "definition": "",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "PlanDefinition.useContext:cancertype.code",
+        "path": "PlanDefinition.useContext.code",
+        "fixedCoding": {
+          "code": "focus",
+          "system": "http://hl7.org/fhir/codesystem-usage-context-type.html"
+        }
+      },
+      {
+        "id": "PlanDefinition.useContext:cancertype.valueCodeableConcept",
+        "path": "PlanDefinition.useContext.valueCodeableConcept",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http:clinfhir.com/fhir/ValueSet/cancer-type"
+        }
       },
       {
         "id": "PlanDefinition.reviewer",
@@ -265,7 +306,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://clinfhir.com/fhir/StructureDefinition/instructions"
+              "http://clinfhir.com/fhir/StructureDefinition/plan-instructions"
             ]
           }
         ]

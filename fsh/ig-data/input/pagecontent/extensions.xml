@@ -3,15 +3,6 @@
 <table width='100%' border='1' cellspacing='0' cellpadding='5px'>
 <tr><th>Id</th><th>Url</th><th>Context of Use</th><th>Description</th></tr>
 <tr>
-<td><a href='http://build.fhir.org/ig/HL7NZ/cca/branches/master/StructureDefinition-Instructions.html'>Instructions</a></td>
-<td>http://clinfhir.com/fhir/StructureDefinition/instructions</td>
-<td>
-<div>PlanDefinition</div>
-<div>PlanDefinition.action</div>
-</td>
-<td>Specific instructions for use of the regimen overall, or for the individual cycles</td>
-</tr>
-<tr>
 <td><a href='http://build.fhir.org/ig/HL7NZ/cca/branches/master/StructureDefinition-disclaimer.html'>disclaimer</a></td>
 <td>http://clinfhir.com/fhir/StructureDefinition/disclaimer</td>
 <td>
@@ -42,6 +33,15 @@
 <div>PlanDefinition</div>
 </td>
 <td>Indicates that the medication is being used for a purpose for which it has not been specifically approved</td>
+</tr>
+<tr>
+<td><a href='http://build.fhir.org/ig/HL7NZ/cca/branches/master/StructureDefinition-plan-instructions.html'>plan-instructions</a></td>
+<td>http://clinfhir.com/fhir/StructureDefinition/plan-instructions</td>
+<td>
+<div>PlanDefinition</div>
+<div>PlanDefinition.action</div>
+</td>
+<td>Specific instructions for use of the regimen overall, or for the individual cycles</td>
 </tr>
 <tr>
 <td><a href='http://build.fhir.org/ig/HL7NZ/cca/branches/master/StructureDefinition-regimen-type.html'>regimen-type</a></td>

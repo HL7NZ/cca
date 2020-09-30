@@ -52,14 +52,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/Instructions"
-        },
-        "name": "Instructions for use",
-        "description": "Specific instructions for use of the regimen overall, or for the individual cycles",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/location-administration"
         },
         "name": "LocationAdministration",
@@ -80,6 +72,14 @@
         },
         "name": "Off label",
         "description": "Indicates that the medication is being used for a purpose for which it has not been specifically approved",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/plan-instructions"
+        },
+        "name": "Instructions for use",
+        "description": "Specific instructions for use of the regimen overall, or for the individual cycles",
         "exampleBoolean": false
       },
       {
@@ -128,6 +128,14 @@
         },
         "name": "TreatmentIntent",
         "description": "The intent of the regimen - what is its purpose",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/cancer-type"
+        },
+        "name": "Cancer type",
+        "description": "The type of Cancer",
         "exampleBoolean": false
       },
       {

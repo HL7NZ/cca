@@ -177,9 +177,9 @@
                 }
               ],
               "description": "Administration of Cabergoline and Tragacanth daily ",
+              "selectionBehavior": "all",
               "priority": "routine",
               "title": "This is the only cycle in the regimen.",
-              "selectionBehavior": "all",
               "timingTiming": {
                 "repeat": {
                   "count": 1,
@@ -188,12 +188,10 @@
                 }
               }
             }
-          ],
-          "description": "Describes the single cycle in this regimen. Cycle length 14 days",
-          "selectionBehavior": "exactly-one"
+          ]
         }
       ],
-      "description": "The first option for this regimen. There is only 1"
+      "description": "This plan defines a single regimen"
     }
   ],
   "status": "draft",

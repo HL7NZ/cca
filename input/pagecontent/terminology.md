@@ -21,6 +21,7 @@ A common pattern is to have a ValueSet that 'includes' all the codes from a code
 
 <table class='table table-bordered table-condensed'>
 <tr><th>ValueSet</th><th>Purpose</th><th>Url</th><th>CodeSystem Urls</th></tr>
+<tr><td width='20%'>Cancer type</td><td>The type of Cancer</td><td><a href='ValueSet-cancer-type.html'>http:clinfhir.com/fhir/ValueSet/cancer-type</a></td><td><div><a href='undefined'>http://snomed.info/sct</a></div><div><a href='undefined'>http://snomed.info/sct</a></div></td></tr>
 <tr><td width='20%'>Administration location</td><td>The physical location where the administration occurred - eg at home or in a clinic</td><td><a href='ValueSet-location-administration.html'>http:clinfhir.com/fhir/ValueSet/location-administration-code</a></td><td><div><a href='undefined'>http://snomed.info/sct</a></div></td></tr>
 <tr><td width='20%'>Medication collection location</td><td>The physical location where the medication can be collected on prior to administration - eg a pharmacy</td><td><a href='ValueSet-location-medication-collection.html'>http:clinfhir.com/fhir/ValueSet/location-medication-collection</a></td><td><div><a href='undefined'>http://snomed.info/sct</a></div></td></tr>
 <tr><td width='20%'>PlanDefinition additional status</td><td>Other codes used for the PlanDefinition status</td><td><a href='ValueSet-plandefinition-status.html'>http://clinfhir.com/fhir/ValueSet/plandefinition-status</a></td><td><div><a href='CodeSystem-plandefinition-status.html'>http://clinfhir.com/fhir/CodeSystem/plandefinition-status</a></div></td></tr>
@@ -32,6 +33,11 @@ A common pattern is to have a ValueSet that 'includes' all the codes from a code
 <em>Coded bindings - even for terminology defined elsewhere</em>
 <table class='table table-bordered table-condensed'>
 <tr><th>Path</th><th>ValueSet</th><th>Notes</th></tr>
+<tr>
+<td>PlanDefinition.useContext.valueCodeableConcept</td>
+<td><a href='ValueSet-cancer-type.html'>http:clinfhir.com/fhir/ValueSet/cancer-type</a></td>
+<td></td>
+</tr>
 <tr>
 <td>Extension.valueCodeableConcept</td>
 <td><a href='ValueSet-location-administration.html'>http:clinfhir.com/fhir/ValueSet/location-administration-code</a></td>

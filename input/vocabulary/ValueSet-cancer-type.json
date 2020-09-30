@@ -1,0 +1,44 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "CancerType",
+  "id": "cancer-type",
+  "title": "Cancer type",
+  "description": "The type of Cancer",
+  "version": "0.1.0",
+  "url": "http:clinfhir.com/fhir/ValueSet/cancer-type",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "NZ",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "77465005"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "363346000"
+          }
+        ]
+      }
+    ]
+  }
+}
