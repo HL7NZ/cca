@@ -225,6 +225,14 @@
         "name": "coloRectal",
         "description": "Example Plan definition for coloRectal cancer",
         "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/CcaPlanDefinition"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/CancerRegimensLM"
+        },
+        "description": "CancerRegimens",
+        "exampleBoolean": false,
+        "name": "CancerRegimensLM"
       }
     ],
     "page": {

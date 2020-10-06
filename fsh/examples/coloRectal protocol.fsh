@@ -134,7 +134,7 @@ Usage: #example
 * extension[location-medication-collection].valueCodeableConcept = $SNOMED#284748001 "Pharmacy shop"
 * extension[location-medication-collection].valueCodeableConcept.text = "Collect medication from Pharmacy shop"
 * extension[location-administration].valueCodeableConcept = $SNOMED#264362003 "Home"
-* extension[location-medication-collection].valueCodeableConcept.text = "Administration takes place at the patients home"
+* extension[location-administration].valueCodeableConcept.text = "Administration takes place at the patients home"
 
 * status = #draft
 

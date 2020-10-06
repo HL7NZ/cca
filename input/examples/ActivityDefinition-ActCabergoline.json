@@ -17,7 +17,7 @@
             "display": "Pharmacy shop"
           }
         ],
-        "text": "Administration takes place at the patients home"
+        "text": "Collect medication from Pharmacy shop"
       }
     },
     {
@@ -29,7 +29,8 @@
             "system": "http://snomed.info/sct",
             "display": "Home"
           }
-        ]
+        ],
+        "text": "Administration takes place at the patients home"
       }
     }
   ],
