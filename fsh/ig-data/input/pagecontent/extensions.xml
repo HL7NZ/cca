@@ -30,7 +30,7 @@
 <td><a href='http://build.fhir.org/ig/HL7NZ/cca/branches/master/StructureDefinition-off-label.html'>off-label</a></td>
 <td>http://clinfhir.com/fhir/StructureDefinition/off-label</td>
 <td>
-<div>PlanDefinition</div>
+<div>ActivityDefinition</div>
 </td>
 <td>Indicates that the medication is being used for a purpose for which it has not been specifically approved</td>
 </tr>

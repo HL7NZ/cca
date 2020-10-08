@@ -10,9 +10,12 @@ These are complex resource types, and have been significantly constrained for th
 * The top level represents regimen options. This allows there to be different 'versions' of the regimen to be selected - potentially based on trigger criteria within the action. In this IG, only a single version is supported, but the pattern is maintained to suport future enhancement. 
 * The second level represents the parts of the regimen - for example chemotherapy and radiotherapy. In this IG, only a single part is supported, but the pattern is maintained to suport future enhancement. 
 * The third level represents the different defined cycles that are included in each regimen part. Each cycle type will have a separate action element at this level. A single cycle may repeat multiple times.
-* The fourth level represents the components of a single cycle - for example each drug will have a separate action element that describes the rules for administration. In most cases, the fourth level action will contain a reference (via canonical url) to a separate ActivityDefinition resource (commonly contained within the PlanDefinition). This resource provides the detailed information to allow a client system to generate the particular 'action' resources if needed - for example a [MedicationRequest](http://hl7.org/fhir/medicationrequest.html) resource for a drug administration.
+* The fourth level represents the components of a single cycle - for example each drug will have a separate action element that describes the rules for administration. In most cases, the fourth level action will contain a reference (via canonical url) to a separate [ActivityDefinition](http://hl7.org/fhir/ActivityDefinition) resource (commonly contained within the PlanDefinition). This resource provides the detailed information to allow a client system to generate the particular 'action' resources if needed - for example a [MedicationRequest](http://hl7.org/fhir/medicationrequest.html) resource for a drug administration.
 
 Refer to the spec for details on how a client might consume a PlanDefinition.
+
+### Logical model
+The [Logical model](StructureDefinition-CancerRegimensLM.html) describes the 'business level' or information model for the data in the guide. It helps to understand the information being represented in a simpler way than the profiles. It is does *not* represent the way the resource instances are structured, but does have mappings to the profile (though these are intended to aid implementer understanding rather than being machine readible.)
 
 ### Examples
 Examples are found at the top of each resource, and listed in the [artifact index](artifacts.html). 
