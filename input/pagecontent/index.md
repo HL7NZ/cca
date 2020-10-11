@@ -25,10 +25,13 @@ These are complex resource types, and have been significantly constrained for th
 Refer to the spec for details on how a client might consume a PlanDefinition.
 
 ### Logical model
-The [Logical model](StructureDefinition-CancerRegimensLM.html) describes the 'business level' or information model for the data in the guide. It helps to understand the information being represented in a simpler way than the profiles. It is does *not* represent the way the resource instances are structured, but does have mappings to the profile (though these are intended to aid implementer understanding rather than being machine readible.)
+The [Logical model](StructureDefinition-CancerRegimensLM.html#tabs-snap) describes the 'business level' or information model for the data in the guide. It helps to understand the information being represented in a simpler way than the profiles. It is does *not* represent the way the resource instances are structured or shared, but does have mappings to the profile (though these are intended to aid implementer understanding rather than being machine readible.)
 
 ### Examples
 Examples are found at the top of each resource, and listed in the [artifact index](artifacts.html). 
+
+### Canonical Urls
+Most of the resources defined in this guide (StructureDefinition, ValueSet, CodeSystem) have what is termed a 'canonical' url - an element with the name url. This functions as a globally unique identifier for these resources. At the time of writing, these url's should be considered provisional. New Zealand does not yet have a consistent way to define them, so they are subject to change. Hopefully this will be resolved before too much longer. 
 
 ### Replacing regimens
 It is common that regimens are deprecated over time and replaced by others. It is necessary to continue to make the deprecated guide available for historic purposes, but to indicate that it is no longer actively used. This is achieved by setting the [status](StructureDefinition-CcaPlanDefinition-definitions.html#PlanDefinition.status) to "retired". 

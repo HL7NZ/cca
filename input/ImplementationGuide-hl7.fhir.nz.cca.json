@@ -172,6 +172,22 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/support-factor"
+        },
+        "name": "Support Factors",
+        "description": "The set of possible support factors (not their values)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/support-factor-value"
+        },
+        "name": "Possible values for Support Factors",
+        "description": "The set of all possible support factors values (not specific to any one factor)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/treatment-intent"
         },
         "name": "Treatment intent",

@@ -8,6 +8,8 @@
 * ig-data/input/pagecontent/notes.md                                                    *
 *****************************************************************************************
 {% endcomment %} -->
+
+
 ### Plan status
 
 The status of the overall plan is exposed in the PlanDefinition.status element, supported by an extension. The statuses that are used are:
@@ -28,4 +30,8 @@ The status of the overall plan is exposed in the PlanDefinition.status element, 
 
 The PlanDefinition.useContext element is used for 2 main items.
 
-The cancers for which the regimen is intended to treat. There can be up to 3 of these, representing the cancer type, sub-type and sub-sub-type. The 'code' value for these is 'focus' - indicating that these are the focus of the regimen.
+The cancers for which the regimen is intended to treat. There can be up to 3 of these, representing the cancer type, sub-type and sub-sub-type in that order. The 'code' value for these is 'focus' - indicating that these are the focus of the regimen.
+
+### Support factors
+
+Support factors are represented by an [extension]() which has 2 child elements - the factor itself, and the value of the factor. Both elements are coded and bound to a valueset, but the value valueset contins all possible values for all support factors - ie there is not one for each specific type.

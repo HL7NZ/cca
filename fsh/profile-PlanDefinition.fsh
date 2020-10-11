@@ -61,10 +61,12 @@ Description:    "CCA Regimen Plan Definition."
     cancertype 0..* MS
 
 //set the code and binding for cancer type
-* useContext[cancertype].code = http://hl7.org/fhir/codesystem-usage-context-type.html#focus (exactly)
+//* useContext[cancertype].code = http://hl7.org/fhir/codesystem-usage-context-type.html#focus (exactly)
+* useContext[cancertype].code = #focus (exactly)
+
 * useContext[cancertype].valueCodeableConcept from http:clinfhir.com/fhir/ValueSet/cancer-type
-* useContext[cancertype] ^short = ""
-* useContext[cancertype] ^definition = ""
+* useContext[cancertype] ^short = "The type of cancer"
+* useContext[cancertype] ^definition = "The type of cancer"
 
 
 * action.action.action.action.extension contains

@@ -1,0 +1,27 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "SupportFactorValue",
+  "id": "support-factor-value",
+  "title": "Possible values for Support Factors",
+  "description": "The set of all possible support factors values (not specific to any one factor)",
+  "version": "0.1.0",
+  "url": "http:clinfhir.com/fhir/ValueSet/support-factor-value",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "NZ",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct"
+      }
+    ]
+  }
+}
