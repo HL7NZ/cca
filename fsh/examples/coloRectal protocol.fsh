@@ -2,12 +2,18 @@
 Alias: $SNOMED = http://snomed.info/sct
 Alias: $NZMT = https://nzulm.org.nz/nzmt
 
-Instance:   coloRectal
+Instance:   ColoRectal
 InstanceOf: CcaPlanDefinition
 Description: "Example Plan definition for coloRectal cancer"
 Usage: #example
 
-* status = #draft
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Plan for ColoRectal cancer</div>"
+* text.status = #additional
+
+* status = #active
+* status.extension[regimen-under-review].valueCode = #review
+
+
 * version = "3.0.3"
 * title = "Colorectal Adjuvant FOLFOX (a7)"
 * description = "A drug treatment regimen for Colorectal cancer"

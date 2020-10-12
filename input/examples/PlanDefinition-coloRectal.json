@@ -1,9 +1,17 @@
 {
   "resourceType": "PlanDefinition",
-  "id": "coloRectal",
+  "id": "ColoRectal",
   "meta": {
     "profile": [
       "http://hl7.org.nz/fhir/StructureDefinition/CcaPlanDefinition"
+    ]
+  },
+  "_status": {
+    "extension": [
+      {
+        "url": "http://clinfhir.com/fhir/StructureDefinition/regimen-under-review",
+        "valueCode": "review"
+      }
     ]
   },
   "type": {
@@ -194,7 +202,11 @@
       "description": "This plan defines a single regimen"
     }
   ],
-  "status": "draft",
+  "text": {
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Plan for ColoRectal cancer</div>",
+    "status": "additional"
+  },
+  "status": "active",
   "version": "3.0.3",
   "title": "Colorectal Adjuvant FOLFOX (a7)",
   "description": "A drug treatment regimen for Colorectal cancer",

@@ -54,7 +54,7 @@ Description:    "CCA Regimen Plan Definition."
     $instructions named instructions 0..1
 
 //slice useContext
-* useContext ^slicing.discriminator.type = #pattern
+* useContext ^slicing.discriminator.type = #value
 * useContext ^slicing.discriminator.path = "code"
 * useContext ^slicing.rules = #openAtEnd
 * useContext contains 

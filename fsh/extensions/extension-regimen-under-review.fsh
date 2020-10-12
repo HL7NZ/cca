@@ -22,7 +22,7 @@ Description:  "Other codes used for the PlanDefinition status"
 
 * ^url = "http://clinfhir.com/fhir/CodeSystem/plandefinition-status"
 
-* #ur "Under review"
+* #review "Under review"
 
 
 ValueSet : PlanDefinitionStatus
