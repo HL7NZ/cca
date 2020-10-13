@@ -107,10 +107,6 @@
     {
       "extension": [
         {
-          "url": "http://clinfhir.com/fhir/StructureDefinition/disclaimer",
-          "valueString": "Ensure not pregnant before starting"
-        },
-        {
           "url": "http://clinfhir.com/fhir/StructureDefinition/plan-instructions",
           "valueMarkdown": "Ensure not pregnant before starting"
         }

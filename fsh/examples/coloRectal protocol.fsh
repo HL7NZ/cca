@@ -86,7 +86,7 @@ Usage: #example
 * action[0].description = "Administration of Cabergoline and Tragacanth. Cycle length 14 days"
 
 
-* action[0].extension[disclaimer].valueString = "Ensure not pregnant before starting"
+
 
 * action[0].extension[action-instructions].valueMarkdown = "Ensure not pregnant before starting"
 
