@@ -7,7 +7,7 @@ InstanceOf: CcaPlanDefinition
 Description: "Example Plan definition for coloRectal cancer"
 Usage: #example
 
-* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Plan for ColoRectal cancer. Therer is a single cycle with 2 drug administrations</div>"
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Plan for ColoRectal cancer</div>"
 * text.status = #additional
 
 * status = #active
@@ -77,47 +77,54 @@ Usage: #example
 * relatedArtifact[1].url = "http://www.ncbi.nlm.nih.gov/pubmed/34324"
 
 
-//This is the first (and only) cycle
-* action[0].description = "Administration of Cabergoline and Tragacanth. Cycle length 14 days"
+* action.description = "This plan defines a single regimen"
 
-* action[0].title = "This is the only cycle in the regimen."
-* action[0].selectionBehavior = #all     //all actions should be performed
 
-* action[0].timingTiming.repeat.count = 1        //only a single repeat
-* action[0].timingTiming.repeat.duration = 14    // of 14 days - 
-* action[0].timingTiming.repeat.durationUnit = #d
+* action.action.action.description = "Describes the single cycle in this regimen. Cycle length 14 days"
+* action.action.action.selectionBehavior = #exactly-one    //explicit that only 1 top level action is chosen (there is only 1)
+
+//Cycle description
+* action.action.action.description = "Administration of Cabergoline and Tragacanth daily "
+
+* action.action.action.priority = #routine
+* action.action.action.title = "This is the only cycle in the regimen."
+* action.action.action.selectionBehavior = #all     //all actions should be performed
+
+* action.action.action.timingTiming.repeat.count = 1        //only a single repeat
+* action.action.action.timingTiming.repeat.duration = 14    // of 14 days - 
+* action.action.action.timingTiming.repeat.durationUnit = #d
 
 
 // -------- the Cabergoline admin within the cycle
-* action[0].action[0].description = "2mg of Cabergoline daily on days 1 and 4 by IV Infusion over 20 minutes"
+* action.action.action.action[0].description = "2mg of Cabergoline daily on days 1 and 4 by IV Infusion over 20 minutes"
 
 //details of the first administration on day 1
-* action[0].action[0].modifierExtension[timing-of-days][0].extension[day].valueInteger = 1
-* action[0].action[0].modifierExtension[timing-of-days][0].extension[instructions].valueString = "Specific instructions for the first administration"
+* action.action.action.action[0].extension[timing-of-days].extension[day].valueInteger = 1
+* action.action.action.action[0].extension[timing-of-days].extension[instructions].valueString = "Specific instructions for the first administration"
 
 //details of the second administration on day 4
-* action[0].action[0].modifierExtension[timing-of-days][1].extension[day].valueInteger = 4
-* action[0].action[0].modifierExtension[timing-of-days][1].extension[instructions].valueString = "Specific instructions for the second administration"
+* action.action.action.action[0].extension[timing-of-days][1].extension[day].valueInteger = 4
+* action.action.action.action[0].extension[timing-of-days][1].extension[instructions].valueString = "Specific instructions for the second administration"
 
 
 //the detailed activity definition. This is enough information to generate a MedicationRequest resource for a specific patient
-* action[0].action[0].definitionCanonical = "#act-cabergoline"
+* action.action.action.action[0].definitionCanonical = "#act-cabergoline"
 
 //------------- the Tragacanth admin within the cycle
-* action[0].action[1].definitionCanonical = "#act-tragacanth"
-* action[0].action[1].description = "3mg of Tragacanth daily on days 2,3 and 4 by IV Infusion over 3 hours"
+* action.action.action.action[1].definitionCanonical = "#act-tragacanth"
+* action.action.action.action[1].description = "3mg of Tragacanth daily on days 2,3 and 4 by IV Infusion over 3 hours"
 
 //details of the first administration on day 2
-* action[0].action[1].modifierExtension[timing-of-days].extension[day].valueInteger = 2
-* action[0].action[1].modifierExtension[timing-of-days].extension[instructions].valueString = "Specific instructions for the first administration"
+* action.action.action.action[1].extension[timing-of-days].extension[day].valueInteger = 2
+* action.action.action.action[1].extension[timing-of-days].extension[instructions].valueString = "Specific instructions for the first administration"
 
 //details of the second administration on day 3
-* action[0].action[1].modifierExtension[timing-of-days][1].extension[day].valueInteger = 3
-* action[0].action[1].modifierExtension[timing-of-days][1].extension[instructions].valueString = "Specific instructions for the second administration"
+* action.action.action.action[1].extension[timing-of-days][1].extension[day].valueInteger = 3
+* action.action.action.action[1].extension[timing-of-days][1].extension[instructions].valueString = "Specific instructions for the second administration"
 
 //details of the third administration on day 4
-* action[0].action[1].modifierExtension[timing-of-days][2].extension[day].valueInteger = 4
-* action[0].action[1].modifierExtension[timing-of-days][2].extension[instructions].valueString = "Specific instructions for the third administration"
+* action.action.action.action[1].extension[timing-of-days][2].extension[day].valueInteger = 4
+* action.action.action.action[1].extension[timing-of-days][2].extension[instructions].valueString = "Specific instructions for the third administration"
 
 
 

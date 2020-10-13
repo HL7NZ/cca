@@ -249,8 +249,6 @@ function makePlanDefinition(pd) {
                     //xml += "<a name='daysum'> </a>"
                     xml += "<strong>Summary of administration by day</strong>"
                     arDaySummary.forEach(function(arItem){
-
-
                         xml += "<div>Day " + arItem[0].day + "</div>";
 
                         arItem.forEach(function(item){

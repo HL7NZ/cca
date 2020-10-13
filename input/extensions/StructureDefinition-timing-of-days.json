@@ -29,7 +29,7 @@
   "context": [
     {
       "type": "element",
-      "expression": "PlanDefinition.action.action.action.action"
+      "expression": "Element"
     }
   ],
   "type": "Extension",
@@ -79,7 +79,7 @@
             "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"
           }
         ],
-        "isModifier": false,
+        "isModifier": true,
         "mapping": [
           {
             "identity": "rim",
@@ -226,7 +226,7 @@
             "source": "http://hl7.org/fhir/StructureDefinition/Extension"
           }
         ],
-        "isModifier": false,
+        "isModifier": true,
         "isSummary": false,
         "mapping": [
           {
@@ -443,7 +443,7 @@
             "source": "http://hl7.org/fhir/StructureDefinition/Extension"
           }
         ],
-        "isModifier": false,
+        "isModifier": true,
         "isSummary": false,
         "mapping": [
           {
@@ -844,6 +844,11 @@
   "differential": {
     "element": [
       {
+        "id": "Extension",
+        "path": "Extension",
+        "isModifier": true
+      },
+      {
         "id": "Extension.extension",
         "path": "Extension.extension",
         "min": 1
@@ -854,7 +859,8 @@
         "sliceName": "day",
         "short": "The day number from the start of the cycle",
         "min": 1,
-        "max": "1"
+        "max": "1",
+        "isModifier": true
       },
       {
         "id": "Extension.extension:day.extension",
@@ -881,7 +887,8 @@
         "sliceName": "instructions",
         "short": "Any specific instructions for this day",
         "min": 0,
-        "max": "1"
+        "max": "1",
+        "isModifier": true
       },
       {
         "id": "Extension.extension:instructions.extension",

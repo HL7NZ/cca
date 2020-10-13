@@ -80,7 +80,7 @@ In most situations the value of the status element will be 'active'</td>
 <td><a href='http://build.fhir.org/ig/HL7NZ/cca/branches/master/StructureDefinition-timing-of-days.html'>timing-of-days</a></td>
 <td>http://clinfhir.com/fhir/StructureDefinition/timing-of-days</td>
 <td>
-<div>PlanDefinition.action.action.action.action</div>
+<div>Element</div>
 </td>
 <td>Allows specific days to be indicated in a component of a regimen cycle. extends the UV extension: http://hl7.org/fhir/extension-timing-daysofcycle.html by adding instructions</td>
 </tr>

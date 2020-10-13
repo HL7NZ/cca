@@ -1,6 +1,7 @@
 
 Alias: $locationMedicationCollection = http://clinfhir.com/fhir/StructureDefinition/location-medication-collection
 Alias: $locationAdministration = http://clinfhir.com/fhir/StructureDefinition/location-administration
+Alias: $offLabel = http://clinfhir.com/fhir/StructureDefinition/off-label
 
 Profile:        CcaActivityDefinition
 Parent:         ActivityDefinition
@@ -16,7 +17,8 @@ Description:    "CCA Regimen Activity Definition."
 
 * extension contains
     $locationMedicationCollection named location-medication-collection 0..1 and
-    $locationAdministration named location-administration 0..1
+    $locationAdministration named location-administration 0..1 and 
+    $offLabel named off-label 0..1
 
 //elements that have been removed
 * identifier 0..0

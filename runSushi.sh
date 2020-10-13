@@ -26,8 +26,9 @@ echo "Making API summary"
 
 # read -p "Press any key..."
 
-echo "Making Text"
-localScripts/makeExamples.js cca
+# need to update to 2 levels...
+# echo "Making Text"
+# localScripts/makeExamples.js cca
 
 else 
 echo

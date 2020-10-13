@@ -8,6 +8,8 @@ Alias: $offLabel = http://clinfhir.com/fhir/StructureDefinition/off-label
 Alias: $instructions = http://clinfhir.com/fhir/StructureDefinition/plan-instructions
 
 Alias: $regimenUnderReview = http://clinfhir.com/fhir/StructureDefinition/regimen-under-review
+Alias: $disclaimer = http://clinfhir.com/fhir/StructureDefinition/disclaimer
+
 
 Alias: $TOD = http://clinfhir.com/fhir/StructureDefinition/timing-of-days
 Alias: $type = http://terminology.hl7.org/CodeSystem/plan-definition-type
@@ -30,8 +32,11 @@ Description:    "CCA Regimen Plan Definition."
     $replacedBy named replaced-by 0..1 and
     $treatmentIntent named treatment-intent 0..1 and
     $offLabel named offLabel 0..1 and
-    $instructions named plan-instructions 0..1
+    $instructions named plan-instructions 0..1 and 
+    $disclaimer named disclaimer 0..1
    
+
+
 
 * status.extension contains
     $regimenUnderReview named regimen-under-review 0..1
@@ -53,6 +58,9 @@ Description:    "CCA Regimen Plan Definition."
 * action.extension contains
     $instructions named instructions 0..1
 
+* action.action.extension contains
+    $instructions named instructions 0..1
+
 //slice useContext
 * useContext ^slicing.discriminator.type = #value
 * useContext ^slicing.discriminator.path = "code"
@@ -60,8 +68,7 @@ Description:    "CCA Regimen Plan Definition."
 * useContext contains 
     cancertype 0..* MS
 
-//set the code and binding for cancer type
-//* useContext[cancertype].code = http://hl7.org/fhir/codesystem-usage-context-type.html#focus (exactly)
+//set the code and binding for cancer typ
 * useContext[cancertype].code = #focus (exactly)
 
 * useContext[cancertype].valueCodeableConcept from http:clinfhir.com/fhir/ValueSet/cancer-type
@@ -69,7 +76,8 @@ Description:    "CCA Regimen Plan Definition."
 * useContext[cancertype] ^definition = "The type of cancer"
 
 
-* action.action.action.action.extension contains
+//top level: Cycle, next level: Actions (eg medication administation) within the cycle
+* action.action.modifierExtension contains
     $TOD named timing-of-days 0..*
 
 * action.prefix 0..0
@@ -90,8 +98,6 @@ Description:    "CCA Regimen Plan Definition."
 
 
 
-//Uses the '3 level' representation of actions suggested by the example in the spec
-//top level: Regimen options. Allows different 'versions' of the rregimen to be selected based on trigger criteria. Only 1 supported
+//must be at least 1 cycle
 * action 1..1
-//next level: Represents the different defined cycles. May be more than one
-//third level: the components of a single cycle
+

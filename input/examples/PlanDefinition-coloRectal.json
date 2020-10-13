@@ -103,107 +103,97 @@
     {
       "action": [
         {
-          "action": [
+          "modifierExtension": [
             {
-              "action": [
+              "extension": [
                 {
-                  "extension": [
-                    {
-                      "extension": [
-                        {
-                          "url": "day",
-                          "valueInteger": 1
-                        },
-                        {
-                          "url": "instructions",
-                          "valueString": "Specific instructions for the first administration"
-                        }
-                      ],
-                      "url": "http://clinfhir.com/fhir/StructureDefinition/timing-of-days"
-                    },
-                    {
-                      "extension": [
-                        {
-                          "url": "day",
-                          "valueInteger": 4
-                        },
-                        {
-                          "url": "instructions",
-                          "valueString": "Specific instructions for the second administration"
-                        }
-                      ],
-                      "url": "http://clinfhir.com/fhir/StructureDefinition/timing-of-days"
-                    }
-                  ],
-                  "description": "2mg of Cabergoline daily on days 1 and 4 by IV Infusion over 20 minutes",
-                  "definitionCanonical": "#act-cabergoline"
+                  "url": "day",
+                  "valueInteger": 1
                 },
                 {
-                  "extension": [
-                    {
-                      "extension": [
-                        {
-                          "url": "day",
-                          "valueInteger": 2
-                        },
-                        {
-                          "url": "instructions",
-                          "valueString": "Specific instructions for the first administration"
-                        }
-                      ],
-                      "url": "http://clinfhir.com/fhir/StructureDefinition/timing-of-days"
-                    },
-                    {
-                      "extension": [
-                        {
-                          "url": "day",
-                          "valueInteger": 3
-                        },
-                        {
-                          "url": "instructions",
-                          "valueString": "Specific instructions for the second administration"
-                        }
-                      ],
-                      "url": "http://clinfhir.com/fhir/StructureDefinition/timing-of-days"
-                    },
-                    {
-                      "extension": [
-                        {
-                          "url": "day",
-                          "valueInteger": 4
-                        },
-                        {
-                          "url": "instructions",
-                          "valueString": "Specific instructions for the third administration"
-                        }
-                      ],
-                      "url": "http://clinfhir.com/fhir/StructureDefinition/timing-of-days"
-                    }
-                  ],
-                  "definitionCanonical": "#act-tragacanth",
-                  "description": "3mg of Tragacanth daily on days 2,3 and 4 by IV Infusion over 3 hours"
+                  "url": "instructions",
+                  "valueString": "Specific instructions for the first administration"
                 }
               ],
-              "description": "Administration of Cabergoline and Tragacanth daily ",
-              "selectionBehavior": "all",
-              "priority": "routine",
-              "title": "This is the only cycle in the regimen.",
-              "timingTiming": {
-                "repeat": {
-                  "count": 1,
-                  "duration": 14,
-                  "durationUnit": "d"
+              "url": "http://clinfhir.com/fhir/StructureDefinition/timing-of-days"
+            },
+            {
+              "extension": [
+                {
+                  "url": "day",
+                  "valueInteger": 4
+                },
+                {
+                  "url": "instructions",
+                  "valueString": "Specific instructions for the second administration"
                 }
-              }
+              ],
+              "url": "http://clinfhir.com/fhir/StructureDefinition/timing-of-days"
             }
-          ]
+          ],
+          "description": "2mg of Cabergoline daily on days 1 and 4 by IV Infusion over 20 minutes",
+          "definitionCanonical": "#act-cabergoline"
+        },
+        {
+          "modifierExtension": [
+            {
+              "extension": [
+                {
+                  "url": "day",
+                  "valueInteger": 2
+                },
+                {
+                  "url": "instructions",
+                  "valueString": "Specific instructions for the first administration"
+                }
+              ],
+              "url": "http://clinfhir.com/fhir/StructureDefinition/timing-of-days"
+            },
+            {
+              "extension": [
+                {
+                  "url": "day",
+                  "valueInteger": 3
+                },
+                {
+                  "url": "instructions",
+                  "valueString": "Specific instructions for the second administration"
+                }
+              ],
+              "url": "http://clinfhir.com/fhir/StructureDefinition/timing-of-days"
+            },
+            {
+              "extension": [
+                {
+                  "url": "day",
+                  "valueInteger": 4
+                },
+                {
+                  "url": "instructions",
+                  "valueString": "Specific instructions for the third administration"
+                }
+              ],
+              "url": "http://clinfhir.com/fhir/StructureDefinition/timing-of-days"
+            }
+          ],
+          "definitionCanonical": "#act-tragacanth",
+          "description": "3mg of Tragacanth daily on days 2,3 and 4 by IV Infusion over 3 hours"
         }
       ],
-      "description": "This plan defines a single regimen"
+      "description": "Administration of Cabergoline and Tragacanth. Cycle length 14 days",
+      "title": "This is the only cycle in the regimen.",
+      "selectionBehavior": "all",
+      "timingTiming": {
+        "repeat": {
+          "count": 1,
+          "duration": 14,
+          "durationUnit": "d"
+        }
+      }
     }
   ],
   "text": {
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Plan for ColoRectal cancer</div>",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Plan for ColoRectal cancer. Therer is a single cycle with 2 drug administrations</div>",
     "status": "additional"
   },
   "status": "active",
