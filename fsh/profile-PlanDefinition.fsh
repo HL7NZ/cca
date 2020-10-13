@@ -36,8 +36,6 @@ Description:    "CCA Regimen Plan Definition."
     $disclaimer named disclaimer 0..1
    
 
-
-
 * status.extension contains
     $regimenUnderReview named regimen-under-review 0..1
 
@@ -56,10 +54,22 @@ Description:    "CCA Regimen Plan Definition."
 //* approvalDate 0..0
 
 * action.extension contains
-    $instructions named instructions 0..1
+    $instructions named action-instructions 0..1 
 
 * action.action.extension contains
-    $instructions named instructions 0..1
+    $instructions named action-instructions 0..1 and
+    
+    $TOD named timing-of-days 0..*
+
+
+
+
+    //top level: Cycle, next level: Actions (eg medication administation) within the cycle
+
+/*
+* action.action.modifierExtension contains
+    $TOD named timing-of-days 0..*
+*/
 
 //slice useContext
 * useContext ^slicing.discriminator.type = #value
@@ -76,9 +86,8 @@ Description:    "CCA Regimen Plan Definition."
 * useContext[cancertype] ^definition = "The type of cancer"
 
 
-//top level: Cycle, next level: Actions (eg medication administation) within the cycle
-* action.action.modifierExtension contains
-    $TOD named timing-of-days 0..*
+
+
 
 * action.prefix 0..0
 * action.priority 0..0

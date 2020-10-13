@@ -119,7 +119,7 @@
           "reference": "StructureDefinition/timing-of-days"
         },
         "name": "TimingOfDays",
-        "description": "Allows specific days to be indicated in a component of a regimen cycle. extends the UV extension: http://hl7.org/fhir/extension-timing-daysofcycle.html by adding instructions",
+        "description": "Allows specific days to be indicated in a component of a regimen cycle. extends the idea of  UV extension: http://hl7.org/fhir/extension-timing-daysofcycle.html by adding instructions",
         "exampleBoolean": false
       },
       {

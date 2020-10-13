@@ -31,10 +31,6 @@
     {
       "type": "element",
       "expression": "PlanDefinition"
-    },
-    {
-      "type": "element",
-      "expression": "PlanDefinition.action"
     }
   ],
   "type": "Extension",

@@ -6,23 +6,11 @@
       "http://hl7.org.nz/fhir/StructureDefinition/CcaPlanDefinition"
     ]
   },
-  "_status": {
-    "extension": [
-      {
-        "url": "http://clinfhir.com/fhir/StructureDefinition/regimen-under-review",
-        "valueCode": "review"
-      }
-    ]
-  },
-  "type": {
-    "coding": [
-      {
-        "code": "clinical-protocol",
-        "system": "http://terminology.hl7.org/CodeSystem/plan-definition-type"
-      }
-    ]
-  },
   "extension": [
+    {
+      "url": "http://clinfhir.com/fhir/StructureDefinition/plan-instructions",
+      "valueMarkdown": "Only for women"
+    },
     {
       "url": "http://clinfhir.com/fhir/StructureDefinition/regimen-type",
       "valueCodeableConcept": {
@@ -99,11 +87,41 @@
       "url": "http://clinfhir.com/fhir/StructureDefinition/support-factor"
     }
   ],
+  "_status": {
+    "extension": [
+      {
+        "url": "http://clinfhir.com/fhir/StructureDefinition/regimen-under-review",
+        "valueCode": "review"
+      }
+    ]
+  },
+  "type": {
+    "coding": [
+      {
+        "code": "clinical-protocol",
+        "system": "http://terminology.hl7.org/CodeSystem/plan-definition-type"
+      }
+    ]
+  },
   "action": [
     {
+      "extension": [
+        {
+          "url": "http://clinfhir.com/fhir/StructureDefinition/disclaimer",
+          "valueString": "Ensure not pregnant before starting"
+        },
+        {
+          "url": "http://clinfhir.com/fhir/StructureDefinition/plan-instructions",
+          "valueMarkdown": "Ensure not pregnant before starting"
+        }
+      ],
       "action": [
         {
-          "modifierExtension": [
+          "extension": [
+            {
+              "url": "http://clinfhir.com/fhir/StructureDefinition/plan-instructions",
+              "valueMarkdown": "Keep a close eye for side effects"
+            },
             {
               "extension": [
                 {
@@ -131,11 +149,11 @@
               "url": "http://clinfhir.com/fhir/StructureDefinition/timing-of-days"
             }
           ],
-          "description": "2mg of Cabergoline daily on days 1 and 4 by IV Infusion over 20 minutes",
-          "definitionCanonical": "#act-cabergoline"
+          "definitionCanonical": "#act-cabergoline",
+          "description": "2mg of Cabergoline daily on days 1 and 4 by IV Infusion over 20 minutes"
         },
         {
-          "modifierExtension": [
+          "extension": [
             {
               "extension": [
                 {

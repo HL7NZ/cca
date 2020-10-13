@@ -8,6 +8,10 @@
   },
   "extension": [
     {
+      "url": "http://clinfhir.com/fhir/StructureDefinition/off-label",
+      "valueBoolean": false
+    },
+    {
       "url": "http://clinfhir.com/fhir/StructureDefinition/location-medication-collection",
       "valueCodeableConcept": {
         "coding": [

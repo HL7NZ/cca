@@ -39,7 +39,6 @@
 <td>http://clinfhir.com/fhir/StructureDefinition/plan-instructions</td>
 <td>
 <div>PlanDefinition</div>
-<div>PlanDefinition.action</div>
 </td>
 <td>Specific instructions for use of the regimen overall, or for the individual cycles</td>
 </tr>
@@ -82,7 +81,7 @@ In most situations the value of the status element will be 'active'</td>
 <td>
 <div>Element</div>
 </td>
-<td>Allows specific days to be indicated in a component of a regimen cycle. extends the UV extension: http://hl7.org/fhir/extension-timing-daysofcycle.html by adding instructions</td>
+<td>Allows specific days to be indicated in a component of a regimen cycle. extends the idea of  UV extension: http://hl7.org/fhir/extension-timing-daysofcycle.html by adding instructions</td>
 </tr>
 <tr>
 <td><a href='http://build.fhir.org/ig/HL7NZ/cca/branches/master/StructureDefinition-treatment-intent.html'>treatment-intent</a></td>
