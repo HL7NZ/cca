@@ -256,6 +256,126 @@ A common pattern is to have a ValueSet that 'includes' all the codes from a code
 <td>Not defined here</td>
 </tr>
 <tr>
+<td>PlanDefinition.language</td>
+<td>http://hl7.org/fhir/ValueSet/languages</td>
+<td>Not defined here</td>
+</tr>
+<tr>
+<td>PlanDefinition.type</td>
+<td>http://hl7.org/fhir/ValueSet/plan-definition-type</td>
+<td>Not defined here</td>
+</tr>
+<tr>
+<td>PlanDefinition.status</td>
+<td>http://hl7.org/fhir/ValueSet/publication-status|4.0.1</td>
+<td>Not defined here</td>
+</tr>
+<tr>
+<td>PlanDefinition.subject[x]</td>
+<td>http://hl7.org/fhir/ValueSet/subject-type</td>
+<td>Not defined here</td>
+</tr>
+<tr>
+<td>PlanDefinition.jurisdiction</td>
+<td>http://hl7.org/fhir/ValueSet/jurisdiction</td>
+<td>Not defined here</td>
+</tr>
+<tr>
+<td>PlanDefinition.topic</td>
+<td>http://hl7.org/fhir/ValueSet/definition-topic</td>
+<td>Not defined here</td>
+</tr>
+<tr>
+<td>PlanDefinition.goal.category</td>
+<td>http://hl7.org/fhir/ValueSet/goal-category</td>
+<td>Not defined here</td>
+</tr>
+<tr>
+<td>PlanDefinition.goal.description</td>
+<td>http://hl7.org/fhir/ValueSet/clinical-findings</td>
+<td>Not defined here</td>
+</tr>
+<tr>
+<td>PlanDefinition.goal.priority</td>
+<td>http://hl7.org/fhir/ValueSet/goal-priority</td>
+<td>Not defined here</td>
+</tr>
+<tr>
+<td>PlanDefinition.goal.start</td>
+<td>http://hl7.org/fhir/ValueSet/goal-start-event</td>
+<td>Not defined here</td>
+</tr>
+<tr>
+<td>PlanDefinition.goal.addresses</td>
+<td>http://hl7.org/fhir/ValueSet/condition-code</td>
+<td>Not defined here</td>
+</tr>
+<tr>
+<td>PlanDefinition.goal.target.measure</td>
+<td>http://hl7.org/fhir/ValueSet/observation-codes</td>
+<td>Not defined here</td>
+</tr>
+<tr>
+<td>PlanDefinition.action.priority</td>
+<td>http://hl7.org/fhir/ValueSet/request-priority|4.0.1</td>
+<td>Not defined here</td>
+</tr>
+<tr>
+<td>PlanDefinition.action.subject[x]</td>
+<td>http://hl7.org/fhir/ValueSet/subject-type</td>
+<td>Not defined here</td>
+</tr>
+<tr>
+<td>PlanDefinition.action.condition.kind</td>
+<td>http://hl7.org/fhir/ValueSet/action-condition-kind|4.0.1</td>
+<td>Not defined here</td>
+</tr>
+<tr>
+<td>PlanDefinition.action.relatedAction.relationship</td>
+<td>http://hl7.org/fhir/ValueSet/action-relationship-type|4.0.1</td>
+<td>Not defined here</td>
+</tr>
+<tr>
+<td>PlanDefinition.action.participant.type</td>
+<td>http://hl7.org/fhir/ValueSet/action-participant-type|4.0.1</td>
+<td>Not defined here</td>
+</tr>
+<tr>
+<td>PlanDefinition.action.participant.role</td>
+<td>http://hl7.org/fhir/ValueSet/action-participant-role</td>
+<td>Not defined here</td>
+</tr>
+<tr>
+<td>PlanDefinition.action.type</td>
+<td>http://hl7.org/fhir/ValueSet/action-type</td>
+<td>Not defined here</td>
+</tr>
+<tr>
+<td>PlanDefinition.action.groupingBehavior</td>
+<td>http://hl7.org/fhir/ValueSet/action-grouping-behavior|4.0.1</td>
+<td>Not defined here</td>
+</tr>
+<tr>
+<td>PlanDefinition.action.selectionBehavior</td>
+<td>http://hl7.org/fhir/ValueSet/action-selection-behavior|4.0.1</td>
+<td>Not defined here</td>
+</tr>
+<tr>
+<td>PlanDefinition.action.requiredBehavior</td>
+<td>http://hl7.org/fhir/ValueSet/action-required-behavior|4.0.1</td>
+<td>Not defined here</td>
+</tr>
+<tr>
+<td>PlanDefinition.action.precheckBehavior</td>
+<td>http://hl7.org/fhir/ValueSet/action-precheck-behavior|4.0.1</td>
+<td>Not defined here</td>
+</tr>
+<tr>
+<td>PlanDefinition.action.cardinalityBehavior</td>
+<td>http://hl7.org/fhir/ValueSet/action-cardinality-behavior|4.0.1</td>
+<td>Not defined here</td>
+</tr>
+<tr>
 <td>Extension.value[x]</td>
 <td><a href='ValueSet-location-administration.html'>http:clinfhir.com/fhir/ValueSet/location-administration-code</a></td>
 <td></td>

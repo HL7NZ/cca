@@ -49,6 +49,8 @@
 <td>http://clinfhir.com/fhir/StructureDefinition/plan-instructions</td>
 <td>
 <div>PlanDefinition</div>
+<div>PlanDefinition.action</div>
+<div>PlanDefinition.action.action</div>
 </td>
 <td>Specific instructions for use of the regimen overall, or for the individual cycles</td>
 </tr>
@@ -84,6 +86,14 @@ In most situations the value of the status element will be 'active'</td>
 <div>PlanDefinition</div>
 </td>
 <td>Support factors needed during treatment</td>
+</tr>
+<tr>
+<td><a href='http://build.fhir.org/ig/HL7NZ/cca/branches/master/StructureDefinition-testExtension.html'>testExtension</a></td>
+<td>http://clinfhir.com/fhir/StructureDefinition/testExtension</td>
+<td>
+<div>Element</div>
+</td>
+<td>Test extension</td>
 </tr>
 <tr>
 <td><a href='http://build.fhir.org/ig/HL7NZ/cca/branches/master/StructureDefinition-timing-of-days.html'>timing-of-days</a></td>

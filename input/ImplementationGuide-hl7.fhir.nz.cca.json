@@ -44,6 +44,13 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/testPlan"
+        },
+        "name": "TestPlan",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/disclaimer"
         },
         "name": "Disclaimer",
@@ -112,6 +119,14 @@
         },
         "name": "SupportFactor",
         "description": "Support factors needed during treatment",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/testExtension"
+        },
+        "name": "TestExt",
+        "description": "Test extension",
         "exampleBoolean": false
       },
       {
@@ -241,6 +256,14 @@
         "name": "ColoRectal",
         "description": "Example Plan definition for coloRectal cancer",
         "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/CcaPlanDefinition"
+      },
+      {
+        "reference": {
+          "reference": "PlanDefinition/tp1"
+        },
+        "name": "tp1",
+        "description": "test plan",
+        "exampleCanonical": "http://clinfhir.com/fhir/StructureDefinition/testPlan"
       },
       {
         "reference": {
