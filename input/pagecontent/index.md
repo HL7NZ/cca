@@ -11,7 +11,7 @@
 # Te Aho o Te Kahu, Cancer Control Agency Implementation Guide
 
 ### Background
-This Implementation Guide describes the representaton of cancer treatment regimens (primarily chemotherapy created by the Cancer Control Agency). A regimen describbes the treratment for a parrticularr type of cancer and consists of a variablle number of cycles, with
+This Implementation Guide describes the representaton of cancer treatment regimens (primarily chemotherapy created by the Cancer Control Agency). A regimen describbes the treatment for a particular type of cancer and consists of a variable number of cycles, with
 each cycle defining one or more medication administrations on specific days within that cycle.
 
 The guide defines profiles on [PlanDefinition](http://hl7.org/fhir/plandefinition.html) and [ActivityDefinition](http://hl7.org/fhir/activitydefinition.html) resource types.

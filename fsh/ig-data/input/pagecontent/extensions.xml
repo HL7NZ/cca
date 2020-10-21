@@ -4,7 +4,7 @@
 <tr><th>Id</th><th>Url</th><th>Context of Use</th><th>Description</th></tr>
 <tr>
 <td><a href='http://build.fhir.org/ig/HL7NZ/cca/branches/master/StructureDefinition-disclaimer.html'>disclaimer</a></td>
-<td>http://clinfhir.com/fhir/StructureDefinition/disclaimer</td>
+<td>http://standards.digital.health.nz/fhir/StructureDefinition/disclaimer</td>
 <td>
 <div>PlanDefinition</div>
 </td>
@@ -12,7 +12,7 @@
 </tr>
 <tr>
 <td><a href='http://build.fhir.org/ig/HL7NZ/cca/branches/master/StructureDefinition-location-administration.html'>location-administration</a></td>
-<td>http://clinfhir.com/fhir/StructureDefinition/location-administration</td>
+<td>http://standards.digital.health.nz/fhir/StructureDefinition/location-administration</td>
 <td>
 <div>ActivityDefinition</div>
 </td>
@@ -20,7 +20,7 @@
 </tr>
 <tr>
 <td><a href='http://build.fhir.org/ig/HL7NZ/cca/branches/master/StructureDefinition-location-medication-collection.html'>location-medication-collection</a></td>
-<td>http://clinfhir.com/fhir/StructureDefinition/location-medication-collection</td>
+<td>http://standards.digital.health.nz/fhir/StructureDefinition/location-medication-collection</td>
 <td>
 <div>ActivityDefinition</div>
 </td>
@@ -28,7 +28,7 @@
 </tr>
 <tr>
 <td><a href='http://build.fhir.org/ig/HL7NZ/cca/branches/master/StructureDefinition-off-label.html'>off-label</a></td>
-<td>http://clinfhir.com/fhir/StructureDefinition/off-label</td>
+<td>http://standards.digital.health.nz/fhir/StructureDefinition/off-label</td>
 <td>
 <div>ActivityDefinition</div>
 </td>
@@ -36,7 +36,7 @@
 </tr>
 <tr>
 <td><a href='http://build.fhir.org/ig/HL7NZ/cca/branches/master/StructureDefinition-plan-instructions.html'>plan-instructions</a></td>
-<td>http://clinfhir.com/fhir/StructureDefinition/plan-instructions</td>
+<td>http://standards.digital.health.nz/fhir/StructureDefinition/plan-instructions</td>
 <td>
 <div>PlanDefinition</div>
 <div>PlanDefinition.action</div>
@@ -46,7 +46,7 @@
 </tr>
 <tr>
 <td><a href='http://build.fhir.org/ig/HL7NZ/cca/branches/master/StructureDefinition-regimen-type.html'>regimen-type</a></td>
-<td>http://clinfhir.com/fhir/StructureDefinition/regimen-type</td>
+<td>http://standards.digital.health.nz/fhir/StructureDefinition/regimen-type</td>
 <td>
 <div>PlanDefinition</div>
 </td>
@@ -54,7 +54,7 @@
 </tr>
 <tr>
 <td><a href='http://build.fhir.org/ig/HL7NZ/cca/branches/master/StructureDefinition-regimen-under-review.html'>regimen-under-review</a></td>
-<td>http://clinfhir.com/fhir/StructureDefinition/regimen-under-review</td>
+<td>http://standards.digital.health.nz/fhir/StructureDefinition/regimen-under-review</td>
 <td>
 <div>PlanDefinition.status</div>
 </td>
@@ -63,7 +63,7 @@ In most situations the value of the status element will be 'active'</td>
 </tr>
 <tr>
 <td><a href='http://build.fhir.org/ig/HL7NZ/cca/branches/master/StructureDefinition-replaced-by.html'>replaced-by</a></td>
-<td>http://clinfhir.com/fhir/StructureDefinition/replaced-by</td>
+<td>http://standards.digital.health.nz/fhir/StructureDefinition/replaced-by</td>
 <td>
 <div>PlanDefinition</div>
 </td>
@@ -71,23 +71,15 @@ In most situations the value of the status element will be 'active'</td>
 </tr>
 <tr>
 <td><a href='http://build.fhir.org/ig/HL7NZ/cca/branches/master/StructureDefinition-support-factor.html'>support-factor</a></td>
-<td>http://clinfhir.com/fhir/StructureDefinition/support-factor</td>
+<td>http://standards.digital.health.nz/fhir/StructureDefinition/support-factor</td>
 <td>
 <div>PlanDefinition</div>
 </td>
 <td>Support factors needed during treatment</td>
 </tr>
 <tr>
-<td><a href='http://build.fhir.org/ig/HL7NZ/cca/branches/master/StructureDefinition-testExtension.html'>testExtension</a></td>
-<td>http://clinfhir.com/fhir/StructureDefinition/testExtension</td>
-<td>
-<div>Element</div>
-</td>
-<td>Test extension</td>
-</tr>
-<tr>
 <td><a href='http://build.fhir.org/ig/HL7NZ/cca/branches/master/StructureDefinition-timing-of-days.html'>timing-of-days</a></td>
-<td>http://clinfhir.com/fhir/StructureDefinition/timing-of-days</td>
+<td>http://standards.digital.health.nz/fhir/StructureDefinition/timing-of-days</td>
 <td>
 <div>Element</div>
 </td>
@@ -95,7 +87,7 @@ In most situations the value of the status element will be 'active'</td>
 </tr>
 <tr>
 <td><a href='http://build.fhir.org/ig/HL7NZ/cca/branches/master/StructureDefinition-treatment-intent.html'>treatment-intent</a></td>
-<td>http://clinfhir.com/fhir/StructureDefinition/treatment-intent</td>
+<td>http://standards.digital.health.nz/fhir/StructureDefinition/treatment-intent</td>
 <td>
 <div>PlanDefinition</div>
 </td>

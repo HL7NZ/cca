@@ -6,11 +6,11 @@
   "title": "Treatment intent",
   "description": "The intent of the regimen - what is its purpose",
   "version": "0.1.0",
-  "url": "http://clinfhir.com/fhir/ValueSet/treatment-intent",
+  "url": "http://standards.digital.health.nz/fhir/ValueSet/treatment-intent",
   "compose": {
     "include": [
       {
-        "system": "http://clinfhir.com/fhir/CodeSystem/treatment-intent"
+        "system": "http://standards.digital.health.nz/ns/treatment-intent"
       }
     ]
   }

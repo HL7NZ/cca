@@ -1,17 +1,17 @@
-Alias: $supportFactor = http://clinfhir.com/fhir/StructureDefinition/support-factor
-Alias: $replacedBy = http://clinfhir.com/fhir/StructureDefinition/replaced-by
-Alias: $regimenType = http://clinfhir.com/fhir/StructureDefinition/regimen-type
+Alias: $supportFactor = http://standards.digital.health.nz/fhir/StructureDefinition/support-factor
+Alias: $replacedBy = http://standards.digital.health.nz/fhir/StructureDefinition/replaced-by
+Alias: $regimenType = http://standards.digital.health.nz/fhir/StructureDefinition/regimen-type
 
 
-Alias: $treatmentIntent = http://clinfhir.com/fhir/StructureDefinition/treatment-intent
-Alias: $offLabel = http://clinfhir.com/fhir/StructureDefinition/off-label
-Alias: $instructions = http://clinfhir.com/fhir/StructureDefinition/plan-instructions
+Alias: $treatmentIntent = http://standards.digital.health.nz/fhir/StructureDefinition/treatment-intent
+Alias: $offLabel = http://standards.digital.health.nz/fhir/StructureDefinition/off-label
+Alias: $instructions = http://standards.digital.health.nz/fhir/StructureDefinition/plan-instructions
 
-Alias: $regimenUnderReview = http://clinfhir.com/fhir/StructureDefinition/regimen-under-review
-Alias: $disclaimer = http://clinfhir.com/fhir/StructureDefinition/disclaimer
+Alias: $regimenUnderReview = http://standards.digital.health.nz/fhir/StructureDefinition/regimen-under-review
+Alias: $disclaimer = http://standards.digital.health.nz/fhir/StructureDefinition/disclaimer
 
 
-Alias: $TOD = http://clinfhir.com/fhir/StructureDefinition/timing-of-days
+Alias: $TOD = http://standards.digital.health.nz/fhir/StructureDefinition/timing-of-days
 Alias: $type = http://terminology.hl7.org/CodeSystem/plan-definition-type
 
 Profile:        CcaPlanDefinition
@@ -81,7 +81,7 @@ Description:    "CCA Regimen Plan Definition."
 //set the code and binding for cancer typ
 * useContext[cancertype].code = #focus (exactly)
 
-* useContext[cancertype].valueCodeableConcept from http:clinfhir.com/fhir/ValueSet/cancer-type
+* useContext[cancertype].valueCodeableConcept from http://standards.digital.health.nz/fhir/ValueSet/cancer-type
 * useContext[cancertype] ^short = "The type of cancer"
 * useContext[cancertype] ^definition = "The type of cancer"
 

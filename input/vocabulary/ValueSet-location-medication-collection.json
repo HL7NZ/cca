@@ -6,7 +6,7 @@
   "title": "Medication collection location",
   "description": "The physical location where the medication can be collected on prior to administration - eg a pharmacy",
   "version": "0.1.0",
-  "url": "http:clinfhir.com/fhir/ValueSet/location-medication-collection",
+  "url": "http://standards.digital.health.nz/fhir/ValueSet/location-medication-collection",
   "jurisdiction": [
     {
       "coding": [

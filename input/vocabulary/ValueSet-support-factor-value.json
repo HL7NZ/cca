@@ -6,7 +6,7 @@
   "title": "Possible values for Support Factors",
   "description": "The set of all possible support factors values (not specific to any one factor)",
   "version": "0.1.0",
-  "url": "http:clinfhir.com/fhir/ValueSet/support-factor-value",
+  "url": "http://standards.digital.health.nz/fhir/ValueSet/support-factor-value",
   "jurisdiction": [
     {
       "coding": [

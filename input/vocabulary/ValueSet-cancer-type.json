@@ -6,7 +6,7 @@
   "title": "Cancer type",
   "description": "The type of Cancer",
   "version": "0.1.0",
-  "url": "http:clinfhir.com/fhir/ValueSet/cancer-type",
+  "url": "http://standards.digital.health.nz/fhir/ValueSet/cancer-type",
   "jurisdiction": [
     {
       "coding": [

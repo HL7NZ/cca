@@ -6,7 +6,7 @@
   "title": "Administration location",
   "description": "The physical location where the administration occurred - eg at home or in a clinic",
   "version": "0.1.0",
-  "url": "http:clinfhir.com/fhir/ValueSet/location-administration-code",
+  "url": "http://standards.digital.health.nz/fhir/ValueSet/location-administration-code",
   "jurisdiction": [
     {
       "coding": [

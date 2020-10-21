@@ -12,10 +12,5 @@
 <td>http://hl7.org.nz/fhir/StructureDefinition/CcaPlanDefinition</td>
 <td>CCA Regimen Plan Definition.</td>
 </tr>
-<tr>
-<td><a href='http://build.fhir.org/ig/HL7NZ/cca/branches/master/StructureDefinition-testPlan.html'>testPlan</a></td>
-<td>http://clinfhir.com/fhir/StructureDefinition/testPlan</td>
-<td>undefined</td>
-</tr>
 </table>
 </div>

@@ -4,7 +4,7 @@ Title: "Regimen under review"
 Description: "Indicates that a regimen is published and available to be used, but there is still a review being performed, so could change. 
 In most situations the value of the status element will be 'active'"
 
-* ^url = "http://clinfhir.com/fhir/StructureDefinition/regimen-under-review"
+* ^url = "http://standards.digital.health.nz/fhir/StructureDefinition/regimen-under-review"
 
 
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
@@ -20,7 +20,7 @@ Id: plandefinition-status
 Title: "PlanDefinition additional status"
 Description:  "Other codes used for the PlanDefinition status"
 
-* ^url = "http://clinfhir.com/fhir/CodeSystem/plandefinition-status"
+* ^url = "http://standards.digital.health.nz/ns/plandefinition-status"
 
 * #review "Under review"
 
@@ -31,6 +31,6 @@ Title: "PlanDefinition additional status"
 Description:  "Other codes used for the PlanDefinition status"
 
 
-* ^url = "http://clinfhir.com/fhir/ValueSet/plandefinition-status"
+* ^url = "http://standards.digital.health.nz/fhir/ValueSet/plandefinition-status"
 
-* codes from system http://clinfhir.com/fhir/CodeSystem/plandefinition-status
+* codes from system http://standards.digital.health.nz/ns/plandefinition-status

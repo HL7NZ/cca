@@ -94,7 +94,7 @@ function makePlanDefinition(pd) {
 
 
     //regimen type
-    let arRT = getExtensions(pd,"http://clinfhir.com/fhir/StructureDefinition/regimen-type")
+    let arRT = getExtensions(pd,"http://standards.digital.health.nz/fhir/StructureDefinition/regimen-type")
     if (arRT.length > 0) {      //should only be one...
 
         console.log(arRT)
@@ -120,7 +120,7 @@ function makePlanDefinition(pd) {
 
     //support factors
 
-    let arSF = getExtensions(pd,"http://clinfhir.com/fhir/StructureDefinition/support-factor")
+    let arSF = getExtensions(pd,"http://standards.digital.health.nz/fhir/StructureDefinition/support-factor")
     if (arSF) {
         xml += "<a name='sf'> </a>"
         xml += "<h4>Support factors</h4>"
@@ -215,7 +215,7 @@ function makePlanDefinition(pd) {
                         xml += "  " + action.description
                         xml += "</div>"
 
-                        let arTOD = getExtensions(action,"http://clinfhir.com/fhir/StructureDefinition/timing-of-days")
+                        let arTOD = getExtensions(action,"http://standards.digital.health.nz/fhir/StructureDefinition/timing-of-days")
                         if (arTOD){
                             arTOD.forEach(function(admin){
                                 let day = getChildExtension(admin,"day","integer")

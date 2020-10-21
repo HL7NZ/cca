@@ -2,7 +2,7 @@ Extension: Disclaimer
 Id: disclaimer
 Description: "A disclaimer for use of this Plan"
 
-* ^url = "http://clinfhir.com/fhir/StructureDefinition/disclaimer"
+* ^url = "http://standards.digital.health.nz/fhir/StructureDefinition/disclaimer"
 
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 * ^context.type = #element

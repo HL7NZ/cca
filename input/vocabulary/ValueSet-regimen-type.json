@@ -6,7 +6,7 @@
   "title": "Regimen type",
   "description": "The type of regimen - eg FOLFOX",
   "version": "0.1.0",
-  "url": "http:clinfhir.com/fhir/ValueSet/regimen-type",
+  "url": "http://standards.digital.health.nz/fhir/ValueSet/regimen-type",
   "jurisdiction": [
     {
       "coding": [

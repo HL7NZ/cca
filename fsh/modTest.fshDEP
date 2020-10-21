@@ -1,9 +1,9 @@
-Alias: $testExt = http://clinfhir.com/fhir/StructureDefinition/testExtension
+Alias: $testExt = http://standards.digital.health.nz/fhir/StructureDefinition/testExtension
 
 Extension: TestExt
 Id: testExtension
 Description: "Test extension"
-* ^url = "http://clinfhir.com/fhir/StructureDefinition/testExtension"
+* ^url = "http://standards.digital.health.nz/fhir/StructureDefinition/testExtension"
 * . ^isModifier = true
 * . ^isModifierReason = "Test reason"
 
