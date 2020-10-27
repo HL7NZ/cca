@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "location-medication-collection",
-  "url": "http://standards.digital.health.nz/fhir/StructureDefinition/location-medication-collection",
+  "url": "http://hl7.org.nz/fhir/StructureDefinition/cca-location-medication-collection",
   "version": "0.1.0",
   "name": "LocationMedicationCollection",
   "status": "active",
@@ -212,7 +212,7 @@
             ]
           }
         ],
-        "fixedUri": "http://standards.digital.health.nz/fhir/StructureDefinition/location-medication-collection",
+        "fixedUri": "http://hl7.org.nz/fhir/StructureDefinition/cca-location-medication-collection",
         "isModifier": false,
         "isSummary": false,
         "mapping": [
@@ -327,7 +327,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://standards.digital.health.nz/fhir/StructureDefinition/location-medication-collection"
+        "fixedUri": "http://hl7.org.nz/fhir/StructureDefinition/cca-location-medication-collection"
       },
       {
         "id": "Extension.value[x]",

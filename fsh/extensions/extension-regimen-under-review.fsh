@@ -4,7 +4,7 @@ Title: "Regimen under review"
 Description: "Indicates that a regimen is published and available to be used, but there is still a review being performed, so could change. 
 In most situations the value of the status element will be 'active'"
 
-* ^url = "http://standards.digital.health.nz/fhir/StructureDefinition/regimen-under-review"
+* ^url = "http://hl7.org.nz/fhir/StructureDefinition/cca-regimen-under-review"
 
 
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ

@@ -4,7 +4,7 @@ Extension: TimingOfDays
 Id: timing-of-days
 Description: "Allows specific days to be indicated in a component of a regimen cycle. extends the idea of  UV extension: http://hl7.org/fhir/extension-timing-daysofcycle.html by adding instructions"
 
-* ^url = "http://standards.digital.health.nz/fhir/StructureDefinition/timing-of-days"
+* ^url = "http://hl7.org.nz/fhir/StructureDefinition/cca-timing-of-days"
 //* . ^isModifier = true
 //* . ^isModifierReason = "Specifies the day the medication should be administered"
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ

@@ -2,7 +2,7 @@ Extension: LocationAdministration
 Id: location-administration
 Description: "The physical Location where the medication administration occurs (eg home or clinic)"
 
-* ^url = "http://standards.digital.health.nz/fhir/StructureDefinition/location-administration"
+* ^url = "http://hl7.org.nz/fhir/StructureDefinition/cca-location-administration"
 
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 * ^context.type = #element

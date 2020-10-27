@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "location-administration",
-  "url": "http://standards.digital.health.nz/fhir/StructureDefinition/location-administration",
+  "url": "http://hl7.org.nz/fhir/StructureDefinition/cca-location-administration",
   "version": "0.1.0",
   "name": "LocationAdministration",
   "status": "active",
@@ -212,7 +212,7 @@
             ]
           }
         ],
-        "fixedUri": "http://standards.digital.health.nz/fhir/StructureDefinition/location-administration",
+        "fixedUri": "http://hl7.org.nz/fhir/StructureDefinition/cca-location-administration",
         "isModifier": false,
         "isSummary": false,
         "mapping": [
@@ -327,7 +327,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://standards.digital.health.nz/fhir/StructureDefinition/location-administration"
+        "fixedUri": "http://hl7.org.nz/fhir/StructureDefinition/cca-location-administration"
       },
       {
         "id": "Extension.value[x]",

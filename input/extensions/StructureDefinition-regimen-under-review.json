@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "regimen-under-review",
-  "url": "http://standards.digital.health.nz/fhir/StructureDefinition/regimen-under-review",
+  "url": "http://hl7.org.nz/fhir/StructureDefinition/cca-regimen-under-review",
   "version": "0.1.0",
   "name": "RegimenUnderReview",
   "title": "Regimen under review",
@@ -213,7 +213,7 @@
             ]
           }
         ],
-        "fixedUri": "http://standards.digital.health.nz/fhir/StructureDefinition/regimen-under-review",
+        "fixedUri": "http://hl7.org.nz/fhir/StructureDefinition/cca-regimen-under-review",
         "isModifier": false,
         "isSummary": false,
         "mapping": [
@@ -322,7 +322,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://standards.digital.health.nz/fhir/StructureDefinition/regimen-under-review"
+        "fixedUri": "http://hl7.org.nz/fhir/StructureDefinition/cca-regimen-under-review"
       },
       {
         "id": "Extension.value[x]",

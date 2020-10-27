@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "disclaimer",
-  "url": "http://standards.digital.health.nz/fhir/StructureDefinition/disclaimer",
+  "url": "http://hl7.org.nz/fhir/StructureDefinition/cca-disclaimer",
   "version": "0.1.0",
   "name": "Disclaimer",
   "status": "active",
@@ -212,7 +212,7 @@
             ]
           }
         ],
-        "fixedUri": "http://standards.digital.health.nz/fhir/StructureDefinition/disclaimer",
+        "fixedUri": "http://hl7.org.nz/fhir/StructureDefinition/cca-disclaimer",
         "isModifier": false,
         "isSummary": false,
         "mapping": [
@@ -270,7 +270,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://standards.digital.health.nz/fhir/StructureDefinition/disclaimer"
+        "fixedUri": "http://hl7.org.nz/fhir/StructureDefinition/cca-disclaimer"
       },
       {
         "id": "Extension.value[x]",

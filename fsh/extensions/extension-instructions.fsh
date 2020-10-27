@@ -3,7 +3,7 @@ Id: plan-instructions
 Title: "Instructions for use"
 Description: "Specific instructions for use of the regimen overall, or for the individual cycles"
 
-* ^url = "http://standards.digital.health.nz/fhir/StructureDefinition/plan-instructions"
+* ^url = "http://hl7.org.nz/fhir/StructureDefinition/cca-plan-instructions"
 
 
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ

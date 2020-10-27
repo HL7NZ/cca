@@ -3,7 +3,7 @@ Id: off-label
 Title: "Off label"
 Description: "Indicates that the medication is being used for a purpose for which it has not been specifically approved"
 
-* ^url = "http://standards.digital.health.nz/fhir/StructureDefinition/off-label"
+* ^url = "http://hl7.org.nz/fhir/StructureDefinition/cca-off-label"
 
 
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ

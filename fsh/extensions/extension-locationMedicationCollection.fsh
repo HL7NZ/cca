@@ -2,7 +2,7 @@ Extension: LocationMedicationCollection
 Id: location-medication-collection
 Description: "The physical Location where the medication can be collection prior to collection"
 
-* ^url = "http://standards.digital.health.nz/fhir/StructureDefinition/location-medication-collection"
+* ^url = "http://hl7.org.nz/fhir/StructureDefinition/cca-location-medication-collection"
 
 
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ

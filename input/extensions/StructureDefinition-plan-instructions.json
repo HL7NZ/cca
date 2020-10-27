@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "plan-instructions",
-  "url": "http://standards.digital.health.nz/fhir/StructureDefinition/plan-instructions",
+  "url": "http://hl7.org.nz/fhir/StructureDefinition/cca-plan-instructions",
   "version": "0.1.0",
   "name": "PlanInstructions",
   "title": "Instructions for use",
@@ -221,7 +221,7 @@
             ]
           }
         ],
-        "fixedUri": "http://standards.digital.health.nz/fhir/StructureDefinition/plan-instructions",
+        "fixedUri": "http://hl7.org.nz/fhir/StructureDefinition/cca-plan-instructions",
         "isModifier": false,
         "isSummary": false,
         "mapping": [
@@ -279,7 +279,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://standards.digital.health.nz/fhir/StructureDefinition/plan-instructions"
+        "fixedUri": "http://hl7.org.nz/fhir/StructureDefinition/cca-plan-instructions"
       },
       {
         "id": "Extension.value[x]",

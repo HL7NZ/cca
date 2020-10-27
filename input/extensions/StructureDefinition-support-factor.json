@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "support-factor",
-  "url": "http://standards.digital.health.nz/fhir/StructureDefinition/support-factor",
+  "url": "http://hl7.org.nz/fhir/StructureDefinition/cca-support-factor",
   "version": "0.1.0",
   "name": "SupportFactor",
   "status": "active",
@@ -697,7 +697,7 @@
             ]
           }
         ],
-        "fixedUri": "http://standards.digital.health.nz/fhir/StructureDefinition/support-factor",
+        "fixedUri": "http://hl7.org.nz/fhir/StructureDefinition/cca-support-factor",
         "isModifier": false,
         "isSummary": false,
         "mapping": [
@@ -976,7 +976,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://standards.digital.health.nz/fhir/StructureDefinition/support-factor"
+        "fixedUri": "http://hl7.org.nz/fhir/StructureDefinition/cca-support-factor"
       },
       {
         "id": "Extension.value[x]",

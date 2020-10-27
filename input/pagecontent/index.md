@@ -50,7 +50,8 @@ Refer to the spec for details on how a client might consume a PlanDefinition.
 -->
 
 ### Logical model
-The [Logical model](StructureDefinition-CancerRegimensLM.html#tabs-snap) describes the 'business level' or information model for the data in the guide. It helps to understand the information being represented in a simpler way than the profiles. It is does *not* represent the way the resource instances are structured or shared, but does have mappings to the profile (though these are intended to aid implementer understanding rather than being machine readible.)
+The [Logical model](StructureDefinition-CancerRegimensLM.html#tabs-snap) describes the 'business level' or information model for the data in the guide. It helps to understand the information being represented in a simpler way than the profiles. It is does *not* represent the way the resource instances are structured or shared, but does have mappings to the profile in the tab at the 
+top of the page (though these are intended to aid implementer understanding rather than being machine readible.)
 
 ### Examples
 Examples are found at the top of each resource, and listed in the [artifact index](artifacts.html). 

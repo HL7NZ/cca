@@ -8,11 +8,11 @@
   },
   "extension": [
     {
-      "url": "http://standards.digital.health.nz/fhir/StructureDefinition/plan-instructions",
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/cca-plan-instructions",
       "valueMarkdown": "Only for women"
     },
     {
-      "url": "http://standards.digital.health.nz/fhir/StructureDefinition/regimen-type",
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/cca-regimen-type",
       "valueCodeableConcept": {
         "text": "Folfox"
       }
@@ -38,7 +38,7 @@
           }
         }
       ],
-      "url": "http://standards.digital.health.nz/fhir/StructureDefinition/support-factor"
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/cca-support-factor"
     },
     {
       "extension": [
@@ -61,7 +61,7 @@
           }
         }
       ],
-      "url": "http://standards.digital.health.nz/fhir/StructureDefinition/support-factor"
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/cca-support-factor"
     },
     {
       "extension": [
@@ -84,13 +84,13 @@
           }
         }
       ],
-      "url": "http://standards.digital.health.nz/fhir/StructureDefinition/support-factor"
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/cca-support-factor"
     }
   ],
   "_status": {
     "extension": [
       {
-        "url": "http://standards.digital.health.nz/fhir/StructureDefinition/regimen-under-review",
+        "url": "http://hl7.org.nz/fhir/StructureDefinition/cca-regimen-under-review",
         "valueCode": "review"
       }
     ]
@@ -107,7 +107,7 @@
     {
       "extension": [
         {
-          "url": "http://standards.digital.health.nz/fhir/StructureDefinition/plan-instructions",
+          "url": "http://hl7.org.nz/fhir/StructureDefinition/cca-plan-instructions",
           "valueMarkdown": "Ensure not pregnant before starting"
         }
       ],
@@ -115,7 +115,7 @@
         {
           "extension": [
             {
-              "url": "http://standards.digital.health.nz/fhir/StructureDefinition/plan-instructions",
+              "url": "http://hl7.org.nz/fhir/StructureDefinition/cca-plan-instructions",
               "valueMarkdown": "Keep a close eye for side effects"
             },
             {
@@ -129,7 +129,7 @@
                   "valueString": "Specific instructions for the first administration"
                 }
               ],
-              "url": "http://standards.digital.health.nz/fhir/StructureDefinition/timing-of-days"
+              "url": "http://hl7.org.nz/fhir/StructureDefinition/cca-timing-of-days"
             },
             {
               "extension": [
@@ -142,7 +142,7 @@
                   "valueString": "Specific instructions for the second administration"
                 }
               ],
-              "url": "http://standards.digital.health.nz/fhir/StructureDefinition/timing-of-days"
+              "url": "http://hl7.org.nz/fhir/StructureDefinition/cca-timing-of-days"
             }
           ],
           "definitionCanonical": "#act-cabergoline",
@@ -161,7 +161,7 @@
                   "valueString": "Specific instructions for the first administration"
                 }
               ],
-              "url": "http://standards.digital.health.nz/fhir/StructureDefinition/timing-of-days"
+              "url": "http://hl7.org.nz/fhir/StructureDefinition/cca-timing-of-days"
             },
             {
               "extension": [
@@ -174,7 +174,7 @@
                   "valueString": "Specific instructions for the second administration"
                 }
               ],
-              "url": "http://standards.digital.health.nz/fhir/StructureDefinition/timing-of-days"
+              "url": "http://hl7.org.nz/fhir/StructureDefinition/cca-timing-of-days"
             },
             {
               "extension": [
@@ -187,7 +187,7 @@
                   "valueString": "Specific instructions for the third administration"
                 }
               ],
-              "url": "http://standards.digital.health.nz/fhir/StructureDefinition/timing-of-days"
+              "url": "http://hl7.org.nz/fhir/StructureDefinition/cca-timing-of-days"
             }
           ],
           "definitionCanonical": "#act-tragacanth",

@@ -444,7 +444,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://standards.digital.health.nz/fhir/StructureDefinition/location-medication-collection"
+              "http://hl7.org.nz/fhir/StructureDefinition/cca-location-medication-collection"
             ]
           }
         ],
@@ -497,7 +497,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://standards.digital.health.nz/fhir/StructureDefinition/location-administration"
+              "http://hl7.org.nz/fhir/StructureDefinition/cca-location-administration"
             ]
           }
         ],
@@ -550,7 +550,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://standards.digital.health.nz/fhir/StructureDefinition/off-label"
+              "http://hl7.org.nz/fhir/StructureDefinition/cca-off-label"
             ]
           }
         ],
@@ -3059,7 +3059,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://standards.digital.health.nz/fhir/StructureDefinition/location-medication-collection"
+              "http://hl7.org.nz/fhir/StructureDefinition/cca-location-medication-collection"
             ]
           }
         ]
@@ -3074,7 +3074,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://standards.digital.health.nz/fhir/StructureDefinition/location-administration"
+              "http://hl7.org.nz/fhir/StructureDefinition/cca-location-administration"
             ]
           }
         ]
@@ -3089,7 +3089,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://standards.digital.health.nz/fhir/StructureDefinition/off-label"
+              "http://hl7.org.nz/fhir/StructureDefinition/cca-off-label"
             ]
           }
         ]

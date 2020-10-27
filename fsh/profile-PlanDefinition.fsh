@@ -1,17 +1,17 @@
-Alias: $supportFactor = http://standards.digital.health.nz/fhir/StructureDefinition/support-factor
-Alias: $replacedBy = http://standards.digital.health.nz/fhir/StructureDefinition/replaced-by
-Alias: $regimenType = http://standards.digital.health.nz/fhir/StructureDefinition/regimen-type
+Alias: $supportFactor = http://hl7.org.nz/fhir/StructureDefinition/cca-support-factor
+Alias: $replacedBy = http://hl7.org.nz/fhir/StructureDefinition/cca-replaced-by
+Alias: $regimenType = http://hl7.org.nz/fhir/StructureDefinition/cca-regimen-type
 
 
-Alias: $treatmentIntent = http://standards.digital.health.nz/fhir/StructureDefinition/treatment-intent
-Alias: $offLabel = http://standards.digital.health.nz/fhir/StructureDefinition/off-label
-Alias: $instructions = http://standards.digital.health.nz/fhir/StructureDefinition/plan-instructions
+Alias: $treatmentIntent = http://hl7.org.nz/fhir/StructureDefinition/cca-treatment-intent
+Alias: $offLabel = http://hl7.org.nz/fhir/StructureDefinition/cca-off-label
+Alias: $instructions = http://hl7.org.nz/fhir/StructureDefinition/cca-plan-instructions
 
-Alias: $regimenUnderReview = http://standards.digital.health.nz/fhir/StructureDefinition/regimen-under-review
-Alias: $disclaimer = http://standards.digital.health.nz/fhir/StructureDefinition/disclaimer
+Alias: $regimenUnderReview = http://hl7.org.nz/fhir/StructureDefinition/cca-regimen-under-review
+Alias: $disclaimer = http://hl7.org.nz/fhir/StructureDefinition/cca-disclaimer
 
 
-Alias: $TOD = http://standards.digital.health.nz/fhir/StructureDefinition/timing-of-days
+Alias: $TOD = http://hl7.org.nz/fhir/StructureDefinition/cca-timing-of-days
 Alias: $type = http://terminology.hl7.org/CodeSystem/plan-definition-type
 
 Profile:        CcaPlanDefinition

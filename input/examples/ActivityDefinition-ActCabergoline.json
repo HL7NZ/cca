@@ -8,11 +8,11 @@
   },
   "extension": [
     {
-      "url": "http://standards.digital.health.nz/fhir/StructureDefinition/off-label",
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/cca-off-label",
       "valueBoolean": false
     },
     {
-      "url": "http://standards.digital.health.nz/fhir/StructureDefinition/location-medication-collection",
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/cca-location-medication-collection",
       "valueCodeableConcept": {
         "coding": [
           {
@@ -25,7 +25,7 @@
       }
     },
     {
-      "url": "http://standards.digital.health.nz/fhir/StructureDefinition/location-administration",
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/cca-location-administration",
       "valueCodeableConcept": {
         "coding": [
           {

@@ -4,7 +4,7 @@ Extension: SupportFactor
 Id: support-factor
 Description: "Support factors needed during treatment"
 
-* ^url = "http://standards.digital.health.nz/fhir/StructureDefinition/support-factor"
+* ^url = "http://hl7.org.nz/fhir/StructureDefinition/cca-support-factor"
 
 
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ

@@ -440,7 +440,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://standards.digital.health.nz/fhir/StructureDefinition/support-factor"
+              "http://hl7.org.nz/fhir/StructureDefinition/cca-support-factor"
             ]
           }
         ],
@@ -493,7 +493,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://standards.digital.health.nz/fhir/StructureDefinition/regimen-type"
+              "http://hl7.org.nz/fhir/StructureDefinition/cca-regimen-type"
             ]
           }
         ],
@@ -546,7 +546,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://standards.digital.health.nz/fhir/StructureDefinition/replaced-by"
+              "http://hl7.org.nz/fhir/StructureDefinition/cca-replaced-by"
             ]
           }
         ],
@@ -599,7 +599,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://standards.digital.health.nz/fhir/StructureDefinition/treatment-intent"
+              "http://hl7.org.nz/fhir/StructureDefinition/cca-treatment-intent"
             ]
           }
         ],
@@ -652,7 +652,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://standards.digital.health.nz/fhir/StructureDefinition/off-label"
+              "http://hl7.org.nz/fhir/StructureDefinition/cca-off-label"
             ]
           }
         ],
@@ -705,7 +705,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://standards.digital.health.nz/fhir/StructureDefinition/plan-instructions"
+              "http://hl7.org.nz/fhir/StructureDefinition/cca-plan-instructions"
             ]
           }
         ],
@@ -758,7 +758,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://standards.digital.health.nz/fhir/StructureDefinition/disclaimer"
+              "http://hl7.org.nz/fhir/StructureDefinition/cca-disclaimer"
             ]
           }
         ],
@@ -1281,7 +1281,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://standards.digital.health.nz/fhir/StructureDefinition/regimen-under-review"
+              "http://hl7.org.nz/fhir/StructureDefinition/cca-regimen-under-review"
             ]
           }
         ],
@@ -3459,7 +3459,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://standards.digital.health.nz/fhir/StructureDefinition/plan-instructions"
+              "http://hl7.org.nz/fhir/StructureDefinition/cca-plan-instructions"
             ]
           }
         ],
@@ -5483,7 +5483,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://standards.digital.health.nz/fhir/StructureDefinition/plan-instructions"
+              "http://hl7.org.nz/fhir/StructureDefinition/cca-plan-instructions"
             ]
           }
         ],
@@ -5536,7 +5536,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://standards.digital.health.nz/fhir/StructureDefinition/timing-of-days"
+              "http://hl7.org.nz/fhir/StructureDefinition/cca-timing-of-days"
             ]
           }
         ],
@@ -7483,7 +7483,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://standards.digital.health.nz/fhir/StructureDefinition/support-factor"
+              "http://hl7.org.nz/fhir/StructureDefinition/cca-support-factor"
             ]
           }
         ]
@@ -7498,7 +7498,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://standards.digital.health.nz/fhir/StructureDefinition/regimen-type"
+              "http://hl7.org.nz/fhir/StructureDefinition/cca-regimen-type"
             ]
           }
         ]
@@ -7513,7 +7513,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://standards.digital.health.nz/fhir/StructureDefinition/replaced-by"
+              "http://hl7.org.nz/fhir/StructureDefinition/cca-replaced-by"
             ]
           }
         ]
@@ -7528,7 +7528,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://standards.digital.health.nz/fhir/StructureDefinition/treatment-intent"
+              "http://hl7.org.nz/fhir/StructureDefinition/cca-treatment-intent"
             ]
           }
         ]
@@ -7543,7 +7543,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://standards.digital.health.nz/fhir/StructureDefinition/off-label"
+              "http://hl7.org.nz/fhir/StructureDefinition/cca-off-label"
             ]
           }
         ]
@@ -7558,7 +7558,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://standards.digital.health.nz/fhir/StructureDefinition/plan-instructions"
+              "http://hl7.org.nz/fhir/StructureDefinition/cca-plan-instructions"
             ]
           }
         ]
@@ -7573,7 +7573,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://standards.digital.health.nz/fhir/StructureDefinition/disclaimer"
+              "http://hl7.org.nz/fhir/StructureDefinition/cca-disclaimer"
             ]
           }
         ]
@@ -7614,7 +7614,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://standards.digital.health.nz/fhir/StructureDefinition/regimen-under-review"
+              "http://hl7.org.nz/fhir/StructureDefinition/cca-regimen-under-review"
             ]
           }
         ]
@@ -7718,7 +7718,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://standards.digital.health.nz/fhir/StructureDefinition/plan-instructions"
+              "http://hl7.org.nz/fhir/StructureDefinition/cca-plan-instructions"
             ]
           }
         ]
@@ -7835,7 +7835,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://standards.digital.health.nz/fhir/StructureDefinition/plan-instructions"
+              "http://hl7.org.nz/fhir/StructureDefinition/cca-plan-instructions"
             ]
           }
         ]
@@ -7850,7 +7850,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://standards.digital.health.nz/fhir/StructureDefinition/timing-of-days"
+              "http://hl7.org.nz/fhir/StructureDefinition/cca-timing-of-days"
             ]
           }
         ]

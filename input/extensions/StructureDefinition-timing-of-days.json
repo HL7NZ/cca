@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "timing-of-days",
-  "url": "http://standards.digital.health.nz/fhir/StructureDefinition/timing-of-days",
+  "url": "http://hl7.org.nz/fhir/StructureDefinition/cca-timing-of-days",
   "version": "0.1.0",
   "name": "TimingOfDays",
   "status": "active",
@@ -646,7 +646,7 @@
             ]
           }
         ],
-        "fixedUri": "http://standards.digital.health.nz/fhir/StructureDefinition/timing-of-days",
+        "fixedUri": "http://hl7.org.nz/fhir/StructureDefinition/cca-timing-of-days",
         "isModifier": false,
         "isSummary": false,
         "mapping": [
@@ -905,7 +905,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://standards.digital.health.nz/fhir/StructureDefinition/timing-of-days"
+        "fixedUri": "http://hl7.org.nz/fhir/StructureDefinition/cca-timing-of-days"
       },
       {
         "id": "Extension.value[x]",
