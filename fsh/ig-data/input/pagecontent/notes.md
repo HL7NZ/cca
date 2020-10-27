@@ -21,3 +21,7 @@ The status of the overall plan is exposed in the PlanDefinition.status element, 
 The PlanDefinition.useContext element is used for 2 main items.
 
 The cancers for which the regimen is intended to treat. There can be up to 3 of these, representing the cancer type, sub-type and sub-sub-type. The 'code' value for these is 'focus' - indicating that these are the focus of the regimen.
+
+### Infusion rate
+
+For an infusable medication, the datatype used to indicate the infusion rate (Part of the [dosage](/StructureDefinition-CcaActivityDefinition-definitions.html#ActivityDefinition.dosage)) is a [Range](http://hl7.org/fhir/datatypes.html#Range). The range has 2 values - low and high. The high value will always be present and represents the 'usual' rate of administration. If the low value is present, then that represents the minimum period over which the infusion should be made.
