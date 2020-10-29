@@ -2,15 +2,15 @@
   "resourceType": "ValueSet",
   "status": "active",
   "name": "TreatmentIntent",
-  "id": "treatment-intent",
+  "id": "cca-treatment-intent",
   "title": "Treatment intent",
   "description": "The intent of the regimen - what is its purpose",
   "version": "0.1.0",
-  "url": "http://standards.digital.health.nz/fhir/ValueSet/treatment-intent",
+  "url": "https://standards.digital.health.nz/fhir/ValueSet/cca-treatment-intent",
   "compose": {
     "include": [
       {
-        "system": "http://standards.digital.health.nz/ns/treatment-intent"
+        "system": "https://standards.digital.health.nz/ns/treatment-intent"
       }
     ]
   }

@@ -1,5 +1,5 @@
 Extension: ReplacedBy
-Id: replaced-by
+Id: cca-replaced-by
 Title: "Replaced by"
 Description: "When a Plan has been deprecated (superceeded or discontinued), refers to the one that replaces it, if any"
 

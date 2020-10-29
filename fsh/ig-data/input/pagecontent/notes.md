@@ -1,5 +1,6 @@
 
 
+
 ### Plan status
 
 The status of the overall plan is exposed in the PlanDefinition.status element, supported by an extension. The statuses that are used are:

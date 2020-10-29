@@ -2,11 +2,11 @@
   "resourceType": "ValueSet",
   "status": "active",
   "name": "SupportFactor",
-  "id": "support-factor",
+  "id": "cca-support-factor",
   "title": "Support Factors",
   "description": "The set of possible support factors (not their values)",
   "version": "0.1.0",
-  "url": "http://standards.digital.health.nz/fhir/ValueSet/support-factor",
+  "url": "https://standards.digital.health.nz/fhir/ValueSet/cca-support-factor",
   "jurisdiction": [
     {
       "coding": [

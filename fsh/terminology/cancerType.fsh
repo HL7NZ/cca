@@ -1,11 +1,11 @@
 Alias: $SNOMED = http://snomed.info/sct
 
 ValueSet: CancerType
-Id: cancer-type
+Id: cca-cancer-type
 Title: "Cancer type"
 Description: "The type of Cancer"
 
-* ^url = "http://standards.digital.health.nz/fhir/ValueSet/cancer-type"
+* ^url = "https://standards.digital.health.nz/fhir/ValueSet/cca-cancer-type"
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 
 * include codes from system $SNOMED where concept is-a #77465005 "Transplantation"

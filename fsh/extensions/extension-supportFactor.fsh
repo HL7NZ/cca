@@ -1,7 +1,7 @@
 //Ideally, there would be a separate ValueSet for the options of each support factor type. But that's a bit tricky...
 
 Extension: SupportFactor
-Id: support-factor
+Id: cca-support-factor
 Description: "Support factors needed during treatment"
 
 * ^url = "http://hl7.org.nz/fhir/StructureDefinition/cca-support-factor"
@@ -26,13 +26,13 @@ Description: "Support factors needed during treatment"
 
 * extension[factor] ^definition = "The support factor to consider."
 * extension[factor].value[x] only CodeableConcept
-* extension[factor].valueCodeableConcept from http://standards.digital.health.nz/fhir/ValueSet/support-factor
+* extension[factor].valueCodeableConcept from https://standards.digital.health.nz/fhir/ValueSet/cca-support-factor
 
 //to come... * extension[factor].valueCodeableConcept from http://hl7.org/fhir/ValueSet/iso3166-1-2 (preferred)
 
 * extension[value] ^definition = "The value of this support factor"
 * extension[value].value[x] only CodeableConcept 
-* extension[factor].valueCodeableConcept from http://standards.digital.health.nz/fhir/ValueSet/support-factor-value
+* extension[factor].valueCodeableConcept from https://standards.digital.health.nz/fhir/ValueSet/cca-support-factor-value
 
 
 

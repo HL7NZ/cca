@@ -2,11 +2,11 @@
   "resourceType": "ValueSet",
   "status": "active",
   "name": "LocationMedicationCollection",
-  "id": "location-medication-collection",
+  "id": "cca-location-medication-collection",
   "title": "Medication collection location",
   "description": "The physical location where the medication can be collected on prior to administration - eg a pharmacy",
   "version": "0.1.0",
-  "url": "http://standards.digital.health.nz/fhir/ValueSet/location-medication-collection",
+  "url": "https://standards.digital.health.nz/fhir/ValueSet/cca-location-medication-collection",
   "jurisdiction": [
     {
       "coding": [

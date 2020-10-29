@@ -90,7 +90,7 @@
   "_status": {
     "extension": [
       {
-        "url": "http://hl7.org.nz/fhir/StructureDefinition/cca-regimen-under-review",
+        "url": "http://hl7.org.nz/fhir/StructureDefinition/cca-additional-plan-status",
         "valueCode": "review"
       }
     ]

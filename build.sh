@@ -4,4 +4,4 @@
 
 # in which case, you add a parameter -publish {url] which is the URL where the IG will be published
 # https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/Local.20use.20vs.2E.20final.20publication
-JAVA -jar input-cache/publisher.jar -ig .  -tx n/a
+JAVA -jar input-cache/publisher.jar -ig . # -tx n/a

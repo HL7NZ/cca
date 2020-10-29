@@ -1,5 +1,5 @@
 Extension: PlanInstructions
-Id: plan-instructions
+Id: cca-plan-instructions
 Title: "Instructions for use"
 Description: "Specific instructions for use of the regimen overall, or for the individual cycles"
 

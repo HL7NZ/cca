@@ -1,12 +1,12 @@
 {
   "resourceType": "ValueSet",
   "status": "active",
-  "name": "LocationAdministration",
-  "id": "location-administration",
-  "title": "Administration location",
-  "description": "The physical location where the administration occurred - eg at home or in a clinic",
+  "name": "RegimenType",
+  "id": "cca-regimen-type",
+  "title": "Regimen type",
+  "description": "The type of regimen - eg FOLFOX",
   "version": "0.1.0",
-  "url": "http://standards.digital.health.nz/fhir/ValueSet/location-administration-code",
+  "url": "https://standards.digital.health.nz/fhir/ValueSet/cca-regimen-type",
   "jurisdiction": [
     {
       "coding": [
@@ -23,8 +23,8 @@
         "system": "http://snomed.info/sct",
         "concept": [
           {
-            "code": "264362003",
-            "display": "Home"
+            "code": "dummy",
+            "display": "FOLFOX"
           }
         ]
       }

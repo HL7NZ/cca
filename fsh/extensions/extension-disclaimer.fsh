@@ -1,5 +1,5 @@
 Extension: Disclaimer
-Id: disclaimer
+Id: cca-disclaimer
 Description: "A disclaimer for use of this Plan"
 
 * ^url = "http://hl7.org.nz/fhir/StructureDefinition/cca-disclaimer"

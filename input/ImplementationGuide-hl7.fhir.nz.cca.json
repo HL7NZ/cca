@@ -44,55 +44,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/disclaimer"
-        },
-        "name": "Disclaimer",
-        "description": "A disclaimer for use of this Plan",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/location-administration"
-        },
-        "name": "LocationAdministration",
-        "description": "The physical Location where the medication administration occurs (eg home or clinic)",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/location-medication-collection"
-        },
-        "name": "LocationMedicationCollection",
-        "description": "The physical Location where the medication can be collection prior to collection",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/off-label"
-        },
-        "name": "Off label",
-        "description": "Indicates that the medication is being used for a purpose for which it has not been specifically approved",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/plan-instructions"
-        },
-        "name": "Instructions for use",
-        "description": "Specific instructions for use of the regimen overall, or for the individual cycles",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/regimen-type"
-        },
-        "name": "Regimen type",
-        "description": "The overall type of the regimen - eg FOLFOX",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/regimen-under-review"
+          "reference": "StructureDefinition/cca-additional-plan-status"
         },
         "name": "Regimen under review",
         "description": "Indicates that a regimen is published and available to be used, but there is still a review being performed, so could change. \nIn most situations the value of the status element will be 'active'",
@@ -100,7 +52,55 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/replaced-by"
+          "reference": "StructureDefinition/cca-disclaimer"
+        },
+        "name": "Disclaimer",
+        "description": "A disclaimer for use of this Plan",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cca-location-administration"
+        },
+        "name": "LocationAdministration",
+        "description": "The physical Location where the medication administration occurs (eg home or clinic)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cca-location-medication-collection"
+        },
+        "name": "LocationMedicationCollection",
+        "description": "The physical Location where the medication can be collection prior to collection",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cca-off-label"
+        },
+        "name": "Off label",
+        "description": "Indicates that the medication is being used for a purpose for which it has not been specifically approved",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cca-plan-instructions"
+        },
+        "name": "Instructions for use",
+        "description": "Specific instructions for use of the regimen overall, or for the individual cycles",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cca-regimen-type"
+        },
+        "name": "Regimen type",
+        "description": "The overall type of the regimen - eg FOLFOX",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cca-replaced-by"
         },
         "name": "Replaced by",
         "description": "When a Plan has been deprecated (superceeded or discontinued), refers to the one that replaces it, if any",
@@ -108,7 +108,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/support-factor"
+          "reference": "StructureDefinition/cca-support-factor"
         },
         "name": "SupportFactor",
         "description": "Support factors needed during treatment",
@@ -116,7 +116,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/timing-of-days"
+          "reference": "StructureDefinition/cca-timing-of-days"
         },
         "name": "TimingOfDays",
         "description": "Allows specific days to be indicated in a component of a regimen cycle. extends the idea of  UV extension: http://hl7.org/fhir/extension-timing-daysofcycle.html by adding instructions",
@@ -124,7 +124,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/treatment-intent"
+          "reference": "StructureDefinition/cca-treatment-intent"
         },
         "name": "TreatmentIntent",
         "description": "The intent of the regimen - what is its purpose",
@@ -132,7 +132,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/cancer-type"
+          "reference": "ValueSet/cca-cancer-type"
         },
         "name": "Cancer type",
         "description": "The type of Cancer",
@@ -140,7 +140,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/location-administration"
+          "reference": "ValueSet/cca-location-administration"
         },
         "name": "Administration location",
         "description": "The physical location where the administration occurred - eg at home or in a clinic",
@@ -148,7 +148,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/location-medication-collection"
+          "reference": "ValueSet/cca-location-medication-collection"
         },
         "name": "Medication collection location",
         "description": "The physical location where the medication can be collected on prior to administration - eg a pharmacy",
@@ -164,7 +164,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/regimen-type"
+          "reference": "ValueSet/cca-regimen-type"
         },
         "name": "Regimen type",
         "description": "The type of regimen - eg FOLFOX",
@@ -172,7 +172,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/support-factor"
+          "reference": "ValueSet/cca-support-factor"
         },
         "name": "Support Factors",
         "description": "The set of possible support factors (not their values)",
@@ -188,7 +188,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/treatment-intent"
+          "reference": "ValueSet/cca-treatment-intent"
         },
         "name": "Treatment intent",
         "description": "The intent of the regimen - what is its purpose",
@@ -204,7 +204,7 @@
       },
       {
         "reference": {
-          "reference": "CodeSystem/treatment-intent"
+          "reference": "CodeSystem/cca-treatment-intent"
         },
         "name": "Treatment intent",
         "description": "The intent of the regimen - what is its purpose",

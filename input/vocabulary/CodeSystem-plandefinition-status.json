@@ -7,7 +7,7 @@
   "title": "PlanDefinition additional status",
   "description": "Other codes used for the PlanDefinition status",
   "version": "0.1.0",
-  "url": "http://standards.digital.health.nz/ns/plandefinition-status",
+  "url": "https://standards.digital.health.nz/ns/plandefinition-status",
   "concept": [
     {
       "code": "review",

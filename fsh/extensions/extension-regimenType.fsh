@@ -1,5 +1,5 @@
 Extension: RegimenType
-Id: regimen-type
+Id: cca-regimen-type
 Title: "Regimen type"
 Description: "The overall type of the regimen - eg FOLFOX"
 
@@ -12,4 +12,4 @@ Description: "The overall type of the regimen - eg FOLFOX"
 
 
 * value[x] only CodeableConcept 
-
+* valueCodeableConcept from https://standards.digital.health.nz/fhir/ValueSet/cca-regimen-type

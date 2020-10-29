@@ -1,5 +1,5 @@
 Extension: OffLabel
-Id: off-label
+Id: cca-off-label
 Title: "Off label"
 Description: "Indicates that the medication is being used for a purpose for which it has not been specifically approved"
 

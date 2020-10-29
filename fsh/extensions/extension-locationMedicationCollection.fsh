@@ -1,5 +1,5 @@
 Extension: LocationMedicationCollection
-Id: location-medication-collection
+Id: cca-location-medication-collection
 Description: "The physical Location where the medication can be collection prior to collection"
 
 * ^url = "http://hl7.org.nz/fhir/StructureDefinition/cca-location-medication-collection"
@@ -10,7 +10,7 @@ Description: "The physical Location where the medication can be collection prior
 * ^context.expression = "ActivityDefinition"
 
 * value[x] only CodeableConcept or Reference(Location)
-* valueCodeableConcept from http://standards.digital.health.nz/fhir/ValueSet/location-medication-collection
+* valueCodeableConcept from https://standards.digital.health.nz/fhir/ValueSet/cca-location-medication-collection
 
 
 

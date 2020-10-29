@@ -2,11 +2,11 @@
 
 
 ValueSet: SupportFactor
-Id: support-factor
+Id: cca-support-factor
 Title: "Support Factors"
 Description: "The set of possible support factors (not their values)"
 
-* ^url = "http://standards.digital.health.nz/fhir/ValueSet/support-factor"
+* ^url = "https://standards.digital.health.nz/fhir/ValueSet/cca-support-factor"
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 
 * include codes from system $SNOMED
@@ -19,7 +19,7 @@ Id: support-factor-value
 Title: "Possible values for Support Factors"
 Description: "The set of all possible support factors values (not specific to any one factor)"
 
-* ^url = "http://standards.digital.health.nz/fhir/ValueSet/support-factor-value"
+* ^url = "https://standards.digital.health.nz/fhir/ValueSet/cca-support-factor-value"
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 
 * include codes from system $SNOMED

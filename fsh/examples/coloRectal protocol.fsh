@@ -15,7 +15,7 @@ Usage: #example
 * text.status = #additional
 
 * status = #active
-* status.extension[regimen-under-review].valueCode = #review
+* status.extension[additional-status].valueCode = #review
 
 
 * version = "3.0.3"

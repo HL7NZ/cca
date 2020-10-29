@@ -1,21 +1,21 @@
 
 CodeSystem:  TreatmentIntent
-Id: treatment-intent
+Id: cca-treatment-intent
 Title: "Treatment intent"
 Description:  "The intent of the regimen - what is its purpose"
 
-* ^url = "http://standards.digital.health.nz/ns/treatment-intent"
+* ^url = "http:s//standards.digital.health.nz/ns/cca-treatment-intent"
 
 * #st "Something"
 
 
 ValueSet : TreatmentIntent
-Id: treatment-intent
+Id: cca-treatment-intent
 Title: "Treatment intent"
 Description:  "The intent of the regimen - what is its purpose"
 
-* ^url = "http://standards.digital.health.nz/fhir/ValueSet/treatment-intent"
+* ^url = "https://standards.digital.health.nz/fhir/ValueSet/cca-treatment-intent"
 
-* codes from system http://standards.digital.health.nz/ns/treatment-intent
+* codes from system https://standards.digital.health.nz/ns/treatment-intent
 
 

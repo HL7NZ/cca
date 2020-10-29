@@ -1,5 +1,5 @@
 Extension: LocationAdministration
-Id: location-administration
+Id: cca-location-administration
 Description: "The physical Location where the medication administration occurs (eg home or clinic)"
 
 * ^url = "http://hl7.org.nz/fhir/StructureDefinition/cca-location-administration"
@@ -9,7 +9,7 @@ Description: "The physical Location where the medication administration occurs (
 * ^context.expression = "ActivityDefinition"
 
 * value[x] only CodeableConcept or Reference(Location)
-* valueCodeableConcept from http://standards.digital.health.nz/fhir/ValueSet/location-administration-code
+* valueCodeableConcept from https://standards.digital.health.nz/fhir/ValueSet/cca-location-administration-code
 
 
 

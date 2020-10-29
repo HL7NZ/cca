@@ -1,7 +1,7 @@
 //todo - This shoud really be a modifierExtension, but there's an issue with the IG publisher ATM.
 
 Extension: TimingOfDays
-Id: timing-of-days
+Id: cca-timing-of-days
 Description: "Allows specific days to be indicated in a component of a regimen cycle. extends the idea of  UV extension: http://hl7.org/fhir/extension-timing-daysofcycle.html by adding instructions"
 
 * ^url = "http://hl7.org.nz/fhir/StructureDefinition/cca-timing-of-days"

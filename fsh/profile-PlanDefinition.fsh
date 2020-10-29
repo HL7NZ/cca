@@ -7,7 +7,10 @@ Alias: $treatmentIntent = http://hl7.org.nz/fhir/StructureDefinition/cca-treatme
 Alias: $offLabel = http://hl7.org.nz/fhir/StructureDefinition/cca-off-label
 Alias: $instructions = http://hl7.org.nz/fhir/StructureDefinition/cca-plan-instructions
 
-Alias: $regimenUnderReview = http://hl7.org.nz/fhir/StructureDefinition/cca-regimen-under-review
+//Alias: $regimenUnderReview = http://hl7.org.nz/fhir/StructureDefinition/cca-regimen-under-review
+
+Alias: $additionalStatus = http://hl7.org.nz/fhir/StructureDefinition/cca-additional-plan-status
+
 Alias: $disclaimer = http://hl7.org.nz/fhir/StructureDefinition/cca-disclaimer
 
 
@@ -37,7 +40,7 @@ Description:    "CCA Regimen Plan Definition."
    
 
 * status.extension contains
-    $regimenUnderReview named regimen-under-review 0..1
+    $additionalStatus named additional-status 0..1
 
 
 //fix the type to clincial-protocol
