@@ -3,49 +3,49 @@
 <table width='100%' border='1' cellspacing='0' cellpadding='5px'>
 <tr><th>Id</th><th>Url</th><th>Context of Use</th><th>Description</th></tr>
 <tr>
-<td><a href='http://build.fhir.org/ig/HL7NZ/cca/branches/master/StructureDefinition-cca-additional-plan-status.html'>cca-additional-plan-status</a></td>
-<td>http://hl7.org.nz/fhir/StructureDefinition/cca-additional-plan-status</td>
+<td><a href='http://build.fhir.org/ig/HL7NZ/cca/branches/master/StructureDefinition-sact-additional-plan-status.html'>sact-additional-plan-status</a></td>
+<td>http://hl7.org.nz/fhir/StructureDefinition/sact-additional-plan-status</td>
 <td>
 <div>PlanDefinition.status</div>
 </td>
-<td>Indicates that a regimen is published and available to be used, but there is still a review being performed, so could change. 
-In most situations the value of the status element will be 'active'</td>
+<td>Additional status values for PlanDefinition. Currently only a single value - review - indicating that a regimen is published and available to be used, but there is still a review being performed, so could change. 
+In most situations the value of the status element itself will be 'active'</td>
 </tr>
 <tr>
-<td><a href='http://build.fhir.org/ig/HL7NZ/cca/branches/master/StructureDefinition-cca-disclaimer.html'>cca-disclaimer</a></td>
-<td>http://hl7.org.nz/fhir/StructureDefinition/cca-disclaimer</td>
-<td>
-<div>PlanDefinition</div>
-</td>
-<td>A disclaimer for use of this Plan</td>
-</tr>
-<tr>
-<td><a href='http://build.fhir.org/ig/HL7NZ/cca/branches/master/StructureDefinition-cca-location-administration.html'>cca-location-administration</a></td>
-<td>http://hl7.org.nz/fhir/StructureDefinition/cca-location-administration</td>
+<td><a href='http://build.fhir.org/ig/HL7NZ/cca/branches/master/StructureDefinition-sact-administration-site.html'>sact-administration-site</a></td>
+<td>http://hl7.org.nz/fhir/StructureDefinition/sact-administration-site</td>
 <td>
 <div>ActivityDefinition</div>
 </td>
 <td>The physical Location where the medication administration occurs (eg home or clinic)</td>
 </tr>
 <tr>
-<td><a href='http://build.fhir.org/ig/HL7NZ/cca/branches/master/StructureDefinition-cca-location-medication-collection.html'>cca-location-medication-collection</a></td>
-<td>http://hl7.org.nz/fhir/StructureDefinition/cca-location-medication-collection</td>
+<td><a href='http://build.fhir.org/ig/HL7NZ/cca/branches/master/StructureDefinition-sact-disclaimer.html'>sact-disclaimer</a></td>
+<td>http://hl7.org.nz/fhir/StructureDefinition/sact-disclaimer</td>
+<td>
+<div>PlanDefinition</div>
+</td>
+<td>A disclaimer for use of this Plan</td>
+</tr>
+<tr>
+<td><a href='http://build.fhir.org/ig/HL7NZ/cca/branches/master/StructureDefinition-sact-location-medication-collection.html'>sact-location-medication-collection</a></td>
+<td>http://hl7.org.nz/fhir/StructureDefinition/sact-location-medication-collection</td>
 <td>
 <div>ActivityDefinition</div>
 </td>
 <td>The physical Location where the medication can be collection prior to collection</td>
 </tr>
 <tr>
-<td><a href='http://build.fhir.org/ig/HL7NZ/cca/branches/master/StructureDefinition-cca-off-label.html'>cca-off-label</a></td>
-<td>http://hl7.org.nz/fhir/StructureDefinition/cca-off-label</td>
+<td><a href='http://build.fhir.org/ig/HL7NZ/cca/branches/master/StructureDefinition-sact-off-label.html'>sact-off-label</a></td>
+<td>http://hl7.org.nz/fhir/StructureDefinition/sact-off-label</td>
 <td>
 <div>ActivityDefinition</div>
 </td>
 <td>Indicates that the medication is being used for a purpose for which it has not been specifically approved</td>
 </tr>
 <tr>
-<td><a href='http://build.fhir.org/ig/HL7NZ/cca/branches/master/StructureDefinition-cca-plan-instructions.html'>cca-plan-instructions</a></td>
-<td>http://hl7.org.nz/fhir/StructureDefinition/cca-plan-instructions</td>
+<td><a href='http://build.fhir.org/ig/HL7NZ/cca/branches/master/StructureDefinition-sact-plan-instructions.html'>sact-plan-instructions</a></td>
+<td>http://hl7.org.nz/fhir/StructureDefinition/sact-plan-instructions</td>
 <td>
 <div>PlanDefinition</div>
 <div>PlanDefinition.action</div>
@@ -54,40 +54,40 @@ In most situations the value of the status element will be 'active'</td>
 <td>Specific instructions for use of the regimen overall, or for the individual cycles</td>
 </tr>
 <tr>
-<td><a href='http://build.fhir.org/ig/HL7NZ/cca/branches/master/StructureDefinition-cca-regimen-type.html'>cca-regimen-type</a></td>
-<td>http://hl7.org.nz/fhir/StructureDefinition/cca-regimen-type</td>
+<td><a href='http://build.fhir.org/ig/HL7NZ/cca/branches/master/StructureDefinition-sact-regimen-type.html'>sact-regimen-type</a></td>
+<td>http://hl7.org.nz/fhir/StructureDefinition/sact-regimen-type</td>
 <td>
 <div>PlanDefinition</div>
 </td>
 <td>The overall type of the regimen - eg FOLFOX</td>
 </tr>
 <tr>
-<td><a href='http://build.fhir.org/ig/HL7NZ/cca/branches/master/StructureDefinition-cca-replaced-by.html'>cca-replaced-by</a></td>
-<td>http://hl7.org.nz/fhir/StructureDefinition/cca-replaced-by</td>
+<td><a href='http://build.fhir.org/ig/HL7NZ/cca/branches/master/StructureDefinition-sact-replaced-by.html'>sact-replaced-by</a></td>
+<td>http://hl7.org.nz/fhir/StructureDefinition/sact-replaced-by</td>
 <td>
 <div>PlanDefinition</div>
 </td>
 <td>When a Plan has been deprecated (superceeded or discontinued), refers to the one that replaces it, if any</td>
 </tr>
 <tr>
-<td><a href='http://build.fhir.org/ig/HL7NZ/cca/branches/master/StructureDefinition-cca-support-factor.html'>cca-support-factor</a></td>
-<td>http://hl7.org.nz/fhir/StructureDefinition/cca-support-factor</td>
+<td><a href='http://build.fhir.org/ig/HL7NZ/cca/branches/master/StructureDefinition-sact-support-factor.html'>sact-support-factor</a></td>
+<td>http://hl7.org.nz/fhir/StructureDefinition/sact-support-factor</td>
 <td>
 <div>PlanDefinition</div>
 </td>
 <td>Support factors needed during treatment</td>
 </tr>
 <tr>
-<td><a href='http://build.fhir.org/ig/HL7NZ/cca/branches/master/StructureDefinition-cca-timing-of-days.html'>cca-timing-of-days</a></td>
-<td>http://hl7.org.nz/fhir/StructureDefinition/cca-timing-of-days</td>
+<td><a href='http://build.fhir.org/ig/HL7NZ/cca/branches/master/StructureDefinition-sact-timing-of-days.html'>sact-timing-of-days</a></td>
+<td>http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days</td>
 <td>
 <div>Element</div>
 </td>
 <td>Allows specific days to be indicated in a component of a regimen cycle. extends the idea of  UV extension: http://hl7.org/fhir/extension-timing-daysofcycle.html by adding instructions</td>
 </tr>
 <tr>
-<td><a href='http://build.fhir.org/ig/HL7NZ/cca/branches/master/StructureDefinition-cca-treatment-intent.html'>cca-treatment-intent</a></td>
-<td>http://hl7.org.nz/fhir/StructureDefinition/cca-treatment-intent</td>
+<td><a href='http://build.fhir.org/ig/HL7NZ/cca/branches/master/StructureDefinition-sact-treatment-intent.html'>sact-treatment-intent</a></td>
+<td>http://hl7.org.nz/fhir/StructureDefinition/sact-treatment-intent</td>
 <td>
 <div>PlanDefinition</div>
 </td>

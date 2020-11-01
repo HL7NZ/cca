@@ -1,20 +1,20 @@
-Alias: $supportFactor = http://hl7.org.nz/fhir/StructureDefinition/cca-support-factor
-Alias: $replacedBy = http://hl7.org.nz/fhir/StructureDefinition/cca-replaced-by
-Alias: $regimenType = http://hl7.org.nz/fhir/StructureDefinition/cca-regimen-type
+Alias: $supportFactor = http://hl7.org.nz/fhir/StructureDefinition/sact-support-factor
+Alias: $replacedBy = http://hl7.org.nz/fhir/StructureDefinition/sact-replaced-by
+Alias: $regimenType = http://hl7.org.nz/fhir/StructureDefinition/sact-regimen-type
 
 
-Alias: $treatmentIntent = http://hl7.org.nz/fhir/StructureDefinition/cca-treatment-intent
-Alias: $offLabel = http://hl7.org.nz/fhir/StructureDefinition/cca-off-label
-Alias: $instructions = http://hl7.org.nz/fhir/StructureDefinition/cca-plan-instructions
+Alias: $treatmentIntent = http://hl7.org.nz/fhir/StructureDefinition/sact-treatment-intent
+Alias: $offLabel = http://hl7.org.nz/fhir/StructureDefinition/sact-off-label
+Alias: $instructions = http://hl7.org.nz/fhir/StructureDefinition/sact-plan-instructions
 
-//Alias: $regimenUnderReview = http://hl7.org.nz/fhir/StructureDefinition/cca-regimen-under-review
+//Alias: $regimenUnderReview = http://hl7.org.nz/fhir/StructureDefinition/sact-regimen-under-review
 
-Alias: $additionalStatus = http://hl7.org.nz/fhir/StructureDefinition/cca-additional-plan-status
+Alias: $additionalStatus = http://hl7.org.nz/fhir/StructureDefinition/sact-additional-plan-status
 
-Alias: $disclaimer = http://hl7.org.nz/fhir/StructureDefinition/cca-disclaimer
+Alias: $disclaimer = http://hl7.org.nz/fhir/StructureDefinition/sact-disclaimer
 
 
-Alias: $TOD = http://hl7.org.nz/fhir/StructureDefinition/cca-timing-of-days
+Alias: $TOD = http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days
 Alias: $type = http://terminology.hl7.org/CodeSystem/plan-definition-type
 
 Profile:        CcaPlanDefinition
@@ -79,14 +79,14 @@ Description:    "CCA Regimen Plan Definition."
 * useContext ^slicing.discriminator.path = "code"
 * useContext ^slicing.rules = #openAtEnd
 * useContext contains 
-    cancertype 0..* MS
+    cancer-type 0..* MS
 
 //set the code and binding for cancer typ
-* useContext[cancertype].code = #focus (exactly)
+* useContext[cancer-type].code = #focus (exactly)
 
-* useContext[cancertype].valueCodeableConcept from http://standards.digital.health.nz/fhir/ValueSet/cancer-type
-* useContext[cancertype] ^short = "The type of cancer"
-* useContext[cancertype] ^definition = "The type of cancer"
+* useContext[cancer-type].valueCodeableConcept from http://standards.digital.health.nz/fhir/ValueSet/cancer-type-code
+* useContext[cancer-type] ^short = "The type of cancer"
+* useContext[cancer-type] ^definition = "The type of cancer"
 
 
 

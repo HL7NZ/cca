@@ -44,15 +44,15 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/cca-additional-plan-status"
+          "reference": "StructureDefinition/sact-additional-plan-status"
         },
         "name": "Regimen under review",
-        "description": "Indicates that a regimen is published and available to be used, but there is still a review being performed, so could change. \nIn most situations the value of the status element will be 'active'",
+        "description": "Additional status values for PlanDefinition. Currently only a single value - review - indicating that a regimen is published and available to be used, but there is still a review being performed, so could change. \nIn most situations the value of the status element itself will be 'active'",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/cca-disclaimer"
+          "reference": "StructureDefinition/sact-disclaimer"
         },
         "name": "Disclaimer",
         "description": "A disclaimer for use of this Plan",
@@ -60,7 +60,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/cca-location-administration"
+          "reference": "StructureDefinition/sact-administration-site"
         },
         "name": "LocationAdministration",
         "description": "The physical Location where the medication administration occurs (eg home or clinic)",
@@ -68,7 +68,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/cca-location-medication-collection"
+          "reference": "StructureDefinition/sact-location-medication-collection"
         },
         "name": "LocationMedicationCollection",
         "description": "The physical Location where the medication can be collection prior to collection",
@@ -76,7 +76,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/cca-off-label"
+          "reference": "StructureDefinition/sact-off-label"
         },
         "name": "Off label",
         "description": "Indicates that the medication is being used for a purpose for which it has not been specifically approved",
@@ -84,7 +84,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/cca-plan-instructions"
+          "reference": "StructureDefinition/sact-plan-instructions"
         },
         "name": "Instructions for use",
         "description": "Specific instructions for use of the regimen overall, or for the individual cycles",
@@ -92,7 +92,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/cca-regimen-type"
+          "reference": "StructureDefinition/sact-regimen-type"
         },
         "name": "Regimen type",
         "description": "The overall type of the regimen - eg FOLFOX",
@@ -100,7 +100,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/cca-replaced-by"
+          "reference": "StructureDefinition/sact-replaced-by"
         },
         "name": "Replaced by",
         "description": "When a Plan has been deprecated (superceeded or discontinued), refers to the one that replaces it, if any",
@@ -108,7 +108,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/cca-support-factor"
+          "reference": "StructureDefinition/sact-support-factor"
         },
         "name": "SupportFactor",
         "description": "Support factors needed during treatment",
@@ -116,7 +116,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/cca-timing-of-days"
+          "reference": "StructureDefinition/sact-timing-of-days"
         },
         "name": "TimingOfDays",
         "description": "Allows specific days to be indicated in a component of a regimen cycle. extends the idea of  UV extension: http://hl7.org/fhir/extension-timing-daysofcycle.html by adding instructions",
@@ -124,7 +124,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/cca-treatment-intent"
+          "reference": "StructureDefinition/sact-treatment-intent"
         },
         "name": "TreatmentIntent",
         "description": "The intent of the regimen - what is its purpose",
@@ -132,7 +132,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/cca-cancer-type"
+          "reference": "ValueSet/cancer-type-code"
         },
         "name": "Cancer type",
         "description": "The type of Cancer",
@@ -140,7 +140,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/cca-location-administration"
+          "reference": "ValueSet/sact-administration-site-code"
         },
         "name": "Administration location",
         "description": "The physical location where the administration occurred - eg at home or in a clinic",
@@ -148,7 +148,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/cca-location-medication-collection"
+          "reference": "ValueSet/sact-location-medication-collection"
         },
         "name": "Medication collection location",
         "description": "The physical location where the medication can be collected on prior to administration - eg a pharmacy",
@@ -156,7 +156,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/plandefinition-status"
+          "reference": "ValueSet/sact-plan-definition-status-code"
         },
         "name": "PlanDefinition additional status",
         "description": "Other codes used for the PlanDefinition status",
@@ -164,7 +164,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/cca-regimen-type"
+          "reference": "ValueSet/sact-regimen-code"
         },
         "name": "Regimen type",
         "description": "The type of regimen - eg FOLFOX",
@@ -172,7 +172,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/cca-support-factor"
+          "reference": "ValueSet/sact-support-factor-code"
         },
         "name": "Support Factors",
         "description": "The set of possible support factors (not their values)",
@@ -188,7 +188,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/cca-treatment-intent"
+          "reference": "ValueSet/sact-treatment-intent-code"
         },
         "name": "Treatment intent",
         "description": "The intent of the regimen - what is its purpose",
@@ -196,7 +196,7 @@
       },
       {
         "reference": {
-          "reference": "CodeSystem/plandefinition-status"
+          "reference": "CodeSystem/sact-plan-definition-status-code"
         },
         "name": "PlanDefinition additional status",
         "description": "Other codes used for the PlanDefinition status",
@@ -204,7 +204,7 @@
       },
       {
         "reference": {
-          "reference": "CodeSystem/cca-treatment-intent"
+          "reference": "CodeSystem/sact-treatment-intent-code"
         },
         "name": "Treatment intent",
         "description": "The intent of the regimen - what is its purpose",

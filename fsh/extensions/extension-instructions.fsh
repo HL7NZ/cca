@@ -1,9 +1,9 @@
 Extension: PlanInstructions
-Id: cca-plan-instructions
+Id: sact-plan-instructions
 Title: "Instructions for use"
 Description: "Specific instructions for use of the regimen overall, or for the individual cycles"
 
-* ^url = "http://hl7.org.nz/fhir/StructureDefinition/cca-plan-instructions"
+* ^url = "http://hl7.org.nz/fhir/StructureDefinition/sact-plan-instructions"
 
 
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ

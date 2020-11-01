@@ -8,11 +8,11 @@
   },
   "extension": [
     {
-      "url": "http://hl7.org.nz/fhir/StructureDefinition/cca-off-label",
-      "valueBoolean": false
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-off-label",
+      "valueBoolean": true
     },
     {
-      "url": "http://hl7.org.nz/fhir/StructureDefinition/cca-location-medication-collection",
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-location-medication-collection",
       "valueCodeableConcept": {
         "coding": [
           {
@@ -25,7 +25,7 @@
       }
     },
     {
-      "url": "http://hl7.org.nz/fhir/StructureDefinition/cca-location-administration",
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-administration-site",
       "valueCodeableConcept": {
         "coding": [
           {

@@ -94,7 +94,7 @@ function makePlanDefinition(pd) {
 
 
     //regimen type
-    let arRT = getExtensions(pd,"http://hl7.org.nz/fhir/StructureDefinition/cca-regimen-type")
+    let arRT = getExtensions(pd,"http://hl7.org.nz/fhir/StructureDefinition/sact-regimen-type")
     if (arRT.length > 0) {      //should only be one...
 
         console.log(arRT)
@@ -120,7 +120,7 @@ function makePlanDefinition(pd) {
 
     //support factors
 
-    let arSF = getExtensions(pd,"http://hl7.org.nz/fhir/StructureDefinition/cca-support-factor")
+    let arSF = getExtensions(pd,"http://hl7.org.nz/fhir/StructureDefinition/sact-support-factor")
     if (arSF) {
         xml += "<a name='sf'> </a>"
         xml += "<h4>Support factors</h4>"
@@ -174,14 +174,9 @@ function makePlanDefinition(pd) {
     xml += "<a name='regimen'> </a>"
     xml += "<h4>Regimen details</h4>"
     try {
-        let arRegimenOptions = pd.action;     //Optional regimens
-        arRegimenOptions.forEach(function(regimen){
-            //this is a single regimen in this spec
-            let arParts = regimen.action;       //the parts of this regimen
-            arParts.forEach(function(part){
-                // a single part only
-                let arCycles = part.action;     //the cycles in this part
-                arCycles.forEach(function(cycle,inxCycle){
+        let arCycles = pd.action;     //Optional regimens
+
+            arCycles.forEach(function(cycle,inxCycle){
                     //this is a single cycle
                     xml += "<div class='alert alert-dark'>"
                     xml += "Cycle " + (inxCycle +1)
@@ -215,7 +210,7 @@ function makePlanDefinition(pd) {
                         xml += "  " + action.description
                         xml += "</div>"
 
-                        let arTOD = getExtensions(action,"http://hl7.org.nz/fhir/StructureDefinition/cca-timing-of-days")
+                        let arTOD = getExtensions(action,"http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days")
                         if (arTOD){
                             arTOD.forEach(function(admin){
                                 let day = getChildExtension(admin,"day","integer")
@@ -239,9 +234,9 @@ function makePlanDefinition(pd) {
                     //and sort
                     arDaySummary.sort(function(a,b){
                         if (a.day > b.day) {
-                            return 1
-                        } else {
                             return -1
+                        } else {
+                            return 1
                         }
                     })
 
@@ -265,8 +260,7 @@ function makePlanDefinition(pd) {
 
 
                 })
-            })
-        })
+
     } catch (ex) {
         console.log(ex);
         process.exit();

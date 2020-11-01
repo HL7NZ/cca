@@ -3,11 +3,11 @@
   "status": "active",
   "content": "complete",
   "name": "PlanDefinitionStatus",
-  "id": "plandefinition-status",
+  "id": "sact-plan-definition-status-code",
   "title": "PlanDefinition additional status",
   "description": "Other codes used for the PlanDefinition status",
   "version": "0.1.0",
-  "url": "https://standards.digital.health.nz/ns/plandefinition-status",
+  "url": "https://standards.digital.health.nz/ns/sact-plan-definition-status-code",
   "concept": [
     {
       "code": "review",

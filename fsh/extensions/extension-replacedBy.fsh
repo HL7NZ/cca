@@ -1,9 +1,9 @@
 Extension: ReplacedBy
-Id: cca-replaced-by
+Id: sact-replaced-by
 Title: "Replaced by"
 Description: "When a Plan has been deprecated (superceeded or discontinued), refers to the one that replaces it, if any"
 
-* ^url = "http://hl7.org.nz/fhir/StructureDefinition/cca-replaced-by"
+* ^url = "http://hl7.org.nz/fhir/StructureDefinition/sact-replaced-by"
 
 
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ

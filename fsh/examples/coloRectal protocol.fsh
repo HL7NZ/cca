@@ -10,6 +10,9 @@ Usage: #example
 
 
 * extension[plan-instructions].valueMarkdown = "Only for women"
+* extension[disclaimer].valueMarkdown = "Developed with the best of intentions."
+* extension[regimen-type].valueCodeableConcept.coding = $SNOMED#dummy
+
 
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Plan for ColoRectal cancer. Therer is a single cycle with 2 drug administrations</div>"
 * text.status = #additional
@@ -109,11 +112,11 @@ Usage: #example
 
 //details of the first administration on day 1
 * action[0].action[0].extension[timing-of-days][0].extension[day].valueInteger = 1
-* action[0].action[0].extension[timing-of-days][0].extension[instructions].valueString = "Specific instructions for the first administration"
+* action[0].action[0].extension[timing-of-days][0].extension[instructions].valueString = "Specific instructions for the day 1 administration"
 
 //details of the second administration on day 4
 * action[0].action[0].extension[timing-of-days][1].extension[day].valueInteger = 4
-* action[0].action[0].extension[timing-of-days][1].extension[instructions].valueString = "Specific instructions for the second administration"
+* action[0].action[0].extension[timing-of-days][1].extension[instructions].valueString = "Specific instructions for the day 4 administration"
 
 
 
@@ -125,15 +128,15 @@ Usage: #example
 
 //details of the first administration on day 2
 * action[0].action[1].extension[timing-of-days][0].extension[day].valueInteger = 2
-* action[0].action[1].extension[timing-of-days][0].extension[instructions].valueString = "Specific instructions for the first administration"
+* action[0].action[1].extension[timing-of-days][0].extension[instructions].valueString = "Specific instructions for the day 2 administration"
 
 //details of the second administration on day 3
 * action[0].action[1].extension[timing-of-days][1].extension[day].valueInteger = 3
-* action[0].action[1].extension[timing-of-days][1].extension[instructions].valueString = "Specific instructions for the second administration"
+* action[0].action[1].extension[timing-of-days][1].extension[instructions].valueString = "Specific instructions for the day 3 administration"
 
 //details of the third administration on day 4
 * action[0].action[1].extension[timing-of-days][2].extension[day].valueInteger = 4
-* action[0].action[1].extension[timing-of-days][2].extension[instructions].valueString = "Specific instructions for the third administration"
+* action[0].action[1].extension[timing-of-days][2].extension[instructions].valueString = "Specific instructions for the day 4 administration"
 
 
 
@@ -146,12 +149,13 @@ Usage: #example
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Cabergoline administration, 2mg over 20 minutes</div>"
 * text.status = #additional
 
-* extension[off-label].valueBoolean = false
+* extension[off-label].valueBoolean = true
 
 * extension[location-medication-collection].valueCodeableConcept = $SNOMED#284748001 "Pharmacy shop"
 * extension[location-medication-collection].valueCodeableConcept.text = "Collect medication from Pharmacy shop"
 * extension[location-administration].valueCodeableConcept = $SNOMED#264362003 "Home"
 * extension[location-administration].valueCodeableConcept.text = "Administration takes place at the patients home"
+
 
 * status = #draft
 

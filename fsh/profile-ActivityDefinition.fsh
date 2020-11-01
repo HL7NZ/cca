@@ -1,7 +1,7 @@
 
-Alias: $locationMedicationCollection = http://hl7.org.nz/fhir/StructureDefinition/cca-location-medication-collection
-Alias: $locationAdministration = http://hl7.org.nz/fhir/StructureDefinition/cca-location-administration
-Alias: $offLabel = http://hl7.org.nz/fhir/StructureDefinition/cca-off-label
+Alias: $locationMedicationCollection = http://hl7.org.nz/fhir/StructureDefinition/sact-location-medication-collection
+Alias: $locationAdministration = http://hl7.org.nz/fhir/StructureDefinition/sact-administration-site
+Alias: $offLabel = http://hl7.org.nz/fhir/StructureDefinition/sact-off-label
 
 Profile:        CcaActivityDefinition
 Parent:         ActivityDefinition

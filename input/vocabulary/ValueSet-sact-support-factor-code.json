@@ -1,12 +1,12 @@
 {
   "resourceType": "ValueSet",
   "status": "active",
-  "name": "SupportFactor",
-  "id": "cca-support-factor",
+  "name": "SupportFactorCode",
+  "id": "sact-support-factor-code",
   "title": "Support Factors",
   "description": "The set of possible support factors (not their values)",
   "version": "0.1.0",
-  "url": "https://standards.digital.health.nz/fhir/ValueSet/cca-support-factor",
+  "url": "https://standards.digital.health.nz/fhir/ValueSet/sact-support-factor-code",
   "jurisdiction": [
     {
       "coding": [

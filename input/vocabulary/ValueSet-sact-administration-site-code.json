@@ -2,11 +2,11 @@
   "resourceType": "ValueSet",
   "status": "active",
   "name": "LocationAdministration",
-  "id": "cca-location-administration",
+  "id": "sact-administration-site-code",
   "title": "Administration location",
   "description": "The physical location where the administration occurred - eg at home or in a clinic",
   "version": "0.1.0",
-  "url": "https://standards.digital.health.nz/fhir/ValueSet/cca-location-administration-code",
+  "url": "https://standards.digital.health.nz/fhir/ValueSet/sact-administration-site-code",
   "jurisdiction": [
     {
       "coding": [

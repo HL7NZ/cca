@@ -8,12 +8,22 @@
   },
   "extension": [
     {
-      "url": "http://hl7.org.nz/fhir/StructureDefinition/cca-plan-instructions",
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-plan-instructions",
       "valueMarkdown": "Only for women"
     },
     {
-      "url": "http://hl7.org.nz/fhir/StructureDefinition/cca-regimen-type",
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-disclaimer",
+      "valueMarkdown": "Developed with the best of intentions."
+    },
+    {
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-regimen-type",
       "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "dummy",
+            "system": "http://snomed.info/sct"
+          }
+        ],
         "text": "Folfox"
       }
     },
@@ -38,7 +48,7 @@
           }
         }
       ],
-      "url": "http://hl7.org.nz/fhir/StructureDefinition/cca-support-factor"
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-support-factor"
     },
     {
       "extension": [
@@ -61,7 +71,7 @@
           }
         }
       ],
-      "url": "http://hl7.org.nz/fhir/StructureDefinition/cca-support-factor"
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-support-factor"
     },
     {
       "extension": [
@@ -84,13 +94,13 @@
           }
         }
       ],
-      "url": "http://hl7.org.nz/fhir/StructureDefinition/cca-support-factor"
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-support-factor"
     }
   ],
   "_status": {
     "extension": [
       {
-        "url": "http://hl7.org.nz/fhir/StructureDefinition/cca-additional-plan-status",
+        "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-additional-plan-status",
         "valueCode": "review"
       }
     ]
@@ -107,7 +117,7 @@
     {
       "extension": [
         {
-          "url": "http://hl7.org.nz/fhir/StructureDefinition/cca-plan-instructions",
+          "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-plan-instructions",
           "valueMarkdown": "Ensure not pregnant before starting"
         }
       ],
@@ -115,7 +125,7 @@
         {
           "extension": [
             {
-              "url": "http://hl7.org.nz/fhir/StructureDefinition/cca-plan-instructions",
+              "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-plan-instructions",
               "valueMarkdown": "Keep a close eye for side effects"
             },
             {
@@ -126,10 +136,10 @@
                 },
                 {
                   "url": "instructions",
-                  "valueString": "Specific instructions for the first administration"
+                  "valueString": "Specific instructions for the day 1 administration"
                 }
               ],
-              "url": "http://hl7.org.nz/fhir/StructureDefinition/cca-timing-of-days"
+              "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
             },
             {
               "extension": [
@@ -139,10 +149,10 @@
                 },
                 {
                   "url": "instructions",
-                  "valueString": "Specific instructions for the second administration"
+                  "valueString": "Specific instructions for the day 4 administration"
                 }
               ],
-              "url": "http://hl7.org.nz/fhir/StructureDefinition/cca-timing-of-days"
+              "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
             }
           ],
           "definitionCanonical": "#act-cabergoline",
@@ -158,10 +168,10 @@
                 },
                 {
                   "url": "instructions",
-                  "valueString": "Specific instructions for the first administration"
+                  "valueString": "Specific instructions for the day 2 administration"
                 }
               ],
-              "url": "http://hl7.org.nz/fhir/StructureDefinition/cca-timing-of-days"
+              "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
             },
             {
               "extension": [
@@ -171,10 +181,10 @@
                 },
                 {
                   "url": "instructions",
-                  "valueString": "Specific instructions for the second administration"
+                  "valueString": "Specific instructions for the day 3 administration"
                 }
               ],
-              "url": "http://hl7.org.nz/fhir/StructureDefinition/cca-timing-of-days"
+              "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
             },
             {
               "extension": [
@@ -184,10 +194,10 @@
                 },
                 {
                   "url": "instructions",
-                  "valueString": "Specific instructions for the third administration"
+                  "valueString": "Specific instructions for the day 4 administration"
                 }
               ],
-              "url": "http://hl7.org.nz/fhir/StructureDefinition/cca-timing-of-days"
+              "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
             }
           ],
           "definitionCanonical": "#act-tragacanth",

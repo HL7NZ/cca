@@ -1,12 +1,12 @@
 {
   "resourceType": "ValueSet",
   "status": "active",
-  "name": "RegimenType",
-  "id": "cca-regimen-type",
+  "name": "RegimenCode",
+  "id": "sact-regimen-code",
   "title": "Regimen type",
   "description": "The type of regimen - eg FOLFOX",
   "version": "0.1.0",
-  "url": "https://standards.digital.health.nz/fhir/ValueSet/cca-regimen-type",
+  "url": "https://standards.digital.health.nz/fhir/ValueSet/sact-regimen-code",
   "jurisdiction": [
     {
       "coding": [

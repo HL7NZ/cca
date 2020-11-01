@@ -2,11 +2,11 @@
   "resourceType": "ValueSet",
   "status": "active",
   "name": "CancerType",
-  "id": "cca-cancer-type",
+  "id": "cancer-type-code",
   "title": "Cancer type",
   "description": "The type of Cancer",
   "version": "0.1.0",
-  "url": "https://standards.digital.health.nz/fhir/ValueSet/cca-cancer-type",
+  "url": "https://standards.digital.health.nz/fhir/ValueSet/cancer-type-code",
   "jurisdiction": [
     {
       "coding": [
