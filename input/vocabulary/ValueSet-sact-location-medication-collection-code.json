@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "status": "active",
   "name": "LocationMedicationCollection",
-  "id": "sact-location-medication-collection",
+  "id": "sact-location-medication-collection-code",
   "title": "Medication collection location",
   "description": "The physical location where the medication can be collected on prior to administration - eg a pharmacy",
   "version": "0.1.0",

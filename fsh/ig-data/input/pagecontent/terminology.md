@@ -13,12 +13,12 @@ A common pattern is to have a ValueSet that 'includes' all the codes from a code
 <tr><th>ValueSet</th><th>Purpose</th><th>Url</th><th>CodeSystem Urls</th></tr>
 <tr><td width='20%'>Cancer type</td><td>The type of Cancer</td><td><a href='ValueSet-cancer-type-code.html'>https://standards.digital.health.nz/fhir/ValueSet/cancer-type-code</a></td><td><div><a href='undefined'>http://snomed.info/sct</a></div><div><a href='undefined'>http://snomed.info/sct</a></div></td></tr>
 <tr><td width='20%'>Administration location</td><td>The physical location where the administration occurred - eg at home or in a clinic</td><td><a href='ValueSet-sact-administration-site-code.html'>https://standards.digital.health.nz/fhir/ValueSet/sact-administration-site-code</a></td><td><div><a href='undefined'>http://snomed.info/sct</a></div></td></tr>
-<tr><td width='20%'>Medication collection location</td><td>The physical location where the medication can be collected on prior to administration - eg a pharmacy</td><td><a href='ValueSet-sact-location-medication-collection.html'>https://standards.digital.health.nz/fhir/ValueSet/sact-location-medication-collection-code</a></td><td><div><a href='undefined'>http://snomed.info/sct</a></div></td></tr>
+<tr><td width='20%'>Medication collection location</td><td>The physical location where the medication can be collected on prior to administration - eg a pharmacy</td><td><a href='ValueSet-sact-location-medication-collection-code.html'>https://standards.digital.health.nz/fhir/ValueSet/sact-location-medication-collection-code</a></td><td><div><a href='undefined'>http://snomed.info/sct</a></div></td></tr>
 <tr><td width='20%'>PlanDefinition additional status</td><td>Other codes used for the PlanDefinition status</td><td><a href='ValueSet-sact-plan-definition-status-code.html'>https://standards.digital.health.nz/fhir/ValueSet/sact-plan-definition-status-code</a></td><td><div><a href='CodeSystem-sact-plan-definition-status-code.html'>https://standards.digital.health.nz/ns/sact-plan-definition-status-code</a></div></td></tr>
 <tr><td width='20%'>Regimen type</td><td>The type of regimen - eg FOLFOX</td><td><a href='ValueSet-sact-regimen-code.html'>https://standards.digital.health.nz/fhir/ValueSet/sact-regimen-code</a></td><td><div><a href='undefined'>http://snomed.info/sct</a></div></td></tr>
 <tr><td width='20%'>Support Factors</td><td>The set of possible support factors (not their values)</td><td><a href='ValueSet-sact-support-factor-code.html'>https://standards.digital.health.nz/fhir/ValueSet/sact-support-factor-code</a></td><td><div><a href='undefined'>http://snomed.info/sct</a></div></td></tr>
+<tr><td width='20%'>Possible values for Support Factors</td><td>The set of all possible support factors values (not specific to any one factor)</td><td><a href='ValueSet-sact-support-factor-value-code.html'>https://standards.digital.health.nz/fhir/ValueSet/sact-support-factor-value-code</a></td><td><div><a href='undefined'>http://snomed.info/sct</a></div></td></tr>
 <tr><td width='20%'>Treatment intent</td><td>The intent of the regimen - what is its purpose</td><td><a href='ValueSet-sact-treatment-intent-code.html'>https://standards.digital.health.nz/fhir/ValueSet/sact-treatment-intent-code</a></td><td><div><a href='undefined'>https://standards.digital.health.nz/ns/treatment-intent-code</a></div></td></tr>
-<tr><td width='20%'>Possible values for Support Factors</td><td>The set of all possible support factors values (not specific to any one factor)</td><td><a href='ValueSet-support-factor-value.html'>https://standards.digital.health.nz/fhir/ValueSet/sact-support-factor-code</a></td><td><div><a href='undefined'>http://snomed.info/sct</a></div></td></tr>
 </table>
 <br/><br/>
 ### ValueSet by path
@@ -267,8 +267,8 @@ A common pattern is to have a ValueSet that 'includes' all the codes from a code
 </tr>
 <tr>
 <td>Extension.value[x]</td>
-<td>https://standards.digital.health.nz/fhir/ValueSet/sact-location-medication-collection</td>
-<td>Not defined here</td>
+<td><a href='ValueSet-sact-location-medication-collection-code.html'>https://standards.digital.health.nz/fhir/ValueSet/sact-location-medication-collection-code</a></td>
+<td></td>
 </tr>
 <tr>
 <td>Extension.value[x]</td>
@@ -277,8 +277,8 @@ A common pattern is to have a ValueSet that 'includes' all the codes from a code
 </tr>
 <tr>
 <td>Extension.extension.value[x]</td>
-<td>https://standards.digital.health.nz/fhir/ValueSet/sact-support-factor-value-code</td>
-<td>Not defined here</td>
+<td><a href='ValueSet-sact-support-factor-value-code.html'>https://standards.digital.health.nz/fhir/ValueSet/sact-support-factor-value-code</a></td>
+<td></td>
 </tr>
 <tr>
 <td>Extension.value[x]</td>

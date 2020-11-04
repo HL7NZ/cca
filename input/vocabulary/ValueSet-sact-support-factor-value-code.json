@@ -2,11 +2,11 @@
   "resourceType": "ValueSet",
   "status": "active",
   "name": "SupportFactorValue",
-  "id": "support-factor-value",
+  "id": "sact-support-factor-value-code",
   "title": "Possible values for Support Factors",
   "description": "The set of all possible support factors values (not specific to any one factor)",
   "version": "0.1.0",
-  "url": "https://standards.digital.health.nz/fhir/ValueSet/sact-support-factor-code",
+  "url": "https://standards.digital.health.nz/fhir/ValueSet/sact-support-factor-value-code",
   "jurisdiction": [
     {
       "coding": [

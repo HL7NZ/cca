@@ -10,7 +10,7 @@ Description: "The physical Location where the medication can be collection prior
 * ^context.expression = "ActivityDefinition"
 
 * value[x] only CodeableConcept or Reference(Location)
-* valueCodeableConcept from https://standards.digital.health.nz/fhir/ValueSet/sact-location-medication-collection
+* valueCodeableConcept from https://standards.digital.health.nz/fhir/ValueSet/sact-location-medication-collection-code
 
 
 

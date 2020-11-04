@@ -1,0 +1,707 @@
+{
+    "resourceType": "PlanDefinition",
+    "id": "e1f7e6de-4d94-4e34-ae6d-318f707e260c",
+    "meta": {
+        "profile": [
+            "http://hl7.org.nz/fhir/StructureDefinition/CcaPlanDefinition"
+        ]
+    },
+    "name" : "TestName",
+    "contained": [
+        {
+            "resourceType": "ActivityDefinition",
+            "id": "1f64ff65-db8d-437b-827a-6d3b176e8180",
+            "meta": {
+                "profile": [
+                    "http://hl7.org.nz/fhir/StructureDefinition/CcaActivityDefinition"
+                ]
+            },
+            "extension": [
+                {
+                    "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-location-medication-collection",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "22232009",
+                                "display": "Hospital"
+                            }
+                        ],
+                        "text": "Hospital"
+                    }
+                },
+                {
+                    "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-administration-site",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "702931005",
+                                "display": "Oncology clinic"
+                            }
+                        ],
+                        "text": "Oncology clinic"
+                    }
+                },
+                {
+                    "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-off-label",
+                    "valueBoolean": true
+                }
+            ],
+            "status": "active",
+            "productCodeableConcept": {
+                "coding": [
+                    {
+                        "system": "https://nzulm.org.nz/nzmt",
+                        "code": "47292171000116103",
+                        "display": "cabazitaxel"
+                    }
+                ],
+                "text": "cabazitaxel"
+            },
+            "quantity": {
+                "value": 3,
+                "unit": "Capsule",
+                "system": "http://snomed.info/sct",
+                "code": "420692007"
+            },
+            "dosage": [
+                {
+                    "text": "20 milligram/square metre Every three hours over 10 minutes by intravenous injection",
+                    "timing": {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "225753005",
+                                    "display": "Every three hours"
+                                }
+                            ],
+                            "text": "Every three hours"
+                        }
+                    },
+                    "route": {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "386358000",
+                                "display": "intravenous injection"
+                            }
+                        ],
+                        "text": "intravenous injection"
+                    },
+                    "doseAndRate": [
+                        {
+                            "doseQuantity": {
+                                "value": 20,
+                                "unit": "milligram/square metre",
+                                "system": "http://snomed.info/sct"
+                            },
+                            "rateRange": {
+                                "high": {
+                                    "value": 10,
+                                    "unit": "Min",
+                                    "system": "http://unitsofmeasure.org"
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "resourceType": "ActivityDefinition",
+            "id": "914843cd-1aac-499a-87d9-88489eeb1126",
+            "meta": {
+                "profile": [
+                    "http://hl7.org.nz/fhir/StructureDefinition/CcaActivityDefinition"
+                ]
+            },
+            "extension": [
+                {
+                    "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-off-label",
+                    "valueBoolean": false
+                }
+            ],
+            "status": "active",
+            "productCodeableConcept": {
+                "coding": [
+                    {
+                        "system": "https://nzulm.org.nz/nzmt",
+                        "code": "10060421000116108",
+                        "display": "prEDNISone"
+                    }
+                ],
+                "text": "prEDNISone"
+            },
+            "dosage": [
+                {
+                    "text": "5 mg flat Twice daily over 3 minutes by oral administration",
+                    "timing": {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "229799001",
+                                    "display": "Twice daily"
+                                }
+                            ],
+                            "text": "Twice daily"
+                        }
+                    },
+                    "route": {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "386359008",
+                                "display": "oral administration"
+                            }
+                        ],
+                        "text": "oral administration"
+                    },
+                    "doseAndRate": [
+                        {
+                            "doseQuantity": {
+                                "value": 5,
+                                "unit": "mg flat",
+                                "system": "http://snomed.info/sct"
+                            },
+                            "rateRange": {
+                                "high": {
+                                    "value": 3,
+                                    "unit": "Min",
+                                    "system": "http://unitsofmeasure.org"
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "extension": [
+        {
+            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-treatment-intent",
+            "valueCodeableConcept": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "DUMMY_2"
+                    }
+                ],
+                "text": "Metastatic"
+            }
+        },
+        {
+            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-plan-instructions",
+            "valueMarkdown": "Lets add\nsome \nmulti line comments"
+        },
+        {
+            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-disclaimer",
+            "valueMarkdown": "The medicines, doses, combinations, and schedule in this treatment regimen have been carefully reviewed against international best practice guidelines by specialists in medical oncology around New Zealand and this advice has been accepted for publication by Te Aho o Te Kahu (the Cancer Control Agency). Sometimes medicines that are used in routine clinical practice have not been through a formal review process by the NZ Medicines Regulator Medsafe and are therefore considered unapproved or off-label. These medicines are legally able to be prescribed through sections 25 and 29 of the Medicines Act and by obtaining informed consent from patients. All treatment regimens listed on this website have been through robust peer review and are considered an accepted standard of care, whether prescribed through sections 25 or 29 or carrying formal Medsafe Approval."
+        },
+        {
+            "extension": [
+                {
+                    "url": "factor",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "718526003"
+                            }
+                        ],
+                        "text": "Antifungal prophylaxis"
+                    }
+                },
+                {
+                    "url": "value",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "897021009"
+                            }
+                        ],
+                        "text": "Routine antifungal prophylaxis not recommended"
+                    }
+                }
+            ],
+            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-support-factor"
+        },
+        {
+            "extension": [
+                {
+                    "url": "factor",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "281800008"
+                            }
+                        ],
+                        "text": "Hydration"
+                    }
+                },
+                {
+                    "url": "value",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "54271000210101"
+                            }
+                        ],
+                        "text": "Routine hydration not recommended"
+                    }
+                }
+            ],
+            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-support-factor"
+        },
+        {
+            "extension": [
+                {
+                    "url": "factor",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "772120006"
+                            }
+                        ],
+                        "text": "Irradiated blood components"
+                    }
+                },
+                {
+                    "url": "value",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "54311000210101"
+                            }
+                        ],
+                        "text": "Irradiation of blood components is not recommended"
+                    }
+                }
+            ],
+            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-support-factor"
+        },
+        {
+            "extension": [
+                {
+                    "url": "factor",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": ""
+                            }
+                        ],
+                        "text": "Mesna uroprotection"
+                    }
+                },
+                {
+                    "url": "value",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "54281000210104"
+                            }
+                        ],
+                        "text": "Routine mesna uroprotection recommended"
+                    }
+                }
+            ],
+            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-support-factor"
+        }
+    ],
+    "url": "https://formulary-fhir-test.azurewebsites.net/fhir/PlanDefinition//e1f7e6de-4d94-4e34-ae6d-318f707e260c",
+    "version": "0.0.7",
+    "title": "Urogenital Prostate Metastatic - carbazitaxel three weekly and prednisone - test",
+    "subtitle": "Urogenital Prostate Metastatic - carbazitaxel three weekly and prednisone - test",
+    "type": {
+        "coding": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+                "code": "clinical-protocol"
+            }
+        ]
+    },
+    "status": "draft",
+    "date": "2020-10-14T03:44:03.923+13:00",
+    "publisher": "New Zealand Medicines Formulary LP",
+    "description": "A drug treatment regimen for Urogenital Prostate Metastatic - carbazitaxel three weekly and prednisone - test",
+    "useContext": [
+        {
+            "code": {
+                "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+                "code": "focus"
+            },
+            "valueCodeableConcept": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "42030000",
+                        "display": "Urogenital"
+                    }
+                ]
+            }
+        },
+        {
+            "code": {
+                "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+                "code": "focus"
+            },
+            "valueCodeableConcept": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "254900004",
+                        "display": "Prostate"
+                    }
+                ]
+            }
+        }
+    ],
+    "copyright": "All rights reserved.",
+    "author": [
+        {
+            "name": "New Zealand Medicines Formulary LP"
+        }
+    ],
+    "relatedArtifact": [
+        {
+            "type": "citation",
+            "display": "1.\tde Bono, J.S., A-C. Hardy-Bessard, C-S. Kim, et al. 2016. \"Phase III non-inferiority study of cabazitaxel (C) 20mg/m2 (C20) versus 25mg/m2 (C25) in patients with metastatic castration resistant prostate cancer (mCRPC) previously treated with docetaxel (D). J Clin Oncol 34,2016 (suppl; abstr 5008)."
+        },
+        {
+            "type": "citation",
+            "display": "2.\tde Bono, J. S., S. Oudard, M. Ozguroglu, et al. 2010. \"Prednisone plus cabazitaxel or mitoxantrone for metastatic castration-resistant prostate cancer progressing after docetaxel treatment: a randomised open-label trial.\" Lancet 376(9747):1147-1154."
+        }
+    ],
+    "action": [
+        {
+            "id": "c1bd2941-cd6c-4d37-a3fd-0fd653f61b4e",
+            "extension": [
+                {
+                    "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-plan-instructions",
+                    "valueMarkdown": "At the clinician’s discretion, prednisone may be given as 10mg once daily (or equivalent corticosteroid dose)\nADadsASD\nASDFASDF"
+                }
+            ],
+            "prefix": "1",
+            "title": "Primary cycle",
+            "description": "Cycle 1 (and all further cycles) - 21 days",
+            "priority": "routine",
+            "timingTiming": {
+                "repeat": {
+                    "count": 1,
+                    "duration": 21,
+                    "durationUnit": "d"
+                }
+            },
+            "selectionBehavior": "all",
+            "action": [
+                {
+                    "id": "Order-Set-1-1f64ff65-db8d-437b-827a-6d3b176e8180",
+                    "extension": [
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 1
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "asdfasd\nasdfasdfa\nasdfasdf\nasdf"
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        }
+                    ],
+                    "definitionCanonical": "#1f64ff65-db8d-437b-827a-6d3b176e8180"
+                },
+                {
+                    "id": "Order-Set-2-914843cd-1aac-499a-87d9-88489eeb1126",
+                    "extension": [
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 1
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "This is a default comment"
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 2
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "This is a comment about what happens on day 2"
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 3
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "This is a default comment"
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 4
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "This is a default comment"
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 5
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "This is a default comment"
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 6
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "This is a default comment"
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 7
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "This is a default comment"
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 8
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "This is a default comment"
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 9
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "This is a default comment"
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 10
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "This is a default comment"
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 11
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "This is a default comment"
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 12
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "This is a default comment"
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 13
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "This is a default comment"
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 14
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "This is a default comment"
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 15
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "This is a default comment"
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 16
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "This is a default comment"
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 17
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "This is a default comment"
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 18
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "This is a default comment"
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 19
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "This is a default comment"
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 20
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "This is a default comment"
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 21
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "This is a default comment"
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        }
+                    ],
+                    "definitionCanonical": "#914843cd-1aac-499a-87d9-88489eeb1126"
+                }
+            ]
+        }
+    ]
+}

@@ -1,7 +1,7 @@
 Alias: $SNOMED = http://snomed.info/sct
 
 ValueSet: LocationMedicationCollection
-Id: sact-location-medication-collection
+Id: sact-location-medication-collection-code
 Title: "Medication collection location"
 Description: "The physical location where the medication can be collected on prior to administration - eg a pharmacy"
 

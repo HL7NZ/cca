@@ -148,7 +148,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/sact-location-medication-collection"
+          "reference": "ValueSet/sact-location-medication-collection-code"
         },
         "name": "Medication collection location",
         "description": "The physical location where the medication can be collected on prior to administration - eg a pharmacy",
@@ -180,7 +180,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/support-factor-value"
+          "reference": "ValueSet/sact-support-factor-value-code"
         },
         "name": "Possible values for Support Factors",
         "description": "The set of all possible support factors values (not specific to any one factor)",
