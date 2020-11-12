@@ -39,6 +39,8 @@ The sub-action contains a reference to an [ActivityDefinition](http://hl7.org/fh
 which has the details of the medication (drug name, dose etc ). 
 
 
+
+
 <!--
 * The top level represents regimen options. This allows there to be different 'versions' of the regimen to be selected - potentially based on trigger criteria within the action. In this IG, only a single version is supported, but the pattern is maintained to suport future enhancement. 
 * The second level represents the parts of the regimen - for example chemotherapy and radiotherapy. In this IG, only a single part is supported, but the pattern is maintained to suport future enhancement. 

@@ -17,6 +17,50 @@ The status of the overall plan is exposed in the PlanDefinition.status element, 
 
 </table>
 
+### Cycle repeats
+As noted in the [background](index.html#background), the top most action element (attached to the resource root) represents a cycle of medication adminstration with the details of the cycles (ie the medications) present as child action elements, with a reference to the ActivityDefinition. The cycles are intended to be extecuted in series - completing one cycle (and its repeats) before moving on to the next one.
+
+As well as having any number of defined cycles in the [plan, an individual cycle can also repeat any number of times, which is indicated in the __action.timingTiming__ element. The element (which is a [Timing]() datatype) has the following child elements.
+
+* .repeat.count - the number of times this cycle should repeat. If this element is absent, then the cycle can repeat any number of times, as dictated by the physician in charge. Otherwise, the value is the number of times that this cycle should be repeated before moving on to the next one.
+* .repeat.duration  / repeat.durationUnit - the length of a single cycle. This will always be present.
+
+It is common to have regimens with multiple cycles where all cycles except for the last one have a specific count value, and the last cycle has no count, meaning that the last cycle can be repeated any number of times, but the repeats for the others are defined.
+
+#### Examples
+
+**A cycle of 14 days which is only executed once**
+
+    "timingTiming": {
+        "repeat": {
+          "count": 1,
+          "duration": 14,
+          "durationUnit": "d"
+        }
+      }
+
+**A cycle of 28 days repeated twice**
+
+    "timingTiming": {
+        "repeat": {
+          "count": 2,
+          "duration": 14,
+          "durationUnit": "d"
+        }
+      }
+
+
+**A cycle of 20 days which can be executed any number of times**
+
+    "timingTiming": {
+        "repeat": {
+          "duration": 20,
+          "durationUnit": "d"
+        }
+      }
+
+
+
 ### UseContext
 
 The PlanDefinition.useContext element is used for 2 main items.
