@@ -9,3 +9,5 @@ Description: "The physical location where the administration occurred - eg at ho
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 
 * $SNOMED#264362003 "Home"
+* $SNOMED#702931005 "Oncology clinic"
+
