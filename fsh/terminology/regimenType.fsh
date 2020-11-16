@@ -1,6 +1,6 @@
-CodeSystem:  RegimenType
+CodeSystem:  RegimenCode
 Id: sact-regimen-code
-Title: "Regimen type"
+Title: "Regimen type code"
 Description:  "Codes used for the regimen type"
 
 * ^url = "https://standards.digital.health.nz/ns/sact-regimen-code"
