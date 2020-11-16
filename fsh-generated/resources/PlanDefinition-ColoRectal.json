@@ -97,14 +97,6 @@
       "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-support-factor"
     }
   ],
-  "_status": {
-    "extension": [
-      {
-        "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-additional-plan-status",
-        "valueCode": "review"
-      }
-    ]
-  },
   "type": {
     "coding": [
       {
@@ -221,6 +213,14 @@
     "status": "additional"
   },
   "status": "active",
+  "_status": {
+    "extension": [
+      {
+        "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-additional-plan-status",
+        "valueCode": "review"
+      }
+    ]
+  },
   "version": "3.0.3",
   "title": "Colorectal Adjuvant FOLFOX (a7)",
   "description": "A drug treatment regimen for Colorectal cancer",

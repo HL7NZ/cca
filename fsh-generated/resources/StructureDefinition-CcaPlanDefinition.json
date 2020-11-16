@@ -1,0 +1,462 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "CcaPlanDefinition",
+  "text": {
+    "status": "additional",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">CCA Plan definition</div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Specialized.Definitional Artifacts"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "business"
+    }
+  ],
+  "url": "http://hl7.org.nz/fhir/StructureDefinition/CcaPlanDefinition",
+  "version": "0.1.0",
+  "name": "CcaPlanDefinition",
+  "title": "PlanDefinition",
+  "status": "active",
+  "description": "CCA Regimen Plan Definition.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "NZ",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "objimpl",
+      "uri": "http://hl7.org/fhir/object-implementation",
+      "name": "Object Implementation Information"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "PlanDefinition",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/PlanDefinition",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "PlanDefinition.extension",
+        "path": "PlanDefinition.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "PlanDefinition.extension:support-factor",
+        "path": "PlanDefinition.extension",
+        "sliceName": "support-factor",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org.nz/fhir/StructureDefinition/sact-support-factor"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "PlanDefinition.extension:regimen-type",
+        "path": "PlanDefinition.extension",
+        "sliceName": "regimen-type",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org.nz/fhir/StructureDefinition/sact-regimen-type"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "PlanDefinition.extension:replaced-by",
+        "path": "PlanDefinition.extension",
+        "sliceName": "replaced-by",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org.nz/fhir/StructureDefinition/sact-replaced-by"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "PlanDefinition.extension:treatment-intent",
+        "path": "PlanDefinition.extension",
+        "sliceName": "treatment-intent",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org.nz/fhir/StructureDefinition/sact-treatment-intent"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "PlanDefinition.extension:offLabel",
+        "path": "PlanDefinition.extension",
+        "sliceName": "offLabel",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org.nz/fhir/StructureDefinition/sact-off-label"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "PlanDefinition.extension:plan-instructions",
+        "path": "PlanDefinition.extension",
+        "sliceName": "plan-instructions",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org.nz/fhir/StructureDefinition/sact-plan-instructions"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "PlanDefinition.extension:disclaimer",
+        "path": "PlanDefinition.extension",
+        "sliceName": "disclaimer",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org.nz/fhir/StructureDefinition/sact-disclaimer"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "PlanDefinition.type",
+        "path": "PlanDefinition.type",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "clinical-protocol",
+              "system": "http://terminology.hl7.org/CodeSystem/plan-definition-type"
+            }
+          ]
+        }
+      },
+      {
+        "id": "PlanDefinition.status.extension",
+        "path": "PlanDefinition.status.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "PlanDefinition.status.extension:additional-status",
+        "path": "PlanDefinition.status.extension",
+        "sliceName": "additional-status",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org.nz/fhir/StructureDefinition/sact-additional-plan-status"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "PlanDefinition.useContext",
+        "path": "PlanDefinition.useContext",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "code"
+            }
+          ],
+          "rules": "openAtEnd"
+        }
+      },
+      {
+        "id": "PlanDefinition.useContext.value[x]",
+        "path": "PlanDefinition.useContext.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "PlanDefinition.useContext:cancer-type",
+        "path": "PlanDefinition.useContext",
+        "sliceName": "cancer-type",
+        "short": "The type of cancer",
+        "definition": "The type of cancer",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "PlanDefinition.useContext:cancer-type.code",
+        "path": "PlanDefinition.useContext.code",
+        "patternCoding": {
+          "code": "focus"
+        }
+      },
+      {
+        "id": "PlanDefinition.useContext:cancer-type.valueCodeableConcept",
+        "path": "PlanDefinition.useContext.valueCodeableConcept",
+        "min": 1,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/cancer-type-code"
+        }
+      },
+      {
+        "id": "PlanDefinition.reviewer",
+        "path": "PlanDefinition.reviewer",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.endorser",
+        "path": "PlanDefinition.endorser",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.library",
+        "path": "PlanDefinition.library",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.goal",
+        "path": "PlanDefinition.goal",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action",
+        "path": "PlanDefinition.action",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "PlanDefinition.action.extension",
+        "path": "PlanDefinition.action.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "PlanDefinition.action.extension:action-instructions",
+        "path": "PlanDefinition.action.extension",
+        "sliceName": "action-instructions",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org.nz/fhir/StructureDefinition/sact-plan-instructions"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "PlanDefinition.action.prefix",
+        "path": "PlanDefinition.action.prefix",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.priority",
+        "path": "PlanDefinition.action.priority",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.code",
+        "path": "PlanDefinition.action.code",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.reason",
+        "path": "PlanDefinition.action.reason",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.subject[x]",
+        "path": "PlanDefinition.action.subject[x]",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.trigger",
+        "path": "PlanDefinition.action.trigger",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.condition",
+        "path": "PlanDefinition.action.condition",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.input",
+        "path": "PlanDefinition.action.input",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.output",
+        "path": "PlanDefinition.action.output",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.timing[x]",
+        "path": "PlanDefinition.action.timing[x]",
+        "type": [
+          {
+            "code": "Timing"
+          }
+        ]
+      },
+      {
+        "id": "PlanDefinition.action.type",
+        "path": "PlanDefinition.action.type",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.precheckBehavior",
+        "path": "PlanDefinition.action.precheckBehavior",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.cardinalityBehavior",
+        "path": "PlanDefinition.action.cardinalityBehavior",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.transform",
+        "path": "PlanDefinition.action.transform",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.dynamicValue",
+        "path": "PlanDefinition.action.dynamicValue",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.action",
+        "path": "PlanDefinition.action.action",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "PlanDefinition.action.action.extension",
+        "path": "PlanDefinition.action.action.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "PlanDefinition.action.action.extension:action-instructions",
+        "path": "PlanDefinition.action.action.extension",
+        "sliceName": "action-instructions",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org.nz/fhir/StructureDefinition/sact-plan-instructions"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "PlanDefinition.action.action.extension:timing-of-days",
+        "path": "PlanDefinition.action.action.extension",
+        "sliceName": "timing-of-days",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

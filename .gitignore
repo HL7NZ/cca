@@ -5,8 +5,13 @@ template/
 output/
 input-cache/
 /input-cache
-/output
 /terms
+
+# from the migration instructions
+/temp
+/template
+/output
+
 
 
 # Windows generated files #

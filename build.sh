@@ -6,4 +6,6 @@
 # https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/Local.20use.20vs.2E.20final.20publication
 # JAVA -jar input-cache/publisher.jar -ig . -packages .   # -tx n/a
 
-JAVA -jar ../scripts/publisher.jar -no-sushi -ig . 
+# JAVA -jar ../scripts/publisher.jar -no-sushi -ig . 
+
+JAVA -jar ../scripts/publisher.jar  -ig . 

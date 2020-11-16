@@ -1,0 +1,220 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "CcaActivityDefinition",
+  "text": {
+    "status": "additional",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">ActivityDefinition</div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Specialized.Definitional Artifacts"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "anonymous"
+    }
+  ],
+  "url": "http://hl7.org.nz/fhir/StructureDefinition/CcaActivityDefinition",
+  "version": "0.1.0",
+  "name": "CcaActivityDefinition",
+  "title": "ActivityDefinition",
+  "status": "active",
+  "description": "CCA Regimen Activity Definition.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "NZ",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "objimpl",
+      "uri": "http://hl7.org/fhir/object-implementation",
+      "name": "Object Implementation Information"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "ActivityDefinition",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/ActivityDefinition",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "ActivityDefinition.extension",
+        "path": "ActivityDefinition.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "ActivityDefinition.extension:location-medication-collection",
+        "path": "ActivityDefinition.extension",
+        "sliceName": "location-medication-collection",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org.nz/fhir/StructureDefinition/sact-location-medication-collection"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ActivityDefinition.extension:location-administration",
+        "path": "ActivityDefinition.extension",
+        "sliceName": "location-administration",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org.nz/fhir/StructureDefinition/sact-administration-site"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ActivityDefinition.extension:off-label",
+        "path": "ActivityDefinition.extension",
+        "sliceName": "off-label",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org.nz/fhir/StructureDefinition/sact-off-label"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ActivityDefinition.identifier",
+        "path": "ActivityDefinition.identifier",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.experimental",
+        "path": "ActivityDefinition.experimental",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.subject[x]",
+        "path": "ActivityDefinition.subject[x]",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.useContext",
+        "path": "ActivityDefinition.useContext",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.approvalDate",
+        "path": "ActivityDefinition.approvalDate",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.lastReviewDate",
+        "path": "ActivityDefinition.lastReviewDate",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.topic",
+        "path": "ActivityDefinition.topic",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.author",
+        "path": "ActivityDefinition.author",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.editor",
+        "path": "ActivityDefinition.editor",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.reviewer",
+        "path": "ActivityDefinition.reviewer",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.library",
+        "path": "ActivityDefinition.library",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.priority",
+        "path": "ActivityDefinition.priority",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.doNotPerform",
+        "path": "ActivityDefinition.doNotPerform",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.timing[x]",
+        "path": "ActivityDefinition.timing[x]",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.specimenRequirement",
+        "path": "ActivityDefinition.specimenRequirement",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.observationRequirement",
+        "path": "ActivityDefinition.observationRequirement",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.observationResultRequirement",
+        "path": "ActivityDefinition.observationResultRequirement",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.transform",
+        "path": "ActivityDefinition.transform",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.dynamicValue",
+        "path": "ActivityDefinition.dynamicValue",
+        "max": "0"
+      }
+    ]
+  }
+}

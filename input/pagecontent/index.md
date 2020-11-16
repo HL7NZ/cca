@@ -30,7 +30,7 @@ For example, a regimen that had 2 cycles, each of which defined the administrati
   * sub-action: drug 3
   * sub-action: drug 4
 
-Details of each administration is found in the sub-action, which has an extension called [timing-of-days](StructureDefinition-timing-of-days.html) that indicates the specific
+Details of each administration is found in the sub-action, which has an extension called [timing-of-days](StructureDefinition-sact-timing-of-days.html) that indicates the specific
 days within the cycle when the medication is to be administered. Note that the extension is actually a modifierExtension as
 it must be understood by the recipient for safe use of the resource. If it were to be ignored, then the wrong administration could be made.
 
@@ -64,7 +64,7 @@ Most of the resources defined in this guide (StructureDefinition, ValueSet, Code
 ### Replacing regimens
 It is common that regimens are deprecated over time and replaced by others. It is necessary to continue to make the deprecated guide available for historic purposes, but to indicate that it is no longer actively used. This is achieved by setting the [status](StructureDefinition-CcaPlanDefinition-definitions.html#PlanDefinition.status) to "retired". 
 
-There is an extension - [replaced-by](StructureDefinition-replaced-by.html) that allows the deprecated plan to refer to the one that replaces it. Thus a user retrieving the deprecated plan can easily find the new one. This is a direct FHIR reference.
+There is an extension - [replaced-by](StructureDefinition-sact-replaced-by.html) that allows the deprecated plan to refer to the one that replaces it. Thus a user retrieving the deprecated plan can easily find the new one. This is a direct FHIR reference.
 
 There is currently no reference from the new Plan back to the one that it has replaced.
 
