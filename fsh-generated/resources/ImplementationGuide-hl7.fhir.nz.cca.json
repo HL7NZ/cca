@@ -1,7 +1,7 @@
 {
   "resourceType": "ImplementationGuide",
   "id": "hl7.fhir.nz.cca",
-  "url": "http://clinfhir.com/fhir/ImplementationGuide/hl7.fhir.nz.cca",
+  "url": "http://hl7.org.nz/fhir/cca/ImplementationGuide/hl7.fhir.nz.cca",
   "version": "0.1.0",
   "name": "CcaImplementationGuide",
   "title": "HL7® FHIR® Te Aho o Te Kahu, Cancer Control Agency Implementation Guide",
@@ -270,11 +270,6 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "CapabilityStatement.html",
-          "title": "Capability Statement",
-          "generation": "html"
-        },
-        {
           "nameUrl": "examples.html",
           "title": "Examples",
           "generation": "html"
@@ -283,11 +278,6 @@
           "nameUrl": "extensions.html",
           "title": "Extensions",
           "generation": "html"
-        },
-        {
-          "nameUrl": "extensionsDEP.html",
-          "title": "Extensions DEP",
-          "generation": "markdown"
         },
         {
           "nameUrl": "notes.html",
@@ -300,24 +290,14 @@
           "generation": "html"
         },
         {
-          "nameUrl": "profilesDEP.html",
-          "title": "Profiles DEP",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "progress.html",
-          "title": "Progress",
-          "generation": "markdown"
-        },
-        {
           "nameUrl": "terminology.html",
           "title": "Terminology",
           "generation": "markdown"
         },
         {
-          "nameUrl": "terminologySave.html",
-          "title": "Terminology Save",
-          "generation": "markdown"
+          "nameUrl": "CapabilityStatement.html",
+          "title": "API",
+          "generation": "html"
         }
       ]
     },
