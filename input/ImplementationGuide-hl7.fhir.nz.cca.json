@@ -166,7 +166,7 @@
         "reference": {
           "reference": "ValueSet/sact-regimen-code"
         },
-        "name": "Regimen type",
+        "name": "Regimen type code",
         "description": "The type of regimen - eg FOLFOX",
         "exampleBoolean": false
       },
@@ -200,6 +200,14 @@
         },
         "name": "PlanDefinition additional status",
         "description": "Other codes used for the PlanDefinition status",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/sact-regimen-code"
+        },
+        "name": "Regimen type code",
+        "description": "Codes used for the regimen type",
         "exampleBoolean": false
       },
       {

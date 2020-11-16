@@ -23,6 +23,10 @@
         "system": "http://snomed.info/sct",
         "concept": [
           {
+            "code": "22232009",
+            "display": "Hospital"
+          },
+          {
             "code": "284748001",
             "display": "Pharmacy shop"
           }

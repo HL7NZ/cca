@@ -12,4 +12,6 @@ Description: "The overall type of the regimen - eg FOLFOX"
 
 
 * value[x] only CodeableConcept 
-* valueCodeableConcept from https://standards.digital.health.nz/fhir/ValueSet/sact-regimen-type-code
+* valueCodeableConcept from https://standards.digital.health.nz/fhir/ValueSet/sact-regimen-code
+
+                        

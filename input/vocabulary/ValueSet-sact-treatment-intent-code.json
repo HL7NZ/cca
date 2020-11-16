@@ -11,6 +11,59 @@
     "include": [
       {
         "system": "https://standards.digital.health.nz/ns/treatment-intent-code"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "373846009",
+            "display": "Adjuvant"
+          },
+          {
+            "code": "58390007",
+            "display": "Allogeneic"
+          },
+          {
+            "code": "58776007",
+            "display": "Autologous"
+          },
+          {
+            "code": "816151001",
+            "display": "Consolidation"
+          },
+          {
+            "code": "703423002",
+            "display": "Definitive chemoradiation"
+          },
+          {
+            "code": "450827009",
+            "display": "Induction"
+          },
+          {
+            "code": "56671000210106",
+            "display": "Maintenance"
+          },
+          {
+            "code": "128462008",
+            "display": "Metastatic"
+          },
+          {
+            "code": "879913000",
+            "display": "Mobilisation"
+          },
+          {
+            "code": "373847000",
+            "display": "Neoadjuvant"
+          },
+          {
+            "code": "394935005",
+            "display": "Post operative chemoradiation"
+          },
+          {
+            "code": "25173007",
+            "display": "Recurrent"
+          }
+        ]
       }
     ]
   }

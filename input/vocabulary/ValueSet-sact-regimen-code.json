@@ -3,30 +3,14 @@
   "status": "active",
   "name": "RegimenCode",
   "id": "sact-regimen-code",
-  "title": "Regimen type",
+  "title": "Regimen type code",
   "description": "The type of regimen - eg FOLFOX",
   "version": "0.1.0",
   "url": "https://standards.digital.health.nz/fhir/ValueSet/sact-regimen-code",
-  "jurisdiction": [
-    {
-      "coding": [
-        {
-          "code": "NZ",
-          "system": "urn:iso:std:iso:3166"
-        }
-      ]
-    }
-  ],
   "compose": {
     "include": [
       {
-        "system": "http://snomed.info/sct",
-        "concept": [
-          {
-            "code": "dummy",
-            "display": "FOLFOX"
-          }
-        ]
+        "system": "https://standards.digital.health.nz/ns/sact-regimen-code"
       }
     ]
   }

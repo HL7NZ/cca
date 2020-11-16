@@ -84,7 +84,7 @@ Description:    "CCA Regimen Plan Definition."
 //set the code and binding for cancer typ
 * useContext[cancer-type].code = #focus //(exactly)
 
-* useContext[cancer-type].valueCodeableConcept from http://standards.digital.health.nz/fhir/ValueSet/cancer-type-code
+* useContext[cancer-type].valueCodeableConcept from https://standards.digital.health.nz/fhir/ValueSet/cancer-type-code
 * useContext[cancer-type] ^short = "The type of cancer"
 * useContext[cancer-type] ^definition = "The type of cancer"
 

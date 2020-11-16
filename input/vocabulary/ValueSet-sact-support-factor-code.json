@@ -20,7 +20,53 @@
   "compose": {
     "include": [
       {
-        "system": "http://snomed.info/sct"
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "718526003",
+            "display": "Antifungal prophylaxis"
+          },
+          {
+            "code": "427314002",
+            "display": "Antiviral prophylaxis"
+          },
+          {
+            "code": "128333008",
+            "display": "Diarrhoea risk"
+          },
+          {
+            "code": "419219000",
+            "display": "Emetogenicity"
+          },
+          {
+            "code": "81286007",
+            "display": "Growth factor support"
+          },
+          {
+            "code": "281800008",
+            "display": "Hydration"
+          },
+          {
+            "code": "421961002",
+            "display": "Hypersensitivity / Infusion related reaction risk"
+          },
+          {
+            "code": "772120006",
+            "display": "Irradiated blood components"
+          },
+          {
+            "code": "56661000210100",
+            "display": "Mesna uroprotection"
+          },
+          {
+            "code": "441952005",
+            "display": "Ocular toxicity risk"
+          },
+          {
+            "code": "75549005",
+            "display": "Pneumocystis jiroveci pneumonia (PJP) prophylaxis"
+          }
+        ]
       }
     ]
   }

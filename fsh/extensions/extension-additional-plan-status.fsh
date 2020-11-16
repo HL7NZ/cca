@@ -13,7 +13,7 @@ In most situations the value of the status element itself will be 'active'"
 
 //todo - need to create the valueset
 * value[x] only code
-* valueCode from http://clinfhir.com/fhir/ValueSet/sact-plan-definition-status-code
+* valueCode from https://standards.digital.health.nz/fhir/ValueSet/sact-plan-definition-status-code
 
 CodeSystem:  PlanDefinitionStatus
 Id: sact-plan-definition-status-code

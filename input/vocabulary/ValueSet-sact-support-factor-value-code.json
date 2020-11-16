@@ -20,7 +20,105 @@
   "compose": {
     "include": [
       {
-        "system": "http://snomed.info/sct"
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "897021009",
+            "display": "Routine antifungal prophylaxis not recommended"
+          },
+          {
+            "code": "897020005",
+            "display": "Routine antifungal prophylaxis recommended"
+          },
+          {
+            "code": "897022002",
+            "display": "Routine antiviral prophylaxis not recommended"
+          },
+          {
+            "code": "897019004",
+            "display": "Routine antiviral prophylaxis recommended"
+          },
+          {
+            "code": "723509005",
+            "display": "High - anti-diarrhoeals are usually prescribed with this treatment "
+          },
+          {
+            "code": "723505004",
+            "display": "Low - anti-diarrhoeals are not usually prescribed with this treatment"
+          },
+          {
+            "code": "75540009",
+            "display": "High"
+          },
+          {
+            "code": "62482003",
+            "display": "Low"
+          },
+          {
+            "code": "255508009",
+            "display": "Medium "
+          },
+          {
+            "code": "255605001",
+            "display": "Minimal"
+          },
+          {
+            "code": "54361000210104",
+            "display": "Recommended for primary prophylaxis"
+          },
+          {
+            "code": "54371000210105",
+            "display": "Recommended for secondary prophylaxis"
+          },
+          {
+            "code": "54271000210101",
+            "display": "Routine hydration not recommended"
+          },
+          {
+            "code": "54261000210107",
+            "display": "Routine hydration recommended"
+          },
+          {
+            "code": "723509005",
+            "display": "High - routine premedication recommended"
+          },
+          {
+            "code": "723505004",
+            "display": "Low - routine premedication recommended"
+          },
+          {
+            "code": "54311000210101",
+            "display": "Irradiation of blood components is not recommended"
+          },
+          {
+            "code": "54301000210103",
+            "display": "Irradiation of blood components is recommended"
+          },
+          {
+            "code": "723509005",
+            "display": "High - administer corticosteroid eyedrops to minimise corneal toxicity"
+          },
+          {
+            "code": "723505004",
+            "display": "Low "
+          },
+          {
+            "code": "391159000",
+            "display": "Routine antibiotic prophylaxis not recommended"
+          },
+          {
+            "code": "413555000",
+            "display": "Routine antibiotic prophylaxis recommended"
+          },
+          {
+            "code": "54291000210102",
+            "display": "Routine mesna uroprotection not recommended"
+          },
+          {
+            "code": "54281000210104",
+            "display": "Routine mesna uroprotection recommended "
+          }
+        ]
       }
     ]
   }
