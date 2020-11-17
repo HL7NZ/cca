@@ -21,7 +21,8 @@ parameters:
 copyrightYear: 2020+
 releaseLabel: CI Build
 
-pages:
+# use includes/menu.xml as not all files will be present (extensions, profiles, terminology)
+pagesX:
   index.md:
     title: Home
   examples.xml:

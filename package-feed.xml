@@ -1,0 +1,23 @@
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:fhir="http://hl7.org/fhir/feed" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+<channel>
+    <title>NZ IG Packages</title>
+    <description>Packages created by David Hay</description>
+    <link>http://igs.clinfhir.com/packages/package-feed.xml</link>
+    <generator>Hand</generator>
+    <lastBuildDate>Tue, 17 Nov 2020 12:00:00 GMT</lastBuildDate>
+    <atom:link href="http://igs.clinfhir.com/packages/package-feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 17 Nov 2020 12:00:00 GMT</pubDate>
+    <language>en</language>
+    <ttl>600</ttl>
+    <item>
+        <title>hl7.fhir.nz.cca#0.1.0</title>
+        <description>CCA package</description>
+        <link>http://igs.clinfhir.com/packages/cca/package.tgz</link>
+        <guid isPermaLink="true">http://igs.clinfhir.com/packages/cca/package.tgz</guid>
+        <dc:creator>David Hay</dc:creator>
+        <fhir:version>4.0.1</fhir:version>
+        <fhir:kind>fhir.ig</fhir:kind>
+        <pubDate>Tue, 17 Nov 2020 12:00:00 GMT</pubDate>
+    </item>
+    </channel>
+</rss>

@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # clear the input folders b4 the generate. Assumes that only sushi to writing to them!
-rm -f input/examples/*.json
-rm -f input/extensions/*.json
-rm -f input/profiles/*.json
-rm -f input/vocabulary/*.json
+# rm -f input/examples/*.json
+# rm -f input/extensions/*.json
+# rm -f input/profiles/*.json
+# rm -f input/vocabulary/*.json
 
 
 
@@ -22,7 +22,7 @@ echo "Making terminology summary"
 ../scripts/makeTerminologySummary.js cca
 
 echo "Making API summary"
-../scripts/makeCapabilityStatement.js cca
+# ../scripts/makeCapabilityStatement.js cca
 
 # read -p "Press any key..."
 

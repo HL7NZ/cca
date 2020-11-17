@@ -270,6 +270,11 @@
           "generation": "markdown"
         },
         {
+          "nameUrl": "CapabilityStatement.html",
+          "title": "Capability Statement",
+          "generation": "html"
+        },
+        {
           "nameUrl": "examples.html",
           "title": "Examples",
           "generation": "html"
@@ -293,11 +298,6 @@
           "nameUrl": "terminology.html",
           "title": "Terminology",
           "generation": "markdown"
-        },
-        {
-          "nameUrl": "CapabilityStatement.html",
-          "title": "API",
-          "generation": "html"
         }
       ]
     },

@@ -20,17 +20,17 @@ The status of the overall plan is exposed in the PlanDefinition.status element, 
     <tr><td>Published</td><td>The regimen is available for use</td><td>active</td><td></td></tr>
     <tr><td>Provisionally published</td>
         <td>The regimen is available for use, but is still undergoing a review so may change</td>
-        <td>active</td><td><a href="StructureDefinition-regimen-under-review.html">regimen-under-review</a></td></tr>
+        <td>active</td><td><a href="StructureDefinition-sact-regimen-under-review.html">regimen-under-review</a></td></tr>
     <tr><td>Discontinued</td><td>The regimen is no longer in use</td><td>retired</td><td></td></tr>
     <tr><td>Superceeded</td><td>The regimen is no longer in use, but has been superceeded by another</td><td>retired</td>
-    <td><a href="StructureDefinition-replaced-by.html">replaced-by</a></td></tr>
+    <td><a href="StructureDefinition-sact-replaced-by.html">replaced-by</a></td></tr>
 
 </table>
 
 ### Cycle repeats
 As noted in the [background](index.html#background), the top most action element (attached to the resource root) represents a cycle of medication adminstration with the details of the cycles (ie the medications) present as child action elements, with a reference to the ActivityDefinition. The cycles are intended to be extecuted in series - completing one cycle (and its repeats) before moving on to the next one.
 
-As well as having any number of defined cycles in the [plan, an individual cycle can also repeat any number of times, which is indicated in the __action.timingTiming__ element. The element (which is a [Timing]() datatype) has the following child elements.
+As well as having any number of defined cycles in the [plan, an individual cycle can also repeat any number of times, which is indicated in the __action.timingTiming__ element. The element (which is a [Timing](http://hl7.org/fhir/datatypes.html#Timing) datatype) has the following child elements.
 
 * .repeat.count - the number of times this cycle should repeat. If this element is absent, then the cycle can repeat any number of times, as dictated by the physician in charge. Otherwise, the value is the number of times that this cycle should be repeated before moving on to the next one.
 * .repeat.duration  / repeat.durationUnit - the length of a single cycle. This will always be present.

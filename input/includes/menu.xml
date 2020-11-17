@@ -7,11 +7,25 @@
 * To change the contents of this file, edit the "menu" attribute in the tank config.yaml file *
 * or provide your own menu.xml in the ig-data/input/includes folder                           *
 ***********************************************************************************************
+  index.md:
+    title: Home
+  examples.xml:
+    title: Examples
+  extensions.xml:
+    title: Extensions
+  notes.md:
+    title: Notes
+  profiles.xml:
+    title: Profiles
+  terminology.md:
+    title: Terminology
+  CapabilityStatement.xml:
+    title: API
 {% endcomment %} -->
 
 <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li>
-    <a href="index.html">IG Home</a>
+    <a href="index.html">Home</a>
   </li>
   <li>
     <a href="notes.html">Notes</a>
