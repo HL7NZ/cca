@@ -326,11 +326,6 @@
         ]
       },
       {
-        "id": "PlanDefinition.action.prefix",
-        "path": "PlanDefinition.action.prefix",
-        "max": "0"
-      },
-      {
         "id": "PlanDefinition.action.priority",
         "path": "PlanDefinition.action.priority",
         "max": "0"
