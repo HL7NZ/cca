@@ -69,10 +69,6 @@ Description:    "CCA Regimen Plan Definition."
 
     //top level: Cycle, next level: Actions (eg medication administation) within the cycle
 
-/*
-* action.action.modifierExtension contains
-    $TOD named timing-of-days 0..*
-*/
 
 //slice useContext
 * useContext ^slicing.discriminator.type = #value
@@ -87,10 +83,6 @@ Description:    "CCA Regimen Plan Definition."
 * useContext[cancer-type].valueCodeableConcept from https://standards.digital.health.nz/fhir/ValueSet/cancer-type-code
 * useContext[cancer-type] ^short = "The type of cancer"
 * useContext[cancer-type] ^definition = "The type of cancer"
-
-
-
-
 
 
 * action.priority 0..0
