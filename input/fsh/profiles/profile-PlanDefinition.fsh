@@ -92,7 +92,7 @@ Description:    "CCA Regimen Plan Definition."
 
 
 
-* action.prefix 0..0
+
 * action.priority 0..0
 * action.code 0..0
 * action.reason 0..0

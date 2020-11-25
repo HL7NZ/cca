@@ -5,7 +5,7 @@
 # │  http://build.fhir.org/ig/HL7/fhir-shorthand/branches/beta/sushi.html#ig-development           │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: hl7.fhir.nz.cca
-canonical: http://hl7.org.nz/fhir/cca
+canonical: http://hl7.org.nz/fhir/ig/cca
 version: 0.1.0
 name: CcaImplementationGuide
 title: HL7® FHIR® Te Aho o Te Kahu, Cancer Control Agency Implementation Guide
@@ -21,22 +21,7 @@ parameters:
 copyrightYear: 2020+
 releaseLabel: CI Build
 
-# use includes/menu.xml as not all files will be present (extensions, profiles, terminology)
-pagesX:
-  index.md:
-    title: Home
-  examples.xml:
-    title: Examples
-  extensions.xml:
-    title: Extensions
-  notes.md:
-    title: Notes
-  profiles.xml:
-    title: Profiles
-  terminology.md:
-    title: Terminology
-  CapabilityStatement.xml:
-    title: API
+# use includes/menu.xml for pages as not all files will be present when sushi runs (extensions, profiles, terminology)
 
 
 menu:

@@ -1,7 +1,7 @@
 {
   "resourceType": "ImplementationGuide",
   "id": "hl7.fhir.nz.cca",
-  "url": "http://hl7.org.nz/fhir/cca/ImplementationGuide/hl7.fhir.nz.cca",
+  "url": "http://hl7.org.nz/fhir/ig/cca/ImplementationGuide/hl7.fhir.nz.cca",
   "version": "0.1.0",
   "name": "CcaImplementationGuide",
   "title": "HL7® FHIR® Te Aho o Te Kahu, Cancer Control Agency Implementation Guide",

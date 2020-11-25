@@ -8,4 +8,4 @@
 
 # JAVA -jar ../scripts/publisher.jar -no-sushi -ig . 
 
-JAVA -jar ../scripts/publisher.jar  -ig . 
+JAVA -jar ../publisher/publisher.jar  -ig . 
