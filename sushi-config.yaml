@@ -1,4 +1,3 @@
-
 # ╭───────────────────────────ImplementationGuide-hl7.fhir.nz.base.json────────────────────────────╮
 # │  The properties below are used to create the ImplementationGuide resource. For a list of       │
 # │  supported properties, see:                                                                    │
@@ -11,8 +10,7 @@ name: CcaImplementationGuide
 title: HL7® FHIR® Te Aho o Te Kahu, Cancer Control Agency Implementation Guide
 status: active
 publisher:
-  name: David Hay
-  email: mailto:david.hay25@gmail.com
+  name: Te Aho o Te Kahu, Cancer Control Agency
 description: CCA IG
 license: CC0-1.0
 fhirVersion: 4.0.1
@@ -22,7 +20,6 @@ copyrightYear: 2020+
 releaseLabel: CI Build
 
 # use includes/menu.xml for pages as not all files will be present when sushi runs (extensions, profiles, terminology)
-
 
 menu:
   IG Home: index.html
@@ -36,4 +33,3 @@ menu:
   "Support\n      ":
     Download IG: full-ig.zip
     FHIR Spec: http://hl7.org/fhir/R4/index.html
-
