@@ -2,6 +2,7 @@
 Alias: $locationMedicationCollection = http://hl7.org.nz/fhir/StructureDefinition/sact-location-medication-collection
 Alias: $locationAdministration = http://hl7.org.nz/fhir/StructureDefinition/sact-administration-site
 Alias: $offLabel = http://hl7.org.nz/fhir/StructureDefinition/sact-off-label
+Alias: $isPrn = http://hl7.org.nz/fhir/StructureDefinition/sact-is-prn
 
 Profile:        CcaActivityDefinition
 Parent:         ActivityDefinition
@@ -18,7 +19,8 @@ Description:    "CCA Regimen Activity Definition."
 * extension contains
     $locationMedicationCollection named location-medication-collection 0..1 and
     $locationAdministration named location-administration 0..1 and 
-    $offLabel named off-label 0..1
+    $offLabel named off-label 0..1 and
+    $isPrn named is-prn 0..1
 
 //elements that have been removed
 * identifier 0..0
