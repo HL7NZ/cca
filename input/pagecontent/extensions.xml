@@ -93,14 +93,6 @@ In most situations the value of the status element itself will be 'active'</td>
 </td>
 <td>The intent of the regimen - what is its purpose</td>
 </tr>
-<tr>
-<td><a href='http://build.fhir.org/ig/HL7NZ/cca/branches/master/StructureDefinition-sact-is-prn.html'>sact-is-prn</a></td>
-<td>http://hl7.org.nz/fhir/StructureDefinition/sact-is-prn</td>
-<td>
-<div>ActivityDefinition</div>
-</td>
-<td>Indicates whether the medication is prn or not</td>
-</tr>
 </table>
 <a name="externalExtensions"> </a>
 <h3>Extensions used but defined elsewhere</h3>
