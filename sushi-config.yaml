@@ -3,7 +3,7 @@
 # │  supported properties, see:                                                                    │
 # │  http://build.fhir.org/ig/HL7/fhir-shorthand/branches/beta/sushi.html#ig-development           │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: hl7.fhir.nz.cca
+id: hl7.org.nz.fhir.ig.cca
 canonical: http://hl7.org.nz/fhir/ig/cca
 version: 0.1.0
 name: CcaImplementationGuide
