@@ -14,16 +14,17 @@ Usage: #example
 * extension[regimen-type].valueCodeableConcept.coding = $SNOMED#dummy
 
 
-* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Plan for ColoRectal cancer. Therer is a single cycle with 2 drug administrations</div>"
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Plan for ColoRectal cancer. There is a single cycle with 2 drug administrations</div>"
 * text.status = #additional
 
+//this plan is under review. It is active, but has an extension 
 * status = #active
 * status.extension[additional-status].valueCode = #review
 
 
 * version = "3.0.3"
 * title = "Colorectal Adjuvant FOLFOX (a7)"
-* description = "A drug treatment regimen for Colorectal cancer"
+* description = "A drug treatment regimen for Colorectal cancer. Plan is still under review."
 
 
 * type.coding.system = "http://terminology.hl7.org/CodeSystem/plan-definition-type"

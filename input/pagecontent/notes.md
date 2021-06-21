@@ -20,12 +20,17 @@ The status of the overall plan is exposed in the PlanDefinition.status element, 
     <tr><td>Published</td><td>The regimen is available for use</td><td>active</td><td></td></tr>
     <tr><td>Provisionally published</td>
         <td>The regimen is available for use, but is still undergoing a review so may change</td>
-        <td>active</td><td><a href="StructureDefinition-sact-regimen-under-review.html">regimen-under-review</a></td></tr>
+        <td>active</td><td><a href="StructureDefinition-sact-additional-plan-status.html">additional-plan-status</a>. Note that this extension is actually on the status element itself, not the root of the resource.</td></tr>
     <tr><td>Discontinued</td><td>The regimen is no longer in use</td><td>retired</td><td></td></tr>
-    <tr><td>Superceeded</td><td>The regimen is no longer in use, but has been superceeded by another</td><td>retired</td>
-    <td><a href="StructureDefinition-sact-replaced-by.html">replaced-by</a></td></tr>
+    <tr>
+      <td>Superceeded</td><td>The regimen is no longer in use, but has been superceeded by another.
+      </td>
+      <td>retired</td>
+    <td><a href="StructureDefinition-sact-replaced-by.html">replaced-by</a>. This extension is on the resource root.</td></tr>
 
 </table>
+
+
 
 ### Cycle repeats
 As noted in the [background](index.html#background), the top most action element (attached to the resource root) represents a cycle of medication adminstration with the details of the cycles (ie the medications) present as child action elements, with a reference to the ActivityDefinition. The cycles are intended to be extecuted in series - completing one cycle (and its repeats) before moving on to the next one.

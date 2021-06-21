@@ -209,7 +209,7 @@
     }
   ],
   "text": {
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Plan for ColoRectal cancer. Therer is a single cycle with 2 drug administrations</div>",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Plan for ColoRectal cancer. There is a single cycle with 2 drug administrations</div>",
     "status": "additional"
   },
   "status": "active",
@@ -223,7 +223,7 @@
   },
   "version": "3.0.3",
   "title": "Colorectal Adjuvant FOLFOX (a7)",
-  "description": "A drug treatment regimen for Colorectal cancer",
+  "description": "A drug treatment regimen for Colorectal cancer. Plan is still under review.",
   "publisher": "New Zealand Medicines Formulary LP",
   "date": "2020-06-29T20:14:18.417+12:00",
   "experimental": false,
