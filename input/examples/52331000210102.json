@@ -268,7 +268,7 @@
             "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-support-factor"
         }
     ],
-    "url": "https://fhir.nzulm.org.nz/fhir/PlanDefinition/?identifier=52331000210102",
+    "url": "https://fhir.nzf.org.nz/fhir/PlanDefinition/52331000210102",
     "identifier": [
         {
             "system": "http://snomed.info/sct",

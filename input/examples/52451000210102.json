@@ -162,7 +162,7 @@
             "valueMarkdown": "The medicines, doses, combinations, and schedule in this treatment regimen have been carefully reviewed against international best practice guidelines by specialists in medical oncology around New Zealand and this advice has been accepted for publication by Te Aho o Te Kahu (the Cancer Control Agency). Sometimes medicines that are used in routine clinical practice have not been through a formal review process by the NZ Medicines Regulator Medsafe and are therefore considered unapproved or off-label. These medicines are legally able to be prescribed through sections 25 and 29 of the Medicines Act and by obtaining informed consent from patients. All treatment regimens listed on this website have been through robust peer review and are considered an accepted standard of care, whether prescribed through sections 25 or 29 or carrying formal Medsafe Approval."
         }
     ],
-    "url": "https://fhir.nzulm.org.nz/fhir/PlanDefinition/?identifier=52451000210102",
+    "url": "https://fhir.nzf.org.nz/fhir/PlanDefinition/52451000210102",
     "identifier": [
         {
             "system": "http://snomed.info/sct",
