@@ -288,7 +288,7 @@
         ]
     },
     "status": "active",
-    "date": "2021-03-03T08:01:14.28+00:00",
+    "date": "2021-03-03T08:01:14.28",
     "publisher": "New Zealand Medicines Formulary LP",
     "description": "A drug treatment regimen for Respiratory Non small cell lung cancer Metastatic - alectinib",
     "useContext": [
@@ -324,8 +324,8 @@
         }
     ],
     "copyright": "All rights reserved.",
-    "approvalDate": "2021-03-03T08:01:14.28+00:00",
-    "lastReviewDate": "2021-03-03T08:01:14.28+00:00",
+    "approvalDate": "2021-03-03T08:01:14.28",
+    "lastReviewDate": "2021-03-03T08:01:14.28",
     "author": [
         {
             "name": "New Zealand Medicines Formulary LP"

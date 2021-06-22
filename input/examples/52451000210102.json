@@ -182,7 +182,7 @@
         ]
     },
     "status": "active",
-    "date": "2021-04-19T13:46:48.093+00:00",
+    "date": "2021-04-19T13:46:48.093",
     "publisher": "New Zealand Medicines Formulary LP",
     "description": "A drug treatment regimen for Urogenital Prostate Castration resistant Metastatic - abiraterone and dexamethasone",
     "useContext": [
@@ -233,8 +233,8 @@
         }
     ],
     "copyright": "All rights reserved.",
-    "approvalDate": "2021-04-19T13:46:48.093+00:00",
-    "lastReviewDate": "2021-04-19T13:46:48.093+00:00",
+    "approvalDate": "2021-04-19T13:46:48.093",
+    "lastReviewDate": "2021-04-19T13:46:48.093",
     "author": [
         {
             "name": "New Zealand Medicines Formulary LP"
