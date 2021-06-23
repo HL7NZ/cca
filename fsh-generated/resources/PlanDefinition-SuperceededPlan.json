@@ -1,0 +1,23 @@
+{
+  "resourceType": "PlanDefinition",
+  "id": "SuperceededPlan",
+  "meta": {
+    "profile": [
+      "http://hl7.org.nz/fhir/StructureDefinition/CcaPlanDefinition"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-replaced-by",
+      "valueReference": {
+        "reference": "PlanDefinition/newPlan"
+      }
+    }
+  ],
+  "status": "retired",
+  "action": [
+    {
+      "description": "Here would be the details of this plan."
+    }
+  ]
+}

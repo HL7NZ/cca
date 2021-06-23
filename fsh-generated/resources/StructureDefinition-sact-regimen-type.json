@@ -39,6 +39,12 @@
   "differential": {
     "element": [
       {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Regimen type",
+        "definition": "The overall type of the regimen - eg FOLFOX"
+      },
+      {
         "id": "Extension.extension",
         "path": "Extension.extension",
         "max": "0"

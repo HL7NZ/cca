@@ -47,6 +47,12 @@
   "differential": {
     "element": [
       {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Instructions for use",
+        "definition": "Specific instructions for use of the regimen overall, or for the individual cycles"
+      },
+      {
         "id": "Extension.extension",
         "path": "Extension.extension",
         "max": "0"

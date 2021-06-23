@@ -38,6 +38,11 @@
   "differential": {
     "element": [
       {
+        "id": "Extension",
+        "path": "Extension",
+        "definition": "The intent of the regimen - what is its purpose"
+      },
+      {
         "id": "Extension.extension",
         "path": "Extension.extension",
         "max": "0"

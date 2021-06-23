@@ -39,6 +39,12 @@
   "differential": {
     "element": [
       {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Replaced by",
+        "definition": "When a Plan has been deprecated (superceeded or discontinued), refers to the one that replaces it, if any"
+      },
+      {
         "id": "Extension.extension",
         "path": "Extension.extension",
         "max": "0"

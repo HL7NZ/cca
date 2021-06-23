@@ -39,6 +39,12 @@
   "differential": {
     "element": [
       {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Off label",
+        "definition": "Indicates that the medication is being used for a purpose for which it has not been specifically approved"
+      },
+      {
         "id": "Extension.extension",
         "path": "Extension.extension",
         "max": "0"

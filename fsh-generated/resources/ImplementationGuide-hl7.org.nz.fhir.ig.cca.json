@@ -1,0 +1,337 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "hl7.org.nz.fhir.ig.cca",
+  "url": "http://hl7.org.nz/fhir/ig/cca/ImplementationGuide/hl7.org.nz.fhir.ig.cca",
+  "version": "0.1.0",
+  "name": "CcaImplementationGuide",
+  "title": "HL7® FHIR® Te Aho o Te Kahu, Cancer Control Agency Implementation Guide",
+  "status": "active",
+  "publisher": "Te Aho o Te Kahu, Cancer Control Agency",
+  "description": "CCA IG",
+  "packageId": "hl7.org.nz.fhir.ig.cca",
+  "license": "CC0-1.0",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/CcaActivityDefinition"
+        },
+        "name": "ActivityDefinition",
+        "description": "CCA Regimen Activity Definition.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/CcaPlanDefinition"
+        },
+        "name": "PlanDefinition",
+        "description": "CCA Regimen Plan Definition.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sact-additional-plan-status"
+        },
+        "name": "Regimen under review",
+        "description": "Additional status values for PlanDefinition. Currently only a single value - review - indicating that a regimen is published and available to be used, but there is still a review being performed, so could change. \nIn most situations the value of the status element itself will be 'active'",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sact-disclaimer"
+        },
+        "name": "Disclaimer",
+        "description": "A disclaimer for use of this Plan",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sact-administration-site"
+        },
+        "name": "LocationAdministration",
+        "description": "The physical Location where the medication administration occurs (eg home or clinic)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sact-location-medication-collection"
+        },
+        "name": "LocationMedicationCollection",
+        "description": "The physical Location where the medication can be collection prior to collection",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sact-off-label"
+        },
+        "name": "Off label",
+        "description": "Indicates that the medication is being used for a purpose for which it has not been specifically approved",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sact-plan-instructions"
+        },
+        "name": "Instructions for use",
+        "description": "Specific instructions for use of the regimen overall, or for the individual cycles",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sact-regimen-type"
+        },
+        "name": "Regimen type",
+        "description": "The overall type of the regimen - eg FOLFOX",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sact-replaced-by"
+        },
+        "name": "Replaced by",
+        "description": "When a Plan has been deprecated (superceeded or discontinued), refers to the one that replaces it, if any",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sact-support-factor"
+        },
+        "name": "SupportFactor",
+        "description": "Support factors needed during treatment",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sact-timing-of-days"
+        },
+        "name": "TimingOfDays",
+        "description": "Allows specific days to be indicated in a component of a regimen cycle. extends the idea of  UV extension: http://hl7.org/fhir/extension-timing-daysofcycle.html by adding instructions",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sact-treatment-intent"
+        },
+        "name": "TreatmentIntent",
+        "description": "The intent of the regimen - what is its purpose",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/cancer-type-code"
+        },
+        "name": "Cancer type",
+        "description": "The type of Cancer",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/sact-administration-site-code"
+        },
+        "name": "Administration location",
+        "description": "The physical location where the administration occurred - eg at home or in a clinic",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/sact-location-medication-collection-code"
+        },
+        "name": "Medication collection location",
+        "description": "The physical location where the medication can be collected on prior to administration - eg a pharmacy",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/sact-plan-definition-status-code"
+        },
+        "name": "PlanDefinition additional status",
+        "description": "Other codes used for the PlanDefinition status",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/sact-regimen-code"
+        },
+        "name": "Regimen type code",
+        "description": "The type of regimen - eg FOLFOX",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/sact-support-factor-code"
+        },
+        "name": "Support Factors",
+        "description": "The set of possible support factors (not their values)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/sact-support-factor-value-code"
+        },
+        "name": "Possible values for Support Factors",
+        "description": "The set of all possible support factors values (not specific to any one factor)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/sact-treatment-intent-code"
+        },
+        "name": "Treatment intent",
+        "description": "The intent of the regimen - what is its purpose",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/sact-plan-definition-status-code"
+        },
+        "name": "PlanDefinition additional status",
+        "description": "Other codes used for the PlanDefinition status",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/sact-regimen-code"
+        },
+        "name": "Regimen type code",
+        "description": "Codes used for the regimen type",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/sact-treatment-intent-code"
+        },
+        "name": "Treatment intent",
+        "description": "The intent of the regimen - what is its purpose",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ActivityDefinition/ActCabergoline"
+        },
+        "name": "ActCabergoline",
+        "description": "Cabergoline Administration",
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/CcaActivityDefinition"
+      },
+      {
+        "reference": {
+          "reference": "ActivityDefinition/ActTragacanth"
+        },
+        "name": "ActTragacanth",
+        "description": "Tragacanth Administration",
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/CcaActivityDefinition"
+      },
+      {
+        "reference": {
+          "reference": "CapabilityStatement/CcaCapabilityStatement"
+        },
+        "name": "CapabilityStatement",
+        "description": "Represents API exposed to retrieve plans",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "PlanDefinition/ColoRectal"
+        },
+        "name": "ColoRectal",
+        "description": "Example Plan definition for coloRectal cancer",
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/CcaPlanDefinition"
+      },
+      {
+        "reference": {
+          "reference": "PlanDefinition/SuperceededPlan"
+        },
+        "name": "SuperceededPlan",
+        "description": "A plan that has been superceeded by another",
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/CcaPlanDefinition"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/CancerRegimensLM"
+        },
+        "description": "CancerRegimens",
+        "exampleBoolean": false,
+        "name": "CancerRegimensLM"
+      },
+      {
+        "reference": {
+          "reference": "PlanDefinition/52331000210102"
+        },
+        "name": "52331000210102",
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/CcaPlanDefinition"
+      },
+      {
+        "reference": {
+          "reference": "PlanDefinition/52401000210103"
+        },
+        "name": "52401000210103",
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/CcaPlanDefinition"
+      },
+      {
+        "reference": {
+          "reference": "PlanDefinition/52451000210102"
+        },
+        "name": "52451000210102",
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/CcaPlanDefinition"
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "CapabilityStatement.html",
+          "title": "Capability Statement",
+          "generation": "html"
+        },
+        {
+          "nameUrl": "examples.html",
+          "title": "Examples",
+          "generation": "html"
+        },
+        {
+          "nameUrl": "extensions.html",
+          "title": "Extensions",
+          "generation": "html"
+        },
+        {
+          "nameUrl": "notes.html",
+          "title": "Notes",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "profiles.html",
+          "title": "Profiles",
+          "generation": "html"
+        },
+        {
+          "nameUrl": "terminology.html",
+          "title": "Terminology",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2020+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "CI Build"
+      },
+      {
+        "code": "show-inherited-invariants",
+        "value": "false"
+      }
+    ]
+  }
+}

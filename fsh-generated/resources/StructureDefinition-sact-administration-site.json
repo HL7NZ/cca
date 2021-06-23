@@ -38,6 +38,11 @@
   "differential": {
     "element": [
       {
+        "id": "Extension",
+        "path": "Extension",
+        "definition": "The physical Location where the medication administration occurs (eg home or clinic)"
+      },
+      {
         "id": "Extension.extension",
         "path": "Extension.extension",
         "max": "0"

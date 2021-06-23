@@ -4,12 +4,12 @@
 <table class='table table-bordered table-hover table-sm'>
 <tr><th>Id</th><th>Url</th><th>Description</th></tr>
 <tr>
-<td><a href='http://build.fhir.org/ig/HL7NZ/cca/branches/master/StructureDefinition-CcaActivityDefinition.html'>CcaActivityDefinition</a></td>
+<td><a href='StructureDefinition-CcaActivityDefinition.html'>CcaActivityDefinition</a></td>
 <td>http://hl7.org.nz/fhir/StructureDefinition/CcaActivityDefinition</td>
 <td>CCA Regimen Activity Definition.</td>
 </tr>
 <tr>
-<td><a href='http://build.fhir.org/ig/HL7NZ/cca/branches/master/StructureDefinition-CcaPlanDefinition.html'>CcaPlanDefinition</a></td>
+<td><a href='StructureDefinition-CcaPlanDefinition.html'>CcaPlanDefinition</a></td>
 <td>http://hl7.org.nz/fhir/StructureDefinition/CcaPlanDefinition</td>
 <td>CCA Regimen Plan Definition.</td>
 </tr>
