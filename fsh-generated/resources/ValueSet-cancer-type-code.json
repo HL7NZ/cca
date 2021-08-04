@@ -38,6 +38,16 @@
             "value": "363346000"
           }
         ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "362965005"
+          }
+        ]
       }
     ]
   }
