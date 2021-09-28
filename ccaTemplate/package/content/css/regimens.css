@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+
+.regimen-display {
+    --light-border: #d5d4d4;
+    font-family: 'Fira Sans', sans-serif;
+    max-width: 1140px;
+    font-weight: 400;
+    font-size: 0.875rem;
+    color: #585353;
+}
+
+.regimen-display .handle-lines {
+    white-space: pre-line;
+}
+
+.regimen-display .regimen-tabs.hidden {
+    display: none !important;
+}
+
+
+
+.regimen-display p {
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 150%;
+    color: #585353;
+}
+
+
+
+.regimen-display h1 {
+    font-weight: 300;
+    font-size: 1.375rem;
+    line-height: 120%;
+    color: #8a8787;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+
+
+.regimen-display h2 {
+    font-weight: 300;
+    font-size: 1rem;
+    letter-spacing: -0.011rem;
+    line-height: 1.5rem;
+    color: #585353;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+}
+
+
+
+.regimen-display h3 {
+    font-weight: 300;
+    font-size: 1rem;
+    text-decoration: none;
+    text-align: left;
+}
+
+
+
+.regimen-display h3,
+.regimen-display h4 {
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    color: #585353;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+}
+
+
+
+.regimen-display label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #8a8787;
+}
+
+
+
+.regimen-display .medication {
+    text-decoration: underline;
+    color: #2c452b;
+    cursor: pointer;
+}
+
+
+
+.regimen-display .regimen-instructions,
+.regimen-display .cycle-instructions {
+    white-space: pre-line;
+    min-width: 180px;
+    margin-top: 12px;
+}
+
+.regimen-display .regimen-instructions p,
+.regimen-display .cycle-instructions p {
+    margin: 0;
+    line-height: initial !important;
+    padding: 0 !important;
+}
+
+.regimen-display .html-instructions {
+    white-space: normal !important;
+}
+
+.regimen-display .html-instructions p {
+    line-height: 150% !important;
+}
+
+.regimen-display table {
+    margin: 2rem 0;
+    width: calc(100% - 80px);
+    border-collapse: collapse;
+}
+
+
+.regimen-display table tr th {
+    font-weight: 600 !important;
+    border-bottom: 1px solid #585353 !important;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    line-height: 1.2rem !important;
+    padding-left: 0 !important;
+    font-size: 0.875rem;
+    margin: 0;
+    text-align: left;
+    color: #8a8787;
+}
+
+
+
+.regimen-display table tr td {
+    font-weight: 400 !important;
+    border-bottom: 1px solid #d5d4d4 !important;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    line-height: 1.2rem !important;
+    padding-left: 0 !important;
+    vertical-align: middle;
+    font-size: 0.875rem;
+    margin: 0;
+    color: #585353
+}
+
+
+.regimen-display .day-overview table th,
+.regimen-display .day-overview table td,
+.regimen-display .cycle-overview table th,
+.regimen-display .cycle-overview table td {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+
+.regimen-display .regimen-tabs {
+    padding-left: 0;
+    margin-left: 0;
+    width: 100%;
+    border-bottom: solid 1px #d5d4d4;
+    list-style: none;
+}
+
+
+
+.regimen-display .regimen-tabs li {
+    display: inline-block;
+    margin-bottom: -1px;
+    padding: 10px;
+    color: #585353;
+}
+
+
+
+.regimen-display .regimen-tabs li:hover {
+    border-top: solid 1px #d5d4d4;
+    border-left: solid 1px #d5d4d4;
+    border-right: solid 1px #d5d4d4;
+    cursor: pointer;
+}
+
+
+
+.regimen-display .regimen-tabs li.active,
+.regimen-display .regimen-tabs li.active:hover {
+    border: solid 1px #d5d4d4;
+    border-bottom-color: white;
+    color: #585353;
+}
+
+
+
+.regimen-display .regimen-tab {
+    border: solid 1px transparent;
+}
+
+
+
+.regimen-display .regimen-tab.active {
+    border: solid 1px #d5d4d4;
+}
+
+
+
+.regimen-display .regimen-tab-content {
+    display: none;
+}
+
+
+
+.regimen-display .regimen-tab-content.active {
+    display: block;
+}
+
+
+
+.regimen-item {
+    position: relative;
+}
+
+
+
+.regimen-display .cycle-overview,
+.regimen-display .day-overview {
+    margin: 20px 0;
+    padding: 10px;
+    border: solid lightgray 1px;
+    position: relative;
+}
+
+
+
+.regimen-display .regimen-row {
+    display: flex;
+}
+
+
+
+.regimen-display .regimen-col-1 {
+    max-width: 8.3333333334%;
+    width: 8.3333333334%;
+}
+
+
+
+.regimen-display .regimen-col-2 {
+    max-width: 16.6666666667%;
+    width: 16.6666666667%;
+}
+
+
+
+.regimen-display .regimen-col-3 {
+    max-width: 25%;
+    width: 25%;
+}
+
+
+
+.regimen-display .regimen-col-4 {
+    max-width: 33.3333333334%;
+    width: 33.3333333334%;
+}
+
+
+
+.regimen-display .regimen-col-5 {
+    max-width: 41.6666666667%;
+    width: 41.6666666667%;
+}
+
+
+
+.regimen-display .regimen-col-6 {
+    max-width: 50%;
+    width: 50%;
+}
+
+
+
+.regimen-display .regimen-col-7 {
+    max-width: 58.3333333334%;
+    width: 58.3333333334%;
+}
+
+
+
+.regimen-display .regimen-col-8 {
+    max-width: 66.6666666667%;
+    width: 66.6666666667%;
+}
+
+
+
+.regimen-display .regimen-col-9 {
+    max-width: 75%;
+    width: 75%;
+}
+
+
+
+.regimen-display .regimen-col-10 {
+    max-width: 88.3333333334%;
+    width: 88.3333333334%;
+}
+
+
+
+.regimen-display .regimen-col-11 {
+    max-width: 91.6666666667%;
+    width: 91.6666666667%;
+}
+
+
+
+.regimen-display .regimen-col-12 {
+    max-width: 100%;
+    width: 100%;
+}
+
+
+
+.regimen-display .s29-section {
+    display: inline;
+    position: relative;
+}
+
+
+
+.regimen-display .s29-label,
+.regimen-display .s25-label {
+    font-size: 10px;
+    font-weight: 500;
+    margin-left: 10px;
+    display: inline-block;
+    padding: 3px;
+    color: red;
+    cursor: pointer;
+}
+
+.s29-explanation-text .s29-explanation-label {
+    font-weight: 500;
+    display: inline-block;
+    padding: 0;
+    color: red;
+}
+
+
+.regimen-display .s29-products-list {
+    font-size: 10px !important;
+    display: inline-block;
+    border: gray 1px solid;
+    padding: 8px;
+    background-color: #595454;
+    color: white;
+    position: absolute;
+    display: none;
+    margin-left: 0px;
+    width: 370px;
+    margin-top: -50px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+
+
+.regimen-display .s29-products-list .s29-products-list-heading {
+    font-size: 12px !important;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+
+.regimen-display .s29-section:hover .s29-products-list {
+    display: inline-block;
+}
+
+
+
+.regimen-display .disclaimer,
+.s29-explanation-text {
+    margin: 35px 15px 15px 15px;
+    padding: 15px;
+    border: solid 1px gray;
+}
+
+
+
+.regimen-display .disclaimer p {
+    margin: 0;
+    font-size: 90%;
+}
+
+.s29-explanation-text p {
+    margin: 0;
+    font-size: 0.7875rem;
+    font-weight: 400;
+}
+
+.regimen-display .day-overview,
+.regimen-display .cycle-overview {
+    overflow-x: auto;
+}
+
+
+
+.regimen-display .day-overview table,
+.regimen-display .cycle-overview table {
+    box-sizing: border-box;
+    min-width: calc(100% - 90px) !important;
+    width: auto !important;
+}
