@@ -1,0 +1,14 @@
+{
+    "name": "nz.fhir.template.cca",
+    "version": "0.1.0",
+    "type": "fhir.template",
+    "license": "CC0-1.0",
+    "description": "CCA NZ FHIR Template",
+    "author": "NZF",
+    "canonical": "http://fhir.org/templates/nz.fhir.template.cca",
+    "baseDEP": "hl7.fhir.template",
+    "base": "fhir.base.template",
+    "dependencies": {
+        "fhir.base.template": "current"
+    }
+}
