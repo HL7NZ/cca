@@ -207,13 +207,6 @@
 }
 
 
-
-.regimen-display .regimen-tab-content {
-    display: none;
-}
-
-
-
 .regimen-display .regimen-tab-content.active {
     display: block;
 }
