@@ -10,7 +10,7 @@ Description:    "CCA Regimen Dosage."
 * ^text.status = #additional
 * ^text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Dosage</div>"
 
-* route from https://standards.digital.health.nz/fhir/ValueSet/sact-dose-unit
+* route from https://standards.digital.health.nz/fhir/ValueSet/sact-route
 * timing.code from https://standards.digital.health.nz/fhir/ValueSet/sact-dose-administration-frequency
 
 //elements that have been removed

@@ -9,6 +9,11 @@
 <td>CCA Regimen Activity Definition.</td>
 </tr>
 <tr>
+<td><a href='StructureDefinition-CcaDosage.html'>CcaDosage</a></td>
+<td>http://hl7.org.nz/fhir/StructureDefinition/CcaDosage</td>
+<td>CCA Regimen Dosage.</td>
+</tr>
+<tr>
 <td><a href='StructureDefinition-CcaPlanDefinition.html'>CcaPlanDefinition</a></td>
 <td>http://hl7.org.nz/fhir/StructureDefinition/CcaPlanDefinition</td>
 <td>CCA Regimen Plan Definition.</td>
