@@ -79,28 +79,12 @@
             "display": "Routine hydration recommended"
           },
           {
-            "code": "723509005",
-            "display": "High - routine premedication recommended"
-          },
-          {
-            "code": "723505004",
-            "display": "Low - routine premedication recommended"
-          },
-          {
             "code": "54311000210101",
             "display": "Irradiation of blood components is not recommended"
           },
           {
             "code": "54301000210103",
             "display": "Irradiation of blood components is recommended"
-          },
-          {
-            "code": "723509005",
-            "display": "High - administer corticosteroid eyedrops to minimise corneal toxicity"
-          },
-          {
-            "code": "723505004",
-            "display": "Low "
           },
           {
             "code": "391159000",

@@ -6,7 +6,7 @@
   "name": "AdditionalPlanStatus",
   "title": "Regimen under review",
   "status": "active",
-  "description": "Additional status values for PlanDefinition. Currently only a single value - review - indicating that a regimen is published and available to be used, but there is still a review being performed, so could change. \nIn most situations the value of the status element itself will be 'active'",
+  "description": "Additional status values for PlanDefinition. Currently only a single value - review - indicating that a regimen is published and available to be used, but there is still a review being performed, so could change. \r\nIn most situations the value of the status element itself will be 'active'",
   "jurisdiction": [
     {
       "coding": [
@@ -52,7 +52,7 @@
         ],
         "path": "Extension",
         "short": "Regimen under review",
-        "definition": "Additional status values for PlanDefinition. Currently only a single value - review - indicating that a regimen is published and available to be used, but there is still a review being performed, so could change. \nIn most situations the value of the status element itself will be 'active'",
+        "definition": "Additional status values for PlanDefinition. Currently only a single value - review - indicating that a regimen is published and available to be used, but there is still a review being performed, so could change. \r\nIn most situations the value of the status element itself will be 'active'",
         "min": 0,
         "max": "*",
         "base": {
@@ -318,7 +318,7 @@
         "id": "Extension",
         "path": "Extension",
         "short": "Regimen under review",
-        "definition": "Additional status values for PlanDefinition. Currently only a single value - review - indicating that a regimen is published and available to be used, but there is still a review being performed, so could change. \nIn most situations the value of the status element itself will be 'active'"
+        "definition": "Additional status values for PlanDefinition. Currently only a single value - review - indicating that a regimen is published and available to be used, but there is still a review being performed, so could change. \r\nIn most situations the value of the status element itself will be 'active'"
       },
       {
         "id": "Extension.extension",

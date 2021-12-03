@@ -25,6 +25,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/CcaDosage"
+        },
+        "name": "Dosage",
+        "description": "CCA Regimen Dosage.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/CcaPlanDefinition"
         },
         "name": "PlanDefinition",
@@ -36,7 +44,7 @@
           "reference": "StructureDefinition/sact-additional-plan-status"
         },
         "name": "Regimen under review",
-        "description": "Additional status values for PlanDefinition. Currently only a single value - review - indicating that a regimen is published and available to be used, but there is still a review being performed, so could change. \nIn most situations the value of the status element itself will be 'active'",
+        "description": "Additional status values for PlanDefinition. Currently only a single value - review - indicating that a regimen is published and available to be used, but there is still a review being performed, so could change. \r\nIn most situations the value of the status element itself will be 'active'",
         "exampleBoolean": false
       },
       {
@@ -129,6 +137,22 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/sact-dose-administration-frequency"
+        },
+        "name": "Medication dose administration frequency",
+        "description": "The dose administration frequency",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/sact-dose-unit-code"
+        },
+        "name": "Medication dose unit",
+        "description": "The dose unit",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/sact-administration-site-code"
         },
         "name": "Administration location",
@@ -157,6 +181,14 @@
         },
         "name": "Regimen type code",
         "description": "The type of regimen - eg FOLFOX",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/sact-route"
+        },
+        "name": "Route",
+        "description": "Route",
         "exampleBoolean": false
       },
       {

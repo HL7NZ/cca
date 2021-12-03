@@ -1,0 +1,109 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "DoseUnit",
+  "id": "sact-dose-unit-code",
+  "title": "Medication dose unit",
+  "description": "The dose unit",
+  "version": "0.1.0",
+  "url": "https://standards.digital.health.nz/fhir/ValueSet/sact-dose-unit",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "NZ",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "118582008",
+            "display": "percent"
+          },
+          {
+            "code": "257260002",
+            "display": "Pack(s)"
+          },
+          {
+            "code": "258682000",
+            "display": "g"
+          },
+          {
+            "code": "258684004",
+            "display": "mg"
+          },
+          {
+            "code": "258685003",
+            "display": "microgram"
+          },
+          {
+            "code": "258718000",
+            "display": "mmol"
+          },
+          {
+            "code": "258773002",
+            "display": "mL"
+          },
+          {
+            "code": "258803005",
+            "display": "microgram/kg"
+          },
+          {
+            "code": "258997004",
+            "display": "international unit"
+          },
+          {
+            "code": "385054002",
+            "display": "Modified release capsule(s)"
+          },
+          {
+            "code": "385055001",
+            "display": "Tablet(s)"
+          },
+          {
+            "code": "385061003",
+            "display": "Modified-release oral tablet(s)"
+          },
+          {
+            "code": "396163008",
+            "display": "mg/kg"
+          },
+          {
+            "code": "396186001",
+            "display": "million unit"
+          },
+          {
+            "code": "404216004",
+            "display": "mg/m²"
+          },
+          {
+            "code": "413573002",
+            "display": "AUC (area under the curve)"
+          },
+          {
+            "code": "414524001",
+            "display": "international unit/m²"
+          },
+          {
+            "code": "414745006",
+            "display": "million unit/m²"
+          },
+          {
+            "code": "420692007",
+            "display": "Capsule(s)"
+          },
+          {
+            "code": "447079001",
+            "display": "Orodispersible tablet(s)"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,6 +1,7 @@
 {
   "resourceType": "CapabilityStatement",
   "id": "CcaCapabilityStatement",
+  "url": "http://hl7.org.nz/fhir/ig/cca/CapabilityStatement/CcaCapabilityStatement",
   "jurisdiction": [
     {
       "coding": [

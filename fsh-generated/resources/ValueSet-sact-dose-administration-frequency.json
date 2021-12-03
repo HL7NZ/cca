@@ -1,0 +1,81 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "DoseAdministrationFrequency",
+  "id": "sact-dose-administration-frequency",
+  "title": "Medication dose administration frequency",
+  "description": "The dose administration frequency",
+  "version": "0.1.0",
+  "url": "https://standards.digital.health.nz/fhir/ValueSet/sact-dose-administration-frequency",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "NZ",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "307443002",
+            "display": "Eight times daily"
+          },
+          {
+            "code": "225756002",
+            "display": "Every four hours"
+          },
+          {
+            "code": "225768006",
+            "display": "Every hour"
+          },
+          {
+            "code": "225753005",
+            "display": "Every three hours"
+          },
+          {
+            "code": "225750008",
+            "display": "Every two hours"
+          },
+          {
+            "code": "307440004",
+            "display": "Five times daily"
+          },
+          {
+            "code": "307439001",
+            "display": "Four times daily"
+          },
+          {
+            "code": "229797004",
+            "display": "Once daily"
+          },
+          {
+            "code": "307486002",
+            "display": "Once per one time"
+          },
+          {
+            "code": "307442007",
+            "display": "Seven times daily"
+          },
+          {
+            "code": "307441000",
+            "display": "Six times daily"
+          },
+          {
+            "code": "229798009",
+            "display": "Three times daily"
+          },
+          {
+            "code": "229799001",
+            "display": "Twice daily"
+          }
+        ]
+      }
+    ]
+  }
+}

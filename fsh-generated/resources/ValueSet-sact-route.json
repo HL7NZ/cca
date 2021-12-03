@@ -1,0 +1,65 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "Route",
+  "id": "sact-route",
+  "title": "Route",
+  "description": "Route",
+  "version": "0.1.0",
+  "url": "https://standards.digital.health.nz/fhir/ValueSet/sact-route",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "NZ",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "386356001",
+            "display": "intramuscular injection"
+          },
+          {
+            "code": "386358000",
+            "display": "intravenous"
+          },
+          {
+            "code": "386359008",
+            "display": "oral administration"
+          },
+          {
+            "code": "386362006",
+            "display": "subcutaneous injection"
+          },
+          {
+            "code": "406188003",
+            "display": "intrathecal injection"
+          },
+          {
+            "code": "431464005",
+            "display": "intravesical administration"
+          },
+          {
+            "code": "431695009",
+            "display": "topical administration"
+          },
+          {
+            "code": "432977006",
+            "display": "intra-arterial injection"
+          },
+          {
+            "code": "81633002",
+            "display": "intraperitoneal injection"
+          }
+        ]
+      }
+    ]
+  }
+}
