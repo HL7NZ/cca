@@ -1,6 +1,6 @@
 Extension: AdditionalDetails
 Id: sact-additional-details
-Description: "Allows additional information to be added to a regimen"
+Description: "Allows additional information to be added to a regimen such as dosing modification details"
 
 * ^url = "http://hl7.org.nz/fhir/StructureDefinition/sact-additional-details"
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
