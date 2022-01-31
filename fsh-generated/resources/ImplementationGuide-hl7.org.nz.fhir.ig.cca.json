@@ -41,6 +41,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/sact-additional-details"
+        },
+        "name": "AdditionalDetails",
+        "description": "Allows additional information to be added to a regimen such as dosing modification details",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/sact-additional-plan-status"
         },
         "name": "Regimen under review",

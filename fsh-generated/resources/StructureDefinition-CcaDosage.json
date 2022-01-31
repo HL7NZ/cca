@@ -1598,7 +1598,7 @@
         "isSummary": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/sact-dose-unit"
+          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/sact-route"
         },
         "mapping": [
           {
@@ -2096,7 +2096,7 @@
         "path": "Dosage.route",
         "binding": {
           "strength": "required",
-          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/sact-dose-unit"
+          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/sact-route"
         }
       },
       {

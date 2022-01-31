@@ -6,6 +6,17 @@
 <th>Status</th>
 </tr>
 <tr style='background-color:#FFCCCC'>
+<td><a href='StructureDefinition-sact-additional-details.html'>sact-additional-details</a></td>
+<td>http://hl7.org.nz/fhir/StructureDefinition/sact-additional-details</td>
+<td>
+<div>Element</div>
+</td>
+<td>Allows additional information to be added to a regimen such as dosing modification details</td>
+<td></td>
+<td>0</td>
+<td>active</td>
+</tr>
+<tr style='background-color:#FFCCCC'>
 <td><a href='StructureDefinition-sact-additional-plan-status.html'>sact-additional-plan-status</a></td>
 <td>http://hl7.org.nz/fhir/StructureDefinition/sact-additional-plan-status</td>
 <td>
