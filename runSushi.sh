@@ -8,7 +8,7 @@
 
 
 
-sushi -s -o .
+sushi fsh -s -o .
 
 if [[ $? -eq 0 ]]
 then
