@@ -17,6 +17,8 @@ Alias: $disclaimer = http://hl7.org.nz/fhir/StructureDefinition/sact-disclaimer
 Alias: $TOD = http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days
 Alias: $type = http://terminology.hl7.org/CodeSystem/plan-definition-type
 
+Alias: $additionalDetails = http://hl7.org.nz/fhir/StructureDefinition/sact-additional-details
+
 Profile:        CcaPlanDefinition
 Parent:         PlanDefinition
 Id:             CcaPlanDefinition
@@ -36,8 +38,8 @@ Description:    "CCA Regimen Plan Definition."
     $treatmentIntent named treatment-intent 0..1 and
     $offLabel named offLabel 0..1 and
     $instructions named plan-instructions 0..1 and 
-    $disclaimer named disclaimer 0..1
-   
+    $disclaimer named disclaimer 0..1 and
+    $additionalDetails named additionalDetails 0..*
 
 * status.extension contains
     $additionalStatus named additional-status 0..1
