@@ -8,7 +8,7 @@ Description: "Allows additional information to be added to a regimen"
 * extension contains 
     sectionId 1..1 and 
     sectionHeader 0..1 and 
-    sectionContent 1..1 and 
+    sectionContent 1..1
 
 * extension[sectionId].url = "section-id" (exactly)
 * extension[sectionId].value[x]  only string
