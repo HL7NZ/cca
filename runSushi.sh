@@ -9,6 +9,7 @@
 
 
 sushi fsh -s -o .
+# running locally use sushi -s -o
 
 if [[ $? -eq 0 ]]
 then
