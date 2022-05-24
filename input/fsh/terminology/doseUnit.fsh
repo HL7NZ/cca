@@ -8,7 +8,7 @@ Description: "The dose unit"
 * ^url = "https://standards.digital.health.nz/fhir/ValueSet/sact-dose-unit"
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 
-* $SNOMED#118582008	"percent"
+* $SNOMED#118582008	"percent"  
 * $SNOMED#257260002	"Pack(s)" 
 * $SNOMED#258682000	"g"
 * $SNOMED#258684004	"mg"
