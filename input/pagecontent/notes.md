@@ -9,8 +9,6 @@
 *****************************************************************************************
 {% endcomment %} -->
 
-
-
 ### Plan status
 
 The status of the overall plan is exposed in the PlanDefinition.status element, supported by an extension. The statuses that are used are:
@@ -30,15 +28,14 @@ The status of the overall plan is exposed in the PlanDefinition.status element, 
 
 </table>
 
-
-
 ### Cycle repeats
+
 As noted in the [background](index.html#background), the top most action element (attached to the resource root) represents a cycle of medication adminstration with the details of the cycles (ie the medications) present as child action elements, with a reference to the ActivityDefinition. The cycles are intended to be extecuted in series - completing one cycle (and its repeats) before moving on to the next one.
 
-As well as having any number of defined cycles in the [plan, an individual cycle can also repeat any number of times, which is indicated in the __action.timingTiming__ element. The element (which is a [Timing](http://hl7.org/fhir/datatypes.html#Timing) datatype) has the following child elements.
+As well as having any number of defined cycles in the [plan, an individual cycle can also repeat any number of times, which is indicated in the **action.timingTiming** element. The element (which is a [Timing](http://hl7.org/fhir/datatypes.html#Timing) datatype) has the following child elements.
 
-* .repeat.count - the number of times this cycle should repeat. If this element is absent, then the cycle can repeat any number of times, as dictated by the physician in charge. Otherwise, the value is the number of times that this cycle should be repeated before moving on to the next one.
-* .repeat.duration  / repeat.durationUnit - the length of a single cycle. This will always be present.
+- .repeat.count - the number of times this cycle should repeat. If this element is absent, then the cycle can repeat any number of times, as dictated by the physician in charge. Otherwise, the value is the number of times that this cycle should be repeated before moving on to the next one.
+- .repeat.duration / repeat.durationUnit - the length of a single cycle. This will always be present.
 
 It is common to have regimens with multiple cycles where all cycles except for the last one have a specific count value, and the last cycle has no count, meaning that the last cycle can be repeated any number of times, but the repeats for the others are defined.
 
@@ -64,7 +61,6 @@ It is common to have regimens with multiple cycles where all cycles except for t
         }
       }
 
-
 **A cycle of 20 days which can be executed any number of times**
 
     "timingTiming": {
@@ -73,8 +69,6 @@ It is common to have regimens with multiple cycles where all cycles except for t
           "durationUnit": "d"
         }
       }
-
-
 
 ### UseContext
 
@@ -85,3 +79,15 @@ The cancers for which the regimen is intended to treat. There can be up to 3 of 
 ### Infusion rate
 
 For an infusable medication, the datatype used to indicate the infusion rate (Part of the [dosage](/StructureDefinition-CcaActivityDefinition-definitions.html#ActivityDefinition.dosage)) is a [Range](http://hl7.org/fhir/datatypes.html#Range). The range has 2 values - low and high. The high value will always be present and represents the 'usual' rate of administration. If the low value is present, then that represents the minimum period over which the infusion should be made.
+
+### Additional details
+
+A regimen can optionally have some additional details section (see [extension](/StructureDefinition-sact-additional-details.html)). These sections contain relevant regimen information such as dose modifications. These sections can also be linked to an activity definition via the Related Artifact field.
+
+### Order set doses
+
+There are a few regimens where for a given activity definition there is no dose quantity specified in the Dosage.DoseAndRate.Dose field. This is usually because the dose needs to be determined due to other clinical factors. The details for determining the dose will be found in either the order set instructions or the additional details tab.
+
+### Medications
+
+Medications used in dosages are all NZMT SCTID codes. Currently these can be Medicinal Products, Trade Products or Medicinal Product Unit of Uses.
