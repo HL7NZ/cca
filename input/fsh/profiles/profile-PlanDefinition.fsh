@@ -3,7 +3,7 @@ Alias: $replacedBy = http://hl7.org.nz/fhir/StructureDefinition/sact-replaced-by
 Alias: $regimenType = http://hl7.org.nz/fhir/StructureDefinition/sact-regimen-type
 
 
-Alias: $treatmentIntent = http://hl7.org.nz/fhir/StructureDefinition/sact-treatment-intent
+Alias: $treatmentSetting = http://hl7.org.nz/fhir/StructureDefinition/sact-treatment-setting
 Alias: $offLabel = http://hl7.org.nz/fhir/StructureDefinition/sact-off-label
 Alias: $instructions = http://hl7.org.nz/fhir/StructureDefinition/sact-plan-instructions
 
@@ -35,7 +35,7 @@ Description:    "CCA Regimen Plan Definition."
     $supportFactor named support-factor 0..* and 
     $regimenType named regimen-type 0..1 and
     $replacedBy named replaced-by 0..1 and
-    $treatmentIntent named treatment-intent 0..1 and
+    $treatmentSetting named treatment-setting 0..1 and
     $offLabel named offLabel 0..1 and
     $instructions named plan-instructions 0..1 and 
     $disclaimer named disclaimer 0..1 and
