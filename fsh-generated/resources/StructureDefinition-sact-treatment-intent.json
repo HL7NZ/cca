@@ -1,9 +1,9 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "sact-treatment-intent",
-  "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-treatment-intent",
+  "id": "sact-treatment-setting",
+  "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-treatment-setting",
   "version": "0.1.0",
-  "name": "TreatmentIntent",
+  "name": "TreatmentSetting",
   "status": "active",
   "description": "The intent of the regimen - what is its purpose",
   "jurisdiction": [
@@ -212,7 +212,7 @@
             ]
           }
         ],
-        "fixedUri": "http://hl7.org.nz/fhir/StructureDefinition/sact-treatment-intent",
+        "fixedUri": "http://hl7.org.nz/fhir/StructureDefinition/sact-treatment-setting",
         "isModifier": false,
         "isSummary": false,
         "mapping": [
@@ -300,7 +300,7 @@
         "isSummary": false,
         "binding": {
           "strength": "required",
-          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/sact-treatment-intent-code"
+          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/sact-treatment-setting-code"
         },
         "mapping": [
           {
@@ -326,7 +326,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://hl7.org.nz/fhir/StructureDefinition/sact-treatment-intent"
+        "fixedUri": "http://hl7.org.nz/fhir/StructureDefinition/sact-treatment-setting"
       },
       {
         "id": "Extension.value[x]",
@@ -354,7 +354,7 @@
         "max": "1",
         "binding": {
           "strength": "required",
-          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/sact-treatment-intent-code"
+          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/sact-treatment-setting-code"
         }
       }
     ]

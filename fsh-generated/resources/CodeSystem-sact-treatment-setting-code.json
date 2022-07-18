@@ -1,0 +1,18 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "TreatmentSetting",
+  "id": "sact-treatment-setting-code",
+  "title": "Treatment setting",
+  "description": "The setting of the regimen - what is its purpose",
+  "version": "0.1.0",
+  "url": "https://standards.digital.health.nz/ns/sact-treatment-setting-code",
+  "concept": [
+    {
+      "code": "st",
+      "display": "Something"
+    }
+  ],
+  "count": 1
+}

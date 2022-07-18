@@ -1,16 +1,16 @@
 {
   "resourceType": "ValueSet",
   "status": "active",
-  "name": "TreatmentIntent",
-  "id": "sact-treatment-intent-code",
+  "name": "TreatmentSetting",
+  "id": "sact-treatment-setting-code",
   "title": "Treatment intent",
   "description": "The intent of the regimen - what is its purpose",
   "version": "0.1.0",
-  "url": "https://standards.digital.health.nz/fhir/ValueSet/sact-treatment-intent-code",
+  "url": "https://standards.digital.health.nz/fhir/ValueSet/sact-treatment-setting-code",
   "compose": {
     "include": [
       {
-        "system": "https://standards.digital.health.nz/ns/treatment-intent-code"
+        "system": "https://standards.digital.health.nz/ns/treatment-setting-code"
       },
       {
         "system": "http://snomed.info/sct",
