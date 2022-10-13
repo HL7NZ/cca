@@ -3,8 +3,8 @@
   "status": "active",
   "name": "TreatmentSetting",
   "id": "sact-treatment-setting-code",
-  "title": "Treatment intent",
-  "description": "The intent of the regimen - what is its purpose",
+  "title": "Treatment setting",
+  "description": "The setting of the regimen - what is its purpose",
   "version": "0.1.0",
   "url": "https://standards.digital.health.nz/fhir/ValueSet/sact-treatment-setting-code",
   "compose": {
@@ -20,12 +20,44 @@
             "display": "Adjuvant"
           },
           {
+            "code": "258266006",
+            "display": "Advanced"
+          },
+          {
             "code": "58390007",
             "display": "Allogeneic"
           },
           {
+            "code": "57251000210103",
+            "display": "Allogeneic conditioning protocol"
+          },
+          {
+            "code": "60551000210105",
+            "display": "Allogeneic intermediate intensity conditioning protocol"
+          },
+          {
+            "code": "60571000210102",
+            "display": "Allogeneic myeloblative conditioning protocol"
+          },
+          {
+            "code": "60581000210100",
+            "display": "Allogeneic non myeloblative conditioning protocol"
+          },
+          {
+            "code": "60611000210105",
+            "display": "Allogeneic reduced intensity conditioning protocol"
+          },
+          {
             "code": "58776007",
             "display": "Autologous"
+          },
+          {
+            "code": "60561000210108",
+            "display": "Autologous conditioning protocol"
+          },
+          {
+            "code": "57241000210101",
+            "display": "Conditioning protocol"
           },
           {
             "code": "816151001",
@@ -56,12 +88,12 @@
             "display": "Neoadjuvant"
           },
           {
-            "code": "394935005",
-            "display": "Post operative chemoradiation"
+            "code": "372087000",
+            "display": "NON-Metastatic"
           },
           {
-            "code": "25173007",
-            "display": "Recurrent"
+            "code": "60591000210103",
+            "display": "Peripheral blood stem cell mobilization protocol"
           }
         ]
       }

@@ -90,6 +90,7 @@ In most situations the value of the status element itself will be 'active'</td>
 <td>http://hl7.org.nz/fhir/StructureDefinition/sact-regimen-type</td>
 <td>
 <div>PlanDefinition</div>
+<div>CarePlan</div>
 </td>
 <td>The overall type of the regimen - eg FOLFOX</td>
 <td></td>
@@ -135,7 +136,7 @@ In most situations the value of the status element itself will be 'active'</td>
 <td>
 <div>PlanDefinition</div>
 </td>
-<td>The intent of the regimen - what is its purpose</td>
+<td>The setting of the regimen - what is its purpose</td>
 <td></td>
 <td>0</td>
 <td>active</td>

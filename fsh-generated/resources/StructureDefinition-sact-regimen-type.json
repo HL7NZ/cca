@@ -31,6 +31,9 @@
     {
       "type": "element",
       "expression": "PlanDefinition"
+    },
+    {
+      "expression": "CarePlan"
     }
   ],
   "type": "Extension",

@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "name": "TreatmentSetting",
   "status": "active",
-  "description": "The intent of the regimen - what is its purpose",
+  "description": "The setting of the regimen - what is its purpose",
   "jurisdiction": [
     {
       "coding": [
@@ -51,7 +51,7 @@
         ],
         "path": "Extension",
         "short": "Optional Extensions Element",
-        "definition": "The intent of the regimen - what is its purpose",
+        "definition": "The setting of the regimen - what is its purpose",
         "min": 0,
         "max": "*",
         "base": {
@@ -316,7 +316,7 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "definition": "The intent of the regimen - what is its purpose"
+        "definition": "The setting of the regimen - what is its purpose"
       },
       {
         "id": "Extension.extension",

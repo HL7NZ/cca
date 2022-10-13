@@ -219,8 +219,8 @@
         "reference": {
           "reference": "ValueSet/sact-treatment-setting-code"
         },
-        "name": "Treatment intent",
-        "description": "The intent of the regimen - what is its purpose",
+        "name": "Treatment setting",
+        "description": "The setting of the regimen - what is its purpose",
         "exampleBoolean": false
       },
       {
@@ -243,8 +243,8 @@
         "reference": {
           "reference": "CodeSystem/sact-treatment-setting-code"
         },
-        "name": "Treatment intent",
-        "description": "The intent of the regimen - what is its purpose",
+        "name": "Treatment setting",
+        "description": "The setting of the regimen - what is its purpose",
         "exampleBoolean": false
       },
       {
