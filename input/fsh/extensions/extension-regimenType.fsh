@@ -9,6 +9,8 @@ Description: "The overall type of the regimen - eg FOLFOX"
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 * ^context.type = #element
 * ^context.expression = "PlanDefinition"
+
+* ^context[1].type = #element
 * ^context[1].expression = "CarePlan"
 
 * value[x] only CodeableConcept 
