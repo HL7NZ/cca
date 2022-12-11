@@ -90,4 +90,4 @@ There are a few regimens where for a given activity definition there is no dose 
 
 ### Medications
 
-Medications used in dosages are all NZMT SCTID codes. Currently these can be Medicinal Products, Trade Products or Medicinal Product Unit of Uses.
+Medications used in dosages are all NZMT SCTID codes. Currently these can be Medicinal Products, Trade Products, Medicinal Product Unit of Uses, Trade Product Unit of Uses, Medicinal Product Packs or Trade Product Packs.
