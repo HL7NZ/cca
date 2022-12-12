@@ -1,0 +1,1014 @@
+{
+    "resourceType": "PlanDefinition",
+    "id": "52451000210102",
+    "meta": {
+        "profile": [
+            "http://hl7.org.nz/fhir/StructureDefinition/CcaPlanDefinition"
+        ]
+    },
+    "text": {
+        "status": "extensions",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"regimen-display\">\n\n        <h1 title=\"Urogenital Prostate Castration resistant Metastatic - abiraterone and dexamethasone\">GU PROS Castration resistant Metastatic - abiraterone and dexamethasone</h1>\n\n\n\n        <ul class=\"regimen-tabs\">\n        </ul>\n\n        <div>\n            <div class=\"regimen-tab-content overview-content active\">\n                <h2 class=\"regimen-section-title\">Treatment Overview</h2>\n\n                    <div class=\"regimen-instructions html-instructions\"><p>This regimen is for corticosteroid switch after progression on abiraterone plus prEDNISone.</p></div>\n                <div>\n                    <div class=\"cycle-overview regimen-item\" id=\"overview-content|1d57a0e6-2058-45ac-b94c-4dc6371fbff2\" title=\"Cycle 1\">\n                        <h2>\n                            Cycle 1 (and all further cycles) - 28 days\n                        </h2>\n                        <div class=\"regimen-row\">\n                            <div class=\"regimen-col-3\"><b>Cycle length:</b></div>\n                            <div class=\"regimen-col-9\">28</div>\n                        </div>\n\n                    </div>\n                </div>\n            </div>\n            <div class=\"regimen-tab-content cycle-details-content\">\n                <h2 class=\"regimen-section-title\">Cycle details</h2>\n                    <div class=\"cycle-overview\">\n                        <h2>\n                            Cycle 1 (and all further cycles) - 28 days\n                        </h2>\n                        <table>\n                            <thead>\n                                <tr>\n                                    <th class=\"regimen-col-3\">Medication</th>\n                                    <th class=\"regimen-col-2\">Dose</th>\n                                    <th class=\"regimen-col-3\">Route</th>\n                                    <th class=\"regimen-col-2\">Days</th>\n                                    <th class=\"regimen-col-2\">Max Duration</th>\n                                </tr>\n                            </thead>\n                            <tbody>\n                                    <tr id=\"cycle-details-content|Order-Set-1-a794418f-bf35-4e3f-8b10-6a20e1759502\" title=\"Cycle 1: abiraterone\" class=\"regimen-item\">\n                                        <td class=\"regimen-col-3\">\n                                            <span class=\"medication\" title=\"44338201000116106\">abiraterone</span>\n                                                <span>*</span>\n                                        </td>\n                                        <td class=\"regimen-col-2 handle-lines\">1000&#xA0;mg flat&#xA0;Once daily</td>\n                                        <td class=\"regimen-col-3\">oral administration</td>\n                                        <td class=\"regimen-col-2\">1 to 28</td>\n                                        <td class=\"regimen-col-2 handle-lines\"></td>\n                                    </tr>\n                                    <tr id=\"cycle-details-content|Order-Set-2-b05f461c-ce1d-4976-862d-b96f3ee44341\" title=\"Cycle 1: dexamethasone\" class=\"regimen-item\">\n                                        <td class=\"regimen-col-3\">\n                                            <span class=\"medication\" title=\"10238921000116102\">dexamethasone</span>\n                                                <span>*</span>\n                                        </td>\n                                        <td class=\"regimen-col-2 handle-lines\">500&#xA0;microgram flat&#xA0;Once daily</td>\n                                        <td class=\"regimen-col-3\">oral administration</td>\n                                        <td class=\"regimen-col-2\">1 to 28</td>\n                                        <td class=\"regimen-col-2 handle-lines\"></td>\n                                    </tr>\n                            </tbody>\n                        </table>\n                    </div>\n            </div>\n            <div class=\"regimen-tab-content day-details-content\">\n                <h2 class=\"regimen-section-title\">Full details</h2>\n                    <div class=\"cycle\">\n                        <h2>\n                            Cycle 1 (and all further cycles) - 28 days\n                        </h2>\n                        <div>\n\n                                <div class=\"day-overview\">\n                                    <h3>Day: 1</h3>\n                                    <table>\n                                        <tr>\n                                            <th class=\"regimen-col-2\">Medication</th>\n                                            <th class=\"regimen-col-2\">Dose</th>\n                                            <th class=\"regimen-col-2\">Route</th>\n                                            <th class=\"regimen-col-2\">Max duration</th>\n                                            <th class=\"regimen-col-4\">Details</th>\n                                        </tr>\n                                            <tr id=\"day-details-content|1d57a0e6-2058-45ac-b94c-4dc6371fbff2-1-a794418f-bf35-4e3f-8b10-6a20e1759502\" title=\"Cycle 1: abiraterone - Day 1\" class=\"regimen-item\">\n                                                <td class=\"regimen-col-2\">\n                                                    <span class=\"medication\" title=\"44338201000116106\">abiraterone</span>\n                                                        <span>*</span>\n                                                </td>\n                                                <td class=\"regimen-col-2 handle-lines\">1000&#xA0;mg flat&#xA0;Once daily</td>\n                                                <td class=\"regimen-col-2\">oral administration</td>\n                                                <td class=\"regimen-col-2 handle-lines\"></td>\n                                                <td class=\"regimen-col-4\">\n                                                        <div class=\"regimen-instructions html-instructions\"><b>Instructions:</b><br />Take each dose on an empty stomach - one hour before OR two hours after food.&#xA;Monitor blood pressure at least once a month during treatment; for patients with hypertension monitor blood pressure every 2 weeks for the first 3 months of treatment.</div>\n                                                </td>\n                                            </tr>\n                                            <tr id=\"day-details-content|1d57a0e6-2058-45ac-b94c-4dc6371fbff2-1-b05f461c-ce1d-4976-862d-b96f3ee44341\" title=\"Cycle 1: dexamethasone - Day 1\" class=\"regimen-item\">\n                                                <td class=\"regimen-col-2\">\n                                                    <span class=\"medication\" title=\"10238921000116102\">dexamethasone</span>\n                                                        <span>*</span>\n                                                </td>\n                                                <td class=\"regimen-col-2 handle-lines\">500&#xA0;microgram flat&#xA0;Once daily</td>\n                                                <td class=\"regimen-col-2\">oral administration</td>\n                                                <td class=\"regimen-col-2 handle-lines\"></td>\n                                                <td class=\"regimen-col-4\">\n                                                        <div class=\"regimen-instructions html-instructions\"><b>Instructions:</b><br />Take with food. Do not stop taking this medicine without consulting your doctor.</div>\n                                                </td>\n                                            </tr>\n                                    </table>\n                                </div>\n                                <div class=\"day-overview\">\n                                    <h3>Day: 2</h3>\n                                    <table>\n                                        <tr>\n                                            <th class=\"regimen-col-2\">Medication</th>\n                                            <th class=\"regimen-col-2\">Dose</th>\n                                            <th class=\"regimen-col-2\">Route</th>\n                                            <th class=\"regimen-col-2\">Max duration</th>\n                                            <th class=\"regimen-col-4\">Details</th>\n                                        </tr>\n                                            <tr id=\"day-details-content|1d57a0e6-2058-45ac-b94c-4dc6371fbff2-2-a794418f-bf35-4e3f-8b10-6a20e1759502\" title=\"Cycle 1: abiraterone - Day 2\" class=\"regimen-item\">\n                                                <td class=\"regimen-col-2\">\n                                                    <span class=\"medication\" title=\"44338201000116106\">abiraterone</span>\n                                                        <span>*</span>\n                                                </td>\n                                                <td class=\"regimen-col-2 handle-lines\">1000&#xA0;mg flat&#xA0;Once daily</td>\n                                                <td class=\"regimen-col-2\">oral administration</td>\n                                                <td class=\"regimen-col-2 handle-lines\"></td>\n                                                <td class=\"regimen-col-4\">\n                                                        <div class=\"regimen-instructions html-instructions\"><b>Instructions:</b><br />Take each dose on an empty stomach - one hour before OR two hours after food.&#xA;Monitor blood pressure at least once a month during treatment; for patients with hypertension monitor blood pressure every 2 weeks for the first 3 months of treatment.</div>\n                                                </td>\n                                            </tr>\n                                            <tr id=\"day-details-content|1d57a0e6-2058-45ac-b94c-4dc6371fbff2-2-b05f461c-ce1d-4976-862d-b96f3ee44341\" title=\"Cycle 1: dexamethasone - Day 2\" class=\"regimen-item\">\n                                                <td class=\"regimen-col-2\">\n                                                    <span class=\"medication\" title=\"10238921000116102\">dexamethasone</span>\n                                                        <span>*</span>\n                                                </td>\n                                                <td class=\"regimen-col-2 handle-lines\">500&#xA0;microgram flat&#xA0;Once daily</td>\n                                                <td class=\"regimen-col-2\">oral administration</td>\n                                                <td class=\"regimen-col-2 handle-lines\"></td>\n                                                <td class=\"regimen-col-4\">\n                                                        <div class=\"regimen-instructions html-instructions\"><b>Instructions:</b><br />Take with food. Do not stop taking this medicine without consulting your doctor.</div>\n                                                </td>\n                                            </tr>\n                                    </table>\n                                </div>\n                                <div class=\"day-overview\">\n                                    <h3>Day: 3</h3>\n                                    <table>\n                                        <tr>\n                                            <th class=\"regimen-col-2\">Medication</th>\n                                            <th class=\"regimen-col-2\">Dose</th>\n                                            <th class=\"regimen-col-2\">Route</th>\n                                            <th class=\"regimen-col-2\">Max duration</th>\n                                            <th class=\"regimen-col-4\">Details</th>\n                                        </tr>\n                                            <tr id=\"day-details-content|1d57a0e6-2058-45ac-b94c-4dc6371fbff2-3-a794418f-bf35-4e3f-8b10-6a20e1759502\" title=\"Cycle 1: abiraterone - Day 3\" class=\"regimen-item\">\n                                                <td class=\"regimen-col-2\">\n                                                    <span class=\"medication\" title=\"44338201000116106\">abiraterone</span>\n                                                        <span>*</span>\n                                                </td>\n                                                <td class=\"regimen-col-2 handle-lines\">1000&#xA0;mg flat&#xA0;Once daily</td>\n                                                <td class=\"regimen-col-2\">oral administration</td>\n                                                <td class=\"regimen-col-2 handle-lines\"></td>\n                                                <td class=\"regimen-col-4\">\n                                                        <div class=\"regimen-instructions html-instructions\"><b>Instructions:</b><br />Take each dose on an empty stomach - one hour before OR two hours after food.&#xA;Monitor blood pressure at least once a month during treatment; for patients with hypertension monitor blood pressure every 2 weeks for the first 3 months of treatment.</div>\n                                                </td>\n                                            </tr>\n                                            <tr id=\"day-details-content|1d57a0e6-2058-45ac-b94c-4dc6371fbff2-3-b05f461c-ce1d-4976-862d-b96f3ee44341\" title=\"Cycle 1: dexamethasone - Day 3\" class=\"regimen-item\">\n                                                <td class=\"regimen-col-2\">\n                                                    <span class=\"medication\" title=\"10238921000116102\">dexamethasone</span>\n                                                        <span>*</span>\n                                                </td>\n                                                <td class=\"regimen-col-2 handle-lines\">500&#xA0;microgram flat&#xA0;Once daily</td>\n                                                <td class=\"regimen-col-2\">oral administration</td>\n                                                <td class=\"regimen-col-2 handle-lines\"></td>\n                                                <td class=\"regimen-col-4\">\n                                                        <div class=\"regimen-instructions html-instructions\"><b>Instructions:</b><br />Take with food. Do not stop taking this medicine without consulting your doctor.</div>\n                                                </td>\n                                            </tr>\n                                    </table>\n                                </div>\n                                <div class=\"day-overview\">\n                                    <h3>Day: 4</h3>\n                                    <table>\n                                        <tr>\n                                            <th class=\"regimen-col-2\">Medication</th>\n                                            <th class=\"regimen-col-2\">Dose</th>\n                                            <th class=\"regimen-col-2\">Route</th>\n                                            <th class=\"regimen-col-2\">Max duration</th>\n                                            <th class=\"regimen-col-4\">Details</th>\n                                        </tr>\n                                            <tr id=\"day-details-content|1d57a0e6-2058-45ac-b94c-4dc6371fbff2-4-a794418f-bf35-4e3f-8b10-6a20e1759502\" title=\"Cycle 1: abiraterone - Day 4\" class=\"regimen-item\">\n                                                <td class=\"regimen-col-2\">\n                                                    <span class=\"medication\" title=\"44338201000116106\">abiraterone</span>\n                                                        <span>*</span>\n                                                </td>\n                                                <td class=\"regimen-col-2 handle-lines\">1000&#xA0;mg flat&#xA0;Once daily</td>\n                                                <td class=\"regimen-col-2\">oral administration</td>\n                                                <td class=\"regimen-col-2 handle-lines\"></td>\n                                                <td class=\"regimen-col-4\">\n                                                        <div class=\"regimen-instructions html-instructions\"><b>Instructions:</b><br />Take each dose on an empty stomach - one hour before OR two hours after food.&#xA;Monitor blood pressure at least once a month during treatment; for patients with hypertension monitor blood pressure every 2 weeks for the first 3 months of treatment.</div>\n                                                </td>\n                                            </tr>\n                                            <tr id=\"day-details-content|1d57a0e6-2058-45ac-b94c-4dc6371fbff2-4-b05f461c-ce1d-4976-862d-b96f3ee44341\" title=\"Cycle 1: dexamethasone - Day 4\" class=\"regimen-item\">\n                                                <td class=\"regimen-col-2\">\n                                                    <span class=\"medication\" title=\"10238921000116102\">dexamethasone</span>\n                                                        <span>*</span>\n                                                </td>\n                                                <td class=\"regimen-col-2 handle-lines\">500&#xA0;microgram flat&#xA0;Once daily</td>\n                                                <td class=\"regimen-col-2\">oral administration</td>\n                                                <td class=\"regimen-col-2 handle-lines\"></td>\n                                                <td class=\"regimen-col-4\">\n                                                        <div class=\"regimen-instructions html-instructions\"><b>Instructions:</b><br />Take with food. Do not stop taking this medicine without consulting your doctor.</div>\n                                                </td>\n                                            </tr>\n                                    </table>\n                                </div>\n                                <div class=\"day-overview\">\n                                    <h3>Day: 5</h3>\n                                    <table>\n                                        <tr>\n                                            <th class=\"regimen-col-2\">Medication</th>\n                                            <th class=\"regimen-col-2\">Dose</th>\n                                            <th class=\"regimen-col-2\">Route</th>\n                                            <th class=\"regimen-col-2\">Max duration</th>\n                                            <th class=\"regimen-col-4\">Details</th>\n                                        </tr>\n                                            <tr id=\"day-details-content|1d57a0e6-2058-45ac-b94c-4dc6371fbff2-5-a794418f-bf35-4e3f-8b10-6a20e1759502\" title=\"Cycle 1: abiraterone - Day 5\" class=\"regimen-item\">\n                                                <td class=\"regimen-col-2\">\n                                                    <span class=\"medication\" title=\"44338201000116106\">abiraterone</span>\n                                                        <span>*</span>\n                                                </td>\n                                                <td class=\"regimen-col-2 handle-lines\">1000&#xA0;mg flat&#xA0;Once daily</td>\n                                                <td class=\"regimen-col-2\">oral administration</td>\n                                                <td class=\"regimen-col-2 handle-lines\"></td>\n                                                <td class=\"regimen-col-4\">\n                                                        <div class=\"regimen-instructions html-instructions\"><b>Instructions:</b><br />Take each dose on an empty stomach - one hour before OR two hours after food.&#xA;Monitor blood pressure at least once a month during treatment; for patients with hypertension monitor blood pressure every 2 weeks for the first 3 months of treatment.</div>\n                                                </td>\n                                            </tr>\n                                            <tr id=\"day-details-content|1d57a0e6-2058-45ac-b94c-4dc6371fbff2-5-b05f461c-ce1d-4976-862d-b96f3ee44341\" title=\"Cycle 1: dexamethasone - Day 5\" class=\"regimen-item\">\n                                                <td class=\"regimen-col-2\">\n                                                    <span class=\"medication\" title=\"10238921000116102\">dexamethasone</span>\n                                                        <span>*</span>\n                                                </td>\n                                                <td class=\"regimen-col-2 handle-lines\">500&#xA0;microgram flat&#xA0;Once daily</td>\n                                                <td class=\"regimen-col-2\">oral administration</td>\n                                                <td class=\"regimen-col-2 handle-lines\"></td>\n                                                <td class=\"regimen-col-4\">\n                                                        <div class=\"regimen-instructions html-instructions\"><b>Instructions:</b><br />Take with food. Do not stop taking this medicine without consulting your doctor.</div>\n                                                </td>\n                                            </tr>\n                                    </table>\n                                </div>\n                                <div class=\"day-overview\">\n                                    <h3>Day: 6</h3>\n                                    <table>\n                                        <tr>\n                                            <th class=\"regimen-col-2\">Medication</th>\n                                            <th class=\"regimen-col-2\">Dose</th>\n                                            <th class=\"regimen-col-2\">Route</th>\n                                            <th class=\"regimen-col-2\">Max duration</th>\n                                            <th class=\"regimen-col-4\">Details</th>\n                                        </tr>\n                                            <tr id=\"day-details-content|1d57a0e6-2058-45ac-b94c-4dc6371fbff2-6-a794418f-bf35-4e3f-8b10-6a20e1759502\" title=\"Cycle 1: abiraterone - Day 6\" class=\"regimen-item\">\n                                                <td class=\"regimen-col-2\">\n                                                    <span class=\"medication\" title=\"44338201000116106\">abiraterone</span>\n                                                        <span>*</span>\n                                                </td>\n                                                <td class=\"regimen-col-2 handle-lines\">1000&#xA0;mg flat&#xA0;Once daily</td>\n                                                <td class=\"regimen-col-2\">oral administration</td>\n                                                <td class=\"regimen-col-2 handle-lines\"></td>\n                                                <td class=\"regimen-col-4\">\n                                                        <div class=\"regimen-instructions html-instructions\"><b>Instructions:</b><br />Take each dose on an empty stomach - one hour before OR two hours after food.&#xA;Monitor blood pressure at least once a month during treatment; for patients with hypertension monitor blood pressure every 2 weeks for the first 3 months of treatment.</div>\n                                                </td>\n                                            </tr>\n                                            <tr id=\"day-details-content|1d57a0e6-2058-45ac-b94c-4dc6371fbff2-6-b05f461c-ce1d-4976-862d-b96f3ee44341\" title=\"Cycle 1: dexamethasone - Day 6\" class=\"regimen-item\">\n                                                <td class=\"regimen-col-2\">\n                                                    <span class=\"medication\" title=\"10238921000116102\">dexamethasone</span>\n                                                        <span>*</span>\n                                                </td>\n                                                <td class=\"regimen-col-2 handle-lines\">500&#xA0;microgram flat&#xA0;Once daily</td>\n                                                <td class=\"regimen-col-2\">oral administration</td>\n                                                <td class=\"regimen-col-2 handle-lines\"></td>\n                                                <td class=\"regimen-col-4\">\n                                                        <div class=\"regimen-instructions html-instructions\"><b>Instructions:</b><br />Take with food. Do not stop taking this medicine without consulting your doctor.</div>\n                                                </td>\n                                            </tr>\n                                    </table>\n                                </div>\n                                <div class=\"day-overview\">\n                                    <h3>Day: 7</h3>\n                                    <table>\n                                        <tr>\n                                            <th class=\"regimen-col-2\">Medication</th>\n                                            <th class=\"regimen-col-2\">Dose</th>\n                                            <th class=\"regimen-col-2\">Route</th>\n                                            <th class=\"regimen-col-2\">Max duration</th>\n                                            <th class=\"regimen-col-4\">Details</th>\n                                        </tr>\n                                            <tr id=\"day-details-content|1d57a0e6-2058-45ac-b94c-4dc6371fbff2-7-a794418f-bf35-4e3f-8b10-6a20e1759502\" title=\"Cycle 1: abiraterone - Day 7\" class=\"regimen-item\">\n                                                <td class=\"regimen-col-2\">\n                                                    <span class=\"medication\" title=\"44338201000116106\">abiraterone</span>\n                                                        <span>*</span>\n                                                </td>\n                                                <td class=\"regimen-col-2 handle-lines\">1000&#xA0;mg flat&#xA0;Once daily</td>\n                                                <td class=\"regimen-col-2\">oral administration</td>\n                                                <td class=\"regimen-col-2 handle-lines\"></td>\n                                                <td class=\"regimen-col-4\">\n                                                        <div class=\"regimen-instructions html-instructions\"><b>Instructions:</b><br />Take each dose on an empty stomach - one hour before OR two hours after food.&#xA;Monitor blood pressure at least once a month during treatment; for patients with hypertension monitor blood pressure every 2 weeks for the first 3 months of treatment.</div>\n                                                </td>\n                                            </tr>\n                                            <tr id=\"day-details-content|1d57a0e6-2058-45ac-b94c-4dc6371fbff2-7-b05f461c-ce1d-4976-862d-b96f3ee44341\" title=\"Cycle 1: dexamethasone - Day 7\" class=\"regimen-item\">\n                                                <td class=\"regimen-col-2\">\n                                                    <span class=\"medication\" title=\"10238921000116102\">dexamethasone</span>\n                                                        <span>*</span>\n                                                </td>\n                                                <td class=\"regimen-col-2 handle-lines\">500&#xA0;microgram flat&#xA0;Once daily</td>\n                                                <td class=\"regimen-col-2\">oral administration</td>\n                                                <td class=\"regimen-col-2 handle-lines\"></td>\n                                                <td class=\"regimen-col-4\">\n                                                        <div class=\"regimen-instructions html-instructions\"><b>Instructions:</b><br />Take with food. Do not stop taking this medicine without consulting your doctor.</div>\n                                                </td>\n                                            </tr>\n                                    </table>\n                                </div>\n                                <div class=\"day-overview\">\n                                    <h3>Day: 8</h3>\n                                    <table>\n                                        <tr>\n                                            <th class=\"regimen-col-2\">Medication</th>\n                                            <th class=\"regimen-col-2\">Dose</th>\n                                            <th class=\"regimen-col-2\">Route</th>\n                                            <th class=\"regimen-col-2\">Max duration</th>\n                                            <th class=\"regimen-col-4\">Details</th>\n                                        </tr>\n                                            <tr id=\"day-details-content|1d57a0e6-2058-45ac-b94c-4dc6371fbff2-8-a794418f-bf35-4e3f-8b10-6a20e1759502\" title=\"Cycle 1: abiraterone - Day 8\" class=\"regimen-item\">\n                                                <td class=\"regimen-col-2\">\n                                                    <span class=\"medication\" title=\"44338201000116106\">abiraterone</span>\n                                                        <span>*</span>\n                                                </td>\n                                                <td class=\"regimen-col-2 handle-lines\">1000&#xA0;mg flat&#xA0;Once daily</td>\n                                                <td class=\"regimen-col-2\">oral administration</td>\n                                                <td class=\"regimen-col-2 handle-lines\"></td>\n                                                <td class=\"regimen-col-4\">\n                                                        <div class=\"regimen-instructions html-instructions\"><b>Instructions:</b><br />Take each dose on an empty stomach - one hour before OR two hours after food.&#xA;Monitor blood pressure at least once a month during treatment; for patients with hypertension monitor blood pressure every 2 weeks for the first 3 months of treatment.</div>\n                                                </td>\n                                            </tr>\n                                            <tr id=\"day-details-content|1d57a0e6-2058-45ac-b94c-4dc6371fbff2-8-b05f461c-ce1d-4976-862d-b96f3ee44341\" title=\"Cycle 1: dexamethasone - Day 8\" class=\"regimen-item\">\n                                                <td class=\"regimen-col-2\">\n                                                    <span class=\"medication\" title=\"10238921000116102\">dexamethasone</span>\n                                                        <span>*</span>\n                                                </td>\n                                                <td class=\"regimen-col-2 handle-lines\">500&#xA0;microgram flat&#xA0;Once daily</td>\n                                                <td class=\"regimen-col-2\">oral administration</td>\n                                                <td class=\"regimen-col-2 handle-lines\"></td>\n                                                <td class=\"regimen-col-4\">\n                                                        <div class=\"regimen-instructions html-instructions\"><b>Instructions:</b><br />Take with food. Do not stop taking this medicine without consulting your doctor.</div>\n                                                </td>\n                                            </tr>\n                                    </table>\n                                </div>\n                                <div class=\"day-overview\">\n                                    <h3>Day: 9</h3>\n                                    <table>\n                                        <tr>\n                                            <th class=\"regimen-col-2\">Medication</th>\n                                            <th class=\"regimen-col-2\">Dose</th>\n                                            <th class=\"regimen-col-2\">Route</th>\n                                            <th class=\"regimen-col-2\">Max duration</th>\n                                            <th class=\"regimen-col-4\">Details</th>\n                                        </tr>\n                                            <tr id=\"day-details-content|1d57a0e6-2058-45ac-b94c-4dc6371fbff2-9-a794418f-bf35-4e3f-8b10-6a20e1759502\" title=\"Cycle 1: abiraterone - Day 9\" class=\"regimen-item\">\n                                                <td class=\"regimen-col-2\">\n                                                    <span class=\"medication\" title=\"44338201000116106\">abiraterone</span>\n                                                        <span>*</span>\n                                                </td>\n                                                <td class=\"regimen-col-2 handle-lines\">1000&#xA0;mg flat&#xA0;Once daily</td>\n                                                <td class=\"regimen-col-2\">oral administration</td>\n                                                <td class=\"regimen-col-2 handle-lines\"></td>\n                                                <td class=\"regimen-col-4\">\n                                                        <div class=\"regimen-instructions html-instructions\"><b>Instructions:</b><br />Take each dose on an empty stomach - one hour before OR two hours after food.&#xA;Monitor blood pressure at least once a month during treatment; for patients with hypertension monitor blood pressure every 2 weeks for the first 3 months of treatment.</div>\n                                                </td>\n                                            </tr>\n                                            <tr id=\"day-details-content|1d57a0e6-2058-45ac-b94c-4dc6371fbff2-9-b05f461c-ce1d-4976-862d-b96f3ee44341\" title=\"Cycle 1: dexamethasone - Day 9\" class=\"regimen-item\">\n                                                <td class=\"regimen-col-2\">\n                                                    <span class=\"medication\" title=\"10238921000116102\">dexamethasone</span>\n                                                        <span>*</span>\n                                                </td>\n                                                <td class=\"regimen-col-2 handle-lines\">500&#xA0;microgram flat&#xA0;Once daily</td>\n                                                <td class=\"regimen-col-2\">oral administration</td>\n                                                <td class=\"regimen-col-2 handle-lines\"></td>\n                                                <td class=\"regimen-col-4\">\n                                                        <div class=\"regimen-instructions html-instructions\"><b>Instructions:</b><br />Take with food. Do not stop taking this medicine without consulting your doctor.</div>\n                                                </td>\n                                            </tr>\n                                    </table>\n                                </div>\n                                <div class=\"day-overview\">\n                                    <h3>Day: 10</h3>\n                                    <table>\n                                        <tr>\n                                            <th class=\"regimen-col-2\">Medication</th>\n                                            <th class=\"regimen-col-2\">Dose</th>\n                                            <th class=\"regimen-col-2\">Route</th>\n                                            <th class=\"regimen-col-2\">Max duration</th>\n                                            <th class=\"regimen-col-4\">Details</th>\n                                        </tr>\n                                            <tr id=\"day-details-content|1d57a0e6-2058-45ac-b94c-4dc6371fbff2-10-a794418f-bf35-4e3f-8b10-6a20e1759502\" title=\"Cycle 1: abiraterone - Day 10\" class=\"regimen-item\">\n                                                <td class=\"regimen-col-2\">\n                                                    <span class=\"medication\" title=\"44338201000116106\">abiraterone</span>\n                                                        <span>*</span>\n                                                </td>\n                                                <td class=\"regimen-col-2 handle-lines\">1000&#xA0;mg flat&#xA0;Once daily</td>\n                                                <td class=\"regimen-col-2\">oral administration</td>\n                                                <td class=\"regimen-col-2 handle-lines\"></td>\n                                                <td class=\"regimen-col-4\">\n                                                        <div class=\"regimen-instructions html-instructions\"><b>Instructions:</b><br />Take each dose on an empty stomach - one hour before OR two hours after food.&#xA;Monitor blood pressure at least once a month during treatment; for patients with hypertension monitor blood pressure every 2 weeks for the first 3 months of treatment.</div>\n                                                </td>\n                                            </tr>\n                                            <tr id=\"day-details-content|1d57a0e6-2058-45ac-b94c-4dc6371fbff2-10-b05f461c-ce1d-4976-862d-b96f3ee44341\" title=\"Cycle 1: dexamethasone - Day 10\" class=\"regimen-item\">\n                                                <td class=\"regimen-col-2\">\n                                                    <span class=\"medication\" title=\"10238921000116102\">dexamethasone</span>\n                                                        <span>*</span>\n                                                </td>\n                                                <td class=\"regimen-col-2 handle-lines\">500&#xA0;microgram flat&#xA0;Once daily</td>\n                                                <td class=\"regimen-col-2\">oral administration</td>\n                                                <td class=\"regimen-col-2 handle-lines\"></td>\n                                                <td class=\"regimen-col-4\">\n                                                        <div class=\"regimen-instructions html-instructions\"><b>Instructions:</b><br />Take with food. Do not stop taking this medicine without consulting your doctor.</div>\n                                                </td>\n                                            </tr>\n                                    </table>\n                                </div>\n                                <div class=\"day-overview\">\n                                    <h3>Day: 11</h3>\n                                    <table>\n                                        <tr>\n                                            <th class=\"regimen-col-2\">Medication</th>\n                                            <th class=\"regimen-col-2\">Dose</th>\n                                            <th class=\"regimen-col-2\">Route</th>\n                                            <th class=\"regimen-col-2\">Max duration</th>\n                                            <th class=\"regimen-col-4\">Details</th>\n                                        </tr>\n                                            <tr id=\"day-details-content|1d57a0e6-2058-45ac-b94c-4dc6371fbff2-11-a794418f-bf35-4e3f-8b10-6a20e1759502\" title=\"Cycle 1: abiraterone - Day 11\" class=\"regimen-item\">\n                                                <td class=\"regimen-col-2\">\n                                                    <span class=\"medication\" title=\"44338201000116106\">abiraterone</span>\n                                                        <span>*</span>\n                                                </td>\n                                                <td class=\"regimen-col-2 handle-lines\">1000&#xA0;mg flat&#xA0;Once daily</td>\n                                                <td class=\"regimen-col-2\">oral administration</td>\n                                                <td class=\"regimen-col-2 handle-lines\"></td>\n                                                <td class=\"regimen-col-4\">\n                                                        <div class=\"regimen-instructions html-instructions\"><b>Instructions:</b><br />Take each dose on an empty stomach - one hour before OR two hours after food.&#xA;Monitor blood pressure at least once a month during treatment; for patients with hypertension monitor blood pressure every 2 weeks for the first 3 months of treatment.</div>\n                                                </td>\n                                            </tr>\n                                            <tr id=\"day-details-content|1d57a0e6-2058-45ac-b94c-4dc6371fbff2-11-b05f461c-ce1d-4976-862d-b96f3ee44341\" title=\"Cycle 1: dexamethasone - Day 11\" class=\"regimen-item\">\n                                                <td class=\"regimen-col-2\">\n                                                    <span class=\"medication\" title=\"10238921000116102\">dexamethasone</span>\n                                                        <span>*</span>\n                                                </td>\n                                                <td class=\"regimen-col-2 handle-lines\">500&#xA0;microgram flat&#xA0;Once daily</td>\n                                                <td class=\"regimen-col-2\">oral administration</td>\n                                                <td class=\"regimen-col-2 handle-lines\"></td>\n                                                <td class=\"regimen-col-4\">\n                                                        <div class=\"regimen-instructions html-instructions\"><b>Instructions:</b><br />Take with food. Do not stop taking this medicine without consulting your doctor.</div>\n                                                </td>\n                                            </tr>\n                                    </table>\n                                </div>\n                                <div class=\"day-overview\">\n                                    <h3>Day: 12</h3>\n                                    <table>\n                                        <tr>\n                                            <th class=\"regimen-col-2\">Medication</th>\n                                            <th class=\"regimen-col-2\">Dose</th>\n                                            <th class=\"regimen-col-2\">Route</th>\n                                            <th class=\"regimen-col-2\">Max duration</th>\n                                            <th class=\"regimen-col-4\">Details</th>\n                                        </tr>\n                                            <tr id=\"day-details-content|1d57a0e6-2058-45ac-b94c-4dc6371fbff2-12-a794418f-bf35-4e3f-8b10-6a20e1759502\" title=\"Cycle 1: abiraterone - Day 12\" class=\"regimen-item\">\n                                                <td class=\"regimen-col-2\">\n                                                    <span class=\"medication\" title=\"44338201000116106\">abiraterone</span>\n                                                        <span>*</span>\n                                                </td>\n                                                <td class=\"regimen-col-2 handle-lines\">1000&#xA0;mg flat&#xA0;Once daily</td>\n                                                <td class=\"regimen-col-2\">oral administration</td>\n                                                <td class=\"regimen-col-2 handle-lines\"></td>\n                                                <td class=\"regimen-col-4\">\n                                                        <div class=\"regimen-instructions html-instructions\"><b>Instructions:</b><br />Take each dose on an empty stomach - one hour before OR two hours after food.&#xA;Monitor blood pressure at least once a month during treatment; for patients with hypertension monitor blood pressure every 2 weeks for the first 3 months of treatment.</div>\n                                                </td>\n                                            </tr>\n                                            <tr id=\"day-details-content|1d57a0e6-2058-45ac-b94c-4dc6371fbff2-12-b05f461c-ce1d-4976-862d-b96f3ee44341\" title=\"Cycle 1: dexamethasone - Day 12\" class=\"regimen-item\">\n                                                <td class=\"regimen-col-2\">\n                                                    <span class=\"medication\" title=\"10238921000116102\">dexamethasone</span>\n                                                        <span>*</span>\n                                                </td>\n                                                <td class=\"regimen-col-2 handle-lines\">500&#xA0;microgram flat&#xA0;Once daily</td>\n                                                <td class=\"regimen-col-2\">oral administration</td>\n                                                <td class=\"regimen-col-2 handle-lines\"></td>\n                                                <td class=\"regimen-col-4\">\n                                                        <div class=\"regimen-instructions html-instructions\"><b>Instructions:</b><br />Take with food. Do not stop taking this medicine without consulting your doctor.</div>\n                                                </td>\n                                            </tr>\n                                    </table>\n                                </div>\n                                <div class=\"day-overview\">\n                                    <h3>Day: 13</h3>\n                                    <table>\n                                        <tr>\n                                            <th class=\"regimen-col-2\">Medication</th>\n                                            <th class=\"regimen-col-2\">Dose</th>\n                                            <th class=\"regimen-col-2\">Route</th>\n                                            <th class=\"regimen-col-2\">Max duration</th>\n                                            <th class=\"regimen-col-4\">Details</th>\n                                        </tr>\n                                            <tr id=\"day-details-content|1d57a0e6-2058-45ac-b94c-4dc6371fbff2-13-a794418f-bf35-4e3f-8b10-6a20e1759502\" title=\"Cycle 1: abiraterone - Day 13\" class=\"regimen-item\">\n                                                <td class=\"regimen-col-2\">\n                                                    <span class=\"medication\" title=\"44338201000116106\">abiraterone</span>\n                                                        <span>*</span>\n                                                </td>\n                                                <td class=\"regimen-col-2 handle-lines\">1000&#xA0;mg flat&#xA0;Once daily</td>\n                                                <td class=\"regimen-col-2\">oral administration</td>\n                                                <td class=\"regimen-col-2 handle-lines\"></td>\n                                                <td class=\"regimen-col-4\">\n                                                        <div class=\"regimen-instructions html-instructions\"><b>Instructions:</b><br />Take each dose on an empty stomach - one hour before OR two hours after food.&#xA;Monitor blood pressure at least once a month during treatment; for patients with hypertension monitor blood pressure every 2 weeks for the first 3 months of treatment.</div>\n                                                </td>\n                                            </tr>\n                                            <tr id=\"day-details-content|1d57a0e6-2058-45ac-b94c-4dc6371fbff2-13-b05f461c-ce1d-4976-862d-b96f3ee44341\" title=\"Cycle 1: dexamethasone - Day 13\" class=\"regimen-item\">\n                                                <td class=\"regimen-col-2\">\n                                                    <span class=\"medication\" title=\"10238921000116102\">dexamethasone</span>\n                                                        <span>*</span>\n                                                </td>\n                                                <td class=\"regimen-col-2 handle-lines\">500&#xA0;microgram flat&#xA0;Once daily</td>\n                                                <td class=\"regimen-col-2\">oral administration</td>\n                                                <td class=\"regimen-col-2 handle-lines\"></td>\n                                                <td class=\"regimen-col-4\">\n                                                        <div class=\"regimen-instructions html-instructions\"><b>Instructions:</b><br />Take with food. Do not stop taking this medicine without consulting your doctor.</div>\n                                                </td>\n                                            </tr>\n                                    </table>\n                                </div>\n                                <div class=\"day-overview\">\n                                    <h3>Day: 14</h3>\n                                    <table>\n                                        <tr>\n                                            <th class=\"regimen-col-2\">Medication</th>\n                                            <th class=\"regimen-col-2\">Dose</th>\n                                            <th class=\"regimen-col-2\">Route</th>\n                                            <th class=\"regimen-col-2\">Max duration</th>\n                                            <th class=\"regimen-col-4\">Details</th>\n                                        </tr>\n                                            <tr id=\"day-details-content|1d57a0e6-2058-45ac-b94c-4dc6371fbff2-14-a794418f-bf35-4e3f-8b10-6a20e1759502\" title=\"Cycle 1: abiraterone - Day 14\" class=\"regimen-item\">\n                                                <td class=\"regimen-col-2\">\n                                                    <span class=\"medication\" title=\"44338201000116106\">abiraterone</span>\n                                                        <span>*</span>\n                                                </td>\n                                                <td class=\"regimen-col-2 handle-lines\">1000&#xA0;mg flat&#xA0;Once daily</td>\n                                                <td class=\"regimen-col-2\">oral administration</td>\n                                                <td class=\"regimen-col-2 handle-lines\"></td>\n                                                <td class=\"regimen-col-4\">\n                                                        <div class=\"regimen-instructions html-instructions\"><b>Instructions:</b><br />Take each dose on an empty stomach - one hour before OR two hours after food.&#xA;Monitor blood pressure at least once a month during treatment; for patients with hypertension monitor blood pressure every 2 weeks for the first 3 months of treatment.</div>\n                                                </td>\n                                            </tr>\n                                            <tr id=\"day-details-content|1d57a0e6-2058-45ac-b94c-4dc6371fbff2-14-b05f461c-ce1d-4976-862d-b96f3ee44341\" title=\"Cycle 1: dexamethasone - Day 14\" class=\"regimen-item\">\n                                                <td class=\"regimen-col-2\">\n                                                    <span class=\"medication\" title=\"10238921000116102\">dexamethasone</span>\n                                                        <span>*</span>\n                                                </td>\n                                                <td class=\"regimen-col-2 handle-lines\">500&#xA0;microgram flat&#xA0;Once daily</td>\n                                                <td class=\"regimen-col-2\">oral administration</td>\n                                                <td class=\"regimen-col-2 handle-lines\"></td>\n                                                <td class=\"regimen-col-4\">\n                                                        <div class=\"regimen-instructions html-instructions\"><b>Instructions:</b><br />Take with food. Do not stop taking this medicine without consulting your doctor.</div>\n                                                </td>\n                                            </tr>\n                                    </table>\n                                </div>\n                                <div class=\"day-overview\">\n                                    <h3>Day: 15</h3>\n                                    <table>\n                                        <tr>\n                                            <th class=\"regimen-col-2\">Medication</th>\n                                            <th class=\"regimen-col-2\">Dose</th>\n                                            <th class=\"regimen-col-2\">Route</th>\n                                            <th class=\"regimen-col-2\">Max duration</th>\n                                            <th class=\"regimen-col-4\">Details</th>\n                                        </tr>\n                                            <tr id=\"day-details-content|1d57a0e6-2058-45ac-b94c-4dc6371fbff2-15-a794418f-bf35-4e3f-8b10-6a20e1759502\" title=\"Cycle 1: abiraterone - Day 15\" class=\"regimen-item\">\n                                                <td class=\"regimen-col-2\">\n                                                    <span class=\"medication\" title=\"44338201000116106\">abiraterone</span>\n                                                        <span>*</span>\n                                                </td>\n                                                <td class=\"regimen-col-2 handle-lines\">1000&#xA0;mg flat&#xA0;Once daily</td>\n                                                <td class=\"regimen-col-2\">oral administration</td>\n                                                <td class=\"regimen-col-2 handle-lines\"></td>\n                                                <td class=\"regimen-col-4\">\n                                                        <div class=\"regimen-instructions html-instructions\"><b>Instructions:</b><br />Take each dose on an empty stomach - one hour before OR two hours after food.&#xA;Monitor blood pressure at least once a month during treatment; for patients with hypertension monitor blood pressure every 2 weeks for the first 3 months of treatment.</div>\n                                                </td>\n                                            </tr>\n                                            <tr id=\"day-details-content|1d57a0e6-2058-45ac-b94c-4dc6371fbff2-15-b05f461c-ce1d-4976-862d-b96f3ee44341\" title=\"Cycle 1: dexamethasone - Day 15\" class=\"regimen-item\">\n                                                <td class=\"regimen-col-2\">\n                                                    <span class=\"medication\" title=\"10238921000116102\">dexamethasone</span>\n                                                        <span>*</span>\n                                                </td>\n                                                <td class=\"regimen-col-2 handle-lines\">500&#xA0;microgram flat&#xA0;Once daily</td>\n                                                <td class=\"regimen-col-2\">oral administration</td>\n                                                <td class=\"regimen-col-2 handle-lines\"></td>\n                                                <td class=\"regimen-col-4\">\n                                                        <div class=\"regimen-instructions html-instructions\"><b>Instructions:</b><br />Take with food. Do not stop taking this medicine without consulting your doctor.</div>\n                                                </td>\n                                            </tr>\n                                    </table>\n                                </div>\n                                <div class=\"day-overview\">\n                                    <h3>Day: 16</h3>\n                                    <table>\n                                        <tr>\n                                            <th class=\"regimen-col-2\">Medication</th>\n                                            <th class=\"regimen-col-2\">Dose</th>\n                                            <th class=\"regimen-col-2\">Route</th>\n                                            <th class=\"regimen-col-2\">Max duration</th>\n                                            <th class=\"regimen-col-4\">Details</th>\n                                        </tr>\n                                            <tr id=\"day-details-content|1d57a0e6-2058-45ac-b94c-4dc6371fbff2-16-a794418f-bf35-4e3f-8b10-6a20e1759502\" title=\"Cycle 1: abiraterone - Day 16\" class=\"regimen-item\">\n                                                <td class=\"regimen-col-2\">\n                                                    <span class=\"medication\" title=\"44338201000116106\">abiraterone</span>\n                                                        <span>*</span>\n                                                </td>\n                                                <td class=\"regimen-col-2 handle-lines\">1000&#xA0;mg flat&#xA0;Once daily</td>\n                                                <td class=\"regimen-col-2\">oral administration</td>\n                                                <td class=\"regimen-col-2 handle-lines\"></td>\n                                                <td class=\"regimen-col-4\">\n                                                        <div class=\"regimen-instructions html-instructions\"><b>Instructions:</b><br />Take each dose on an empty stomach - one hour before OR two hours after food.&#xA;Monitor blood pressure at least once a month during treatment; for patients with hypertension monitor blood pressure every 2 weeks for the first 3 months of treatment.</div>\n                                                </td>\n                                            </tr>\n                                            <tr id=\"day-details-content|1d57a0e6-2058-45ac-b94c-4dc6371fbff2-16-b05f461c-ce1d-4976-862d-b96f3ee44341\" title=\"Cycle 1: dexamethasone - Day 16\" class=\"regimen-item\">\n                                                <td class=\"regimen-col-2\">\n                                                    <span class=\"medication\" title=\"10238921000116102\">dexamethasone</span>\n                                                        <span>*</span>\n                                                </td>\n                                                <td class=\"regimen-col-2 handle-lines\">500&#xA0;microgram flat&#xA0;Once daily</td>\n                                                <td class=\"regimen-col-2\">oral administration</td>\n                                                <td class=\"regimen-col-2 handle-lines\"></td>\n                                                <td class=\"regimen-col-4\">\n                                                        <div class=\"regimen-instructions html-instructions\"><b>Instructions:</b><br />Take with food. Do not stop taking this medicine without consulting your doctor.</div>\n                                                </td>\n                                            </tr>\n                                    </table>\n                                </div>\n                                <div class=\"day-overview\">\n                                    <h3>Day: 17</h3>\n                                    <table>\n                                        <tr>\n                                            <th class=\"regimen-col-2\">Medication</th>\n                                            <th class=\"regimen-col-2\">Dose</th>\n                                            <th class=\"regimen-col-2\">Route</th>\n                                            <th class=\"regimen-col-2\">Max duration</th>\n                                            <th class=\"regimen-col-4\">Details</th>\n                                        </tr>\n                                            <tr id=\"day-details-content|1d57a0e6-2058-45ac-b94c-4dc6371fbff2-17-a794418f-bf35-4e3f-8b10-6a20e1759502\" title=\"Cycle 1: abiraterone - Day 17\" class=\"regimen-item\">\n                                                <td class=\"regimen-col-2\">\n                                                    <span class=\"medication\" title=\"44338201000116106\">abiraterone</span>\n                                                        <span>*</span>\n                                                </td>\n                                                <td class=\"regimen-col-2 handle-lines\">1000&#xA0;mg flat&#xA0;Once daily</td>\n                                                <td class=\"regimen-col-2\">oral administration</td>\n                                                <td class=\"regimen-col-2 handle-lines\"></td>\n                                                <td class=\"regimen-col-4\">\n                                                        <div class=\"regimen-instructions html-instructions\"><b>Instructions:</b><br />Take each dose on an empty stomach - one hour before OR two hours after food.&#xA;Monitor blood pressure at least once a month during treatment; for patients with hypertension monitor blood pressure every 2 weeks for the first 3 months of treatment.</div>\n                                                </td>\n                                            </tr>\n                                            <tr id=\"day-details-content|1d57a0e6-2058-45ac-b94c-4dc6371fbff2-17-b05f461c-ce1d-4976-862d-b96f3ee44341\" title=\"Cycle 1: dexamethasone - Day 17\" class=\"regimen-item\">\n                                                <td class=\"regimen-col-2\">\n                                                    <span class=\"medication\" title=\"10238921000116102\">dexamethasone</span>\n                                                        <span>*</span>\n                                                </td>\n                                                <td class=\"regimen-col-2 handle-lines\">500&#xA0;microgram flat&#xA0;Once daily</td>\n                                                <td class=\"regimen-col-2\">oral administration</td>\n                                                <td class=\"regimen-col-2 handle-lines\"></td>\n                                                <td class=\"regimen-col-4\">\n                                                        <div class=\"regimen-instructions html-instructions\"><b>Instructions:</b><br />Take with food. Do not stop taking this medicine without consulting your doctor.</div>\n                                                </td>\n                                            </tr>\n                                    </table>\n                                </div>\n                                <div class=\"day-overview\">\n                                    <h3>Day: 18</h3>\n                                    <table>\n                                        <tr>\n                                            <th class=\"regimen-col-2\">Medication</th>\n                                            <th class=\"regimen-col-2\">Dose</th>\n                                            <th class=\"regimen-col-2\">Route</th>\n                                            <th class=\"regimen-col-2\">Max duration</th>\n                                            <th class=\"regimen-col-4\">Details</th>\n                                        </tr>\n                                            <tr id=\"day-details-content|1d57a0e6-2058-45ac-b94c-4dc6371fbff2-18-a794418f-bf35-4e3f-8b10-6a20e1759502\" title=\"Cycle 1: abiraterone - Day 18\" class=\"regimen-item\">\n                                                <td class=\"regimen-col-2\">\n                                                    <span class=\"medication\" title=\"44338201000116106\">abiraterone</span>\n                                                        <span>*</span>\n                                                </td>\n                                                <td class=\"regimen-col-2 handle-lines\">1000&#xA0;mg flat&#xA0;Once daily</td>\n                                                <td class=\"regimen-col-2\">oral administration</td>\n                                                <td class=\"regimen-col-2 handle-lines\"></td>\n                                                <td class=\"regimen-col-4\">\n                                                        <div class=\"regimen-instructions html-instructions\"><b>Instructions:</b><br />Take each dose on an empty stomach - one hour before OR two hours after food.&#xA;Monitor blood pressure at least once a month during treatment; for patients with hypertension monitor blood pressure every 2 weeks for the first 3 months of treatment.</div>\n                                                </td>\n                                            </tr>\n                                            <tr id=\"day-details-content|1d57a0e6-2058-45ac-b94c-4dc6371fbff2-18-b05f461c-ce1d-4976-862d-b96f3ee44341\" title=\"Cycle 1: dexamethasone - Day 18\" class=\"regimen-item\">\n                                                <td class=\"regimen-col-2\">\n                                                    <span class=\"medication\" title=\"10238921000116102\">dexamethasone</span>\n                                                        <span>*</span>\n                                                </td>\n                                                <td class=\"regimen-col-2 handle-lines\">500&#xA0;microgram flat&#xA0;Once daily</td>\n                                                <td class=\"regimen-col-2\">oral administration</td>\n                                                <td class=\"regimen-col-2 handle-lines\"></td>\n                                                <td class=\"regimen-col-4\">\n                                                        <div class=\"regimen-instructions html-instructions\"><b>Instructions:</b><br />Take with food. Do not stop taking this medicine without consulting your doctor.</div>\n                                                </td>\n                                            </tr>\n                                    </table>\n                                </div>\n                                <div class=\"day-overview\">\n                                    <h3>Day: 19</h3>\n                                    <table>\n                                        <tr>\n                                            <th class=\"regimen-col-2\">Medication</th>\n                                            <th class=\"regimen-col-2\">Dose</th>\n                                            <th class=\"regimen-col-2\">Route</th>\n                                            <th class=\"regimen-col-2\">Max duration</th>\n                                            <th class=\"regimen-col-4\">Details</th>\n                                        </tr>\n                                            <tr id=\"day-details-content|1d57a0e6-2058-45ac-b94c-4dc6371fbff2-19-a794418f-bf35-4e3f-8b10-6a20e1759502\" title=\"Cycle 1: abiraterone - Day 19\" class=\"regimen-item\">\n                                                <td class=\"regimen-col-2\">\n                                                    <span class=\"medication\" title=\"44338201000116106\">abiraterone</span>\n                                                        <span>*</span>\n                                                </td>\n                                                <td class=\"regimen-col-2 handle-lines\">1000&#xA0;mg flat&#xA0;Once daily</td>\n                                                <td class=\"regimen-col-2\">oral administration</td>\n                                                <td class=\"regimen-col-2 handle-lines\"></td>\n                                                <td class=\"regimen-col-4\">\n                                                        <div class=\"regimen-instructions html-instructions\"><b>Instructions:</b><br />Take each dose on an empty stomach - one hour before OR two hours after food.&#xA;Monitor blood pressure at least once a month during treatment; for patients with hypertension monitor blood pressure every 2 weeks for the first 3 months of treatment.</div>\n                                                </td>\n                                            </tr>\n                                            <tr id=\"day-details-content|1d57a0e6-2058-45ac-b94c-4dc6371fbff2-19-b05f461c-ce1d-4976-862d-b96f3ee44341\" title=\"Cycle 1: dexamethasone - Day 19\" class=\"regimen-item\">\n                                                <td class=\"regimen-col-2\">\n                                                    <span class=\"medication\" title=\"10238921000116102\">dexamethasone</span>\n                                                        <span>*</span>\n                                                </td>\n                                                <td class=\"regimen-col-2 handle-lines\">500&#xA0;microgram flat&#xA0;Once daily</td>\n                                                <td class=\"regimen-col-2\">oral administration</td>\n                                                <td class=\"regimen-col-2 handle-lines\"></td>\n                                                <td class=\"regimen-col-4\">\n                                                        <div class=\"regimen-instructions html-instructions\"><b>Instructions:</b><br />Take with food. Do not stop taking this medicine without consulting your doctor.</div>\n                                                </td>\n                                            </tr>\n                                    </table>\n                                </div>\n                                <div class=\"day-overview\">\n                                    <h3>Day: 20</h3>\n                                    <table>\n                                        <tr>\n                                            <th class=\"regimen-col-2\">Medication</th>\n                                            <th class=\"regimen-col-2\">Dose</th>\n                                            <th class=\"regimen-col-2\">Route</th>\n                                            <th class=\"regimen-col-2\">Max duration</th>\n                                            <th class=\"regimen-col-4\">Details</th>\n                                        </tr>\n                                            <tr id=\"day-details-content|1d57a0e6-2058-45ac-b94c-4dc6371fbff2-20-a794418f-bf35-4e3f-8b10-6a20e1759502\" title=\"Cycle 1: abiraterone - Day 20\" class=\"regimen-item\">\n                                                <td class=\"regimen-col-2\">\n                                                    <span class=\"medication\" title=\"44338201000116106\">abiraterone</span>\n                                                        <span>*</span>\n                                                </td>\n                                                <td class=\"regimen-col-2 handle-lines\">1000&#xA0;mg flat&#xA0;Once daily</td>\n                                                <td class=\"regimen-col-2\">oral administration</td>\n                                                <td class=\"regimen-col-2 handle-lines\"></td>\n                                                <td class=\"regimen-col-4\">\n                                                        <div class=\"regimen-instructions html-instructions\"><b>Instructions:</b><br />Take each dose on an empty stomach - one hour before OR two hours after food.&#xA;Monitor blood pressure at least once a month during treatment; for patients with hypertension monitor blood pressure every 2 weeks for the first 3 months of treatment.</div>\n                                                </td>\n                                            </tr>\n                                            <tr id=\"day-details-content|1d57a0e6-2058-45ac-b94c-4dc6371fbff2-20-b05f461c-ce1d-4976-862d-b96f3ee44341\" title=\"Cycle 1: dexamethasone - Day 20\" class=\"regimen-item\">\n                                                <td class=\"regimen-col-2\">\n                                                    <span class=\"medication\" title=\"10238921000116102\">dexamethasone</span>\n                                                        <span>*</span>\n                                                </td>\n                                                <td class=\"regimen-col-2 handle-lines\">500&#xA0;microgram flat&#xA0;Once daily</td>\n                                                <td class=\"regimen-col-2\">oral administration</td>\n                                                <td class=\"regimen-col-2 handle-lines\"></td>\n                                                <td class=\"regimen-col-4\">\n                                                        <div class=\"regimen-instructions html-instructions\"><b>Instructions:</b><br />Take with food. Do not stop taking this medicine without consulting your doctor.</div>\n                                                </td>\n                                            </tr>\n                                    </table>\n                                </div>\n                                <div class=\"day-overview\">\n                                    <h3>Day: 21</h3>\n                                    <table>\n                                        <tr>\n                                            <th class=\"regimen-col-2\">Medication</th>\n                                            <th class=\"regimen-col-2\">Dose</th>\n                                            <th class=\"regimen-col-2\">Route</th>\n                                            <th class=\"regimen-col-2\">Max duration</th>\n                                            <th class=\"regimen-col-4\">Details</th>\n                                        </tr>\n                                            <tr id=\"day-details-content|1d57a0e6-2058-45ac-b94c-4dc6371fbff2-21-a794418f-bf35-4e3f-8b10-6a20e1759502\" title=\"Cycle 1: abiraterone - Day 21\" class=\"regimen-item\">\n                                                <td class=\"regimen-col-2\">\n                                                    <span class=\"medication\" title=\"44338201000116106\">abiraterone</span>\n                                                        <span>*</span>\n                                                </td>\n                                                <td class=\"regimen-col-2 handle-lines\">1000&#xA0;mg flat&#xA0;Once daily</td>\n                                                <td class=\"regimen-col-2\">oral administration</td>\n                                                <td class=\"regimen-col-2 handle-lines\"></td>\n                                                <td class=\"regimen-col-4\">\n                                                        <div class=\"regimen-instructions html-instructions\"><b>Instructions:</b><br />Take each dose on an empty stomach - one hour before OR two hours after food.&#xA;Monitor blood pressure at least once a month during treatment; for patients with hypertension monitor blood pressure every 2 weeks for the first 3 months of treatment.</div>\n                                                </td>\n                                            </tr>\n                                            <tr id=\"day-details-content|1d57a0e6-2058-45ac-b94c-4dc6371fbff2-21-b05f461c-ce1d-4976-862d-b96f3ee44341\" title=\"Cycle 1: dexamethasone - Day 21\" class=\"regimen-item\">\n                                                <td class=\"regimen-col-2\">\n                                                    <span class=\"medication\" title=\"10238921000116102\">dexamethasone</span>\n                                                        <span>*</span>\n                                                </td>\n                                                <td class=\"regimen-col-2 handle-lines\">500&#xA0;microgram flat&#xA0;Once daily</td>\n                                                <td class=\"regimen-col-2\">oral administration</td>\n                                                <td class=\"regimen-col-2 handle-lines\"></td>\n                                                <td class=\"regimen-col-4\">\n                                                        <div class=\"regimen-instructions html-instructions\"><b>Instructions:</b><br />Take with food. Do not stop taking this medicine without consulting your doctor.</div>\n                                                </td>\n                                            </tr>\n                                    </table>\n                                </div>\n                                <div class=\"day-overview\">\n                                    <h3>Day: 22</h3>\n                                    <table>\n                                        <tr>\n                                            <th class=\"regimen-col-2\">Medication</th>\n                                            <th class=\"regimen-col-2\">Dose</th>\n                                            <th class=\"regimen-col-2\">Route</th>\n                                            <th class=\"regimen-col-2\">Max duration</th>\n                                            <th class=\"regimen-col-4\">Details</th>\n                                        </tr>\n                                            <tr id=\"day-details-content|1d57a0e6-2058-45ac-b94c-4dc6371fbff2-22-a794418f-bf35-4e3f-8b10-6a20e1759502\" title=\"Cycle 1: abiraterone - Day 22\" class=\"regimen-item\">\n                                                <td class=\"regimen-col-2\">\n                                                    <span class=\"medication\" title=\"44338201000116106\">abiraterone</span>\n                                                        <span>*</span>\n                                                </td>\n                                                <td class=\"regimen-col-2 handle-lines\">1000&#xA0;mg flat&#xA0;Once daily</td>\n                                                <td class=\"regimen-col-2\">oral administration</td>\n                                                <td class=\"regimen-col-2 handle-lines\"></td>\n                                                <td class=\"regimen-col-4\">\n                                                        <div class=\"regimen-instructions html-instructions\"><b>Instructions:</b><br />Take each dose on an empty stomach - one hour before OR two hours after food.&#xA;Monitor blood pressure at least once a month during treatment; for patients with hypertension monitor blood pressure every 2 weeks for the first 3 months of treatment.</div>\n                                                </td>\n                                            </tr>\n                                            <tr id=\"day-details-content|1d57a0e6-2058-45ac-b94c-4dc6371fbff2-22-b05f461c-ce1d-4976-862d-b96f3ee44341\" title=\"Cycle 1: dexamethasone - Day 22\" class=\"regimen-item\">\n                                                <td class=\"regimen-col-2\">\n                                                    <span class=\"medication\" title=\"10238921000116102\">dexamethasone</span>\n                                                        <span>*</span>\n                                                </td>\n                                                <td class=\"regimen-col-2 handle-lines\">500&#xA0;microgram flat&#xA0;Once daily</td>\n                                                <td class=\"regimen-col-2\">oral administration</td>\n                                                <td class=\"regimen-col-2 handle-lines\"></td>\n                                                <td class=\"regimen-col-4\">\n                                                        <div class=\"regimen-instructions html-instructions\"><b>Instructions:</b><br />Take with food. Do not stop taking this medicine without consulting your doctor.</div>\n                                                </td>\n                                            </tr>\n                                    </table>\n                                </div>\n                                <div class=\"day-overview\">\n                                    <h3>Day: 23</h3>\n                                    <table>\n                                        <tr>\n                                            <th class=\"regimen-col-2\">Medication</th>\n                                            <th class=\"regimen-col-2\">Dose</th>\n                                            <th class=\"regimen-col-2\">Route</th>\n                                            <th class=\"regimen-col-2\">Max duration</th>\n                                            <th class=\"regimen-col-4\">Details</th>\n                                        </tr>\n                                            <tr id=\"day-details-content|1d57a0e6-2058-45ac-b94c-4dc6371fbff2-23-a794418f-bf35-4e3f-8b10-6a20e1759502\" title=\"Cycle 1: abiraterone - Day 23\" class=\"regimen-item\">\n                                                <td class=\"regimen-col-2\">\n                                                    <span class=\"medication\" title=\"44338201000116106\">abiraterone</span>\n                                                        <span>*</span>\n                                                </td>\n                                                <td class=\"regimen-col-2 handle-lines\">1000&#xA0;mg flat&#xA0;Once daily</td>\n                                                <td class=\"regimen-col-2\">oral administration</td>\n                                                <td class=\"regimen-col-2 handle-lines\"></td>\n                                                <td class=\"regimen-col-4\">\n                                                        <div class=\"regimen-instructions html-instructions\"><b>Instructions:</b><br />Take each dose on an empty stomach - one hour before OR two hours after food.&#xA;Monitor blood pressure at least once a month during treatment; for patients with hypertension monitor blood pressure every 2 weeks for the first 3 months of treatment.</div>\n                                                </td>\n                                            </tr>\n                                            <tr id=\"day-details-content|1d57a0e6-2058-45ac-b94c-4dc6371fbff2-23-b05f461c-ce1d-4976-862d-b96f3ee44341\" title=\"Cycle 1: dexamethasone - Day 23\" class=\"regimen-item\">\n                                                <td class=\"regimen-col-2\">\n                                                    <span class=\"medication\" title=\"10238921000116102\">dexamethasone</span>\n                                                        <span>*</span>\n                                                </td>\n                                                <td class=\"regimen-col-2 handle-lines\">500&#xA0;microgram flat&#xA0;Once daily</td>\n                                                <td class=\"regimen-col-2\">oral administration</td>\n                                                <td class=\"regimen-col-2 handle-lines\"></td>\n                                                <td class=\"regimen-col-4\">\n                                                        <div class=\"regimen-instructions html-instructions\"><b>Instructions:</b><br />Take with food. Do not stop taking this medicine without consulting your doctor.</div>\n                                                </td>\n                                            </tr>\n                                    </table>\n                                </div>\n                                <div class=\"day-overview\">\n                                    <h3>Day: 24</h3>\n                                    <table>\n                                        <tr>\n                                            <th class=\"regimen-col-2\">Medication</th>\n                                            <th class=\"regimen-col-2\">Dose</th>\n                                            <th class=\"regimen-col-2\">Route</th>\n                                            <th class=\"regimen-col-2\">Max duration</th>\n                                            <th class=\"regimen-col-4\">Details</th>\n                                        </tr>\n                                            <tr id=\"day-details-content|1d57a0e6-2058-45ac-b94c-4dc6371fbff2-24-a794418f-bf35-4e3f-8b10-6a20e1759502\" title=\"Cycle 1: abiraterone - Day 24\" class=\"regimen-item\">\n                                                <td class=\"regimen-col-2\">\n                                                    <span class=\"medication\" title=\"44338201000116106\">abiraterone</span>\n                                                        <span>*</span>\n                                                </td>\n                                                <td class=\"regimen-col-2 handle-lines\">1000&#xA0;mg flat&#xA0;Once daily</td>\n                                                <td class=\"regimen-col-2\">oral administration</td>\n                                                <td class=\"regimen-col-2 handle-lines\"></td>\n                                                <td class=\"regimen-col-4\">\n                                                        <div class=\"regimen-instructions html-instructions\"><b>Instructions:</b><br />Take each dose on an empty stomach - one hour before OR two hours after food.&#xA;Monitor blood pressure at least once a month during treatment; for patients with hypertension monitor blood pressure every 2 weeks for the first 3 months of treatment.</div>\n                                                </td>\n                                            </tr>\n                                            <tr id=\"day-details-content|1d57a0e6-2058-45ac-b94c-4dc6371fbff2-24-b05f461c-ce1d-4976-862d-b96f3ee44341\" title=\"Cycle 1: dexamethasone - Day 24\" class=\"regimen-item\">\n                                                <td class=\"regimen-col-2\">\n                                                    <span class=\"medication\" title=\"10238921000116102\">dexamethasone</span>\n                                                        <span>*</span>\n                                                </td>\n                                                <td class=\"regimen-col-2 handle-lines\">500&#xA0;microgram flat&#xA0;Once daily</td>\n                                                <td class=\"regimen-col-2\">oral administration</td>\n                                                <td class=\"regimen-col-2 handle-lines\"></td>\n                                                <td class=\"regimen-col-4\">\n                                                        <div class=\"regimen-instructions html-instructions\"><b>Instructions:</b><br />Take with food. Do not stop taking this medicine without consulting your doctor.</div>\n                                                </td>\n                                            </tr>\n                                    </table>\n                                </div>\n                                <div class=\"day-overview\">\n                                    <h3>Day: 25</h3>\n                                    <table>\n                                        <tr>\n                                            <th class=\"regimen-col-2\">Medication</th>\n                                            <th class=\"regimen-col-2\">Dose</th>\n                                            <th class=\"regimen-col-2\">Route</th>\n                                            <th class=\"regimen-col-2\">Max duration</th>\n                                            <th class=\"regimen-col-4\">Details</th>\n                                        </tr>\n                                            <tr id=\"day-details-content|1d57a0e6-2058-45ac-b94c-4dc6371fbff2-25-a794418f-bf35-4e3f-8b10-6a20e1759502\" title=\"Cycle 1: abiraterone - Day 25\" class=\"regimen-item\">\n                                                <td class=\"regimen-col-2\">\n                                                    <span class=\"medication\" title=\"44338201000116106\">abiraterone</span>\n                                                        <span>*</span>\n                                                </td>\n                                                <td class=\"regimen-col-2 handle-lines\">1000&#xA0;mg flat&#xA0;Once daily</td>\n                                                <td class=\"regimen-col-2\">oral administration</td>\n                                                <td class=\"regimen-col-2 handle-lines\"></td>\n                                                <td class=\"regimen-col-4\">\n                                                        <div class=\"regimen-instructions html-instructions\"><b>Instructions:</b><br />Take each dose on an empty stomach - one hour before OR two hours after food.&#xA;Monitor blood pressure at least once a month during treatment; for patients with hypertension monitor blood pressure every 2 weeks for the first 3 months of treatment.</div>\n                                                </td>\n                                            </tr>\n                                            <tr id=\"day-details-content|1d57a0e6-2058-45ac-b94c-4dc6371fbff2-25-b05f461c-ce1d-4976-862d-b96f3ee44341\" title=\"Cycle 1: dexamethasone - Day 25\" class=\"regimen-item\">\n                                                <td class=\"regimen-col-2\">\n                                                    <span class=\"medication\" title=\"10238921000116102\">dexamethasone</span>\n                                                        <span>*</span>\n                                                </td>\n                                                <td class=\"regimen-col-2 handle-lines\">500&#xA0;microgram flat&#xA0;Once daily</td>\n                                                <td class=\"regimen-col-2\">oral administration</td>\n                                                <td class=\"regimen-col-2 handle-lines\"></td>\n                                                <td class=\"regimen-col-4\">\n                                                        <div class=\"regimen-instructions html-instructions\"><b>Instructions:</b><br />Take with food. Do not stop taking this medicine without consulting your doctor.</div>\n                                                </td>\n                                            </tr>\n                                    </table>\n                                </div>\n                                <div class=\"day-overview\">\n                                    <h3>Day: 26</h3>\n                                    <table>\n                                        <tr>\n                                            <th class=\"regimen-col-2\">Medication</th>\n                                            <th class=\"regimen-col-2\">Dose</th>\n                                            <th class=\"regimen-col-2\">Route</th>\n                                            <th class=\"regimen-col-2\">Max duration</th>\n                                            <th class=\"regimen-col-4\">Details</th>\n                                        </tr>\n                                            <tr id=\"day-details-content|1d57a0e6-2058-45ac-b94c-4dc6371fbff2-26-a794418f-bf35-4e3f-8b10-6a20e1759502\" title=\"Cycle 1: abiraterone - Day 26\" class=\"regimen-item\">\n                                                <td class=\"regimen-col-2\">\n                                                    <span class=\"medication\" title=\"44338201000116106\">abiraterone</span>\n                                                        <span>*</span>\n                                                </td>\n                                                <td class=\"regimen-col-2 handle-lines\">1000&#xA0;mg flat&#xA0;Once daily</td>\n                                                <td class=\"regimen-col-2\">oral administration</td>\n                                                <td class=\"regimen-col-2 handle-lines\"></td>\n                                                <td class=\"regimen-col-4\">\n                                                        <div class=\"regimen-instructions html-instructions\"><b>Instructions:</b><br />Take each dose on an empty stomach - one hour before OR two hours after food.&#xA;Monitor blood pressure at least once a month during treatment; for patients with hypertension monitor blood pressure every 2 weeks for the first 3 months of treatment.</div>\n                                                </td>\n                                            </tr>\n                                            <tr id=\"day-details-content|1d57a0e6-2058-45ac-b94c-4dc6371fbff2-26-b05f461c-ce1d-4976-862d-b96f3ee44341\" title=\"Cycle 1: dexamethasone - Day 26\" class=\"regimen-item\">\n                                                <td class=\"regimen-col-2\">\n                                                    <span class=\"medication\" title=\"10238921000116102\">dexamethasone</span>\n                                                        <span>*</span>\n                                                </td>\n                                                <td class=\"regimen-col-2 handle-lines\">500&#xA0;microgram flat&#xA0;Once daily</td>\n                                                <td class=\"regimen-col-2\">oral administration</td>\n                                                <td class=\"regimen-col-2 handle-lines\"></td>\n                                                <td class=\"regimen-col-4\">\n                                                        <div class=\"regimen-instructions html-instructions\"><b>Instructions:</b><br />Take with food. Do not stop taking this medicine without consulting your doctor.</div>\n                                                </td>\n                                            </tr>\n                                    </table>\n                                </div>\n                                <div class=\"day-overview\">\n                                    <h3>Day: 27</h3>\n                                    <table>\n                                        <tr>\n                                            <th class=\"regimen-col-2\">Medication</th>\n                                            <th class=\"regimen-col-2\">Dose</th>\n                                            <th class=\"regimen-col-2\">Route</th>\n                                            <th class=\"regimen-col-2\">Max duration</th>\n                                            <th class=\"regimen-col-4\">Details</th>\n                                        </tr>\n                                            <tr id=\"day-details-content|1d57a0e6-2058-45ac-b94c-4dc6371fbff2-27-a794418f-bf35-4e3f-8b10-6a20e1759502\" title=\"Cycle 1: abiraterone - Day 27\" class=\"regimen-item\">\n                                                <td class=\"regimen-col-2\">\n                                                    <span class=\"medication\" title=\"44338201000116106\">abiraterone</span>\n                                                        <span>*</span>\n                                                </td>\n                                                <td class=\"regimen-col-2 handle-lines\">1000&#xA0;mg flat&#xA0;Once daily</td>\n                                                <td class=\"regimen-col-2\">oral administration</td>\n                                                <td class=\"regimen-col-2 handle-lines\"></td>\n                                                <td class=\"regimen-col-4\">\n                                                        <div class=\"regimen-instructions html-instructions\"><b>Instructions:</b><br />Take each dose on an empty stomach - one hour before OR two hours after food.&#xA;Monitor blood pressure at least once a month during treatment; for patients with hypertension monitor blood pressure every 2 weeks for the first 3 months of treatment.</div>\n                                                </td>\n                                            </tr>\n                                            <tr id=\"day-details-content|1d57a0e6-2058-45ac-b94c-4dc6371fbff2-27-b05f461c-ce1d-4976-862d-b96f3ee44341\" title=\"Cycle 1: dexamethasone - Day 27\" class=\"regimen-item\">\n                                                <td class=\"regimen-col-2\">\n                                                    <span class=\"medication\" title=\"10238921000116102\">dexamethasone</span>\n                                                        <span>*</span>\n                                                </td>\n                                                <td class=\"regimen-col-2 handle-lines\">500&#xA0;microgram flat&#xA0;Once daily</td>\n                                                <td class=\"regimen-col-2\">oral administration</td>\n                                                <td class=\"regimen-col-2 handle-lines\"></td>\n                                                <td class=\"regimen-col-4\">\n                                                        <div class=\"regimen-instructions html-instructions\"><b>Instructions:</b><br />Take with food. Do not stop taking this medicine without consulting your doctor.</div>\n                                                </td>\n                                            </tr>\n                                    </table>\n                                </div>\n                                <div class=\"day-overview\">\n                                    <h3>Day: 28</h3>\n                                    <table>\n                                        <tr>\n                                            <th class=\"regimen-col-2\">Medication</th>\n                                            <th class=\"regimen-col-2\">Dose</th>\n                                            <th class=\"regimen-col-2\">Route</th>\n                                            <th class=\"regimen-col-2\">Max duration</th>\n                                            <th class=\"regimen-col-4\">Details</th>\n                                        </tr>\n                                            <tr id=\"day-details-content|1d57a0e6-2058-45ac-b94c-4dc6371fbff2-28-a794418f-bf35-4e3f-8b10-6a20e1759502\" title=\"Cycle 1: abiraterone - Day 28\" class=\"regimen-item\">\n                                                <td class=\"regimen-col-2\">\n                                                    <span class=\"medication\" title=\"44338201000116106\">abiraterone</span>\n                                                        <span>*</span>\n                                                </td>\n                                                <td class=\"regimen-col-2 handle-lines\">1000&#xA0;mg flat&#xA0;Once daily</td>\n                                                <td class=\"regimen-col-2\">oral administration</td>\n                                                <td class=\"regimen-col-2 handle-lines\"></td>\n                                                <td class=\"regimen-col-4\">\n                                                        <div class=\"regimen-instructions html-instructions\"><b>Instructions:</b><br />Take each dose on an empty stomach - one hour before OR two hours after food.&#xA;Monitor blood pressure at least once a month during treatment; for patients with hypertension monitor blood pressure every 2 weeks for the first 3 months of treatment.</div>\n                                                </td>\n                                            </tr>\n                                            <tr id=\"day-details-content|1d57a0e6-2058-45ac-b94c-4dc6371fbff2-28-b05f461c-ce1d-4976-862d-b96f3ee44341\" title=\"Cycle 1: dexamethasone - Day 28\" class=\"regimen-item\">\n                                                <td class=\"regimen-col-2\">\n                                                    <span class=\"medication\" title=\"10238921000116102\">dexamethasone</span>\n                                                        <span>*</span>\n                                                </td>\n                                                <td class=\"regimen-col-2 handle-lines\">500&#xA0;microgram flat&#xA0;Once daily</td>\n                                                <td class=\"regimen-col-2\">oral administration</td>\n                                                <td class=\"regimen-col-2 handle-lines\"></td>\n                                                <td class=\"regimen-col-4\">\n                                                        <div class=\"regimen-instructions html-instructions\"><b>Instructions:</b><br />Take with food. Do not stop taking this medicine without consulting your doctor.</div>\n                                                </td>\n                                            </tr>\n                                    </table>\n                                </div>\n                        </div>\n                    </div>\n            </div>\n            <div class=\"references\">\n                <h2>Supportive Care Factors</h2>\n\n                    <p>No supportive care factors specified</p>\n            </div>\n            <div class=\"references\">\n                <h2>References</h2>\n                        <p class=\"regimen-reference\">\n                            <small>1.&#x9;Fenioux C, Louvet C, Charton E, et al. Switch from abiraterone plus prednisone to abiraterone plus dexamethasone at asymptomatic PSA progression in patients with metastatic castration-resistant prostate cancer. BJU Int. 2019;123(2):300-306. doi:10.1111/bju.14511, PMID: 30099821</small>\n                        </p>\n                        <p class=\"regimen-reference\">\n                            <small>2.&#x9;Romero-Laorden N, Lozano R, Jayaram A, et al. Phase II pilot study of the prednisone to dexamethasone switch in metastatic castration-resistant prostate cancer (mCRPC) patients with limited progression on abiraterone plus prednisone (SWITCH study). Br J Cancer. 2018;119(9):1052-1059. doi:10.1038/s41416-018-0123-9, PMID: 30131546</small>\n                        </p>\n                        <p class=\"regimen-reference\">\n                            <small>3. Roviello G, Sobhani N, Corona SP, D&#x27;Angelo A. Corticosteroid switch after progression on abiraterone acetate plus prednisone. Int J Clin Oncol. 2020 Feb;25(2):240-246. doi: 10.1007/s10147-019-01577-w. Epub 2019 Nov 8., PMID: 31705219</small>\n                        </p>\n                        <p class=\"regimen-reference\">\n                            <small>4. Attard G, Merseburger AS, Arlt W, Sternberg CN, Feyerabend S, Berruti A, Joniau S, G&#xE9;czi L, Lefresne F, Lahaye M, Shelby FN, Pissart G, Chua S, Jones RJ, Tombal B. Assessment of the Safety of Glucocorticoid Regimens in Combination With Abiraterone Acetate: A Randomized, Open-Label Phase 2 Study. JAMA Oncol. 2019 Jun 27;5(8):1159&#x2013;67. doi: 10.1001/jamaoncol.2019.1011. Epub ahead of print. Erratum in: JAMA Oncol. 2019 Aug 1;5(8):1232., PMID: 31246234</small>\n                        </p>\n\n            </div>\n            <div class=\"disclaimer\">\n                <p><b>* The medicines, doses, combinations, and schedule in this treatment regimen have been carefully reviewed against international best practice guidelines by specialists in medical oncology around New Zealand and this advice has been accepted for publication by Te Aho o Te Kahu (the Cancer Control Agency). Sometimes medicines that are used in routine clinical practice have not been through a formal review process by the NZ Medicines Regulator Medsafe and are therefore considered unapproved or off-label. These medicines are legally able to be prescribed through sections 25 and 29 of the Medicines Act and by obtaining informed consent from patients. All treatment regimens listed on this website have been through robust peer review and are considered an accepted standard of care, whether prescribed through sections 25 or 29 or carrying formal Medsafe Approval.</b></p>\n            </div>\n        </div>\n    </div>"
+    },
+    "contained": [
+        {
+            "resourceType": "ActivityDefinition",
+            "id": "a794418f-bf35-4e3f-8b10-6a20e1759502",
+            "meta": {
+                "profile": [
+                    "http://hl7.org.nz/fhir/StructureDefinition/CcaActivityDefinition"
+                ]
+            },
+            "extension": [
+                {
+                    "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-off-label",
+                    "valueBoolean": true
+                }
+            ],
+            "name": "Orderset_a794418f_bf35_4e3f_8b10_6a20e1759502",
+            "status": "active",
+            "productCodeableConcept": {
+                "coding": [
+                    {
+                        "system": "https://nzulm.org.nz/nzmt",
+                        "code": "44338201000116106",
+                        "display": "abiraterone"
+                    }
+                ],
+                "text": "abiraterone"
+            },
+            "dosage": [
+                {
+                    "text": "1000 mg flat Once daily by oral administration",
+                    "timing": {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "229797004"
+                                }
+                            ],
+                            "text": "Once daily"
+                        }
+                    },
+                    "route": {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "386359008"
+                            }
+                        ],
+                        "text": "oral administration"
+                    },
+                    "doseAndRate": [
+                        {
+                            "doseQuantity": {
+                                "value": 1000,
+                                "unit": "mg flat",
+                                "system": "http://snomed.info/sct",
+                                "code": "258684004"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "resourceType": "ActivityDefinition",
+            "id": "b05f461c-ce1d-4976-862d-b96f3ee44341",
+            "meta": {
+                "profile": [
+                    "http://hl7.org.nz/fhir/StructureDefinition/CcaActivityDefinition"
+                ]
+            },
+            "extension": [
+                {
+                    "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-off-label",
+                    "valueBoolean": true
+                }
+            ],
+            "name": "Orderset_b05f461c_ce1d_4976_862d_b96f3ee44341",
+            "status": "active",
+            "productCodeableConcept": {
+                "coding": [
+                    {
+                        "system": "https://nzulm.org.nz/nzmt",
+                        "code": "10238921000116102",
+                        "display": "dexamethasone"
+                    }
+                ],
+                "text": "dexamethasone"
+            },
+            "dosage": [
+                {
+                    "text": "500 microgram flat Once daily by oral administration",
+                    "timing": {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "229797004"
+                                }
+                            ],
+                            "text": "Once daily"
+                        }
+                    },
+                    "route": {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "386359008"
+                            }
+                        ],
+                        "text": "oral administration"
+                    },
+                    "doseAndRate": [
+                        {
+                            "doseQuantity": {
+                                "value": 500,
+                                "unit": "microgram flat",
+                                "system": "http://snomed.info/sct",
+                                "code": "258685003"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "extension": [
+        {
+            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-treatment-setting",
+            "valueCodeableConcept": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "128462008"
+                    }
+                ],
+                "text": "Metastatic"
+            }
+        },
+        {
+            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-plan-instructions",
+            "valueMarkdown": "<p>This regimen is for corticosteroid switch after progression on abiraterone plus prEDNISone.</p>"
+        },
+        {
+            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-disclaimer",
+            "valueMarkdown": "The medicines, doses, combinations, and schedule in this treatment regimen have been carefully reviewed against international best practice guidelines by specialists in medical oncology around New Zealand and this advice has been accepted for publication by Te Aho o Te Kahu (the Cancer Control Agency). Sometimes medicines that are used in routine clinical practice have not been through a formal review process by the NZ Medicines Regulator Medsafe and are therefore considered unapproved or off-label. These medicines are legally able to be prescribed through sections 25 and 29 of the Medicines Act and by obtaining informed consent from patients. All treatment regimens listed on this website have been through robust peer review and are considered an accepted standard of care, whether prescribed through sections 25 or 29 or carrying formal Medsafe Approval."
+        }
+    ],
+    "url": "https://fhir.nzf.org.nz/fhir/PlanDefinition/52451000210102",
+    "identifier": [
+        {
+            "system": "http://snomed.info/sct",
+            "value": "52451000210102"
+        }
+    ],
+    "version": "1.0.0",
+    "name": "GU PROS Castration resistant Metastatic - abiraterone and dexamethasone",
+    "title": "GU PROS Castration resistant Metastatic - abiraterone and dexamethasone",
+    "subtitle": "Urogenital Prostate Castration resistant Metastatic - abiraterone and dexamethasone",
+    "type": {
+        "coding": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+                "code": "clinical-protocol"
+            }
+        ]
+    },
+    "status": "active",
+    "publisher": "New Zealand Medicines Formulary LP",
+    "description": "A drug treatment regimen for Urogenital Prostate Castration resistant Metastatic - abiraterone and dexamethasone",
+    "useContext": [
+        {
+            "code": {
+                "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+                "code": "focus"
+            },
+            "valueCodeableConcept": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "42030000"
+                    }
+                ],
+                "text": "Urogenital"
+            }
+        },
+        {
+            "code": {
+                "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+                "code": "focus"
+            },
+            "valueCodeableConcept": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "254900004"
+                    }
+                ],
+                "text": "Prostate"
+            }
+        },
+        {
+            "code": {
+                "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+                "code": "focus"
+            },
+            "valueCodeableConcept": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "427492003"
+                    }
+                ],
+                "text": "Castration resistant"
+            }
+        }
+    ],
+    "copyright": "All rights reserved.",
+    "author": [
+        {
+            "name": "New Zealand Medicines Formulary LP"
+        }
+    ],
+    "relatedArtifact": [
+        {
+            "type": "citation",
+            "display": "1.\tFenioux C, Louvet C, Charton E, et al. Switch from abiraterone plus prednisone to abiraterone plus dexamethasone at asymptomatic PSA progression in patients with metastatic castration-resistant prostate cancer. BJU Int. 2019;123(2):300-306. doi:10.1111/bju.14511, PMID: 30099821",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/30099821"
+        },
+        {
+            "type": "citation",
+            "display": "2.\tRomero-Laorden N, Lozano R, Jayaram A, et al. Phase II pilot study of the prednisone to dexamethasone switch in metastatic castration-resistant prostate cancer (mCRPC) patients with limited progression on abiraterone plus prednisone (SWITCH study). Br J Cancer. 2018;119(9):1052-1059. doi:10.1038/s41416-018-0123-9, PMID: 30131546",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/30131546"
+        },
+        {
+            "type": "citation",
+            "display": "3. Roviello G, Sobhani N, Corona SP, D'Angelo A. Corticosteroid switch after progression on abiraterone acetate plus prednisone. Int J Clin Oncol. 2020 Feb;25(2):240-246. doi: 10.1007/s10147-019-01577-w. Epub 2019 Nov 8., PMID: 31705219",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/31705219"
+        },
+        {
+            "type": "citation",
+            "display": "4. Attard G, Merseburger AS, Arlt W, Sternberg CN, Feyerabend S, Berruti A, Joniau S, Géczi L, Lefresne F, Lahaye M, Shelby FN, Pissart G, Chua S, Jones RJ, Tombal B. Assessment of the Safety of Glucocorticoid Regimens in Combination With Abiraterone Acetate: A Randomized, Open-Label Phase 2 Study. JAMA Oncol. 2019 Jun 27;5(8):1159–67. doi: 10.1001/jamaoncol.2019.1011. Epub ahead of print. Erratum in: JAMA Oncol. 2019 Aug 1;5(8):1232., PMID: 31246234",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/31246234"
+        }
+    ],
+    "action": [
+        {
+            "id": "1d57a0e6-2058-45ac-b94c-4dc6371fbff2",
+            "prefix": "1",
+            "description": "Cycle 1 (and all further cycles) - 28 days",
+            "timingTiming": {
+                "repeat": {
+                    "duration": 28,
+                    "durationUnit": "d"
+                }
+            },
+            "selectionBehavior": "all",
+            "action": [
+                {
+                    "id": "Order-Set-1-a794418f-bf35-4e3f-8b10-6a20e1759502",
+                    "extension": [
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 1
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "Take each dose on an empty stomach - one hour before OR two hours after food.\nMonitor blood pressure at least once a month during treatment; for patients with hypertension monitor blood pressure every 2 weeks for the first 3 months of treatment."
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 2
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "Take each dose on an empty stomach - one hour before OR two hours after food.\nMonitor blood pressure at least once a month during treatment; for patients with hypertension monitor blood pressure every 2 weeks for the first 3 months of treatment."
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 3
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "Take each dose on an empty stomach - one hour before OR two hours after food.\nMonitor blood pressure at least once a month during treatment; for patients with hypertension monitor blood pressure every 2 weeks for the first 3 months of treatment."
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 4
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "Take each dose on an empty stomach - one hour before OR two hours after food.\nMonitor blood pressure at least once a month during treatment; for patients with hypertension monitor blood pressure every 2 weeks for the first 3 months of treatment."
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 5
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "Take each dose on an empty stomach - one hour before OR two hours after food.\nMonitor blood pressure at least once a month during treatment; for patients with hypertension monitor blood pressure every 2 weeks for the first 3 months of treatment."
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 6
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "Take each dose on an empty stomach - one hour before OR two hours after food.\nMonitor blood pressure at least once a month during treatment; for patients with hypertension monitor blood pressure every 2 weeks for the first 3 months of treatment."
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 7
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "Take each dose on an empty stomach - one hour before OR two hours after food.\nMonitor blood pressure at least once a month during treatment; for patients with hypertension monitor blood pressure every 2 weeks for the first 3 months of treatment."
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 8
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "Take each dose on an empty stomach - one hour before OR two hours after food.\nMonitor blood pressure at least once a month during treatment; for patients with hypertension monitor blood pressure every 2 weeks for the first 3 months of treatment."
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 9
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "Take each dose on an empty stomach - one hour before OR two hours after food.\nMonitor blood pressure at least once a month during treatment; for patients with hypertension monitor blood pressure every 2 weeks for the first 3 months of treatment."
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 10
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "Take each dose on an empty stomach - one hour before OR two hours after food.\nMonitor blood pressure at least once a month during treatment; for patients with hypertension monitor blood pressure every 2 weeks for the first 3 months of treatment."
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 11
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "Take each dose on an empty stomach - one hour before OR two hours after food.\nMonitor blood pressure at least once a month during treatment; for patients with hypertension monitor blood pressure every 2 weeks for the first 3 months of treatment."
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 12
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "Take each dose on an empty stomach - one hour before OR two hours after food.\nMonitor blood pressure at least once a month during treatment; for patients with hypertension monitor blood pressure every 2 weeks for the first 3 months of treatment."
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 13
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "Take each dose on an empty stomach - one hour before OR two hours after food.\nMonitor blood pressure at least once a month during treatment; for patients with hypertension monitor blood pressure every 2 weeks for the first 3 months of treatment."
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 14
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "Take each dose on an empty stomach - one hour before OR two hours after food.\nMonitor blood pressure at least once a month during treatment; for patients with hypertension monitor blood pressure every 2 weeks for the first 3 months of treatment."
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 15
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "Take each dose on an empty stomach - one hour before OR two hours after food.\nMonitor blood pressure at least once a month during treatment; for patients with hypertension monitor blood pressure every 2 weeks for the first 3 months of treatment."
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 16
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "Take each dose on an empty stomach - one hour before OR two hours after food.\nMonitor blood pressure at least once a month during treatment; for patients with hypertension monitor blood pressure every 2 weeks for the first 3 months of treatment."
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 17
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "Take each dose on an empty stomach - one hour before OR two hours after food.\nMonitor blood pressure at least once a month during treatment; for patients with hypertension monitor blood pressure every 2 weeks for the first 3 months of treatment."
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 18
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "Take each dose on an empty stomach - one hour before OR two hours after food.\nMonitor blood pressure at least once a month during treatment; for patients with hypertension monitor blood pressure every 2 weeks for the first 3 months of treatment."
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 19
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "Take each dose on an empty stomach - one hour before OR two hours after food.\nMonitor blood pressure at least once a month during treatment; for patients with hypertension monitor blood pressure every 2 weeks for the first 3 months of treatment."
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 20
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "Take each dose on an empty stomach - one hour before OR two hours after food.\nMonitor blood pressure at least once a month during treatment; for patients with hypertension monitor blood pressure every 2 weeks for the first 3 months of treatment."
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 21
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "Take each dose on an empty stomach - one hour before OR two hours after food.\nMonitor blood pressure at least once a month during treatment; for patients with hypertension monitor blood pressure every 2 weeks for the first 3 months of treatment."
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 22
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "Take each dose on an empty stomach - one hour before OR two hours after food.\nMonitor blood pressure at least once a month during treatment; for patients with hypertension monitor blood pressure every 2 weeks for the first 3 months of treatment."
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 23
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "Take each dose on an empty stomach - one hour before OR two hours after food.\nMonitor blood pressure at least once a month during treatment; for patients with hypertension monitor blood pressure every 2 weeks for the first 3 months of treatment."
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 24
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "Take each dose on an empty stomach - one hour before OR two hours after food.\nMonitor blood pressure at least once a month during treatment; for patients with hypertension monitor blood pressure every 2 weeks for the first 3 months of treatment."
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 25
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "Take each dose on an empty stomach - one hour before OR two hours after food.\nMonitor blood pressure at least once a month during treatment; for patients with hypertension monitor blood pressure every 2 weeks for the first 3 months of treatment."
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 26
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "Take each dose on an empty stomach - one hour before OR two hours after food.\nMonitor blood pressure at least once a month during treatment; for patients with hypertension monitor blood pressure every 2 weeks for the first 3 months of treatment."
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 27
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "Take each dose on an empty stomach - one hour before OR two hours after food.\nMonitor blood pressure at least once a month during treatment; for patients with hypertension monitor blood pressure every 2 weeks for the first 3 months of treatment."
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 28
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "Take each dose on an empty stomach - one hour before OR two hours after food.\nMonitor blood pressure at least once a month during treatment; for patients with hypertension monitor blood pressure every 2 weeks for the first 3 months of treatment."
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        }
+                    ],
+                    "definitionCanonical": "#a794418f-bf35-4e3f-8b10-6a20e1759502"
+                },
+                {
+                    "id": "Order-Set-2-b05f461c-ce1d-4976-862d-b96f3ee44341",
+                    "extension": [
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 1
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "Take with food. Do not stop taking this medicine without consulting your doctor."
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 2
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "Take with food. Do not stop taking this medicine without consulting your doctor."
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 3
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "Take with food. Do not stop taking this medicine without consulting your doctor."
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 4
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "Take with food. Do not stop taking this medicine without consulting your doctor."
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 5
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "Take with food. Do not stop taking this medicine without consulting your doctor."
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 6
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "Take with food. Do not stop taking this medicine without consulting your doctor."
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 7
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "Take with food. Do not stop taking this medicine without consulting your doctor."
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 8
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "Take with food. Do not stop taking this medicine without consulting your doctor."
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 9
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "Take with food. Do not stop taking this medicine without consulting your doctor."
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 10
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "Take with food. Do not stop taking this medicine without consulting your doctor."
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 11
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "Take with food. Do not stop taking this medicine without consulting your doctor."
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 12
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "Take with food. Do not stop taking this medicine without consulting your doctor."
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 13
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "Take with food. Do not stop taking this medicine without consulting your doctor."
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 14
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "Take with food. Do not stop taking this medicine without consulting your doctor."
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 15
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "Take with food. Do not stop taking this medicine without consulting your doctor."
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 16
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "Take with food. Do not stop taking this medicine without consulting your doctor."
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 17
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "Take with food. Do not stop taking this medicine without consulting your doctor."
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 18
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "Take with food. Do not stop taking this medicine without consulting your doctor."
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 19
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "Take with food. Do not stop taking this medicine without consulting your doctor."
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 20
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "Take with food. Do not stop taking this medicine without consulting your doctor."
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 21
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "Take with food. Do not stop taking this medicine without consulting your doctor."
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 22
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "Take with food. Do not stop taking this medicine without consulting your doctor."
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 23
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "Take with food. Do not stop taking this medicine without consulting your doctor."
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 24
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "Take with food. Do not stop taking this medicine without consulting your doctor."
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 25
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "Take with food. Do not stop taking this medicine without consulting your doctor."
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 26
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "Take with food. Do not stop taking this medicine without consulting your doctor."
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 27
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "Take with food. Do not stop taking this medicine without consulting your doctor."
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "day",
+                                    "valueInteger": 28
+                                },
+                                {
+                                    "url": "instructions",
+                                    "valueString": "Take with food. Do not stop taking this medicine without consulting your doctor."
+                                }
+                            ],
+                            "url": "http://hl7.org.nz/fhir/StructureDefinition/sact-timing-of-days"
+                        }
+                    ],
+                    "definitionCanonical": "#b05f461c-ce1d-4976-862d-b96f3ee44341"
+                }
+            ]
+        }
+    ]
+}
