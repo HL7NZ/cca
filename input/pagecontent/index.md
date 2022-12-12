@@ -11,15 +11,14 @@
 # Te Aho o Te Kahu, Cancer Control Agency Implementation Guide
 
 ### Background
-This Implementation Guide describes the representaton of cancer treatment regimens (primarily chemotherapy created by the Cancer Control Agency). A regimen describbes the treatment for a particular type of cancer and consists of a variable number of cycles, with
+This Implementation Guide describes the representaton of cancer treatment regimens (primarily chemotherapy created by the Cancer Control Agency). A regimen describes the treatment for a particular type of cancer and consists of a variable number of cycles, with
 each cycle defining one or more medication administrations on specific days within that cycle.
 
 The guide defines profiles on [PlanDefinition](http://hl7.org/fhir/plandefinition.html) and [ActivityDefinition](http://hl7.org/fhir/activitydefinition.html) resource types.
 
 These are complex resource types, and have been significantly constrained for this usage. In particular, the ['action'](http://hl7.org/fhir/plandefinition-definitions.html#PlanDefinition.action) element of the PlanDefinion resource is used in a specific manner. It has 2 levels of nesting.
 
-The top level action represents a cycle and contains information like the cycle description, length, repeats (if any) and so forth. Each cycle contains any number of sub-actions representing the individual actions within that cycle - generally a medication administration
-
+In most cases the top level action represents a cycle and contains information like the cycle description, length, repeats (if any) and so forth. Each cycle contains any number of sub-actions representing the individual actions within that cycle - generally a medication administration
 
 For example, a regimen that had 2 cycles, each of which defined the administration of 2 medications would be structured as folllows:
 
@@ -34,12 +33,10 @@ Details of each administration is found in the sub-action, which has an extensio
 days within the cycle when the medication is to be administered. Note that the extension is actually a modifierExtension as
 it must be understood by the recipient for safe use of the resource. If it were to be ignored, then the wrong administration could be made.
 
-
 The sub-action contains a reference to an [ActivityDefinition](http://hl7.org/fhir/ActivityDefinition) resource 
 which has the details of the medication (drug name, dose etc ). 
 
-
-
+There are however, regimens that provide a 'Treatment overview'.  These are plan definitions that contain full regimens as children. 
 
 <!--
 * The top level represents regimen options. This allows there to be different 'versions' of the regimen to be selected - potentially based on trigger criteria within the action. In this IG, only a single version is supported, but the pattern is maintained to suport future enhancement. 
