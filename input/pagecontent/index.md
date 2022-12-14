@@ -36,7 +36,7 @@ it must be understood by the recipient for safe use of the resource. If it were 
 The sub-action contains a reference to an [ActivityDefinition](http://hl7.org/fhir/ActivityDefinition) resource 
 which has the details of the medication (drug name, dose etc ). 
 
-There are however, regimens that provide a 'Treatment overview'.  These are plan definitions that contain full regimens as children. 
+There are however, regimens that provide a 'Treatment overview'.  These are plan definitions that contain full regimens as children. These children or component regimens are contained resources.  The treatment overview regimens do not contain activity definitions (cycles) only component regimens.
 
 <!--
 * The top level represents regimen options. This allows there to be different 'versions' of the regimen to be selected - potentially based on trigger criteria within the action. In this IG, only a single version is supported, but the pattern is maintained to suport future enhancement. 
@@ -66,7 +66,9 @@ There is an extension - [replaced-by](StructureDefinition-sact-replaced-by.html)
 There is currently no reference from the new Plan back to the one that it has replaced.
 
 ### Contained resources
-In this implementation, ActivityDefinition resources will be contained within the PlanDefinition and there uisn't a separate API for them (the only API is against PlanDefinition)
+In this implementation, ActivityDefinition resources will be contained within the PlanDefinition and there uisn't a separate API for them (the only API is against PlanDefinition).  
+
+Component or child regimens will also be contained within the PlanDefinition.  These are not available as separate resources
 
 ### Using this guide
 
