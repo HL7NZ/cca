@@ -315,6 +315,13 @@
         },
         "name": "52451000210102",
         "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/CcaPlanDefinition"
+      },
+      {
+        "reference": {
+          "reference": "PlanDefinition/60071000210106"
+        },
+        "name": "60071000210106",
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/CcaPlanDefinition"
       }
     ],
     "page": {
