@@ -71,7 +71,7 @@ It is common to have regimens with multiple cycles where all cycles except for t
       }
 
 ### UseContext
-
+  
 The PlanDefinition.useContext element is used for 2 main items.
 
 The cancers for which the regimen is intended to treat. There can be up to 3 of these, representing the cancer type, sub-type and sub-sub-type. The 'code' value for these is 'focus' - indicating that these are the focus of the regimen.
