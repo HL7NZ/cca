@@ -18,7 +18,7 @@ The guide defines profiles on [PlanDefinition](http://hl7.org/fhir/plandefinitio
 
 These are complex resource types, and have been significantly constrained for this usage. In particular, the ['action'](http://hl7.org/fhir/plandefinition-definitions.html#PlanDefinition.action) element of the PlanDefinion resource is used in a specific manner. It has 2 levels of nesting.
 
-In most cases the top level action represents a cycle and contains information like the cycle description, length, repeats (if any) and so forth. Each cycle contains any number of sub-actions representing the individual actions within that cycle - generally a medication administration
+In most cases the top level action represents a cycle and contains information like the cycle description, length, repeats (if any) and so forth. Each cycle contains any number of sub-actions representing the individual actions within that cycle - generally a medication administration (but can also be a procedure - see notes)
 
 For example, a regimen that had 2 cycles, each of which defined the administration of 2 medications would be structured as folllows:
 
