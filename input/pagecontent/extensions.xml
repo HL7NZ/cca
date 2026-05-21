@@ -52,6 +52,17 @@ In most situations the value of the status element itself will be 'active'</td>
 <td>active</td>
 </tr>
 <tr style='background-color:#FFCCCC'>
+<td><a href='StructureDefinition-sact-esmo-score.html'>sact-esmo-score</a></td>
+<td>http://hl7.org.nz/fhir/StructureDefinition/sact-esmo-score</td>
+<td>
+<div>PlanDefinition</div>
+</td>
+<td>The ESMO Magnitude of Clinical Benefit Scale (ESMO-MCBS) score for the regimen</td>
+<td></td>
+<td>0</td>
+<td>active</td>
+</tr>
+<tr style='background-color:#FFCCCC'>
 <td><a href='StructureDefinition-sact-location-medication-collection.html'>sact-location-medication-collection</a></td>
 <td>http://hl7.org.nz/fhir/StructureDefinition/sact-location-medication-collection</td>
 <td>
