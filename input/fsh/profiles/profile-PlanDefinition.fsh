@@ -19,6 +19,8 @@ Alias: $type = http://terminology.hl7.org/CodeSystem/plan-definition-type
 
 Alias: $additionalDetails = http://hl7.org.nz/fhir/StructureDefinition/sact-additional-details
 
+Alias: $esmoScore = http://hl7.org.nz/fhir/StructureDefinition/sact-esmo-score
+
 Profile:        CcaPlanDefinition
 Parent:         PlanDefinition
 Id:             CcaPlanDefinition
@@ -39,7 +41,8 @@ Description:    "CCA Regimen Plan Definition."
     $offLabel named offLabel 0..1 and
     $instructions named plan-instructions 0..1 and 
     $disclaimer named disclaimer 0..1 and
-    $additionalDetails named additionalDetails 0..*
+    $additionalDetails named additionalDetails 0..* and
+    $esmoScore named esmo-score 0..1
 
 * status.extension contains
     $additionalStatus named additional-status 0..1
